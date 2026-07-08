@@ -58,21 +58,41 @@ Baselines (joint 10k, uniform corpus):
 | byte-level, uniform | 1.398 | 3.533 | 5.767 | 1.316 | 4.451 | 225 | ❌ |
 
 Lessons: byte-level is catastrophic for Indic; uniform char-level still violates the English cap *and* leaves
-Telugu the outlier. Weighted-allocation search: **TODO (next step).**
+Telugu the outlier. **Pre-tokenizer fix:** use `WhitespaceSplit` (whitespace-only), NOT `Whitespace`
+(which also splits punctuation and inflates fertility) — must match the grader's `\S+` word count.
+
+**Weighted-allocation search (char-level, WhitespaceSplit, joint 10k):**
+- Natural balance point (no cap) = all four ≈ **1.4**: `en 1.42 / hi 1.34 / te 1.35 / es 1.38`, gap **0.078** — but English 1.42 violates its 1.2 cap.
+- **The cap forces English below the balance point**, which requires giving English ~40%+ of the weight share; that starves the others. English is a *step function* (only 3,774 unique words → snaps from 1.42 to ~1.0; cannot sit at 1.19).
+- **English and Telugu directly compete for the 10k budget:** feed Telugu to ≈1.0 and English pops back to 1.36 (infeasible); satisfy English (≤1.2) and Telugu is stuck at ≈1.95. Telugu's tiny 2,511-word page is the fragile bottleneck.
+- **Best FEASIBLE (en≤1.2), joint corpus-weighting:** weights `en20 hi8 te16 es8` → `en 1.142 / hi 1.471 / te 1.949 / es 1.488`, gap **0.807**, **score ≈ 1,239**.
+- **Diagnostic:** at V=20k the tension evaporates (all ≈1.0–1.07, gap 0.072). **The gap is budget-scarcity-induced.**
+
+**Next-session unlock:** *script-disjoint vocab allocation* — train per-language BPE with explicit budgets and
+union the vocabularies. English (Latin) and Telugu (Brahmic) live in disjoint code-point spaces, so separate
+budgets stop them competing — should satisfy en≤1.2 AND pull Telugu down, beating ~1,239. (Also the H1 artifact.)
 
 ## 6. Paper Hooks / Open Questions
-- **H1 — the fertility-parity allocation frontier** *(status: to gate)*: for a fixed joint vocab budget V and
-  a language set, what is the minimum achievable cross-lingual fertility gap, and its **irreducible floor**?
-  A tool that computes this Pareto frontier for any language set is an effect-agnostic artifact. Connects
-  paper20's *tax measurement* to a *fairness-allocation* frontier. **Must gate vs Zheng 2021 / α-sampling
-  before treating as novel.**
-- **H2 — cap-induced gap** *(observation)*: the `X1<=1.2` cap can *force* a minimum gap (over-serving English
-  is mandatory to satisfy it, which pushes X1 down). Is there a clean statement of the gap a per-language cap
-  imposes under a shared budget?
+- **H1 — the fertility-parity allocation frontier** *(status: to gate; now with measured evidence)*: for a
+  fixed joint vocab budget V, the min cross-lingual fertility gap is **budget-governed** — measured here it
+  falls from 0.81 (V=10k, capped) toward 0.07 (V=20k). There is a **critical budget** above which parity is
+  ~free. A tool that computes this frontier for any language set is an effect-agnostic artifact linking
+  paper20's *tax* to a *fairness-allocation* frontier. **Gate vs Zheng 2021 (vocab-capacity allocation) /
+  α-sampling / paper20 before treating as novel.**
+- **H2 — the cap-induced gap** *(now measured)*: a per-language fertility cap below the natural balance point
+  *manufactures* the gap — satisfying it forces a budget reallocation that starves other languages. Cleanly
+  visible here as a **two-language competition** (English cap vs Telugu bottleneck) that is unsatisfiable at
+  10k but trivial at 20k. Candidate clean statement: the min gap under a cap `c` and budget `V` is
+  `max(0, balance(V) - c)` plus a starvation term. **Gate before claiming.**
+- **H3 — script-disjoint allocation beats corpus-temperature** *(to test next session)*: because scripts
+  occupy disjoint code-point spaces, per-script vocab budgets decouple languages that joint corpus-weighting
+  couples. If this beats α-sampling on the parity frontier, that's a concrete, testable contribution.
 
 ## 7. Artifact / Submission
-Code: `llm_ws/era-v5/session-02-multilingual-bpe/`. Deliverable: static widget (ratios, stats, score, token
-download) hosted on Netlify. Self-score: **TBD after optimization.**
+Code: `llm_ws/era-v5/session-02-multilingual-bpe/` (`train.py`, `data/`, saved `tokenizer.json` / `tokens.txt`
+/ `results.json`). Deliverable: static widget (ratios, stats, score, token download) on Netlify — **not yet
+built**. Current honest self-score: **≈ 1,239** (joint corpus-weighting, feasible). Resubmission allowed →
+improve via H3 (script-disjoint allocation) before final submit. **Due 2026-07-11.**
 
 ## 8. References
 - paper20 token-cost-ledger (author) — `github.com/samyama-ai/token-cost-ledger`
