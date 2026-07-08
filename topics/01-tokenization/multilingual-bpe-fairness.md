@@ -135,12 +135,13 @@ pedagogical artifact, and a cataloged prior-art map. Honesty-over-reach per the 
 not a novel one.
 
 ## 7. Artifact / Submission
-Code: `llm_ws/era-v5/session-02-multilingual-bpe/` — `train.py` (joint-weighted, 1,239), `train_h3.py`
-(script-disjoint union, 2,336), `train_h4.py` (+ whole-word reclamation, **2,430**), `experiments/` (the
-optimize/augment sweeps), `build_widget.py` (publishes artifacts into the `session-2/` page).
-**Deployed:** https://era-v5.netlify.app/session-2/ — widget shows the ratios/stats/score, downloads
-tokenizer.json/tokens.txt, and **re-tokenizes all four pages live in-browser** as an honesty proof.
-Current honest self-score: **2,430**. Resubmission allowed. **Due 2026-07-11.**
+Code: `llm_ws/era-v5/session-02-multilingual-bpe/` — progression `train.py` (naive, 1,239) → `train_h3.py`
+(script-disjoint union, 2,336) → `train_h4.py` (+ whole-word reclamation, 2,430) → **`train_h5.py`
+(parity-aware BPE, principled, 2,511 — DEPLOYED)**. `experiments/parity_bpe.py` = the pure-parity (gap 0)
+version; `experiments/{optimize,augment,vocap}.py` = sweeps. `build_widget.py` publishes into `session-2/`.
+**Deployed:** https://era-v5.netlify.app/session-2/ — shows ratios/stats/score, downloads
+tokenizer.json/tokens.txt, and **re-tokenizes all four pages live in-browser**. H5: en 1.182 / hi=te=es 1.580,
+gap 0.398. Verified exact vs HuggingFace. **Due 2026-07-11.**
 
 ## 8. References
 Full BibTeX (with per-paper reuse verdicts): [`references.bib`](./references.bib) — also imported into **Zotero**.
