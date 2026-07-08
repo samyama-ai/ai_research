@@ -68,9 +68,27 @@ Telugu the outlier. **Pre-tokenizer fix:** use `WhitespaceSplit` (whitespace-onl
 - **Best FEASIBLE (en≤1.2), joint corpus-weighting:** weights `en20 hi8 te16 es8` → `en 1.142 / hi 1.471 / te 1.949 / es 1.488`, gap **0.807**, **score ≈ 1,239**.
 - **Diagnostic:** at V=20k the tension evaporates (all ≈1.0–1.07, gap 0.072). **The gap is budget-scarcity-induced.**
 
-**Next-session unlock:** *script-disjoint vocab allocation* — train per-language BPE with explicit budgets and
-union the vocabularies. English (Latin) and Telugu (Brahmic) live in disjoint code-point spaces, so separate
-budgets stop them competing — should satisfy en≤1.2 AND pull Telugu down, beating ~1,239. (Also the H1 artifact.)
+**H3 — script-disjoint allocation (CONFIRMED, score 2,336):** train per *script group* and union the vocabs.
+Key subtlety discovered: naive **per-language** union fails for **same-script** languages — English and
+Spanish are both Latin, so unioning two Latin merge lists lets whichever has priority hijack the other
+(measured: en-priority → es 1.95; es-priority → en 2.05). Correct structure = 3 *script* groups: joint
+**Latin** (en oversampled + es), disjoint **Devanagari** (hi), disjoint **Telugu** (te), unioned losslessly.
+Result: `en 1.180 / hi 1.608 / te 1.577 / es 1.607`, gap **0.428**, **score 2,336** (1.9×). This independently
+reproduces **Chung et al. 2020** (language-clustered vocabularies) and **XLM-V** (de-emphasize cross-script sharing).
+
+**H4 — whole-word budget reclamation (CONFIRMED, score 2,430):** diagnosed that the H3 tokenizer wastes
+**~17% of its 10k slots** on intermediate BPE merges that never surface as final tokens, while whole-word
+coverage is low (hi 21%, es 17%). Reclaim them: train the union at a *reduced* budget and spend the freed
+~650 slots on explicit whole-word merges for the highest-fertility languages. Pulls the max cluster from
+~1.61 → 1.59: `en 1.180 / hi 1.582 / te 1.591 / es 1.577`, gap **0.411**, **score 2,430** (2×). This is the
+**Picky BPE** (Chizhov 2024) / **BPE-knockout** (Bauwens 2024) idea applied to a parity objective. Still one
+valid BPE tokenizer (graders re-run).
+
+**Ceiling (measured):** within "one BPE tokenizer, 10k, en≤1.2, these 4 pages", the frontier is ~2,400 safe /
+~2,600 at the cap-edge (en 1.198, risky). Normalization (NFC/NFD/NFKC) does **not** help. The gap is
+structural: en is forced low by the cap while hi/te/es cluster at ~1.6 (budget-limited). A larger jump needs a
+different tokenizer family — **Unigram LM** (Bostrom & Durrett 2020: BPE is suboptimal) — which the "must be
+BPE" assignment forbids.
 
 ## 6. Paper Hooks / Open Questions
 - **H1 — the fertility-parity allocation frontier** *(status: to gate; now with measured evidence)*: for a
@@ -89,14 +107,27 @@ budgets stop them competing — should satisfy en≤1.2 AND pull Telugu down, be
   couples. If this beats α-sampling on the parity frontier, that's a concrete, testable contribution.
 
 ## 7. Artifact / Submission
-Code: `llm_ws/era-v5/session-02-multilingual-bpe/` (`train.py`, `data/`, saved `tokenizer.json` / `tokens.txt`
-/ `results.json`). Deliverable: static widget (ratios, stats, score, token download) on Netlify — **not yet
-built**. Current honest self-score: **≈ 1,239** (joint corpus-weighting, feasible). Resubmission allowed →
-improve via H3 (script-disjoint allocation) before final submit. **Due 2026-07-11.**
+Code: `llm_ws/era-v5/session-02-multilingual-bpe/` — `train.py` (joint-weighted, 1,239), `train_h3.py`
+(script-disjoint union, 2,336), `train_h4.py` (+ whole-word reclamation, **2,430**), `experiments/` (the
+optimize/augment sweeps), `build_widget.py` (publishes artifacts into the `session-2/` page).
+**Deployed:** https://era-v5.netlify.app/session-2/ — widget shows the ratios/stats/score, downloads
+tokenizer.json/tokens.txt, and **re-tokenizes all four pages live in-browser** as an honesty proof.
+Current honest self-score: **2,430**. Resubmission allowed. **Due 2026-07-11.**
 
 ## 8. References
-- paper20 token-cost-ledger (author) — `github.com/samyama-ai/token-cost-ledger`
-- Conneau et al. 2020, *Unsupervised Cross-lingual Representation Learning at Scale* (XLM-R, α-sampling)
-- Zheng et al. 2021, *Allocating Large Vocabulary Capacity for Cross-lingual Language Model Pre-training*
-- Zouhar et al. 2023, *A Formal Perspective on Byte-Pair Encoding*
-- Radford et al. 2019 (GPT-2, byte-level BPE)
+Full BibTeX (with per-paper reuse verdicts): [`references.bib`](./references.bib) — also imported into **Zotero**.
+
+Reusable techniques (verdict):
+- **Chizhov et al. 2024**, *BPE Gets Picky* (Picky BPE) — remove wasted intermediate tokens → **powers H4** (2,336→2,430).
+- **Bauwens & Delobelle 2024**, *BPE-knockout* — post-hoc merge pruning with reconnection (same family as H4).
+- **Zheng et al. 2021**, *Allocating Large Vocabulary Capacity* (VoCap, code) — principled per-script budgets (could replace our grid).
+- **Bostrom & Durrett 2020**, *BPE is Suboptimal* — Unigram LM lowers fertility; the big lever IF BPE constraint relaxed.
+
+Validates our approach:
+- **Chung et al. 2020**, *Language-Clustered Vocabularies* (EMNLP) — combine per-cluster vocabs = our script-disjoint union.
+- **Liang et al. 2023**, *XLM-V* — de-emphasize cross-script token sharing at 1M-vocab scale.
+- **Petrov et al. 2023**, *Tokenizers Introduce Unfairness Between Languages* (NeurIPS) — frames the fairness objective.
+- **Al Kautsar & Koto 2025**, *Parallel Tokenizers* — monolingual-then-align; "naturally improves fertility balance".
+
+Background: paper20 token-cost-ledger (author, `github.com/samyama-ai/token-cost-ledger`); Conneau et al. 2020
+(XLM-R α-sampling); Zouhar et al. 2023; Radford et al. 2019 (GPT-2 byte-level BPE).
