@@ -109,6 +109,15 @@ One ordinary BPE tokenizer; verified against HuggingFace (max Δ 0.0000).
   under-serving the large en/es pages. **Observation, gate before claiming** vs Zouhar 2023 (noiseless channel)
   / Arnett 2025 — likely known that length≠quality, but the *inversion* under fertility-parity is worth a check.
 
+**Does parity hold at scale / off the India pages? (`experiments/scale.py`, 14 langs fetched).**
+- **Yes, robustly.** Pure parity-aware BPE over the *same* article in **12 whitespace languages / 5 scripts**
+  (Latin ×6, Cyrillic, Arabic, Brahmic ×4) holds all twelve to spread **0.0014** @ V=10k (all 2.109–2.110);
+  no language starved — Indonesian (2,050 words) = German (23,420 words) to 3 decimals. Common fertility is
+  budget-governed: N=4→1.39, 6→1.56, 12→2.11; 12@20k→1.71.
+- **Scope limit — the metric breaks for CJK.** Chinese ~57 chars / "\\S+ word", Japanese ~55: scriptio-continua
+  scripts have almost no whitespace, so tokens-per-\\S+-word is meaningless. The assignment's fairness framework
+  silently assumes whitespace-delimited languages; a char-normalized denominator is needed for zh/ja/th.
+
 **VoCap-style allocation (tested):** a marginal-utility water-filling allocator (attack-the-worst-language,
 after Zheng 2021) independently converges to the same base budget as the hand grid (Lat ~6250 / hi ~1000 /
 te ~2050) → score **2,429 ≈ 2,430**. Confirms we sit *on* the allocation frontier; the reclamation step, not the
