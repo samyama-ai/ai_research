@@ -84,6 +84,18 @@ coverage is low (hi 21%, es 17%). Reclaim them: train the union at a *reduced* b
 **Picky BPE** (Chizhov 2024) / **BPE-knockout** (Bauwens 2024) idea applied to a parity objective. Still one
 valid BPE tokenizer (graders re-run).
 
+**Parity-aware BPE (principled, `experiments/parity_bpe.py`) — the real answer to the problem.**
+Implemented the Foroutan et al. (ACL 2026) idea from scratch: at each merge step, help the currently
+*worst-compressed* language (merge its most valuable pair) instead of the globally most-frequent pair.
+One ordinary BPE tokenizer; verified against HuggingFace (max Δ 0.0000).
+- **Pure parity (no cap): PERFECT fairness — all four converge to en=hi=te=es=1.390, gap 0.000.** They
+  move in lockstep as |V| grows (e.g. |V|=6000 → all 1.670). Nobody pays a token tax.
+- **With en≤1.2 cap: gap 0.367** (en 1.197 / hi=te=es 1.564 — the other three perfectly balanced), which
+  beats the post-hoc H4 (0.411) AND is principled, not a bolt-on.
+- **Insight (H2, now sharp):** the English cap *manufactures* the inequity. Remove it → perfect parity,
+  and total tokenization is *cheaper* (forcing English to 1.2 wastes shared budget, pushing everyone else
+  up to 1.56). The assignment scores you on mitigating an inequity its own constraint creates.
+
 **VoCap-style allocation (tested):** a marginal-utility water-filling allocator (attack-the-worst-language,
 after Zheng 2021) independently converges to the same base budget as the hand grid (Lat ~6250 / hi ~1000 /
 te ~2050) → score **2,429 ≈ 2,430**. Confirms we sit *on* the allocation frontier; the reclamation step, not the
