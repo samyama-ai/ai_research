@@ -95,3 +95,26 @@
   url     = {https://arxiv.org/abs/2510.06128},
   annote  = {Train tokenizers monolingually, then align vocabularies -- closest recent work to our per-script training. Explicitly notes alignment "naturally improves fertility balance". Future direction.}
 }
+
+@inproceedings{arnett2025inequities,
+  title     = {Explaining and Mitigating Crosslingual Tokenizer Inequities},
+  author    = {Arnett, Catherine and Chang, Tyler A. and Biderman, Stella and Bergen, Benjamin K.},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+  eprint    = {2510.21909},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2510.21909},
+  annote    = {GATING PAPER. Trains ~7,000 monolingual tokenizers over 97 languages; maps how token-premium disparity varies with vocab size + pre-tokenizer. Gates our H1 (parity-is-budget-governed) to RED. BUT uses PER-LANGUAGE vocab sizes, not a fixed JOINT budget, and no script-disjoint/merge-reclamation -> leaves the joint-budget min-max-gap regime (our H4 angle) open/YELLOW.}
+}
+
+@inproceedings{foroutan2026parityaware,
+  title     = {Parity-Aware Byte-Pair Encoding: Improving Cross-lingual Fairness in Tokenization},
+  author    = {Foroutan, Negar and Meister, Clara and Paul, Debjit and Niklaus, Joel and Ahmadi, Sina and Bosselut, Antoine and Sennrich, Rico},
+  booktitle = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2026},
+  eprint    = {2508.04796},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2508.04796},
+  note      = {code: https://github.com/swiss-ai/parity-aware-bpe},
+  annote    = {DECISIVE GATE (RED). Exactly our objective+method: a parity-aware BPE that at EVERY merge maximizes compression gain of the currently worst-compressed language (= our "attack the worst language" water-filling, integrated into the merge objective rather than post-hoc). Trades a little global compression for cross-lingual parity. Our H3+H4+VoCap-style approach is a post-hoc approximation of this. Also the SOTA method to TRY (has code) if we want to push past 2,430.}
+}

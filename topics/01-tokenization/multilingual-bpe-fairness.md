@@ -84,27 +84,43 @@ coverage is low (hi 21%, es 17%). Reclaim them: train the union at a *reduced* b
 **Picky BPE** (Chizhov 2024) / **BPE-knockout** (Bauwens 2024) idea applied to a parity objective. Still one
 valid BPE tokenizer (graders re-run).
 
+**VoCap-style allocation (tested):** a marginal-utility water-filling allocator (attack-the-worst-language,
+after Zheng 2021) independently converges to the same base budget as the hand grid (Lat ~6250 / hi ~1000 /
+te ~2050) → score **2,429 ≈ 2,430**. Confirms we sit *on* the allocation frontier; the reclamation step, not the
+base split, is the lever. (`experiments/vocap.py`.)
+
 **Ceiling (measured):** within "one BPE tokenizer, 10k, en≤1.2, these 4 pages", the frontier is ~2,400 safe /
 ~2,600 at the cap-edge (en 1.198, risky). Normalization (NFC/NFD/NFKC) does **not** help. The gap is
 structural: en is forced low by the cap while hi/te/es cluster at ~1.6 (budget-limited). A larger jump needs a
 different tokenizer family — **Unigram LM** (Bostrom & Durrett 2020: BPE is suboptimal) — which the "must be
 BPE" assignment forbids.
 
-## 6. Paper Hooks / Open Questions
-- **H1 — the fertility-parity allocation frontier** *(status: to gate; now with measured evidence)*: for a
-  fixed joint vocab budget V, the min cross-lingual fertility gap is **budget-governed** — measured here it
-  falls from 0.81 (V=10k, capped) toward 0.07 (V=20k). There is a **critical budget** above which parity is
-  ~free. A tool that computes this frontier for any language set is an effect-agnostic artifact linking
-  paper20's *tax* to a *fairness-allocation* frontier. **Gate vs Zheng 2021 (vocab-capacity allocation) /
-  α-sampling / paper20 before treating as novel.**
-- **H2 — the cap-induced gap** *(now measured)*: a per-language fertility cap below the natural balance point
-  *manufactures* the gap — satisfying it forces a budget reallocation that starves other languages. Cleanly
-  visible here as a **two-language competition** (English cap vs Telugu bottleneck) that is unsatisfiable at
-  10k but trivial at 20k. Candidate clean statement: the min gap under a cap `c` and budget `V` is
-  `max(0, balance(V) - c)` plus a starvation term. **Gate before claiming.**
-- **H3 — script-disjoint allocation beats corpus-temperature** *(to test next session)*: because scripts
-  occupy disjoint code-point spaces, per-script vocab budgets decouple languages that joint corpus-weighting
-  couples. If this beats α-sampling on the parity frontier, that's a concrete, testable contribution.
+## 6. Paper Hooks / Open Questions — GATED 2026-07-08 (adversarial web check done)
+**Verdict: no GREEN. Every angle is RED after gating — the field converged on this exact problem in 2024–2026.**
+The honest value of this session: independently *reproducing* SOTA (a good understanding check), a clean
+pedagogical artifact, and a cataloged prior-art map. Honesty-over-reach per the runbook — negatives are fine.
+
+- **H1 — parity is budget-governed** → **RED.** [[arnett2025inequities|Arnett et al., NeurIPS 2025]] trains
+  ~7,000 monolingual tokenizers over 97 languages and maps how token-premium disparity varies with vocab size
+  and pre-tokenizer — the frontier we observed, done comprehensively.
+- **H2 — a per-language cap manufactures the gap** → not a paper. It is an artifact of *this assignment's*
+  artificial hard cap + fixed joint budget, not a general phenomenon.
+- **H3 — script-disjoint allocation** → **RED.** [[chung2020clustered|Chung et al. 2020]] (language-clustered
+  vocabularies) and [[liang2023xlmv|XLM-V]] already combine per-cluster vocabularies / de-emphasize cross-script
+  sharing. We reinvented it.
+- **H4 — parity-aware reclamation / attack-the-worst-language** → **RED.**
+  [[foroutan2026parityaware|Parity-Aware BPE, Foroutan et al., ACL 2026]] is our exact objective **and** method:
+  at every merge it maximizes the compression gain of the currently worst-compressed language (= our water-fill /
+  VoCap-style "attack the worst"), integrated into the merge objective. Our H3+H4+VoCap post-hoc pipeline is an
+  approximation of it. Slot-reclamation itself = [[chizhov2024pickybpe|Picky BPE]] / [[bauwens2024bpeknockout|BPE-knockout]].
+- **The one narrow YELLOW (not worth a paper alone):** the *fixed-hard-joint-budget + hard per-language cap*
+  regime differs from prior parity work, which assumes *per-language* budgets (Arnett) or trades global
+  compression (Parity-Aware BPE). Reclamation as a parity lever under a hard joint cap is mildly distinct — but
+  incremental and pre-empted in spirit. Not pursued.
+
+**If we want to actually push past 2,430:** adopt Parity-Aware BPE's integrated merge objective (they have
+[code](https://github.com/swiss-ai/parity-aware-bpe)) instead of our post-hoc union+reclamation — the SOTA method,
+not a novel one.
 
 ## 7. Artifact / Submission
 Code: `llm_ws/era-v5/session-02-multilingual-bpe/` — `train.py` (joint-weighted, 1,239), `train_h3.py`
