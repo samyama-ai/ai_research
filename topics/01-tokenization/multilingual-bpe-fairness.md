@@ -99,9 +99,9 @@ One ordinary BPE tokenizer; verified against HuggingFace (max Δ 0.0000).
 **Is the parity fertility a floor? (info-theoretic, `experiments/parity_bpe.py` V-sweep + Rényi).**
 - **No — 1.390 is just the V=10k operating point.** Pure-parity common fertility keeps dropping with budget
   (V=4k→1.90, 8k→1.51, 10k→1.39, 14k→1.24, 20k→1.05) and **parity holds at every budget** (spread ~0.0002
-  throughout). The irreducible floor for whitespace-word units is **1.0** (each word = one token), reached at
-  **V ≈ 11,416 = the number of unique word types** across the four pages. Below that, the common fertility is
-  set by Zipf coverage of the word distribution; going *below* 1.0 needs superword (cross-whitespace) tokens.
+  throughout). The irreducible floor for whitespace-word units is **1.0** (each word = one token); reaching it needs at
+  least **11,416 tokens** (= unique word types across the four pages), and because BPE also spends slots on
+  intermediate merges it only *nears* 1.0 in practice (V=20k → 1.05). Going *below* 1.0 needs superword tokens.
 - **Fertility parity ≠ information parity.** At equal fertility (hi=te=es≈1.58), Zouhar's Rényi efficiency
   (α=2.5, correlates w/ downstream) is NOT equal — te 0.70 / hi 0.54 / es 0.49 / en 0.48 — and bits-per-word
   differ sharply (te 16.5 / es 14.8 / hi 14.3 / en 12.1). Equalizing token *count* leaves the *information*
