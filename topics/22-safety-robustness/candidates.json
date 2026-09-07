@@ -108,12 +108,6 @@
     "description": "Detecting a model that behaves well only under observation."
   },
   {
-    "title": "Eliciting Latent Knowledge From a Reporting Model",
-    "slug": "eliciting-latent-knowledge",
-    "status": "open",
-    "description": "Extracting what a model knows when it reports otherwise."
-  },
-  {
     "title": "Scalable Oversight Beyond Human Evaluator Ceiling",
     "slug": "scalable-oversight-beyond-human-ceiling",
     "status": "empirically-open",
@@ -154,12 +148,6 @@
     "slug": "monitorability-latent-reasoning",
     "status": "open",
     "description": "Overseeing models that reason without legible token traces."
-  },
-  {
-    "title": "Sandbagging Detection Under Capability Evaluations",
-    "slug": "sandbagging-detection-capability-evals",
-    "status": "empirically-open",
-    "description": "Detecting a model deliberately underperforming on safety evaluations."
   },
   {
     "title": "Elicitation Gap in Dangerous-Capability Evaluations",

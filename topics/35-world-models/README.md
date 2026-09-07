@@ -5,3 +5,6 @@ Topic `35-world-models` of the [AI Research catalog](../../README.md). See [TAXO
 
 ## Problems Index
 
+* 🟡 [Learning Dynamics From Passive Video Without Action Labels](./action-free-dynamics-from-video.md)
+* 🔵 [Distinguishing Aleatoric From Epistemic Error in Rollouts](./aleatoric-epistemic-separation-rollouts.md)
+* 🟢 [Amortized Planning Versus Explicit Search at Scale](./amortized-versus-explicit-search.md)

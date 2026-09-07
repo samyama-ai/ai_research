@@ -1,11 +1,5 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size",
-    "slug": "compute-optimal-vocabulary-size",
-    "status": "empirically-open",
-    "description": "How vocabulary size should scale with model and data budget."
-  },
-  {
     "title": "Softmax Bottleneck Beyond Language Modeling",
     "slug": "softmax-bottleneck-beyond-language-modeling",
     "status": "partially-solved",

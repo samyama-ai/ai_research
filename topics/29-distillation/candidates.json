@@ -84,12 +84,6 @@
     "description": "Tight theory for forgetting during sequential task transfer."
   },
   {
-    "title": "Cross-Tokenizer Distillation",
-    "slug": "cross-tokenizer-distillation",
-    "status": "partially-solved",
-    "description": "Distilling across models with mismatched vocabularies."
-  },
-  {
     "title": "Cross-Modal Distillation Alignment",
     "slug": "cross-modal-distillation-alignment",
     "status": "open",

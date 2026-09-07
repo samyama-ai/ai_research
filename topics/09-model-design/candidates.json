@@ -1,11 +1,5 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size",
-    "slug": "compute-optimal-vocabulary-size",
-    "status": "empirically-open",
-    "description": "How tokenizer vocabulary should scale with model and data size."
-  },
-  {
     "title": "Depth versus Width Allocation at Fixed Parameter Budget",
     "slug": "depth-width-allocation-fixed-budget",
     "status": "empirically-open",
@@ -46,12 +40,6 @@
     "slug": "differentiable-discrete-routing",
     "status": "open",
     "description": "Training sparse routers without heuristic auxiliary objectives."
-  },
-  {
-    "title": "Length Generalization from Positional Encoding Design",
-    "slug": "positional-encoding-length-generalization",
-    "status": "partially-solved",
-    "description": "Which position schemes provably extrapolate beyond training length."
   },
   {
     "title": "Necessity of Explicit Position Information in Decoders",

@@ -35,8 +35,9 @@ AGY_SEMAPHORE = asyncio.Semaphore(AGY_CONCURRENCY)
 # every call returned in under 10 seconds, so the retry loop just spun. Once this is
 # seen, the whole run aborts and says when the quota resets.
 QUOTA_RE = re.compile(
-    r"quota reached|rate limit|session limit|usage limit"
-    r"|Resets in|resets \d|resets at", re.I)
+    r"quota reached|quota exceeded|rate limit|resets? (in|at|\d)|"
+    r"(session|usage|weekly|daily) limit|hit your limit|"
+    r"upgrade your subscription|too many requests|429", re.I)
 
 
 class QuotaExhausted(RuntimeError):

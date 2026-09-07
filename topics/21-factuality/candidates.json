@@ -24,12 +24,6 @@
     "description": "Is there a steerable single direction controlling factual fabrication?"
   },
   {
-    "title": "Faithfulness of Chain-of-Thought to the Computation Producing the Answer",
-    "slug": "chain-of-thought-faithfulness-measurement",
-    "status": "methodologically-blocked",
-    "description": "Does stated reasoning reflect the model's actual internal computation?"
-  },
-  {
     "title": "Retrieval Augmentation Under Conflicting Evidence",
     "slug": "context-parametric-knowledge-conflict-resolution",
     "status": "open",

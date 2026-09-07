@@ -1,242 +1,242 @@
 [
   {
-    "title": "Sample-Efficient Latent Dynamics Learning Without Reconstruction",
-    "slug": "latent-dynamics-without-reconstruction",
-    "status": "open",
-    "description": "Can latent world models drop pixel reconstruction without losing task-relevant state?"
-  },
-  {
-    "title": "Compounding Error Bounds for Autoregressive Rollouts",
-    "slug": "compounding-error-bounds-rollouts",
+    "title": "Compounding Error Bounds for Learned World Models",
+    "slug": "compounding-error-bounds-learned-world-models",
     "status": "partially-solved",
-    "description": "Tight horizon-dependent error bounds for learned model rollouts remain unproven."
+    "description": "How rollout error grows with horizon under learned dynamics."
   },
   {
-    "title": "Optimal Imagination Horizon in Dyna-Style Training",
-    "slug": "optimal-imagination-horizon",
+    "title": "Latent State Identifiability in Recurrent World Models",
+    "slug": "latent-state-identifiability-world-models",
+    "status": "open",
+    "description": "When does a latent model recover true environment state?"
+  },
+  {
+    "title": "Optimal Rollout Horizon in Dyna-Style Model-Based RL",
+    "slug": "optimal-rollout-horizon-model-based-rl",
     "status": "empirically-open",
-    "description": "What rollout length maximizes return per unit of compute?"
+    "description": "Choosing model rollout length without task-specific tuning."
   },
   {
-    "title": "Measuring Whether a Video Model Encodes Physics",
-    "slug": "video-model-physics-encoding-measure",
+    "title": "Video Generators as Action-Conditioned Simulators",
+    "slug": "video-generators-as-action-conditioned-simulators",
+    "status": "empirically-open",
+    "description": "Do video models support reliable closed-loop control?"
+  },
+  {
+    "title": "Measuring World Model Consistency Independent of Task Reward",
+    "slug": "measuring-world-model-consistency",
     "status": "methodologically-blocked",
-    "description": "No agreed test separates physical understanding from surface prediction."
+    "description": "No agreed metric for internal model coherence."
   },
   {
-    "title": "Object Permanence Under Long Occlusion in Learned Simulators",
-    "slug": "object-permanence-long-occlusion",
+    "title": "Long-Horizon Memory Persistence in Generative Environments",
+    "slug": "long-horizon-memory-persistence-generative-environments",
     "status": "open",
-    "description": "Learned simulators lose occluded objects beyond short time gaps."
+    "description": "Keeping generated scenes stable over minutes of interaction."
   },
   {
-    "title": "Action-Conditioning Fidelity in Generative Game Engines",
-    "slug": "action-conditioning-fidelity-game-engines",
+    "title": "Object Permanence in Learned Latent Dynamics",
+    "slug": "object-permanence-latent-dynamics",
     "status": "empirically-open",
-    "description": "Do neural game engines obey actions or hallucinate plausible continuations?"
+    "description": "Do latent models track occluded objects across time?"
   },
   {
-    "title": "Value-Aware Model Learning at Scale",
-    "slug": "value-aware-model-learning-scale",
+    "title": "Sample Complexity of Model-Based versus Model-Free RL",
+    "slug": "sample-complexity-model-based-vs-model-free",
     "status": "partially-solved",
-    "description": "Decision-aware model losses help in theory, rarely at scale."
+    "description": "When does learning dynamics beat learning policies directly?"
   },
   {
-    "title": "Model-Based Exploration Under Irreversible Dynamics",
-    "slug": "exploration-irreversible-dynamics",
+    "title": "Value Equivalence versus Reconstruction Objectives",
+    "slug": "value-equivalence-versus-reconstruction",
     "status": "open",
-    "description": "Safe exploration when mistakes permanently remove reachable states."
+    "description": "Which world model objective yields better planning performance?"
   },
   {
-    "title": "Scaling Laws for World Model Prediction Error",
-    "slug": "scaling-laws-world-model-error",
+    "title": "Planning Depth Scaling Laws for Search-Based Agents",
+    "slug": "planning-depth-scaling-laws",
     "status": "empirically-open",
-    "description": "How does rollout fidelity scale with parameters, data, and horizon?"
+    "description": "How performance scales with search budget and model error."
   },
   {
-    "title": "Discovering Reusable Temporal Abstractions Without Hand-Coded Options",
-    "slug": "unsupervised-temporal-abstraction-discovery",
-    "status": "open",
-    "description": "No method reliably discovers useful options from scratch."
-  },
-  {
-    "title": "Planning Horizon Versus Model Error Tradeoff",
-    "slug": "planning-horizon-model-error-tradeoff",
+    "title": "Model Exploitation by Planners",
+    "slug": "model-exploitation-by-planners",
     "status": "partially-solved",
-    "description": "Optimal planning depth given an imperfect model is unresolved."
-  },
-  {
-    "title": "MCTS Without Learned Value Bootstrapping",
-    "slug": "mcts-without-value-bootstrap",
-    "status": "empirically-open",
-    "description": "Can search alone match bootstrapped value networks at scale?"
-  },
-  {
-    "title": "Latent Space Planning Consistency",
-    "slug": "latent-space-planning-consistency",
-    "status": "open",
-    "description": "Latent plans need not correspond to feasible real trajectories."
-  },
-  {
-    "title": "Transferring World Models Across Embodiments",
-    "slug": "cross-embodiment-world-model-transfer",
-    "status": "open",
-    "description": "Reusing dynamics models across different robot morphologies fails."
-  },
-  {
-    "title": "Counterfactual Validity of Learned Simulators",
-    "slug": "counterfactual-validity-learned-simulators",
-    "status": "methodologically-blocked",
-    "description": "Learned models are untested on unseen interventions, not just predictions."
-  },
-  {
-    "title": "Long-Horizon Credit Assignment Through Imagined Rollouts",
-    "slug": "credit-assignment-imagined-rollouts",
-    "status": "open",
-    "description": "Gradients through long imagined trajectories vanish or explode."
+    "description": "Preventing planners from finding model-only adversarial actions."
   },
   {
     "title": "Uncertainty Calibration in Learned Dynamics Ensembles",
-    "slug": "dynamics-ensemble-uncertainty-calibration",
-    "status": "partially-solved",
-    "description": "Ensembles underestimate epistemic uncertainty far from data."
+    "slug": "uncertainty-calibration-dynamics-ensembles",
+    "status": "open",
+    "description": "Do ensembles give usable epistemic uncertainty for planning?"
   },
   {
-    "title": "Distinguishing Aleatoric From Epistemic Error in Rollouts",
-    "slug": "aleatoric-epistemic-separation-rollouts",
+    "title": "Transfer of World Models Across Embodiments",
+    "slug": "world-model-transfer-across-embodiments",
+    "status": "empirically-open",
+    "description": "Reusing dynamics knowledge when the body changes."
+  },
+  {
+    "title": "Counterfactual Correctness of Generative World Models",
+    "slug": "counterfactual-correctness-generative-world-models",
     "status": "methodologically-blocked",
-    "description": "No practical decomposition of prediction error into its two sources."
+    "description": "Testing whether models answer unseen intervention queries correctly."
   },
   {
-    "title": "Test-Time Search Scaling in LLM Planners",
-    "slug": "test-time-search-scaling-llm-planners",
-    "status": "empirically-open",
-    "description": "Does more search compute keep improving LLM plan validity?"
-  },
-  {
-    "title": "LLMs as Faithful World Model Simulators",
-    "slug": "llm-as-world-model-fidelity",
+    "title": "Discovering Temporal Abstractions Without Hand-Specified Options",
+    "slug": "discovering-temporal-abstractions-without-options",
     "status": "open",
-    "description": "Whether language models track state consistently over long interactions."
+    "description": "Learning useful macro-actions purely from unsupervised interaction."
   },
   {
-    "title": "Learned Heuristics With Bounded Suboptimality Guarantees",
-    "slug": "learned-heuristics-bounded-suboptimality",
+    "title": "Bisimulation Metrics at Scale",
+    "slug": "bisimulation-metrics-at-scale",
     "status": "partially-solved",
-    "description": "Neural heuristics rarely come with admissibility or bound guarantees."
+    "description": "Do state abstractions from bisimulation scale to pixels?"
   },
   {
-    "title": "Symbolic Abstraction Discovery for Task and Motion Planning",
-    "slug": "symbolic-abstraction-discovery-tamp",
-    "status": "open",
-    "description": "Learning PDDL-like predicates from raw continuous observation streams."
-  },
-  {
-    "title": "Offline Model-Based RL Under Narrow Data Coverage",
-    "slug": "offline-mbrl-narrow-coverage",
-    "status": "partially-solved",
-    "description": "Guarantees exist only under coverage assumptions rarely met in practice."
-  },
-  {
-    "title": "Reward Model Exploitation Inside Imagined Rollouts",
-    "slug": "reward-exploitation-imagined-rollouts",
-    "status": "open",
-    "description": "Policies exploit model flaws to fabricate reward during imagination."
-  },
-  {
-    "title": "Non-Stationary World Model Adaptation Rate",
-    "slug": "nonstationary-world-model-adaptation",
-    "status": "empirically-open",
-    "description": "How fast can a model track changing dynamics without forgetting?"
-  },
-  {
-    "title": "Partial Observability Versus Recurrent State Sufficiency",
-    "slug": "recurrent-state-sufficiency-pomdp",
-    "status": "open",
-    "description": "When is a learned recurrent state a sufficient statistic?"
-  },
-  {
-    "title": "Memory Capacity Limits of Recurrent World Models",
-    "slug": "recurrent-world-model-memory-capacity",
-    "status": "empirically-open",
-    "description": "Maximum retrievable history length in learned state-space models."
-  },
-  {
-    "title": "Diffusion Planners Versus Autoregressive Planners",
-    "slug": "diffusion-versus-autoregressive-planners",
-    "status": "empirically-open",
-    "description": "Which plan representation wins at long horizons and scale?"
-  },
-  {
-    "title": "Guaranteeing Constraint Satisfaction in Generative Plans",
-    "slug": "constraint-satisfaction-generative-plans",
-    "status": "open",
-    "description": "Generative planners cannot yet certify hard constraint feasibility."
-  },
-  {
-    "title": "Sim-to-Real Gap Prediction Before Deployment",
-    "slug": "predicting-sim-to-real-gap",
+    "title": "Physical Plausibility Evaluation for Video World Models",
+    "slug": "physical-plausibility-evaluation-video-models",
     "status": "methodologically-blocked",
-    "description": "No metric forecasts real-world performance from simulator fidelity."
+    "description": "No robust automated test for physics violations in generations."
   },
   {
-    "title": "Model-Based Versus Model-Free Sample Efficiency Crossover",
-    "slug": "model-based-model-free-crossover",
-    "status": "empirically-open",
-    "description": "At what data budget does model-free overtake model-based learning?"
-  },
-  {
-    "title": "Causal Structure Identifiability From Interventional Agent Data",
-    "slug": "causal-identifiability-agent-data",
+    "title": "Offline Model-Based RL Under Distribution Shift",
+    "slug": "offline-model-based-rl-distribution-shift",
     "status": "partially-solved",
-    "description": "Which causal graphs an acting agent can identify from its own actions."
+    "description": "Bounding policy value when data misses relevant transitions."
   },
   {
-    "title": "Goal-Conditioned Value Function Composition",
-    "slug": "goal-conditioned-value-composition",
+    "title": "Learning Reward Functions Inside World Models",
+    "slug": "learning-reward-functions-inside-world-models",
     "status": "open",
-    "description": "Composing learned subgoal values into valid long-horizon plans."
+    "description": "Whether reward prediction should share latent state with dynamics."
   },
   {
-    "title": "World Model Consistency Under Repeated Replanning",
-    "slug": "replanning-consistency",
-    "status": "open",
-    "description": "Successive replans can oscillate rather than converge to behavior."
+    "title": "Stochastic versus Deterministic Latent Dynamics",
+    "slug": "stochastic-versus-deterministic-latent-dynamics",
+    "status": "empirically-open",
+    "description": "When does modeling aleatoric noise help control?"
   },
   {
-    "title": "Learning Dynamics From Passive Video Without Action Labels",
-    "slug": "action-free-dynamics-from-video",
+    "title": "Planning with Language Models as Approximate Simulators",
+    "slug": "planning-with-language-models-as-simulators",
+    "status": "empirically-open",
+    "description": "Reliability of LLM state prediction inside search loops."
+  },
+  {
+    "title": "Credit Assignment Through Differentiable Model Rollouts",
+    "slug": "credit-assignment-differentiable-rollouts",
     "status": "partially-solved",
-    "description": "Recovering an action space from unlabeled observational video."
+    "description": "Gradient pathologies when backpropagating through long simulations."
   },
   {
-    "title": "Amortized Planning Versus Explicit Search at Scale",
-    "slug": "amortized-versus-explicit-search",
-    "status": "empirically-open",
-    "description": "Can a distilled policy fully replace search-time computation?"
-  },
-  {
-    "title": "Continuous-Time World Models for Irregular Observations",
-    "slug": "continuous-time-world-models",
+    "title": "Amortized versus Search-Based Planning Tradeoff",
+    "slug": "amortized-versus-search-planning-tradeoff",
     "status": "open",
-    "description": "Handling irregularly sampled sensor streams without discretization artifacts."
+    "description": "When to distill search into a policy versus search."
   },
   {
-    "title": "Verification of Learned Models Against Conservation Laws",
-    "slug": "conservation-law-verification-learned-models",
+    "title": "World Models for Non-Stationary Environments",
+    "slug": "world-models-non-stationary-environments",
     "status": "open",
-    "description": "Certifying that learned dynamics respect known physical invariants."
+    "description": "Detecting and adapting to dynamics that change online."
   },
   {
-    "title": "Compute-Optimal Split Between Model Training and Search",
-    "slug": "compute-split-model-versus-search",
+    "title": "Compositional Generalization of Learned Dynamics",
+    "slug": "compositional-generalization-learned-dynamics",
     "status": "empirically-open",
-    "description": "Best allocation of a fixed budget between learning and planning."
+    "description": "Predicting novel combinations of known objects and forces."
   },
   {
-    "title": "Evaluating World Models Independently of Downstream Policy",
-    "slug": "policy-independent-world-model-evaluation",
+    "title": "Action Space Abstraction for Continuous Control Planning",
+    "slug": "action-space-abstraction-continuous-control",
+    "status": "open",
+    "description": "Learning action representations that make planning tractable."
+  },
+  {
+    "title": "Model-Based Exploration Without Reward Signals",
+    "slug": "model-based-exploration-without-reward",
+    "status": "partially-solved",
+    "description": "Provably efficient exploration driven by model uncertainty."
+  },
+  {
+    "title": "Latent Space Collapse Under Self-Predictive Objectives",
+    "slug": "latent-collapse-self-predictive-objectives",
+    "status": "partially-solved",
+    "description": "Why bootstrapped latent losses avoid trivial constant solutions."
+  },
+  {
+    "title": "Real-Time Constraints on Interactive Neural Simulators",
+    "slug": "real-time-neural-simulator-constraints",
+    "status": "solved-but-impractical",
+    "description": "Achieving high-fidelity generated environments at interactive frame rates."
+  },
+  {
+    "title": "Sim-to-Real Gap Quantification for Learned Simulators",
+    "slug": "sim-to-real-gap-quantification-learned-simulators",
     "status": "methodologically-blocked",
-    "description": "No model quality metric predicts control performance reliably."
+    "description": "Predicting real-world transfer from simulator error metrics."
+  },
+  {
+    "title": "Hierarchical Planning Over Learned Subgoal Spaces",
+    "slug": "hierarchical-planning-learned-subgoal-spaces",
+    "status": "open",
+    "description": "Learning subgoal representations that guarantee reachability."
+  },
+  {
+    "title": "Optimal Model Capacity Allocation Between Encoder and Dynamics",
+    "slug": "capacity-allocation-encoder-versus-dynamics",
+    "status": "empirically-open",
+    "description": "How to split parameters between perception and prediction."
+  },
+  {
+    "title": "Planning Under Partial Observability with Learned Belief States",
+    "slug": "planning-learned-belief-states-pomdp",
+    "status": "open",
+    "description": "Whether learned beliefs are sufficient statistics for control."
+  },
+  {
+    "title": "Robustness of MCTS to Learned Value Function Error",
+    "slug": "mcts-robustness-to-value-error",
+    "status": "partially-solved",
+    "description": "How search degrades as value estimates become biased."
+  },
+  {
+    "title": "Data Scaling Laws for World Model Prediction Accuracy",
+    "slug": "data-scaling-laws-world-model-accuracy",
+    "status": "empirically-open",
+    "description": "How prediction error falls with interaction data volume."
+  },
+  {
+    "title": "Goal-Conditioned Planning Without Reward Engineering",
+    "slug": "goal-conditioned-planning-without-reward-engineering",
+    "status": "open",
+    "description": "Reaching arbitrary states using only learned distance functions."
+  },
+  {
+    "title": "Test-Time Adaptation of World Models From Few Observations",
+    "slug": "test-time-adaptation-world-models",
+    "status": "empirically-open",
+    "description": "Correcting model error online from a handful of transitions."
+  },
+  {
+    "title": "Interpretability of Latent Variables in World Models",
+    "slug": "interpretability-latent-variables-world-models",
+    "status": "methodologically-blocked",
+    "description": "Determining whether latents encode identifiable physical quantities."
+  },
+  {
+    "title": "Multi-Agent World Models with Opponent Dynamics",
+    "slug": "multi-agent-world-models-opponent-dynamics",
+    "status": "open",
+    "description": "Modeling other agents inside a single-agent planner."
+  },
+  {
+    "title": "Safety Verification of Plans Produced by Learned Models",
+    "slug": "safety-verification-plans-learned-models",
+    "status": "open",
+    "description": "Certifying constraint satisfaction when the simulator is approximate."
   }
 ]

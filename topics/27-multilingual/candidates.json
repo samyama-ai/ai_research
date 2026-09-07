@@ -78,12 +78,6 @@
     "description": "Isolating shared semantics from language identity in representations."
   },
   {
-    "title": "Cross-Lingual Factual Knowledge Inconsistency",
-    "slug": "cross-lingual-factual-consistency",
-    "status": "open",
-    "description": "Same fact answered differently across a model's languages."
-  },
-  {
     "title": "Cross-Lingual Transfer of Safety Alignment",
     "slug": "cross-lingual-safety-alignment-transfer",
     "status": "empirically-open",
@@ -178,12 +172,6 @@
     "slug": "speech-text-transfer-unwritten-languages",
     "status": "open",
     "description": "Modeling languages that have speech but no standard orthography."
-  },
-  {
-    "title": "Multilingual Tokenizer Cost Fairness",
-    "slug": "tokenizer-cost-fairness",
-    "status": "partially-solved",
-    "description": "Unequal token counts make some languages structurally more expensive."
   },
   {
     "title": "Long-Context Degradation Across Languages",

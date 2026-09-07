@@ -84,12 +84,6 @@
     "description": "Does analog matmul noise break large transformer inference?"
   },
   {
-    "title": "Silent Data Corruption Detection in Large-Scale Training",
-    "slug": "silent-data-corruption-detection",
-    "status": "open",
-    "description": "Detecting rare hardware bit errors during training cheaply."
-  },
-  {
     "title": "Energy-Optimal Batch Size for LLM Serving",
     "slug": "energy-optimal-serving-batch-size",
     "status": "empirically-open",

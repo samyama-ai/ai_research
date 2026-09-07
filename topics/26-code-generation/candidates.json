@@ -12,12 +12,6 @@
     "description": "Pass-at-k tests underestimate bugs; sufficiency unmeasured."
   },
   {
-    "title": "Benchmark Contamination Detection Without Training Data Access",
-    "slug": "contamination-detection-without-training-access",
-    "status": "open",
-    "description": "Detecting memorized coding benchmarks without seeing pretraining corpora."
-  },
-  {
     "title": "Scaling Laws for Repository-Level Code Completion",
     "slug": "scaling-laws-repository-level-completion",
     "status": "empirically-open",

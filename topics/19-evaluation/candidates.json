@@ -78,12 +78,6 @@
     "description": "Separating legitimate label ambiguity from annotator error."
   },
   {
-    "title": "Self-Preference Bias in LLM Judges",
-    "slug": "self-preference-bias-llm-judges",
-    "status": "partially-solved",
-    "description": "Judges favoring their own generations, and how to correct."
-  },
-  {
     "title": "Evaluation Metrics Robust to Answer Extraction Failures",
     "slug": "answer-extraction-robust-metrics",
     "status": "empirically-open",

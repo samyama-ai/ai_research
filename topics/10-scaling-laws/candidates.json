@@ -1,11 +1,5 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size",
-    "slug": "compute-optimal-vocabulary-size",
-    "status": "empirically-open",
-    "description": "How tokenizer vocabulary should scale with model and data budget."
-  },
-  {
     "title": "Irreducible Loss Term Identifiability",
     "slug": "irreducible-loss-term-identifiability",
     "status": "methodologically-blocked",

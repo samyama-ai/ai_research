@@ -24,12 +24,6 @@
     "description": "Optimal RoPE base as function of context length."
   },
   {
-    "title": "Attention Sink Necessity",
-    "slug": "attention-sink-necessity",
-    "status": "open",
-    "description": "Whether attention sinks are required or merely emergent artifacts."
-  },
-  {
     "title": "Subquadratic Exact Attention Lower Bound",
     "slug": "subquadratic-exact-attention-lower-bound",
     "status": "partially-solved",

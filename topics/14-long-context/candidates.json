@@ -12,18 +12,6 @@
     "description": "Minimum cache bits needed to preserve exact retrieval from context."
   },
   {
-    "title": "Length Generalization of Positional Encodings Beyond Training Window",
-    "slug": "positional-encoding-length-generalization",
-    "status": "partially-solved",
-    "description": "Which position schemes extrapolate far past trained lengths, and why?"
-  },
-  {
-    "title": "RoPE Base Frequency Scaling Law for Context Extension",
-    "slug": "rope-base-frequency-scaling-law",
-    "status": "empirically-open",
-    "description": "Is there a principled rule mapping target length to RoPE base?"
-  },
-  {
     "title": "Attention Sinks: Necessity or Artifact",
     "slug": "attention-sink-necessity",
     "status": "open",

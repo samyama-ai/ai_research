@@ -1,11 +1,5 @@
 [
   {
-    "title": "Optimal Critical Batch Size Prediction from Cheap Proxies",
-    "slug": "critical-batch-size-prediction",
-    "status": "empirically-open",
-    "description": "Predicting the batch size where scaling stops helping."
-  },
-  {
     "title": "Asynchronous SGD Convergence Under Adaptive Optimizers",
     "slug": "async-sgd-adaptive-optimizer-convergence",
     "status": "open",
@@ -232,11 +226,5 @@
     "slug": "rl-rollout-trainer-coscheduling",
     "status": "open",
     "description": "Balancing generation and gradient workers without idle accelerators."
-  },
-  {
-    "title": "Deciding Optimal Tensor-Parallel Degree from Model and Fabric Alone",
-    "slug": "optimal-tensor-parallel-degree",
-    "status": "partially-solved",
-    "description": "Predicting the best tensor-parallel width without exhaustive benchmarking."
   }
 ]

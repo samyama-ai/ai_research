@@ -84,12 +84,6 @@
     "description": "Are there neuron-level causes of polysemanticity besides feature packing?"
   },
   {
-    "title": "Linear Representation Hypothesis Scope",
-    "slug": "linear-representation-hypothesis-scope",
-    "status": "partially-solved",
-    "description": "Which concepts are linearly encoded and which are not?"
-  },
-  {
     "title": "Nonlinear and Circular Feature Geometry",
     "slug": "nonlinear-circular-feature-geometry",
     "status": "open",
@@ -100,12 +94,6 @@
     "slug": "attention-head-taxonomy-coverage",
     "status": "empirically-open",
     "description": "What fraction of heads have identified functional roles?"
-  },
-  {
-    "title": "Chain-of-Thought Faithfulness Measurement",
-    "slug": "chain-of-thought-faithfulness",
-    "status": "open",
-    "description": "Does stated reasoning reflect the computation producing the answer?"
   },
   {
     "title": "Introspective Self-Report Accuracy",
