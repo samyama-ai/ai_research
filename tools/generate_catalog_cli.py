@@ -224,7 +224,7 @@ async def discover_candidates(topic_slug, topic_name, limit=100):
 For each problem, you must provide:
 1. A precise Title naming the problem (e.g. "Compute-Optimal Vocabulary Size", "Length Generalization in Arithmetic").
 2. A kebab-case filename slug (e.g. "compute-optimal-vocabulary-size", "length-generalization-arithmetic").
-3. The Status: one of "open" (no accepted answer), "partially-solved" (settled under restrictive assumptions or at small scale only), "empirically-open" (the deciding experiment is runnable but has not been run at the right scale), or "solved-but-impractical" (a correct method exists but its cost rules it out in practice).
+3. The Status: one of "open" (no accepted answer), "partially-solved" (settled under restrictive assumptions or at small scale only), "empirically-open" (the deciding experiment is runnable but has not been run at the right scale), "solved-but-impractical" (a correct method exists but its cost rules it out in practice), or "methodologically-blocked" (the quantity in question is not yet well enough defined to measure).
 4. A very brief 1-sentence Description (maximum 12 words) summarizing the core question. Do NOT use LaTeX, math blocks ($ or $$), or backslashes. Keep it strictly plain text.
 
 Return this list as a JSON array of objects matching the following schema:
@@ -232,7 +232,7 @@ Return this list as a JSON array of objects matching the following schema:
   {{
     "title": "Problem Title",
     "slug": "problem-slug",
-    "status": "open|partially-solved|empirically-open|solved-but-impractical",
+    "status": "open|partially-solved|empirically-open|solved-but-impractical|methodologically-blocked",
     "description": "1-sentence summary of the problem."
   }}
 ]
@@ -282,7 +282,7 @@ Go deeper into the specialised sub-areas of the field to find problems that are 
 For each problem, provide:
 1. The official/common Title.
 2. A kebab-case filename slug.
-3. The Status: one of "open", "partially-solved", "empirically-open", or "solved-but-impractical".
+3. The Status: one of "open", "partially-solved", "empirically-open", "solved-but-impractical", or "methodologically-blocked".
 4. A very brief 1-sentence Description (maximum 12 words). Do NOT use LaTeX, math blocks ($ or $$), or backslashes. Keep it strictly plain text.
 
 Return a JSON array of objects with keys: title, slug, status, description.
@@ -537,6 +537,7 @@ async def generate_topic_readme(topic_slug, topic_name):
             "partially-solved": "\U0001F7E1",
             "empirically-open": "\U0001F7E2",
             "solved-but-impractical": "\U0001F7E0",
+            "methodologically-blocked": "\U0001F535",
         }.get(status, "\U0001F534")
 
         entry = f"* {status_emoji} [{title_line}](./{f.name})"

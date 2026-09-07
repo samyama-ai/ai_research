@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Compute-Optimal Vocabulary Size Scaling Law",
+    "slug": "compute-optimal-vocabulary-size",
+    "status": "empirically-open",
+    "description": "How vocabulary size should scale with model and data budget."
+  },
+  {
+    "title": "Tokenizer-Induced Arithmetic Length Generalization",
+    "slug": "tokenizer-induced-arithmetic-failure",
+    "status": "partially-solved",
+    "description": "Whether digit grouping causes arithmetic length generalization failure."
+  },
+  {
+    "title": "Optimal Tokenization as a Tractable Compression Objective",
+    "slug": "optimal-tokenization-np-hardness",
+    "status": "partially-solved",
+    "description": "Is finding the loss-minimizing token vocabulary computationally tractable?"
+  },
+  {
+    "title": "Cross-Lingual Tokenization Fairness and Premium Pricing",
+    "slug": "cross-lingual-tokenization-fairness",
+    "status": "open",
+    "description": "Can one vocabulary give all languages equal token cost?"
+  },
+  {
+    "title": "Byte-Level Models Matching Subword Models at Scale",
+    "slug": "byte-level-parity-at-scale",
+    "status": "empirically-open",
+    "description": "Do tokenizer-free byte models match subword models at scale?"
+  },
+  {
+    "title": "Under-Trained Glitch Tokens and Vocabulary Hygiene",
+    "slug": "undertrained-glitch-tokens",
+    "status": "partially-solved",
+    "description": "Detecting and preventing tokens the model never learns."
+  },
+  {
+    "title": "Tokenizer Transplantation Without Retraining",
+    "slug": "tokenizer-transplantation",
+    "status": "open",
+    "description": "Swapping a trained model's vocabulary while preserving its capabilities."
+  },
+  {
+    "title": "Predicting Downstream Quality from Intrinsic Tokenizer Metrics",
+    "slug": "intrinsic-tokenizer-metric-validity",
+    "status": "methodologically-blocked",
+    "description": "Does compression rate predict downstream task performance at all?"
+  }
+]

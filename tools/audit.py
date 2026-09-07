@@ -24,7 +24,7 @@ TOPICS = os.path.join(ROOT, "topics")
 REQUIRED_FM = ["id", "title", "topic", "status", "first_added",
                "last_reviewed", "last_substantive_update", "stale_since", "provenance"]
 VALID_STATUS = {"open", "partially-solved", "empirically-open",
-                "solved-but-impractical", "stale"}
+                "methodologically-blocked", "solved-but-impractical", "stale"}
 VALID_PROV = {"synthesized", "verified"}
 SECTIONS = ["1. Problem Statement", "2. Formal Setting", "3. State of the Art",
             "4. What Is Known", "5. What Is Not Known", "6. Why It Is Hard",
