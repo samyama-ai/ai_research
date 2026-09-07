@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Provable Expressivity Gap Between Linear SSMs and Softmax Attention",
+    "slug": "ssm-attention-expressivity-separation",
+    "status": "partially-solved",
+    "description": "Which tasks separate fixed-state recurrences from attention provably?"
+  },
+  {
+    "title": "State Size Required for Exact Associative Recall",
+    "slug": "recall-state-size-lower-bound",
+    "status": "partially-solved",
+    "description": "Tight memory lower bounds for recall in recurrent models."
+  },
+  {
+    "title": "Length Generalization of Selective State-Space Models",
+    "slug": "ssm-length-generalization",
+    "status": "empirically-open",
+    "description": "Do selective SSMs extrapolate far beyond training context length?"
+  },
+  {
+    "title": "Optimal Initialization Beyond HiPPO for Deep SSMs",
+    "slug": "beyond-hippo-initialization",
+    "status": "open",
+    "description": "Is HiPPO initialization necessary or merely sufficient for stability?"
+  },
+  {
+    "title": "Compute-Optimal Scaling Laws for Hybrid Attention-SSM Stacks",
+    "slug": "hybrid-ssm-attention-scaling-law",
+    "status": "empirically-open",
+    "description": "What attention-to-recurrence ratio is compute-optimal at scale?"
+  },
+  {
+    "title": "In-Context Learning Mechanism in State-Space Models",
+    "slug": "ssm-in-context-learning-mechanism",
+    "status": "open",
+    "description": "Do SSMs implement gradient-descent-like in-context algorithms?"
+  },
+  {
+    "title": "State Collapse in Long-Horizon Recurrent Inference",
+    "slug": "recurrent-state-collapse",
+    "status": "empirically-open",
+    "description": "Why do SSM states degrade past training-length inference horizons?"
+  },
+  {
+    "title": "Expressivity Ceiling of Linear Attention as State Space",
+    "slug": "linear-attention-state-space-equivalence",
+    "status": "partially-solved",
+    "description": "Exact class equivalence between linear attention and diagonal SSMs."
+  },
+  {
+    "title": "Numerically Stable Parallel Scan in Low Precision",
+    "slug": "low-precision-parallel-scan-stability",
+    "status": "open",
+    "description": "Can associative scans stay stable in fp8 training?"
+  },
+  {
+    "title": "Optimal Discretization Rule for Continuous-Time SSMs",
+    "slug": "ssm-discretization-choice",
+    "status": "open",
+    "description": "Does discretization scheme materially change learned model quality?"
+  },
+  {
+    "title": "Complex versus Real Diagonal State Matrices",
+    "slug": "complex-vs-real-ssm-eigenvalues",
+    "status": "empirically-open",
+    "description": "Do complex eigenvalues buy expressivity worth their cost?"
+  },
+  {
+    "title": "Recurrent Models and State Tracking Beyond TC0",
+    "slug": "ssm-state-tracking-tc0",
+    "status": "partially-solved",
+    "description": "Can practical SSM variants solve word problems attention cannot?"
+  },
+  {
+    "title": "Constant-Memory Retrieval Without Attention Layers",
+    "slug": "attention-free-retrieval",
+    "status": "open",
+    "description": "Can pure recurrences match attention on long-document retrieval?"
+  },
+  {
+    "title": "Test-Time Training as Recurrent State Update",
+    "slug": "test-time-training-recurrence",
+    "status": "empirically-open",
+    "description": "Do learned-optimizer states beat linear states at scale?"
+  },
+  {
+    "title": "Gating Function Identifiability in Selective Recurrences",
+    "slug": "selective-gating-identifiability",
+    "status": "open",
+    "description": "Are learned selection gates identifiable from behavior alone?"
+  },
+  {
+    "title": "Distillation of Transformers into Recurrent Students",
+    "slug": "transformer-to-ssm-distillation",
+    "status": "partially-solved",
+    "description": "How much quality survives converting attention into fixed-state recurrence?"
+  },
+  {
+    "title": "KV-Cache-Free Speculative Decoding for SSMs",
+    "slug": "ssm-speculative-decoding",
+    "status": "open",
+    "description": "Efficient state rollback for speculative decoding in recurrences."
+  },
+  {
+    "title": "Chunked Parallel Training and Sequential Inference Mismatch",
+    "slug": "chunkwise-train-infer-mismatch",
+    "status": "empirically-open",
+    "description": "Does chunked training change learned recurrent dynamics measurably?"
+  },
+  {
+    "title": "Memory Capacity Scaling of Delta-Rule Recurrences",
+    "slug": "delta-rule-memory-capacity",
+    "status": "partially-solved",
+    "description": "How does DeltaNet capacity scale with state dimension?"
+  },
+  {
+    "title": "Forgetting Schedules and Optimal Decay Spectra",
+    "slug": "optimal-decay-spectrum",
+    "status": "open",
+    "description": "What decay eigenvalue distribution maximizes long-range task performance?"
+  },
+  {
+    "title": "Recurrent Models Under Extreme Context Compression",
+    "slug": "context-compression-limits-recurrence",
+    "status": "empirically-open",
+    "description": "Information-theoretic limit of fixed-state summarization of long contexts."
+  },
+  {
+    "title": "Chain-of-Thought Compensating for Bounded State",
+    "slug": "cot-compensates-bounded-state",
+    "status": "partially-solved",
+    "description": "Does reasoning scratchpad restore expressivity lost to fixed state?"
+  },
+  {
+    "title": "Gradient Propagation Depth in Deep Recurrent Stacks",
+    "slug": "deep-ssm-gradient-propagation",
+    "status": "open",
+    "description": "Why deep SSM stacks train stably where RNNs did not."
+  },
+  {
+    "title": "Interpretable Circuits Inside State-Space Models",
+    "slug": "ssm-circuit-interpretability",
+    "status": "methodologically-blocked",
+    "description": "How to define and find circuits in continuous states."
+  },
+  {
+    "title": "Induction Heads Analogue in Pure Recurrent Models",
+    "slug": "recurrent-induction-heads",
+    "status": "empirically-open",
+    "description": "Do fixed-state models form induction-head-like copying mechanisms?"
+  },
+  {
+    "title": "Robustness of SSMs to Adversarial Long-Range Distractors",
+    "slug": "ssm-distractor-robustness",
+    "status": "empirically-open",
+    "description": "Do recurrences degrade faster than attention under distractors?"
+  },
+  {
+    "title": "Continuous-Time Modeling of Irregularly Sampled Sequences",
+    "slug": "irregular-sampling-continuous-ssm",
+    "status": "partially-solved",
+    "description": "Do continuous SSMs beat discrete ones on irregular data?"
+  },
+  {
+    "title": "State-Space Models for Non-Causal Bidirectional Encoding",
+    "slug": "bidirectional-ssm-encoders",
+    "status": "empirically-open",
+    "description": "Can bidirectional SSMs match encoder transformers on understanding tasks?"
+  },
+  {
+    "title": "Quantization Sensitivity of Recurrent State Versus KV Cache",
+    "slug": "recurrent-state-quantization",
+    "status": "empirically-open",
+    "description": "How aggressively can recurrent hidden state be quantized?"
+  },
+  {
+    "title": "Optimal Hybrid Layer Placement Within a Stack",
+    "slug": "hybrid-layer-placement",
+    "status": "empirically-open",
+    "description": "Where in depth should attention layers sit among recurrences?"
+  },
+  {
+    "title": "Associative Memory Interference Bounds in Matrix-Valued States",
+    "slug": "matrix-state-interference-bounds",
+    "status": "open",
+    "description": "Capacity-interference tradeoff for outer-product memory in recurrences."
+  },
+  {
+    "title": "Learning Rate and Weight Decay Transfer for SSM Parameters",
+    "slug": "ssm-hyperparameter-transfer",
+    "status": "open",
+    "description": "Does muP-style hyperparameter transfer hold for state matrices?"
+  },
+  {
+    "title": "Recurrent Models and Multi-Query Long-Context Retrieval",
+    "slug": "multi-query-long-context-recurrence",
+    "status": "empirically-open",
+    "description": "Does recall degrade superlinearly with number of simultaneous queries?"
+  },
+  {
+    "title": "Provable Convergence of Learning Linear Dynamical Systems by SGD",
+    "slug": "lds-sgd-convergence",
+    "status": "partially-solved",
+    "description": "Does gradient descent recover ground-truth linear dynamics reliably?"
+  },
+  {
+    "title": "Optimal Convolutional Kernel Parameterization for Long Convolutions",
+    "slug": "long-convolution-parameterization",
+    "status": "open",
+    "description": "Which implicit kernel parameterization is best for long convolutions?"
+  },
+  {
+    "title": "State-Space Models for Continual Learning Without Replay",
+    "slug": "ssm-continual-learning",
+    "status": "empirically-open",
+    "description": "Does fixed recurrent state reduce or worsen catastrophic forgetting?"
+  },
+  {
+    "title": "Position Information Without Explicit Positional Encoding",
+    "slug": "implicit-position-in-recurrence",
+    "status": "partially-solved",
+    "description": "How recurrences encode position and whether it generalizes."
+  },
+  {
+    "title": "Energy and Latency Crossover Point Versus Attention",
+    "slug": "recurrence-attention-efficiency-crossover",
+    "status": "empirically-open",
+    "description": "At what context length does recurrence actually win wall-clock?"
+  },
+  {
+    "title": "Measuring Effective Memory Horizon of a Trained Recurrence",
+    "slug": "effective-memory-horizon-metric",
+    "status": "methodologically-blocked",
+    "description": "No agreed metric for a model's true memory span."
+  },
+  {
+    "title": "Recurrent Architectures for Reinforcement Learning Under Partial Observability",
+    "slug": "ssm-pomdp-memory",
+    "status": "empirically-open",
+    "description": "Do SSMs beat LSTMs as POMDP memory at scale?"
+  }
+]

@@ -1,50 +1,242 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size Scaling Law",
+    "title": "Compute-Optimal Vocabulary Size",
     "slug": "compute-optimal-vocabulary-size",
     "status": "empirically-open",
     "description": "How vocabulary size should scale with model and data budget."
   },
   {
-    "title": "Tokenizer-Induced Arithmetic Length Generalization",
-    "slug": "tokenizer-induced-arithmetic-failure",
-    "status": "partially-solved",
-    "description": "Whether digit grouping causes arithmetic length generalization failure."
-  },
-  {
-    "title": "Optimal Tokenization as a Tractable Compression Objective",
-    "slug": "optimal-tokenization-np-hardness",
-    "status": "partially-solved",
-    "description": "Is finding the loss-minimizing token vocabulary computationally tractable?"
-  },
-  {
-    "title": "Cross-Lingual Tokenization Fairness and Premium Pricing",
-    "slug": "cross-lingual-tokenization-fairness",
-    "status": "open",
-    "description": "Can one vocabulary give all languages equal token cost?"
-  },
-  {
-    "title": "Byte-Level Models Matching Subword Models at Scale",
-    "slug": "byte-level-parity-at-scale",
+    "title": "Tokenizer-Free Byte Models at Frontier Scale",
+    "slug": "byte-level-models-at-scale",
     "status": "empirically-open",
-    "description": "Do tokenizer-free byte models match subword models at scale?"
+    "description": "Whether byte-level models match subword models at frontier scale."
   },
   {
-    "title": "Under-Trained Glitch Tokens and Vocabulary Hygiene",
-    "slug": "undertrained-glitch-tokens",
-    "status": "partially-solved",
-    "description": "Detecting and preventing tokens the model never learns."
-  },
-  {
-    "title": "Tokenizer Transplantation Without Retraining",
-    "slug": "tokenizer-transplantation",
+    "title": "Optimal Tokenizer Objective Beyond Compression",
+    "slug": "tokenizer-objective-beyond-compression",
     "status": "open",
-    "description": "Swapping a trained model's vocabulary while preserving its capabilities."
+    "description": "Which tokenizer objective predicts downstream loss better than compression."
   },
   {
-    "title": "Predicting Downstream Quality from Intrinsic Tokenizer Metrics",
-    "slug": "intrinsic-tokenizer-metric-validity",
+    "title": "Provable Suboptimality of Greedy BPE Merges",
+    "slug": "bpe-greedy-suboptimality-bounds",
+    "status": "partially-solved",
+    "description": "How far greedy BPE is from the optimal merge sequence."
+  },
+  {
+    "title": "NP-Hardness of Optimal Vocabulary Selection",
+    "slug": "optimal-vocabulary-selection-hardness",
+    "status": "partially-solved",
+    "description": "Complexity of choosing a vocabulary minimizing corpus token count."
+  },
+  {
+    "title": "Tokenization Bias in Next-Token Probabilities",
+    "slug": "tokenization-bias-probability-estimates",
+    "status": "partially-solved",
+    "description": "Correcting token-level likelihoods to unbiased character-level ones."
+  },
+  {
+    "title": "Marginalization Over Segmentations at Inference",
+    "slug": "segmentation-marginalization-inference",
+    "status": "solved-but-impractical",
+    "description": "Computing text probability by summing over all valid segmentations."
+  },
+  {
+    "title": "Glitch Tokens and Under-Trained Embeddings",
+    "slug": "glitch-token-detection",
+    "status": "empirically-open",
+    "description": "Detecting and repairing tokens with near-zero training exposure."
+  },
+  {
+    "title": "Arithmetic Digit Grouping and Length Generalization",
+    "slug": "digit-tokenization-arithmetic",
+    "status": "partially-solved",
+    "description": "Which digit tokenization best supports arithmetic length generalization."
+  },
+  {
+    "title": "Cross-Lingual Token Premium and Fairness",
+    "slug": "cross-lingual-token-premium",
+    "status": "open",
+    "description": "Eliminating per-language cost and context penalties from tokenization."
+  },
+  {
+    "title": "Vocabulary Transfer Without Retraining",
+    "slug": "vocabulary-transfer-without-retraining",
+    "status": "empirically-open",
+    "description": "Swapping a trained model's tokenizer with minimal quality loss."
+  },
+  {
+    "title": "Learned End-to-End Segmentation Beating BPE",
+    "slug": "learned-segmentation-vs-bpe",
+    "status": "empirically-open",
+    "description": "Whether jointly learned segmentation beats fixed BPE at scale."
+  },
+  {
+    "title": "Optimal Dynamic Byte Patching Policy",
+    "slug": "dynamic-byte-patching-policy",
+    "status": "open",
+    "description": "What entropy-based patch boundaries are optimal for byte transformers."
+  },
+  {
+    "title": "Tokenizer Choice and Emergent Capability Thresholds",
+    "slug": "tokenizer-emergent-capability-thresholds",
+    "status": "empirically-open",
+    "description": "Whether tokenizer choice shifts where capabilities emerge with scale."
+  },
+  {
+    "title": "Multilingual Vocabulary Allocation Under Budget",
+    "slug": "multilingual-vocabulary-allocation",
+    "status": "open",
+    "description": "How to split a fixed vocabulary budget across many languages."
+  },
+  {
+    "title": "Tokenization of Code Whitespace and Indentation",
+    "slug": "code-whitespace-tokenization",
+    "status": "empirically-open",
+    "description": "Optimal indentation encoding for code model accuracy and length."
+  },
+  {
+    "title": "Prompt Boundary Effects and Token Healing",
+    "slug": "prompt-boundary-token-healing",
+    "status": "partially-solved",
+    "description": "Removing mid-token prompt-boundary artifacts in generation."
+  },
+  {
+    "title": "Superword and Multi-Word Tokens",
+    "slug": "superword-multiword-tokens",
+    "status": "empirically-open",
+    "description": "Whether tokens spanning word boundaries improve efficiency and quality."
+  },
+  {
+    "title": "Vocabulary Curriculum and Growing Vocabularies",
+    "slug": "growing-vocabulary-curriculum",
+    "status": "empirically-open",
+    "description": "Whether vocabulary should expand during pretraining rather than stay fixed."
+  },
+  {
+    "title": "Softmax Bottleneck from Large Vocabularies",
+    "slug": "large-vocabulary-softmax-bottleneck",
+    "status": "open",
+    "description": "How vocabulary size interacts with output softmax rank limits."
+  },
+  {
+    "title": "Tokenizer-Induced Memorization and Extraction Risk",
+    "slug": "tokenizer-memorization-extraction",
+    "status": "empirically-open",
+    "description": "Whether rare-token segmentation raises verbatim memorization and leakage."
+  },
+  {
+    "title": "Domain-Adaptive Vocabulary Extension",
+    "slug": "domain-adaptive-vocabulary-extension",
+    "status": "partially-solved",
+    "description": "Best way to add domain tokens without catastrophic forgetting."
+  },
+  {
+    "title": "Embedding Initialization for New Tokens",
+    "slug": "new-token-embedding-initialization",
+    "status": "partially-solved",
+    "description": "How to initialize embeddings for tokens added post-training."
+  },
+  {
+    "title": "Tokenizer Inference Algorithm Mismatch",
+    "slug": "tokenizer-encoder-decoder-mismatch",
+    "status": "open",
+    "description": "Consequences of encoding with a different algorithm than training."
+  },
+  {
+    "title": "Canonical Segmentation and Invalid Token Sequences",
+    "slug": "non-canonical-token-sequences",
+    "status": "open",
+    "description": "Model behavior on segmentations the tokenizer would never emit."
+  },
+  {
+    "title": "Subword Regularization at Large Scale",
+    "slug": "subword-regularization-at-scale",
+    "status": "empirically-open",
+    "description": "Whether sampled segmentations still help billion-parameter models."
+  },
+  {
+    "title": "Measuring Tokenizer Quality Intrinsically",
+    "slug": "intrinsic-tokenizer-quality-metric",
     "status": "methodologically-blocked",
-    "description": "Does compression rate predict downstream task performance at all?"
+    "description": "No intrinsic metric reliably predicts downstream tokenizer performance."
+  },
+  {
+    "title": "Morphological Alignment Versus Model Quality",
+    "slug": "morphological-alignment-vs-quality",
+    "status": "open",
+    "description": "Whether morpheme-aligned tokens actually improve language model performance."
+  },
+  {
+    "title": "Tokenization of Numbers in Retrieval and Reasoning",
+    "slug": "numeric-token-representation-reasoning",
+    "status": "empirically-open",
+    "description": "How numeric token layout affects magnitude representation and comparison."
+  },
+  {
+    "title": "Cross-Tokenizer Distillation and Model Merging",
+    "slug": "cross-tokenizer-distillation",
+    "status": "open",
+    "description": "Transferring knowledge between models with incompatible vocabularies."
+  },
+  {
+    "title": "Adversarial Tokenization Attacks",
+    "slug": "adversarial-tokenization-attacks",
+    "status": "empirically-open",
+    "description": "Whether alternate segmentations reliably bypass safety training."
+  },
+  {
+    "title": "Unicode Normalization and Script Coverage Failures",
+    "slug": "unicode-normalization-tokenization",
+    "status": "open",
+    "description": "How normalization choices break low-resource scripts and reversibility."
+  },
+  {
+    "title": "Tied Input-Output Embeddings for Huge Vocabularies",
+    "slug": "tied-embeddings-huge-vocabularies",
+    "status": "empirically-open",
+    "description": "Whether embedding tying still helps as vocabulary grows large."
+  },
+  {
+    "title": "Tokenizer Effects on In-Context Learning",
+    "slug": "tokenizer-effects-in-context-learning",
+    "status": "empirically-open",
+    "description": "Whether segmentation granularity changes in-context learning ability."
+  },
+  {
+    "title": "Optimal Tokenization for Speech and Audio Units",
+    "slug": "discrete-audio-token-vocabulary",
+    "status": "open",
+    "description": "Choosing codebook size and rate for discrete audio tokens."
+  },
+  {
+    "title": "Image Tokenizer Vocabulary and Codebook Collapse",
+    "slug": "visual-codebook-collapse",
+    "status": "partially-solved",
+    "description": "Preventing dead codes while scaling visual token vocabularies."
+  },
+  {
+    "title": "Tokenization Effects on Spelling and Character Tasks",
+    "slug": "character-level-task-failures",
+    "status": "empirically-open",
+    "description": "Whether character tasks fail purely because of subword tokenization."
+  },
+  {
+    "title": "Compression Rate Versus Downstream Loss Tradeoff Curve",
+    "slug": "compression-vs-downstream-loss-curve",
+    "status": "empirically-open",
+    "description": "Shape of the curve relating token compression to model loss."
+  },
+  {
+    "title": "Tokenizer Robustness to Noisy and Dialectal Text",
+    "slug": "tokenizer-robustness-noisy-text",
+    "status": "open",
+    "description": "How typos and dialect inflate token counts and degrade accuracy."
+  },
+  {
+    "title": "Reserved and Special Token Interference",
+    "slug": "special-token-interference",
+    "status": "empirically-open",
+    "description": "Whether control tokens leak into and distort natural text modeling."
   }
 ]

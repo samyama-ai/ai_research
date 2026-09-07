@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Compute-Optimal Allocation Between Pretraining and Inference",
+    "slug": "compute-optimal-pretraining-inference-tradeoff",
+    "status": "empirically-open",
+    "description": "How to split a fixed compute budget between training and test-time search."
+  },
+  {
+    "title": "Verifier-Free Test-Time Scaling Limits",
+    "slug": "verifier-free-test-time-scaling-limits",
+    "status": "open",
+    "description": "Can sampling without a verifier beat majority voting asymptotically?"
+  },
+  {
+    "title": "Faithfulness of Chain-of-Thought to Internal Computation",
+    "slug": "chain-of-thought-faithfulness",
+    "status": "methodologically-blocked",
+    "description": "Does stated reasoning reflect the model's actual causal computation?"
+  },
+  {
+    "title": "Existence of a Scaling Law for Sequential Revision Depth",
+    "slug": "sequential-revision-scaling-law",
+    "status": "empirically-open",
+    "description": "Does accuracy scale predictably with number of self-revision rounds?"
+  },
+  {
+    "title": "Parallel Versus Sequential Test-Time Compute Exchange Rate",
+    "slug": "parallel-vs-sequential-compute-exchange-rate",
+    "status": "empirically-open",
+    "description": "What sample count equals one extra reasoning step in accuracy?"
+  },
+  {
+    "title": "Self-Correction Without External Feedback",
+    "slug": "intrinsic-self-correction",
+    "status": "partially-solved",
+    "description": "Can models reliably fix their own errors without oracle signals?"
+  },
+  {
+    "title": "Process Reward Model Credit Assignment Identifiability",
+    "slug": "process-reward-credit-assignment",
+    "status": "open",
+    "description": "Are per-step reward labels identifiable from outcome-only supervision?"
+  },
+  {
+    "title": "Reward Hacking Under Best-of-N Selection",
+    "slug": "best-of-n-reward-hacking",
+    "status": "partially-solved",
+    "description": "When does more sampling reduce true quality via verifier exploitation?"
+  },
+  {
+    "title": "Optimal Stopping Rule for Adaptive Inference Compute",
+    "slug": "adaptive-inference-optimal-stopping",
+    "status": "open",
+    "description": "When should a model stop thinking on a given input?"
+  },
+  {
+    "title": "Latent Reasoning in Continuous Space Versus Tokens",
+    "slug": "latent-continuous-reasoning-vs-tokens",
+    "status": "empirically-open",
+    "description": "Can recurrent latent computation match token-level chain-of-thought accuracy?"
+  },
+  {
+    "title": "Expressivity Gap Closed by Chain-of-Thought Length",
+    "slug": "cot-length-expressivity-gap",
+    "status": "partially-solved",
+    "description": "Which complexity classes become reachable at each reasoning length?"
+  },
+  {
+    "title": "Length Generalization of Learned Reasoning Procedures",
+    "slug": "reasoning-length-generalization",
+    "status": "open",
+    "description": "Do trained reasoners extrapolate to longer problem instances reliably?"
+  },
+  {
+    "title": "Detecting Answer-First Post-Hoc Rationalization",
+    "slug": "post-hoc-rationalization-detection",
+    "status": "methodologically-blocked",
+    "description": "How to measure whether an answer preceded its justification."
+  },
+  {
+    "title": "Sample Complexity of Self-Consistency Voting",
+    "slug": "self-consistency-sample-complexity",
+    "status": "partially-solved",
+    "description": "How many samples are needed for a given accuracy gain?"
+  },
+  {
+    "title": "Overthinking and Non-Monotone Accuracy in Long Reasoning",
+    "slug": "overthinking-non-monotone-accuracy",
+    "status": "empirically-open",
+    "description": "Why does accuracy sometimes fall as reasoning grows longer?"
+  },
+  {
+    "title": "Transfer of Test-Time Search Gains Across Domains",
+    "slug": "test-time-search-domain-transfer",
+    "status": "empirically-open",
+    "description": "Do search gains on math carry to open-ended domains?"
+  },
+  {
+    "title": "Verifier Generalization Beyond Training Difficulty",
+    "slug": "verifier-difficulty-generalization",
+    "status": "open",
+    "description": "Do reward models stay accurate on harder unseen problems?"
+  },
+  {
+    "title": "Weak-to-Strong Verification of Superhuman Reasoning",
+    "slug": "weak-to-strong-verification",
+    "status": "open",
+    "description": "Can weaker verifiers reliably rank stronger models' reasoning?"
+  },
+  {
+    "title": "Compression Limits of Reasoning Traces",
+    "slug": "reasoning-trace-compression-limits",
+    "status": "empirically-open",
+    "description": "What is the minimum token budget preserving reasoning accuracy?"
+  },
+  {
+    "title": "Speculative Decoding for Reasoning Without Quality Loss",
+    "slug": "speculative-decoding-reasoning-quality",
+    "status": "partially-solved",
+    "description": "Does draft-model acceleration preserve multi-step reasoning distributions exactly?"
+  },
+  {
+    "title": "KV Cache Budget Versus Reasoning Depth",
+    "slug": "kv-cache-budget-reasoning-depth",
+    "status": "empirically-open",
+    "description": "How much cache eviction can long reasoning tolerate?"
+  },
+  {
+    "title": "Optimal Tree Search Policy for Language Model Reasoning",
+    "slug": "optimal-tree-search-policy-reasoning",
+    "status": "open",
+    "description": "Which search algorithm is optimal under a token budget?"
+  },
+  {
+    "title": "Diversity Collapse Under Reasoning-Focused RL",
+    "slug": "rl-reasoning-diversity-collapse",
+    "status": "empirically-open",
+    "description": "Does RL training destroy the sample diversity search needs?"
+  },
+  {
+    "title": "Does RL Add Reasoning Capability or Only Sharpen Sampling",
+    "slug": "rl-capability-versus-sampling-sharpening",
+    "status": "empirically-open",
+    "description": "Can RL surpass the base model's pass-at-large-k ceiling?"
+  },
+  {
+    "title": "Calibrated Confidence Over Multi-Step Reasoning Chains",
+    "slug": "multi-step-reasoning-calibration",
+    "status": "open",
+    "description": "Can models produce calibrated confidence for full derivations?"
+  },
+  {
+    "title": "Error Propagation Bounds in Sequential Reasoning",
+    "slug": "reasoning-error-propagation-bounds",
+    "status": "partially-solved",
+    "description": "How do per-step error rates compound over chain length?"
+  },
+  {
+    "title": "Test-Time Training Versus In-Context Adaptation",
+    "slug": "test-time-training-vs-in-context",
+    "status": "empirically-open",
+    "description": "Does gradient adaptation at inference beat longer context prompting?"
+  },
+  {
+    "title": "Benchmark Contamination-Free Measurement of Reasoning Gains",
+    "slug": "contamination-free-reasoning-measurement",
+    "status": "methodologically-blocked",
+    "description": "How to attribute gains to reasoning rather than memorization."
+  },
+  {
+    "title": "Reasoning Budget Forcing and Controllability",
+    "slug": "reasoning-budget-forcing-controllability",
+    "status": "partially-solved",
+    "description": "Can thinking length be controlled precisely without accuracy loss."
+  },
+  {
+    "title": "Multi-Agent Debate Versus Equal-Compute Single Model",
+    "slug": "debate-versus-equal-compute-single-model",
+    "status": "empirically-open",
+    "description": "Does debate beat one model given identical total compute?"
+  },
+  {
+    "title": "Soundness of Debate as a Scalable Oversight Protocol",
+    "slug": "debate-protocol-soundness",
+    "status": "partially-solved",
+    "description": "Do debate equilibria provably favor truthful arguments in practice?"
+  },
+  {
+    "title": "Self-Verification Asymmetry Between Generation and Checking",
+    "slug": "generation-verification-asymmetry",
+    "status": "open",
+    "description": "Is verifying reliably easier than generating for language models?"
+  },
+  {
+    "title": "Inference-Time Compute for Non-Verifiable Open-Ended Tasks",
+    "slug": "test-time-compute-non-verifiable-tasks",
+    "status": "open",
+    "description": "How to scale test-time compute without a ground-truth checker."
+  },
+  {
+    "title": "Steganographic Encoding in Reasoning Traces",
+    "slug": "steganographic-reasoning-encoding",
+    "status": "empirically-open",
+    "description": "Do models hide computation in seemingly innocuous reasoning tokens?"
+  },
+  {
+    "title": "Necessity of Natural Language for Effective Reasoning",
+    "slug": "necessity-of-natural-language-reasoning",
+    "status": "open",
+    "description": "Do filler or non-semantic tokens buy the same compute?"
+  },
+  {
+    "title": "Optimal Compute Routing Across Heterogeneous Model Sizes",
+    "slug": "heterogeneous-model-compute-routing",
+    "status": "empirically-open",
+    "description": "How to route queries among models for best accuracy-per-FLOP."
+  },
+  {
+    "title": "Cross-Problem Reuse of Cached Reasoning",
+    "slug": "cross-problem-reasoning-reuse",
+    "status": "empirically-open",
+    "description": "Can stored past derivations cut compute on new problems?"
+  },
+  {
+    "title": "Backtracking Capability Learned From Linear Training Data",
+    "slug": "learned-backtracking-from-linear-data",
+    "status": "open",
+    "description": "Can models learn search behavior from non-search demonstrations?"
+  },
+  {
+    "title": "Test-Time Scaling Under Adversarial Distribution Shift",
+    "slug": "test-time-scaling-adversarial-shift",
+    "status": "empirically-open",
+    "description": "Do search gains survive adversarially perturbed problem statements?"
+  },
+  {
+    "title": "Information-Theoretic Lower Bound on Tokens Per Solved Problem",
+    "slug": "token-lower-bound-per-problem",
+    "status": "open",
+    "description": "What is the minimum token count any model needs?"
+  }
+]

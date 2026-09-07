@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Optimal Bit Allocation Across Layers",
+    "slug": "optimal-bit-allocation-across-layers",
+    "status": "open",
+    "description": "No principled rule assigns per-layer bitwidths under a global budget."
+  },
+  {
+    "title": "Quantization Scaling Laws for Low-Precision Training",
+    "slug": "quantization-scaling-laws-low-precision-training",
+    "status": "empirically-open",
+    "description": "Loss as function of precision, parameters, tokens remains unverified at scale."
+  },
+  {
+    "title": "Existence of a Precision Floor for Language Models",
+    "slug": "precision-floor-language-models",
+    "status": "open",
+    "description": "Whether a minimum bitwidth exists below which capability collapses."
+  },
+  {
+    "title": "Optimality of Rotation-Based Outlier Suppression",
+    "slug": "optimality-rotation-outlier-suppression",
+    "status": "open",
+    "description": "Whether Hadamard rotations are optimal incoherence transforms for weight quantization."
+  },
+  {
+    "title": "Provable Guarantees for GPTQ-Style Error Compensation",
+    "slug": "provable-guarantees-gptq-error-compensation",
+    "status": "partially-solved",
+    "description": "Error bounds exist only under strong data and layer assumptions."
+  },
+  {
+    "title": "Quantization Effects on Long-Context Retrieval",
+    "slug": "quantization-long-context-retrieval",
+    "status": "empirically-open",
+    "description": "Whether KV cache quantization degrades retrieval disproportionately at long contexts."
+  },
+  {
+    "title": "Compressing Reasoning Chains Without Losing Correctness",
+    "slug": "compression-reasoning-chain-degradation",
+    "status": "empirically-open",
+    "description": "Whether quantization hurts multi-step reasoning more than single-step tasks."
+  },
+  {
+    "title": "Lottery Ticket Existence at Modern Scale",
+    "slug": "lottery-ticket-existence-at-scale",
+    "status": "empirically-open",
+    "description": "Whether matching sparse subnetworks exist in billion-parameter pretrained models."
+  },
+  {
+    "title": "Sparsity-Quantization Composition Bounds",
+    "slug": "sparsity-quantization-composition-bounds",
+    "status": "open",
+    "description": "How pruning and quantization errors compose when applied jointly."
+  },
+  {
+    "title": "Optimal Number Format Below 8 Bits",
+    "slug": "optimal-number-format-below-8-bits",
+    "status": "open",
+    "description": "Which 4-bit float, int, or codebook format is information-theoretically best."
+  },
+  {
+    "title": "Mixture-of-Experts Quantization Sensitivity",
+    "slug": "moe-quantization-sensitivity",
+    "status": "empirically-open",
+    "description": "Whether expert routing breaks under aggressive weight quantization."
+  },
+  {
+    "title": "Calibration Set Size and Distribution Requirements",
+    "slug": "calibration-set-requirements-ptq",
+    "status": "methodologically-blocked",
+    "description": "No theory says how much calibration data post-training quantization needs."
+  },
+  {
+    "title": "Quantization and Safety Alignment Erosion",
+    "slug": "quantization-safety-alignment-erosion",
+    "status": "empirically-open",
+    "description": "Whether compression selectively removes alignment behaviors from aligned models."
+  },
+  {
+    "title": "Straight-Through Estimator Convergence Theory",
+    "slug": "straight-through-estimator-convergence",
+    "status": "partially-solved",
+    "description": "STE convergence proven only for shallow or convex surrogates."
+  },
+  {
+    "title": "Learned Codebooks Versus Uniform Grids",
+    "slug": "learned-codebooks-versus-uniform-grids",
+    "status": "open",
+    "description": "Whether vector quantization beats scalar grids at matched inference cost."
+  },
+  {
+    "title": "Rate-Distortion Theory for Neural Network Weights",
+    "slug": "rate-distortion-theory-network-weights",
+    "status": "methodologically-blocked",
+    "description": "The right distortion measure for weights is not agreed upon."
+  },
+  {
+    "title": "Compression Effects on Memorization and Extraction",
+    "slug": "compression-memorization-extraction",
+    "status": "empirically-open",
+    "description": "Whether quantization removes or preserves verbatim training data memorization."
+  },
+  {
+    "title": "Ternary and Binary Pretraining Parity",
+    "slug": "ternary-binary-pretraining-parity",
+    "status": "empirically-open",
+    "description": "Whether 1.58-bit native training matches FP16 at large scale."
+  },
+  {
+    "title": "Activation Outlier Origin in Transformers",
+    "slug": "activation-outlier-origin-transformers",
+    "status": "open",
+    "description": "Why massive activation outliers emerge during pretraining remains unexplained."
+  },
+  {
+    "title": "Quantization-Aware Architecture Search Payoff",
+    "slug": "quantization-aware-architecture-search-payoff",
+    "status": "empirically-open",
+    "description": "Whether co-designing architecture with precision beats post-hoc quantization."
+  },
+  {
+    "title": "Non-Uniform KV Cache Precision Schedules",
+    "slug": "nonuniform-kv-cache-precision-schedules",
+    "status": "open",
+    "description": "Optimal precision allocation across cache positions and heads is unknown."
+  },
+  {
+    "title": "Distillation Versus Quantization at Fixed Budget",
+    "slug": "distillation-versus-quantization-fixed-budget",
+    "status": "empirically-open",
+    "description": "Which yields better quality per deployed byte at equal cost."
+  },
+  {
+    "title": "Low-Rank Plus Quantized Decomposition Optimality",
+    "slug": "low-rank-plus-quantized-decomposition",
+    "status": "open",
+    "description": "Best split between low-rank residual and quantized base is unsolved."
+  },
+  {
+    "title": "Compression Effects on Out-of-Distribution Robustness",
+    "slug": "compression-ood-robustness",
+    "status": "empirically-open",
+    "description": "Whether compressed models generalize worse under distribution shift."
+  },
+  {
+    "title": "Hardware-Faithful Cost Models for Compression",
+    "slug": "hardware-faithful-cost-models-compression",
+    "status": "methodologically-blocked",
+    "description": "Reported speedups rarely correspond to measured kernel-level latency gains."
+  },
+  {
+    "title": "Optimal Group Size for Weight Quantization",
+    "slug": "optimal-group-size-weight-quantization",
+    "status": "open",
+    "description": "No theory sets group size trading overhead against reconstruction error."
+  },
+  {
+    "title": "Quantized Fine-Tuning Expressivity Limits",
+    "slug": "quantized-finetuning-expressivity-limits",
+    "status": "open",
+    "description": "Whether adapters on quantized bases can recover full-precision fine-tuning."
+  },
+  {
+    "title": "Second-Order Sensitivity Metrics Validity",
+    "slug": "second-order-sensitivity-metrics-validity",
+    "status": "partially-solved",
+    "description": "Hessian proxies predict quantization sensitivity only inconsistently across layers."
+  },
+  {
+    "title": "Compression of Diffusion Model Samplers",
+    "slug": "compression-diffusion-samplers",
+    "status": "open",
+    "description": "Error accumulation across denoising steps under quantization lacks bounds."
+  },
+  {
+    "title": "Extreme Compression of Embedding and Output Layers",
+    "slug": "extreme-compression-embedding-output-layers",
+    "status": "open",
+    "description": "Vocabulary matrices resist quantization far more than transformer blocks."
+  },
+  {
+    "title": "Benchmark Insensitivity to Compression Damage",
+    "slug": "benchmark-insensitivity-compression-damage",
+    "status": "methodologically-blocked",
+    "description": "Standard benchmarks may miss capabilities that compression actually destroys."
+  },
+  {
+    "title": "Quantization Error Propagation Across Depth",
+    "slug": "quantization-error-propagation-depth",
+    "status": "open",
+    "description": "Whether per-layer error accumulates linearly or amplifies with depth."
+  },
+  {
+    "title": "Optimal Speculative Decoding Draft Compression",
+    "slug": "speculative-decoding-draft-compression",
+    "status": "open",
+    "description": "Best draft model precision maximizing acceptance rate per unit compute."
+  },
+  {
+    "title": "Compression Under Continual and Repeated Retraining",
+    "slug": "compression-continual-retraining",
+    "status": "empirically-open",
+    "description": "Whether repeated quantize-finetune cycles cause irreversible capability loss."
+  },
+  {
+    "title": "Data-Free Quantization Fidelity Limits",
+    "slug": "data-free-quantization-fidelity-limits",
+    "status": "open",
+    "description": "How close calibration-free quantization can get to data-driven methods."
+  },
+  {
+    "title": "Structured Versus Unstructured Sparsity Tradeoff",
+    "slug": "structured-versus-unstructured-sparsity-tradeoff",
+    "status": "open",
+    "description": "Whether N:M structured sparsity fundamentally caps achievable accuracy."
+  },
+  {
+    "title": "Quantization Effects on In-Context Learning",
+    "slug": "quantization-in-context-learning",
+    "status": "empirically-open",
+    "description": "Whether few-shot in-context ability degrades faster than parametric knowledge."
+  },
+  {
+    "title": "Gradient and Optimizer State Compression Limits",
+    "slug": "optimizer-state-compression-limits",
+    "status": "open",
+    "description": "Minimum precision for optimizer moments preserving convergence is unknown."
+  },
+  {
+    "title": "Multilingual and Low-Resource Language Compression Disparity",
+    "slug": "multilingual-compression-disparity",
+    "status": "empirically-open",
+    "description": "Whether quantization harms low-resource languages more than high-resource ones."
+  },
+  {
+    "title": "Verifiable Equivalence Certificates for Compressed Models",
+    "slug": "verifiable-equivalence-certificates-compressed-models",
+    "status": "solved-but-impractical",
+    "description": "Formal input-output equivalence checks exist but scale only to tiny networks."
+  }
+]

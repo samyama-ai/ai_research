@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Benchmark Contamination Detection Without Training-Data Access",
+    "slug": "contamination-detection-without-data-access",
+    "status": "open",
+    "description": "Detect test-set memorization using only black-box model access."
+  },
+  {
+    "title": "Statistically Valid Confidence Intervals for LLM Benchmark Scores",
+    "slug": "benchmark-score-confidence-intervals",
+    "status": "partially-solved",
+    "description": "Correct error bars for single-run benchmark accuracy comparisons."
+  },
+  {
+    "title": "Identifiability of Ability from Pairwise Preference Arenas",
+    "slug": "arena-elo-identifiability",
+    "status": "open",
+    "description": "When does Elo from human votes recover a real ability ordering?"
+  },
+  {
+    "title": "LLM-as-Judge Bias Correction with Provable Guarantees",
+    "slug": "llm-judge-bias-correction",
+    "status": "open",
+    "description": "Debias model judges to match human ratings with error bounds."
+  },
+  {
+    "title": "Benchmark Saturation Prediction Before It Happens",
+    "slug": "benchmark-saturation-prediction",
+    "status": "empirically-open",
+    "description": "Forecast when a benchmark ceases to discriminate between models."
+  },
+  {
+    "title": "Construct Validity of Reasoning Benchmarks",
+    "slug": "reasoning-benchmark-construct-validity",
+    "status": "methodologically-blocked",
+    "description": "Show a reasoning benchmark measures reasoning, not surface cues."
+  },
+  {
+    "title": "Prompt Sensitivity as a Confound in Model Ranking",
+    "slug": "prompt-sensitivity-ranking-confound",
+    "status": "empirically-open",
+    "description": "Do model rankings survive adversarial prompt-format perturbation?"
+  },
+  {
+    "title": "Minimum Sample Size for Reliable Agentic Task Evaluation",
+    "slug": "agentic-eval-sample-size",
+    "status": "open",
+    "description": "How many rollouts are needed for stable agent success rates?"
+  },
+  {
+    "title": "Compute-Matched Comparison Protocols for Test-Time Scaling",
+    "slug": "compute-matched-test-time-scaling",
+    "status": "open",
+    "description": "Fair comparison rules when methods spend unequal inference compute."
+  },
+  {
+    "title": "Contamination-Resistant Benchmark Generation",
+    "slug": "contamination-resistant-benchmark-generation",
+    "status": "partially-solved",
+    "description": "Procedurally generate items that stay hard after public release."
+  },
+  {
+    "title": "Item Response Theory for Foundation Model Evaluation",
+    "slug": "irt-for-foundation-models",
+    "status": "partially-solved",
+    "description": "Do IRT ability parameters transfer across model families?"
+  },
+  {
+    "title": "Evaluating Long-Context Use Beyond Retrieval Probes",
+    "slug": "long-context-eval-beyond-needle",
+    "status": "open",
+    "description": "Measure genuine long-context integration, not single-fact retrieval."
+  },
+  {
+    "title": "Ground Truth for Open-Ended Generation Quality",
+    "slug": "open-ended-generation-ground-truth",
+    "status": "methodologically-blocked",
+    "description": "Define a checkable target for free-form generation quality."
+  },
+  {
+    "title": "Transfer of Benchmark Gains to Deployment Utility",
+    "slug": "benchmark-to-deployment-transfer",
+    "status": "empirically-open",
+    "description": "Do benchmark improvements predict real user task success?"
+  },
+  {
+    "title": "Detecting Benchmark Overfitting via Held-Out Replicas",
+    "slug": "benchmark-overfitting-replicas",
+    "status": "empirically-open",
+    "description": "Measure community overfitting by rebuilding benchmarks from scratch."
+  },
+  {
+    "title": "Calibration Metrics Under Distribution Shift",
+    "slug": "calibration-metrics-under-shift",
+    "status": "open",
+    "description": "Estimate calibration error when the eval distribution shifts."
+  },
+  {
+    "title": "Evaluating Hallucination Rate Without an Oracle Knowledge Base",
+    "slug": "hallucination-rate-without-oracle",
+    "status": "methodologically-blocked",
+    "description": "Measure factuality when no complete reference corpus exists."
+  },
+  {
+    "title": "Adversarial Robustness Evaluation That Upper-Bounds Attack Strength",
+    "slug": "robustness-eval-upper-bounds",
+    "status": "solved-but-impractical",
+    "description": "Certify robustness rather than report best-known-attack accuracy."
+  },
+  {
+    "title": "Sample-Efficient Benchmarking by Item Selection",
+    "slug": "sample-efficient-benchmark-subsets",
+    "status": "partially-solved",
+    "description": "Predict full-benchmark score from a small chosen subset."
+  },
+  {
+    "title": "Evaluating Multi-Agent Systems Beyond End-Task Accuracy",
+    "slug": "multi-agent-eval-beyond-accuracy",
+    "status": "open",
+    "description": "Attribute credit and failure across agents in a pipeline."
+  },
+  {
+    "title": "Reward Model Evaluation That Predicts Post-RLHF Policy Quality",
+    "slug": "reward-model-eval-predictivity",
+    "status": "empirically-open",
+    "description": "Do reward-model benchmark scores predict trained policy quality?"
+  },
+  {
+    "title": "Cross-Lingual Benchmark Equivalence",
+    "slug": "cross-lingual-benchmark-equivalence",
+    "status": "open",
+    "description": "Prove translated benchmark items keep equal difficulty across languages."
+  },
+  {
+    "title": "Evaluating Deception and Evaluation-Awareness in Models",
+    "slug": "evaluation-awareness-detection",
+    "status": "open",
+    "description": "Detect when models behave differently because they detect testing."
+  },
+  {
+    "title": "Scaling Laws for Benchmark Metrics Versus Loss",
+    "slug": "benchmark-metric-scaling-laws",
+    "status": "partially-solved",
+    "description": "Predict downstream benchmark accuracy from pretraining loss curves."
+  },
+  {
+    "title": "Emergence as Metric Artifact Versus Real Capability Jump",
+    "slug": "emergence-metric-artifact",
+    "status": "partially-solved",
+    "description": "Do discontinuous capability jumps survive continuous metric choices."
+  },
+  {
+    "title": "Contamination-Free Evaluation of Code Models on Real Repositories",
+    "slug": "code-eval-repository-contamination",
+    "status": "empirically-open",
+    "description": "Evaluate code agents on tasks postdating every training cutoff."
+  },
+  {
+    "title": "Reproducibility of Benchmark Scores Across Inference Stacks",
+    "slug": "inference-stack-score-reproducibility",
+    "status": "empirically-open",
+    "description": "How much do serving-stack numerics change reported benchmark scores?"
+  },
+  {
+    "title": "Evaluating Retrieval-Augmented Systems Separately from Retrievers",
+    "slug": "rag-component-attribution",
+    "status": "open",
+    "description": "Attribute RAG errors to retriever versus generator reliably."
+  },
+  {
+    "title": "Human Evaluation Reliability at Frontier Capability Levels",
+    "slug": "human-eval-reliability-frontier",
+    "status": "methodologically-blocked",
+    "description": "Rate outputs humans cannot verify without expert oracles."
+  },
+  {
+    "title": "Cost-Aware Leaderboards with Pareto Guarantees",
+    "slug": "cost-aware-leaderboards",
+    "status": "open",
+    "description": "Rank models jointly on quality and inference cost defensibly."
+  },
+  {
+    "title": "Detecting Leaderboard Gaming and Sandbagging",
+    "slug": "leaderboard-gaming-detection",
+    "status": "open",
+    "description": "Detect models tuned to a leaderboard or hiding capability."
+  },
+  {
+    "title": "Evaluating Safety Refusal Without Overrefusal Confound",
+    "slug": "refusal-overrefusal-tradeoff-measure",
+    "status": "open",
+    "description": "Score safety and helpfulness on one comparable axis."
+  },
+  {
+    "title": "Task Difficulty Estimation Independent of Any Model",
+    "slug": "model-independent-difficulty",
+    "status": "methodologically-blocked",
+    "description": "Define item difficulty without reference to a model population."
+  },
+  {
+    "title": "Generalization Gap Between Benchmark and Perturbed Twin Items",
+    "slug": "perturbed-twin-generalization-gap",
+    "status": "empirically-open",
+    "description": "Measure accuracy drop on semantically identical rewritten items."
+  },
+  {
+    "title": "Evaluating Agents in Environments with Irreversible Actions",
+    "slug": "irreversible-action-agent-eval",
+    "status": "open",
+    "description": "Score agents when mistakes cannot be undone or replayed."
+  },
+  {
+    "title": "Statistical Power of Pairwise Model Comparisons on Small Benchmarks",
+    "slug": "pairwise-comparison-statistical-power",
+    "status": "partially-solved",
+    "description": "Detect small true quality gaps with limited eval items."
+  },
+  {
+    "title": "Unified Metric for Multimodal Grounding Beyond Caption Overlap",
+    "slug": "multimodal-grounding-metric",
+    "status": "open",
+    "description": "Score image-text grounding without n-gram or embedding proxies."
+  },
+  {
+    "title": "Predicting Capability on Unseen Tasks from Existing Benchmark Profiles",
+    "slug": "cross-task-capability-prediction",
+    "status": "empirically-open",
+    "description": "Predict a model's new-task score from its benchmark vector."
+  },
+  {
+    "title": "Evaluation Under Continual Model Updates",
+    "slug": "eval-under-continual-updates",
+    "status": "open",
+    "description": "Track capability change when the deployed model silently changes."
+  },
+  {
+    "title": "Verifier-Complete Benchmarks for Non-Verifiable Domains",
+    "slug": "verifier-complete-nonverifiable-domains",
+    "status": "methodologically-blocked",
+    "description": "Build automatic checkers for domains lacking formal correctness criteria."
+  }
+]

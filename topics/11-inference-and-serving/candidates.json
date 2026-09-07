@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Optimal KV Cache Eviction Under Bounded Memory",
+    "slug": "optimal-kv-cache-eviction-bounded-memory",
+    "status": "open",
+    "description": "No competitive-ratio bound exists for online KV token eviction."
+  },
+  {
+    "title": "Lossless Speculative Decoding Draft-Model Optimality",
+    "slug": "speculative-decoding-draft-optimality",
+    "status": "partially-solved",
+    "description": "Which draft model maximizes accepted tokens per unit latency?"
+  },
+  {
+    "title": "Speculative Decoding Beyond Single-Sequence Distribution Preservation",
+    "slug": "speculative-decoding-batch-distribution-preservation",
+    "status": "open",
+    "description": "Does batched speculation preserve exact output distribution under dynamic batching?"
+  },
+  {
+    "title": "Tight Lower Bound on Attention Memory Bandwidth at Decode",
+    "slug": "decode-attention-bandwidth-lower-bound",
+    "status": "open",
+    "description": "Is decode attention provably memory-bandwidth bound at all scales?"
+  },
+  {
+    "title": "Exact Equivalence of Quantized and Full-Precision Serving Outputs",
+    "slug": "quantized-serving-output-equivalence",
+    "status": "methodologically-blocked",
+    "description": "How to measure whether quantized serving changes model behavior meaningfully?"
+  },
+  {
+    "title": "Continuous Batching Scheduling Optimality",
+    "slug": "continuous-batching-scheduling-optimality",
+    "status": "open",
+    "description": "Is optimal continuous-batch scheduling NP-hard with unknown output lengths?"
+  },
+  {
+    "title": "Output Length Prediction for Request Scheduling",
+    "slug": "output-length-prediction-scheduling",
+    "status": "empirically-open",
+    "description": "Can predicted generation length beat FCFS scheduling at production scale?"
+  },
+  {
+    "title": "Prefix Cache Sharing Under Privacy Constraints",
+    "slug": "prefix-cache-sharing-privacy",
+    "status": "open",
+    "description": "Does cross-user prefix caching leak information through timing?"
+  },
+  {
+    "title": "Compute-Optimal Prefill-Decode Disaggregation Ratio",
+    "slug": "prefill-decode-disaggregation-ratio",
+    "status": "empirically-open",
+    "description": "What machine ratio minimizes cost under mixed workload traces?"
+  },
+  {
+    "title": "KV Cache Compression Without Long-Context Degradation",
+    "slug": "kv-compression-long-context-degradation",
+    "status": "open",
+    "description": "Can KV caches compress sublinearly without losing retrieval ability?"
+  },
+  {
+    "title": "Provable Sparsity of Attention at Inference Time",
+    "slug": "provable-attention-sparsity-inference",
+    "status": "partially-solved",
+    "description": "Which heads are provably sparse enough to skip safely?"
+  },
+  {
+    "title": "Determinism of Batched Floating-Point LLM Inference",
+    "slug": "batch-invariant-inference-determinism",
+    "status": "partially-solved",
+    "description": "Can serving be bitwise deterministic across batch sizes cheaply?"
+  },
+  {
+    "title": "Latency-Optimal Tensor Parallel Degree Selection",
+    "slug": "latency-optimal-tensor-parallel-degree",
+    "status": "partially-solved",
+    "description": "Predicting best parallelism degree from hardware and model shape."
+  },
+  {
+    "title": "Early-Exit Confidence Calibration for Generative Models",
+    "slug": "early-exit-confidence-calibration-generation",
+    "status": "open",
+    "description": "Are per-token exit confidences calibrated for sequence-level quality?"
+  },
+  {
+    "title": "Cascade Routing With Guaranteed Quality Floor",
+    "slug": "cascade-routing-quality-floor",
+    "status": "open",
+    "description": "Can model cascades guarantee no per-query quality regression?"
+  },
+  {
+    "title": "Mixture-of-Experts Expert Placement for Serving Skew",
+    "slug": "moe-expert-placement-load-skew",
+    "status": "empirically-open",
+    "description": "Does adaptive expert replication remove MoE inference load imbalance?"
+  },
+  {
+    "title": "Cost of Exact Top-k Sampling at Large Vocabularies",
+    "slug": "exact-topk-sampling-cost",
+    "status": "solved-but-impractical",
+    "description": "Exact large-vocabulary sampling is correct but too slow."
+  },
+  {
+    "title": "Semantic Caching Correctness Criterion",
+    "slug": "semantic-cache-correctness-criterion",
+    "status": "methodologically-blocked",
+    "description": "When is reusing a similar prompt's answer actually valid?"
+  },
+  {
+    "title": "Structured Decoding Without Distribution Distortion",
+    "slug": "structured-decoding-distribution-distortion",
+    "status": "partially-solved",
+    "description": "Grammar-constrained decoding shifts probabilities in unquantified ways."
+  },
+  {
+    "title": "Optimal Chunked Prefill Chunk Size",
+    "slug": "optimal-chunked-prefill-size",
+    "status": "empirically-open",
+    "description": "What chunk size jointly optimizes TTFT and throughput?"
+  },
+  {
+    "title": "SLO-Aware Admission Control for LLM Serving",
+    "slug": "slo-aware-admission-control-llm",
+    "status": "open",
+    "description": "No online algorithm with proven SLO attainment guarantees."
+  },
+  {
+    "title": "Speculation Depth Adaptation Policy",
+    "slug": "adaptive-speculation-depth-policy",
+    "status": "partially-solved",
+    "description": "Optimal per-request draft length under varying acceptance rates."
+  },
+  {
+    "title": "KV Cache Offloading Bandwidth Break-Even Point",
+    "slug": "kv-offload-bandwidth-breakeven",
+    "status": "empirically-open",
+    "description": "When does CPU or SSD KV offload beat recomputation?"
+  },
+  {
+    "title": "Long-Context Inference Cost Scaling Law",
+    "slug": "long-context-inference-cost-scaling-law",
+    "status": "open",
+    "description": "No predictive law for serving cost versus context length."
+  },
+  {
+    "title": "Test-Time Compute Allocation Under a Token Budget",
+    "slug": "test-time-compute-budget-allocation",
+    "status": "open",
+    "description": "How to allocate reasoning tokens optimally across a query set?"
+  },
+  {
+    "title": "Verifier-Free Best-of-n Selection Guarantees",
+    "slug": "verifier-free-best-of-n-guarantees",
+    "status": "open",
+    "description": "Can self-consistency selection beat random without an external verifier?"
+  },
+  {
+    "title": "Batch Size Effects on Generation Quality",
+    "slug": "batch-size-generation-quality-effects",
+    "status": "empirically-open",
+    "description": "Does batching change sampled output quality measurably?"
+  },
+  {
+    "title": "Optimal Paging Granularity for Attention Memory",
+    "slug": "optimal-kv-paging-granularity",
+    "status": "partially-solved",
+    "description": "What page size minimizes fragmentation and kernel overhead jointly?"
+  },
+  {
+    "title": "Multi-Tenant Fairness in Token-Level Serving",
+    "slug": "multi-tenant-token-level-fairness",
+    "status": "open",
+    "description": "No accepted fairness definition for variable-length token streams."
+  },
+  {
+    "title": "Speculative Decoding for Non-Greedy Temperatures",
+    "slug": "speculative-decoding-high-temperature",
+    "status": "partially-solved",
+    "description": "Acceptance rates collapse at high temperature; no principled fix."
+  },
+  {
+    "title": "Cold-Start Model Loading Latency Lower Bound",
+    "slug": "model-cold-start-latency-bound",
+    "status": "open",
+    "description": "Minimum achievable time from request to first token, unloaded."
+  },
+  {
+    "title": "Draft-Free Self-Speculation Acceptance Prediction",
+    "slug": "self-speculation-acceptance-prediction",
+    "status": "empirically-open",
+    "description": "Can layer-skipping self-drafts match separate draft models?"
+  },
+  {
+    "title": "Attention Kernel Numerical Error Accumulation Over Long Generations",
+    "slug": "attention-numerical-error-accumulation",
+    "status": "open",
+    "description": "Does low-precision attention error compound across thousands of tokens?"
+  },
+  {
+    "title": "Serving Throughput Roofline for Sparse Attention",
+    "slug": "sparse-attention-serving-roofline",
+    "status": "methodologically-blocked",
+    "description": "No agreed cost model for irregular sparse attention kernels."
+  },
+  {
+    "title": "Retrieval-Augmented Serving Cache Coherence",
+    "slug": "rag-serving-cache-coherence",
+    "status": "open",
+    "description": "How to invalidate KV caches when retrieved documents change?"
+  },
+  {
+    "title": "Optimal Placement of LoRA Adapters in Multi-Adapter Serving",
+    "slug": "multi-lora-adapter-placement",
+    "status": "empirically-open",
+    "description": "Best adapter batching and swapping policy at hundreds of adapters."
+  },
+  {
+    "title": "Energy-Optimal Inference Operating Point",
+    "slug": "energy-optimal-inference-operating-point",
+    "status": "empirically-open",
+    "description": "What frequency, batch, and precision minimize joules per token?"
+  },
+  {
+    "title": "Watermark Preservation Under Speculative Decoding",
+    "slug": "watermark-preservation-speculative-decoding",
+    "status": "open",
+    "description": "Can watermarks survive speculation without detectability loss?"
+  },
+  {
+    "title": "Streaming Attention Sink Necessity",
+    "slug": "streaming-attention-sink-necessity",
+    "status": "partially-solved",
+    "description": "Why do attention sinks make streaming inference stable?"
+  },
+  {
+    "title": "Confidential Inference Overhead Lower Bound",
+    "slug": "confidential-inference-overhead-bound",
+    "status": "solved-but-impractical",
+    "description": "Cryptographically private inference works but costs orders of magnitude."
+  }
+]

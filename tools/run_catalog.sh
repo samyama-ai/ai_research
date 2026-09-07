@@ -29,6 +29,17 @@ import glob, json
 print(sum(len(json.load(open(f))) for f in glob.glob("topics/*/candidates.json")))
 PY
 }
+# Topics that have no candidate pool yet. The guard below used to test the *total*
+# pool against 100, which silently skipped discovery whenever an earlier pass had
+# been interrupted part-way: 640 candidates across 16 of 35 topics reads as "pool
+# is healthy" while 19 topics have nothing and would never get any.
+uncovered() { python3 - <<'PY'
+import glob, os
+have = {os.path.basename(os.path.dirname(f)) for f in glob.glob("topics/*/candidates.json")}
+all_ = {os.path.basename(d.rstrip("/")) for d in glob.glob("topics/*/")}
+print(len(all_ - have))
+PY
+}
 
 started_at=$(date +%s)
 say() { echo "$*" | tee -a "$LOG"; }
@@ -36,7 +47,8 @@ say() { echo "$*" | tee -a "$LOG"; }
 say "=== run start $(date -u +%FT%TZ) — $(count) files, target ${TARGET}, backend ${CATALOG_BACKEND} ==="
 
 # Stage 1: discovery, skipped when a pool already exists so a restart does not re-ask.
-if [ "$(pool)" -lt 100 ]; then
+if [ "$(uncovered)" -gt 0 ]; then
+  say "=== discovery: $(uncovered) topics with no candidate pool ==="
   python3 -u tools/generate_catalog_cli.py --stage discovery \
     --limit-candidates "$PER_TOPIC" 2>&1 | tee -a "$LOG"
 fi

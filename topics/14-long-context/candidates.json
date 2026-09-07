@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Provable Separation Between Softmax Attention and Recurrent State for Long-Range Retrieval",
+    "slug": "attention-vs-recurrent-state-retrieval-separation",
+    "status": "partially-solved",
+    "description": "Does fixed-size recurrent state provably lose long-range retrieval?"
+  },
+  {
+    "title": "Length Generalization of Rotary Position Embeddings Beyond Training Window",
+    "slug": "rope-length-generalization-beyond-training-window",
+    "status": "open",
+    "description": "Why do RoPE models fail just past trained context length?"
+  },
+  {
+    "title": "Optimal Base Frequency Scaling Law for RoPE Context Extension",
+    "slug": "rope-base-frequency-scaling-law",
+    "status": "empirically-open",
+    "description": "Is there a principled base scaling rule per target length?"
+  },
+  {
+    "title": "Effective Context Length Versus Advertised Context Length",
+    "slug": "effective-versus-advertised-context-length",
+    "status": "methodologically-blocked",
+    "description": "How do we define the length a model actually uses?"
+  },
+  {
+    "title": "Lost-in-the-Middle Positional Bias Cause",
+    "slug": "lost-in-the-middle-cause",
+    "status": "open",
+    "description": "What mechanism causes mid-context accuracy dips?"
+  },
+  {
+    "title": "KV Cache Compression Rate-Distortion Limit",
+    "slug": "kv-cache-compression-rate-distortion-limit",
+    "status": "open",
+    "description": "What is the minimum KV bits per token preserving accuracy?"
+  },
+  {
+    "title": "Sub-Quadratic Exact Attention Lower Bounds Under SETH",
+    "slug": "subquadratic-exact-attention-lower-bounds",
+    "status": "partially-solved",
+    "description": "Can exact attention be computed in subquadratic time?"
+  },
+  {
+    "title": "Attention Sink Necessity and Removability",
+    "slug": "attention-sink-necessity",
+    "status": "open",
+    "description": "Are attention sinks required for stable long-context inference?"
+  },
+  {
+    "title": "Long-Context Data Mixture for Continued Pretraining",
+    "slug": "long-context-data-mixture-continued-pretraining",
+    "status": "empirically-open",
+    "description": "Which document length distribution best trains long context?"
+  },
+  {
+    "title": "Scaling Law for Loss as a Function of Context Length",
+    "slug": "context-length-scaling-law",
+    "status": "empirically-open",
+    "description": "How does loss scale jointly with context and parameters?"
+  },
+  {
+    "title": "Compute-Optimal Allocation Between Context Length and Model Size",
+    "slug": "compute-optimal-context-versus-model-size",
+    "status": "open",
+    "description": "Given fixed compute, how long should training context be?"
+  },
+  {
+    "title": "Needle Benchmarks Underestimate Multi-Hop Long-Context Failure",
+    "slug": "needle-benchmarks-multi-hop-validity",
+    "status": "methodologically-blocked",
+    "description": "Do retrieval probes measure real long-context reasoning?"
+  },
+  {
+    "title": "Sparse Attention Pattern Learnability Versus Hand-Designed Patterns",
+    "slug": "learned-versus-fixed-sparse-attention-patterns",
+    "status": "empirically-open",
+    "description": "Can learned sparsity beat fixed windows at scale?"
+  },
+  {
+    "title": "State Space Model Recall Capacity as a Function of State Size",
+    "slug": "ssm-recall-capacity-state-size",
+    "status": "partially-solved",
+    "description": "How much can a fixed recurrent state memorize?"
+  },
+  {
+    "title": "Hybrid Attention-Recurrence Layer Ratio",
+    "slug": "hybrid-attention-recurrence-layer-ratio",
+    "status": "empirically-open",
+    "description": "What fraction of layers must be full attention?"
+  },
+  {
+    "title": "Long-Context In-Context Learning Versus Fine-Tuning Crossover",
+    "slug": "many-shot-icl-versus-finetuning-crossover",
+    "status": "empirically-open",
+    "description": "When does many-shot prompting beat parameter fine-tuning?"
+  },
+  {
+    "title": "Prefix Cache Reuse Under Semantic Drift",
+    "slug": "prefix-cache-reuse-semantic-drift",
+    "status": "open",
+    "description": "When is reusing a shared prefix cache safe?"
+  },
+  {
+    "title": "Position Interpolation Without Degrading Short-Context Ability",
+    "slug": "context-extension-without-short-context-regression",
+    "status": "open",
+    "description": "Can extension avoid short-context performance loss?"
+  },
+  {
+    "title": "Training-Free Context Extension Ceiling",
+    "slug": "training-free-context-extension-ceiling",
+    "status": "empirically-open",
+    "description": "How far can context extend with no weight updates?"
+  },
+  {
+    "title": "Long-Context Generalization From Short-Context Supervision",
+    "slug": "long-context-from-short-supervision",
+    "status": "open",
+    "description": "Can long-context skills emerge without long labeled data?"
+  },
+  {
+    "title": "Memory Hierarchy Versus Flat Context Equivalence",
+    "slug": "external-memory-versus-flat-context",
+    "status": "open",
+    "description": "Is external memory ever strictly better than long context?"
+  },
+  {
+    "title": "Retrieval Augmentation Versus Long Context Crossover Point",
+    "slug": "rag-versus-long-context-crossover",
+    "status": "empirically-open",
+    "description": "At what corpus size does retrieval beat full context?"
+  },
+  {
+    "title": "Chunking-Free Document Encoding Without Boundary Artifacts",
+    "slug": "chunking-boundary-artifacts",
+    "status": "open",
+    "description": "How to encode long documents without chunk boundary loss?"
+  },
+  {
+    "title": "Long-Context Hallucination Rate as a Function of Distractors",
+    "slug": "distractor-induced-hallucination-scaling",
+    "status": "empirically-open",
+    "description": "How does distractor volume drive long-context hallucination?"
+  },
+  {
+    "title": "Contextual Sparsity Predictability for Token Eviction",
+    "slug": "kv-eviction-future-token-dependence",
+    "status": "open",
+    "description": "Can we evict KV entries without knowing future queries?"
+  },
+  {
+    "title": "Ring and Sequence Parallel Attention Communication Lower Bound",
+    "slug": "sequence-parallel-attention-communication-lower-bound",
+    "status": "partially-solved",
+    "description": "What is the minimum communication for distributed long attention?"
+  },
+  {
+    "title": "Numerical Stability of Softmax at Extreme Sequence Lengths",
+    "slug": "softmax-numerical-stability-extreme-lengths",
+    "status": "open",
+    "description": "Does low-precision attention degrade predictably with length?"
+  },
+  {
+    "title": "Long-Context Reinforcement Learning Credit Assignment Over Long Horizons",
+    "slug": "long-horizon-credit-assignment-in-context",
+    "status": "open",
+    "description": "Can models assign credit across million-token trajectories?"
+  },
+  {
+    "title": "Perplexity Is Not Predictive of Long-Context Task Skill",
+    "slug": "perplexity-long-context-task-mismatch",
+    "status": "methodologically-blocked",
+    "description": "Why does long-context perplexity decouple from downstream ability?"
+  },
+  {
+    "title": "Induction Head Formation at Extreme Context Length",
+    "slug": "induction-heads-at-extreme-length",
+    "status": "open",
+    "description": "Do induction circuits survive million-token contexts?"
+  },
+  {
+    "title": "Optimal Context Compression Ratio Before Task Collapse",
+    "slug": "prompt-compression-collapse-threshold",
+    "status": "empirically-open",
+    "description": "How far can prompts compress before tasks break?"
+  },
+  {
+    "title": "Streaming Inference With Unbounded Context and Bounded Memory",
+    "slug": "unbounded-streaming-bounded-memory",
+    "status": "solved-but-impractical",
+    "description": "Can infinite streams be served with constant memory faithfully?"
+  },
+  {
+    "title": "Cross-Document Reasoning Versus Within-Document Reasoning Gap",
+    "slug": "cross-document-reasoning-gap",
+    "status": "open",
+    "description": "Why is cross-document synthesis harder than within-document?"
+  },
+  {
+    "title": "Long-Context Safety Alignment Decay With Input Length",
+    "slug": "alignment-decay-with-context-length",
+    "status": "empirically-open",
+    "description": "Does refusal reliability degrade as context grows?"
+  },
+  {
+    "title": "Many-Shot Jailbreak Scaling Law and Defenses",
+    "slug": "many-shot-jailbreak-scaling",
+    "status": "open",
+    "description": "Can long-context jailbreak scaling be provably bounded?"
+  },
+  {
+    "title": "Test-Time Context Length Extrapolation via Attention Temperature",
+    "slug": "attention-entropy-temperature-extrapolation",
+    "status": "partially-solved",
+    "description": "Does entropy rescaling fully fix length extrapolation?"
+  },
+  {
+    "title": "Positional Encoding-Free Transformers at Long Range",
+    "slug": "nope-long-range-viability",
+    "status": "empirically-open",
+    "description": "Can causal masking alone supply position at long range?"
+  },
+  {
+    "title": "Long-Context Evaluation Contamination From Pretraining Corpora",
+    "slug": "long-context-eval-contamination",
+    "status": "methodologically-blocked",
+    "description": "How to measure contamination in long-document benchmarks?"
+  },
+  {
+    "title": "Latency-Accuracy Frontier for Speculative Decoding at Long Context",
+    "slug": "speculative-decoding-long-context-frontier",
+    "status": "open",
+    "description": "Does speculation keep helping as KV cache dominates cost?"
+  },
+  {
+    "title": "Provable Approximation Error of Linear Attention on Copy Tasks",
+    "slug": "linear-attention-copy-task-error-bounds",
+    "status": "partially-solved",
+    "description": "What error bounds hold for linear attention copying?"
+  }
+]

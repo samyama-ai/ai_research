@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Compute-Optimal Vocabulary Size",
+    "slug": "compute-optimal-vocabulary-size",
+    "status": "empirically-open",
+    "description": "How vocabulary size should scale with model and data budget."
+  },
+  {
+    "title": "Softmax Bottleneck Beyond Rank Fixes",
+    "slug": "softmax-bottleneck-beyond-rank-fixes",
+    "status": "open",
+    "description": "Whether low-rank output heads limit modern LLM expressivity in practice."
+  },
+  {
+    "title": "Cross-Entropy Versus Calibrated Proper Scoring Rules",
+    "slug": "cross-entropy-versus-proper-scoring-rules",
+    "status": "empirically-open",
+    "description": "Does swapping log loss for other proper losses change pretraining scaling?"
+  },
+  {
+    "title": "Label Smoothing and Representation Collapse",
+    "slug": "label-smoothing-representation-collapse",
+    "status": "partially-solved",
+    "description": "When label smoothing helps accuracy but harms distillation and retrieval."
+  },
+  {
+    "title": "Optimal Auxiliary Loss Weight Schedules",
+    "slug": "auxiliary-loss-weight-schedules",
+    "status": "open",
+    "description": "Principled schedules for weighting auxiliary heads during training."
+  },
+  {
+    "title": "Z-Loss Necessity for Logit Stability",
+    "slug": "z-loss-necessity-logit-stability",
+    "status": "empirically-open",
+    "description": "Whether logit-norm regularizers are needed at large scale."
+  },
+  {
+    "title": "Tied Versus Untied Input-Output Embeddings at Scale",
+    "slug": "tied-versus-untied-embeddings-at-scale",
+    "status": "empirically-open",
+    "description": "Does weight tying still pay off past ten billion parameters?"
+  },
+  {
+    "title": "Multi-Token Prediction Head Design",
+    "slug": "multi-token-prediction-head-design",
+    "status": "open",
+    "description": "Which multi-token head architecture best improves downstream reasoning."
+  },
+  {
+    "title": "Sampling-Based Softmax Approximation Bias",
+    "slug": "sampled-softmax-approximation-bias",
+    "status": "partially-solved",
+    "description": "Bias of sampled softmax estimators for very large vocabularies."
+  },
+  {
+    "title": "Hierarchical Softmax Versus Full Softmax Quality Gap",
+    "slug": "hierarchical-softmax-quality-gap",
+    "status": "solved-but-impractical",
+    "description": "Whether tree-structured output heads can match full softmax quality."
+  },
+  {
+    "title": "Loss Function Choice and Calibration Under Distribution Shift",
+    "slug": "loss-choice-calibration-under-shift",
+    "status": "open",
+    "description": "Which training loss yields calibration robust to covariate shift."
+  },
+  {
+    "title": "Focal Loss and Proper Calibration Tradeoff",
+    "slug": "focal-loss-calibration-tradeoff",
+    "status": "partially-solved",
+    "description": "Focal loss is improper; when does that cost accuracy?"
+  },
+  {
+    "title": "Contrastive Temperature Selection Theory",
+    "slug": "contrastive-temperature-selection-theory",
+    "status": "open",
+    "description": "Principled choice of InfoNCE temperature without validation sweeps."
+  },
+  {
+    "title": "Negative Sample Count Scaling in Contrastive Losses",
+    "slug": "negative-sample-count-scaling",
+    "status": "empirically-open",
+    "description": "How contrastive batch negatives should scale with model capacity."
+  },
+  {
+    "title": "Dimensional Collapse Criteria in Non-Contrastive Losses",
+    "slug": "dimensional-collapse-criteria",
+    "status": "partially-solved",
+    "description": "Exact conditions under which BYOL-style losses avoid collapse."
+  },
+  {
+    "title": "Regression Heads Versus Discretized Classification Heads",
+    "slug": "regression-versus-discretized-heads",
+    "status": "empirically-open",
+    "description": "When binning a continuous target beats direct regression loss."
+  },
+  {
+    "title": "Loss Scaling for Mixed-Precision Output Heads",
+    "slug": "loss-scaling-mixed-precision-heads",
+    "status": "partially-solved",
+    "description": "Automatic loss scaling rules that provably avoid gradient underflow."
+  },
+  {
+    "title": "Cross-Entropy Memory Cost at Large Vocabulary",
+    "slug": "cross-entropy-memory-cost-large-vocab",
+    "status": "solved-but-impractical",
+    "description": "Computing exact logits without materializing the full vocabulary tensor."
+  },
+  {
+    "title": "Token-Level Loss Reweighting for Data Quality",
+    "slug": "token-level-loss-reweighting",
+    "status": "open",
+    "description": "Which per-token weighting improves pretraining beyond uniform averaging."
+  },
+  {
+    "title": "Sequence-Length Normalization Bias in Language Modeling Loss",
+    "slug": "sequence-length-normalization-bias",
+    "status": "open",
+    "description": "How per-token versus per-sequence averaging biases learned behavior."
+  },
+  {
+    "title": "KL Direction Choice in Distillation Objectives",
+    "slug": "kl-direction-choice-distillation",
+    "status": "empirically-open",
+    "description": "Forward versus reverse KL for language model distillation quality."
+  },
+  {
+    "title": "Optimal Temperature in Knowledge Distillation",
+    "slug": "optimal-distillation-temperature",
+    "status": "open",
+    "description": "Theory predicting the best distillation softening temperature."
+  },
+  {
+    "title": "Preference Loss Equivalence Classes",
+    "slug": "preference-loss-equivalence-classes",
+    "status": "open",
+    "description": "Which pairwise preference losses are provably interchangeable in outcome."
+  },
+  {
+    "title": "Length Bias in Preference Optimization Objectives",
+    "slug": "length-bias-preference-objectives",
+    "status": "partially-solved",
+    "description": "Removing verbosity bias from DPO-style losses without hurting quality."
+  },
+  {
+    "title": "Reward Model Head Overoptimization Threshold",
+    "slug": "reward-head-overoptimization-threshold",
+    "status": "empirically-open",
+    "description": "Predicting the KL budget where reward hacking begins."
+  },
+  {
+    "title": "Value Head Loss Interference in Actor-Critic LLMs",
+    "slug": "value-head-loss-interference",
+    "status": "open",
+    "description": "Whether shared trunks make value and policy losses conflict."
+  },
+  {
+    "title": "Verifiable Reward Sparsity and Credit Assignment",
+    "slug": "verifiable-reward-sparsity-credit-assignment",
+    "status": "open",
+    "description": "Assigning token credit from a single binary correctness signal."
+  },
+  {
+    "title": "Entropy Regularization Collapse in RL Post-Training",
+    "slug": "entropy-regularization-collapse-rl",
+    "status": "empirically-open",
+    "description": "Preventing policy entropy collapse without degrading reward gains."
+  },
+  {
+    "title": "Ranking Loss Consistency for Top-K Metrics",
+    "slug": "ranking-loss-consistency-topk",
+    "status": "partially-solved",
+    "description": "Surrogate losses provably consistent for truncated ranking measures."
+  },
+  {
+    "title": "Differentiable Surrogates for Non-Decomposable Metrics",
+    "slug": "differentiable-surrogates-nondecomposable-metrics",
+    "status": "open",
+    "description": "Optimizing F-measure and AUC directly with unbiased gradients."
+  },
+  {
+    "title": "Multi-Task Loss Balancing Beyond Gradient Heuristics",
+    "slug": "multi-task-loss-balancing",
+    "status": "open",
+    "description": "Whether any loss-balancing rule beats tuned fixed weights."
+  },
+  {
+    "title": "Mixture-of-Experts Load Balancing Loss Optimality",
+    "slug": "moe-load-balancing-loss-optimality",
+    "status": "open",
+    "description": "Whether auxiliary balance losses trade quality for utilization unavoidably."
+  },
+  {
+    "title": "Auxiliary-Loss-Free Expert Routing Guarantees",
+    "slug": "auxiliary-loss-free-routing-guarantees",
+    "status": "partially-solved",
+    "description": "Do bias-based routing correctors guarantee balance without gradient signal?"
+  },
+  {
+    "title": "Output Head Sharpness and Generalization",
+    "slug": "output-head-sharpness-generalization",
+    "status": "open",
+    "description": "Does final-layer loss curvature predict generalization better than global sharpness?"
+  },
+  {
+    "title": "Abstention Heads with Provable Coverage",
+    "slug": "abstention-heads-provable-coverage",
+    "status": "partially-solved",
+    "description": "Training selective-prediction heads with distribution-free risk guarantees."
+  },
+  {
+    "title": "Uncertainty Head Faithfulness Measurement",
+    "slug": "uncertainty-head-faithfulness-measurement",
+    "status": "methodologically-blocked",
+    "description": "No agreed metric for whether uncertainty heads report true uncertainty."
+  },
+  {
+    "title": "Loss Landscape Effects of Logit Soft-Capping",
+    "slug": "logit-soft-capping-effects",
+    "status": "empirically-open",
+    "description": "Whether tanh logit capping costs quality while improving stability."
+  },
+  {
+    "title": "Diffusion Loss Weighting Versus Likelihood",
+    "slug": "diffusion-loss-weighting-versus-likelihood",
+    "status": "partially-solved",
+    "description": "Which noise-level weighting best trades sample quality against likelihood."
+  },
+  {
+    "title": "Structured Prediction Heads for Set-Valued Outputs",
+    "slug": "structured-heads-set-valued-outputs",
+    "status": "open",
+    "description": "Permutation-invariant losses that scale to large output sets."
+  },
+  {
+    "title": "Loss Objective Transfer Across Modalities",
+    "slug": "loss-objective-transfer-across-modalities",
+    "status": "empirically-open",
+    "description": "Whether one unified objective matches per-modality specialized losses."
+  }
+]

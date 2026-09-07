@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Provable Separation Between Memorization and Generalization Capacity",
+    "slug": "memorization-generalization-capacity-separation",
+    "status": "open",
+    "description": "Can a model generalize without storing verbatim training examples?"
+  },
+  {
+    "title": "Tight Per-Example Memorization Bounds Under DP-SGD",
+    "slug": "per-example-memorization-bounds-dp-sgd",
+    "status": "partially-solved",
+    "description": "Do epsilon guarantees predict actual per-example extraction rates?"
+  },
+  {
+    "title": "Extraction Rate Scaling Laws for Model Size and Duplication",
+    "slug": "extraction-scaling-laws-size-duplication",
+    "status": "empirically-open",
+    "description": "How does verbatim extraction scale with parameters and duplicate count?"
+  },
+  {
+    "title": "Deduplication Sufficiency for Preventing Verbatim Regurgitation",
+    "slug": "deduplication-sufficiency-verbatim-regurgitation",
+    "status": "empirically-open",
+    "description": "Does exact deduplication eliminate extractable memorization at scale?"
+  },
+  {
+    "title": "Defining Memorization Independently of a Prompt Distribution",
+    "slug": "prompt-independent-memorization-definition",
+    "status": "methodologically-blocked",
+    "description": "Memorization measures depend on chosen prompts, lacking canonical definition."
+  },
+  {
+    "title": "Machine Unlearning Certification Without Retraining",
+    "slug": "certified-unlearning-without-retraining",
+    "status": "solved-but-impractical",
+    "description": "Provable data deletion currently requires full or sharded retraining."
+  },
+  {
+    "title": "Auditing Differential Privacy with One Training Run",
+    "slug": "one-run-dp-auditing-tightness",
+    "status": "partially-solved",
+    "description": "Can single-run audits achieve tight epsilon lower bounds?"
+  },
+  {
+    "title": "Membership Inference Under Realistic Distribution Shift",
+    "slug": "membership-inference-distribution-shift",
+    "status": "open",
+    "description": "Do MIA attacks survive when shadow data mismatches training data?"
+  },
+  {
+    "title": "Privacy Cost of Fine-Tuning on Top of Public Pretraining",
+    "slug": "privacy-cost-public-pretraining-finetuning",
+    "status": "open",
+    "description": "How does pretraining data leakage compose with private fine-tuning?"
+  },
+  {
+    "title": "Memorization in Retrieval-Augmented Generation Pipelines",
+    "slug": "memorization-retrieval-augmented-generation",
+    "status": "empirically-open",
+    "description": "Does retrieval reduce or relocate private data leakage?"
+  },
+  {
+    "title": "Privacy Leakage Through Model Distillation",
+    "slug": "privacy-leakage-model-distillation",
+    "status": "partially-solved",
+    "description": "Do student models inherit teacher memorization of training data?"
+  },
+  {
+    "title": "Optimal Privacy-Utility Frontier for Language Model Pretraining",
+    "slug": "privacy-utility-frontier-lm-pretraining",
+    "status": "empirically-open",
+    "description": "What utility is achievable at meaningful epsilon during pretraining?"
+  },
+  {
+    "title": "Detecting Training Data Membership Without Reference Models",
+    "slug": "reference-free-membership-detection",
+    "status": "open",
+    "description": "Can membership be inferred with no shadow model access?"
+  },
+  {
+    "title": "Copyright-Relevant Substantial Similarity as a Measurable Quantity",
+    "slug": "substantial-similarity-measurable-quantity",
+    "status": "methodologically-blocked",
+    "description": "No agreed metric captures non-verbatim copyrighted content reproduction."
+  },
+  {
+    "title": "Latent Memorization Revealed Only After Perturbation",
+    "slug": "latent-memorization-perturbation-recovery",
+    "status": "open",
+    "description": "Do models hide memorized data recoverable by weight perturbation?"
+  },
+  {
+    "title": "Unlearning Robustness Against Relearning Attacks",
+    "slug": "unlearning-robustness-relearning-attacks",
+    "status": "open",
+    "description": "Can small fine-tuning restore supposedly unlearned knowledge?"
+  },
+  {
+    "title": "Privacy Auditing of Federated Learning with Secure Aggregation",
+    "slug": "auditing-federated-secure-aggregation",
+    "status": "partially-solved",
+    "description": "How much does secure aggregation actually reduce client leakage?"
+  },
+  {
+    "title": "Gradient Inversion Feasibility at Large Batch Sizes",
+    "slug": "gradient-inversion-large-batch",
+    "status": "partially-solved",
+    "description": "Can training examples be recovered from realistic large-batch gradients?"
+  },
+  {
+    "title": "Memorization of Personally Identifiable Information Versus Generic Text",
+    "slug": "pii-versus-generic-text-memorization",
+    "status": "empirically-open",
+    "description": "Is PII memorized at different rates than ordinary text?"
+  },
+  {
+    "title": "Privacy Guarantees for In-Context Learning Demonstrations",
+    "slug": "privacy-in-context-learning-demonstrations",
+    "status": "partially-solved",
+    "description": "Can prompt examples be protected without destroying task accuracy?"
+  },
+  {
+    "title": "Extraction Attacks on Aligned and RLHF-Tuned Models",
+    "slug": "extraction-attacks-aligned-models",
+    "status": "empirically-open",
+    "description": "Does alignment training suppress or merely mask memorization?"
+  },
+  {
+    "title": "Memorization in Diffusion Models and Its Trigger Conditions",
+    "slug": "diffusion-model-memorization-triggers",
+    "status": "partially-solved",
+    "description": "Which caption and duplication conditions cause image replication?"
+  },
+  {
+    "title": "Privacy Risk of Model Weights Released Openly Versus API Access",
+    "slug": "open-weights-versus-api-privacy-risk",
+    "status": "open",
+    "description": "How much extra leakage does releasing weights actually create?"
+  },
+  {
+    "title": "Composition of Privacy Across Many Fine-Tuned Model Variants",
+    "slug": "privacy-composition-model-variants",
+    "status": "open",
+    "description": "Does releasing many checkpoints multiply extraction risk?"
+  },
+  {
+    "title": "Data Attribution at Scale Without Retraining",
+    "slug": "training-data-attribution-without-retraining",
+    "status": "solved-but-impractical",
+    "description": "Influence estimates need retraining or intractable Hessian computation."
+  },
+  {
+    "title": "Memorization Onset Dynamics During Training",
+    "slug": "memorization-onset-training-dynamics",
+    "status": "empirically-open",
+    "description": "At which step and epoch do examples become extractable?"
+  },
+  {
+    "title": "Privacy of Synthetic Data Generated by Language Models",
+    "slug": "synthetic-data-privacy-guarantees",
+    "status": "open",
+    "description": "Does synthetic text leak the records that generated it?"
+  },
+  {
+    "title": "Canary Design That Predicts Real Data Leakage",
+    "slug": "canary-design-predicting-real-leakage",
+    "status": "methodologically-blocked",
+    "description": "Injected canaries may not represent natural example memorization."
+  },
+  {
+    "title": "Quantization and Pruning Effects on Memorized Content",
+    "slug": "quantization-pruning-memorization-effects",
+    "status": "empirically-open",
+    "description": "Does compression remove memorized data or preserve it?"
+  },
+  {
+    "title": "Sample-Level Deletion Guarantees for Mixture-of-Experts Models",
+    "slug": "deletion-guarantees-mixture-of-experts",
+    "status": "open",
+    "description": "Can routing sparsity enable cheap per-example deletion?"
+  },
+  {
+    "title": "Lower Bounds on Memorization Required for Next-Token Prediction",
+    "slug": "lower-bounds-memorization-next-token",
+    "status": "open",
+    "description": "Is some verbatim storage information-theoretically necessary for language modeling?"
+  },
+  {
+    "title": "Privacy Leakage Through Agent Tool Traces and Logs",
+    "slug": "agent-tool-trace-privacy-leakage",
+    "status": "open",
+    "description": "Do agent traces expose user data beyond model outputs?"
+  },
+  {
+    "title": "Differentially Private Training Without Per-Example Gradient Costs",
+    "slug": "dp-training-without-per-example-gradients",
+    "status": "partially-solved",
+    "description": "Can DP-SGD match non-private throughput at large scale?"
+  },
+  {
+    "title": "Reconstruction Robustness as a Practical Alternative to Epsilon",
+    "slug": "reconstruction-robustness-versus-epsilon",
+    "status": "partially-solved",
+    "description": "Can reconstruction bounds replace epsilon for deployment decisions?"
+  },
+  {
+    "title": "Memorization Transfer Across Languages and Modalities",
+    "slug": "cross-lingual-memorization-transfer",
+    "status": "empirically-open",
+    "description": "Can data memorized in one language be extracted in another?"
+  },
+  {
+    "title": "Privacy Attacks Exploiting Model Output Probabilities Versus Text Only",
+    "slug": "logit-access-versus-text-only-attacks",
+    "status": "empirically-open",
+    "description": "How much attack power comes from logit access alone?"
+  },
+  {
+    "title": "Detecting Whether a Specific Document Was in Pretraining Data",
+    "slug": "document-level-pretraining-data-detection",
+    "status": "open",
+    "description": "Reliable document-level dataset inference remains unresolved at web scale."
+  },
+  {
+    "title": "Unlearning Evaluation Metrics That Resist Gaming",
+    "slug": "gaming-resistant-unlearning-metrics",
+    "status": "methodologically-blocked",
+    "description": "Current unlearning benchmarks are passed by output suppression alone."
+  },
+  {
+    "title": "Privacy Amplification by Iteration for Modern Optimizers",
+    "slug": "privacy-amplification-iteration-modern-optimizers",
+    "status": "open",
+    "description": "Do amplification bounds extend to Adam and adaptive methods?"
+  },
+  {
+    "title": "Memorization Under Continual and Multi-Epoch Data Recycling",
+    "slug": "memorization-continual-data-recycling",
+    "status": "empirically-open",
+    "description": "How does repeated epoch exposure change extraction risk curves?"
+  }
+]

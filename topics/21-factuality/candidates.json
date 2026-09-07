@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Separating Knowledge Gaps from Retrieval Failures in Closed-Book Errors",
+    "slug": "knowledge-gap-vs-retrieval-failure-attribution",
+    "status": "methodologically-blocked",
+    "description": "Does the model lack the fact or fail to recall it?"
+  },
+  {
+    "title": "Calibrated Abstention Under Distribution Shift",
+    "slug": "calibrated-abstention-under-distribution-shift",
+    "status": "open",
+    "description": "Can abstention thresholds stay calibrated off the training distribution?"
+  },
+  {
+    "title": "Hallucination Rate Lower Bounds from Training Data Frequency",
+    "slug": "hallucination-lower-bound-pretraining-frequency",
+    "status": "partially-solved",
+    "description": "Do rare pretraining facts imply provable error floors?"
+  },
+  {
+    "title": "Does RLHF Systematically Increase Confident Falsehoods",
+    "slug": "rlhf-induced-confident-falsehood",
+    "status": "empirically-open",
+    "description": "Does preference tuning trade calibration for confident wrong answers?"
+  },
+  {
+    "title": "Faithfulness of Chain-of-Thought to the Computation Actually Used",
+    "slug": "chain-of-thought-faithfulness-measurement",
+    "status": "methodologically-blocked",
+    "description": "Do stated reasoning steps reflect the true internal computation?"
+  },
+  {
+    "title": "Linear Truth Directions Generalize Across Domains",
+    "slug": "linear-truth-direction-cross-domain-generalization",
+    "status": "empirically-open",
+    "description": "Is there one probe direction encoding truth everywhere?"
+  },
+  {
+    "title": "Self-Consistency Sampling as a Sound Hallucination Detector",
+    "slug": "self-consistency-sampling-detection-soundness",
+    "status": "partially-solved",
+    "description": "Does answer agreement across samples actually track correctness?"
+  },
+  {
+    "title": "Semantic Entropy at Long-Form Generation Scale",
+    "slug": "semantic-entropy-long-form-scaling",
+    "status": "empirically-open",
+    "description": "Does semantic entropy detection survive paragraph-length outputs?"
+  },
+  {
+    "title": "Provable Attribution: Every Sentence Entailed by Cited Source",
+    "slug": "provable-sentence-level-source-entailment",
+    "status": "open",
+    "description": "Can generation guarantee each claim follows from citations?"
+  },
+  {
+    "title": "Retrieval Augmentation Does Not Eliminate Parametric Override",
+    "slug": "context-vs-parametric-knowledge-conflict",
+    "status": "open",
+    "description": "When does the model ignore correct retrieved evidence?"
+  },
+  {
+    "title": "Hallucination Under Irrelevant or Adversarial Retrieved Context",
+    "slug": "rag-robustness-to-distractor-passages",
+    "status": "empirically-open",
+    "description": "How much do distractor documents raise fabrication rates?"
+  },
+  {
+    "title": "Scaling Laws for Factual Recall Versus Parameter Count",
+    "slug": "factual-recall-scaling-law",
+    "status": "partially-solved",
+    "description": "How does factual accuracy scale with parameters and data?"
+  },
+  {
+    "title": "Fabricated Citations Persist After Targeted Finetuning",
+    "slug": "fabricated-citation-persistence",
+    "status": "empirically-open",
+    "description": "Can finetuning remove invented references without harming recall?"
+  },
+  {
+    "title": "Knowledge Editing Without Ripple-Effect Damage",
+    "slug": "knowledge-editing-ripple-effects",
+    "status": "open",
+    "description": "Do edits propagate to entailed facts without collateral corruption?"
+  },
+  {
+    "title": "Sequential Edit Capacity Before Model Collapse",
+    "slug": "sequential-knowledge-edit-capacity",
+    "status": "partially-solved",
+    "description": "How many edits can a model absorb before degrading?"
+  },
+  {
+    "title": "Unlearning a Fact Versus Suppressing Its Expression",
+    "slug": "unlearning-versus-suppression-distinction",
+    "status": "methodologically-blocked",
+    "description": "Is removed knowledge gone or merely hidden?"
+  },
+  {
+    "title": "Intrinsic Hallucination Floor from Next-Token Training Objective",
+    "slug": "intrinsic-hallucination-floor-lm-objective",
+    "status": "open",
+    "description": "Does the likelihood objective force a nonzero error rate?"
+  },
+  {
+    "title": "Calibration of Verbalized Confidence Versus Token Probability",
+    "slug": "verbalized-confidence-versus-logit-calibration",
+    "status": "partially-solved",
+    "description": "Are stated confidences better calibrated than internal probabilities?"
+  },
+  {
+    "title": "Hallucination Detection Transfer Across Model Families",
+    "slug": "detector-transfer-across-model-families",
+    "status": "empirically-open",
+    "description": "Do trained detectors transfer to unseen model families?"
+  },
+  {
+    "title": "LLM Judges Inherit the Hallucinations They Score",
+    "slug": "llm-judge-factuality-correlation-with-truth",
+    "status": "open",
+    "description": "Can a fallible judge reliably measure factual accuracy?"
+  },
+  {
+    "title": "Atomic Claim Decomposition Is Not Unique",
+    "slug": "atomic-claim-decomposition-nonuniqueness",
+    "status": "methodologically-blocked",
+    "description": "Different decompositions yield different factuality scores for identical text."
+  },
+  {
+    "title": "Factuality of Multi-Hop Compositions of Known Facts",
+    "slug": "multi-hop-composition-of-known-facts",
+    "status": "open",
+    "description": "Why do models fail to compose facts they individually know?"
+  },
+  {
+    "title": "The Reversal Curse Beyond Surface Symmetry",
+    "slug": "reversal-curse-mechanism",
+    "status": "partially-solved",
+    "description": "Why does A-is-B not yield B-is-A?"
+  },
+  {
+    "title": "Hallucination Amplification Under Synthetic-Data Training Loops",
+    "slug": "hallucination-amplification-model-collapse",
+    "status": "empirically-open",
+    "description": "Do model-generated corpora compound factual error over generations?"
+  },
+  {
+    "title": "Conformal Guarantees for Long-Form Factual Output",
+    "slug": "conformal-factuality-long-form",
+    "status": "partially-solved",
+    "description": "Can conformal prediction bound errors in free-form text?"
+  },
+  {
+    "title": "Constrained Decoding That Provably Excludes Unsupported Entities",
+    "slug": "decoding-time-entity-grounding-guarantee",
+    "status": "solved-but-impractical",
+    "description": "Can decoding forbid entities absent from the source?"
+  },
+  {
+    "title": "Detecting Hallucination Before the Token Is Emitted",
+    "slug": "pre-generation-hallucination-prediction",
+    "status": "empirically-open",
+    "description": "Do hidden states predict hallucination prior to decoding?"
+  },
+  {
+    "title": "Sycophancy Versus Factual Correction Under User Pushback",
+    "slug": "sycophantic-retraction-of-correct-answers",
+    "status": "open",
+    "description": "Why do models abandon correct answers when challenged?"
+  },
+  {
+    "title": "Uncertainty Attribution: Aleatoric Versus Epistemic in LLMs",
+    "slug": "aleatoric-epistemic-decomposition-llm",
+    "status": "methodologically-blocked",
+    "description": "Can LLM uncertainty be split into knowledge versus ambiguity?"
+  },
+  {
+    "title": "Cross-Lingual Consistency of Factual Assertions",
+    "slug": "cross-lingual-factual-consistency",
+    "status": "empirically-open",
+    "description": "Do models assert contradictory facts in different languages?"
+  },
+  {
+    "title": "Temporal Staleness Detection Without an External Clock",
+    "slug": "temporal-staleness-self-detection",
+    "status": "open",
+    "description": "Can a model know its facts have expired?"
+  },
+  {
+    "title": "Object Hallucination in Vision-Language Models Beyond Frequency Priors",
+    "slug": "vlm-object-hallucination-beyond-priors",
+    "status": "partially-solved",
+    "description": "Is visual hallucination reducible to language-prior co-occurrence bias?"
+  },
+  {
+    "title": "Grounding Speech and Audio Transcription Hallucinations",
+    "slug": "asr-hallucination-under-silence",
+    "status": "empirically-open",
+    "description": "Why do ASR models fabricate text from silence?"
+  },
+  {
+    "title": "Tool-Use Does Not Guarantee Faithful Result Reporting",
+    "slug": "tool-output-misreporting",
+    "status": "open",
+    "description": "Do agents accurately report what tools returned?"
+  },
+  {
+    "title": "Hallucination in Code: Nonexistent APIs and Package Slopsquatting",
+    "slug": "nonexistent-api-hallucination-code",
+    "status": "empirically-open",
+    "description": "How predictable are invented library and function names?"
+  },
+  {
+    "title": "Contamination-Free Measurement of Factual Benchmarks",
+    "slug": "contamination-free-factuality-evaluation",
+    "status": "methodologically-blocked",
+    "description": "Can factuality scores be separated from benchmark leakage?"
+  },
+  {
+    "title": "Does Longer Reasoning Reduce or Increase Fabrication",
+    "slug": "reasoning-length-versus-fabrication-rate",
+    "status": "empirically-open",
+    "description": "Does extended test-time reasoning trade accuracy for invented steps?"
+  },
+  {
+    "title": "Entity-Level Knowledge Boundary Self-Knowledge",
+    "slug": "model-self-knowledge-of-knowledge-boundary",
+    "status": "open",
+    "description": "Can a model reliably enumerate what it does not know?"
+  },
+  {
+    "title": "Hallucination Rate Under Quantization and Distillation",
+    "slug": "quantization-effect-on-factual-recall",
+    "status": "empirically-open",
+    "description": "Does compression damage rare facts more than common ones?"
+  },
+  {
+    "title": "Abstention Cost Curves: Optimal Trade-off Between Silence and Error",
+    "slug": "optimal-abstention-error-tradeoff-curve",
+    "status": "open",
+    "description": "What is the achievable frontier between abstaining and being wrong?"
+  }
+]

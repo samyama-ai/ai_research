@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Anisotropy and the Narrow Cone Effect in Contextual Embeddings",
+    "slug": "anisotropy-narrow-cone-contextual-embeddings",
+    "status": "open",
+    "description": "Why contextual embeddings occupy a narrow cone, and whether it hurts."
+  },
+  {
+    "title": "Linear Representation Hypothesis Beyond Curated Concepts",
+    "slug": "linear-representation-hypothesis-scope",
+    "status": "empirically-open",
+    "description": "Which features are linearly encoded and which are irreducibly nonlinear."
+  },
+  {
+    "title": "Superposition Capacity Bounds for Realistic Feature Distributions",
+    "slug": "superposition-capacity-bounds",
+    "status": "partially-solved",
+    "description": "How many sparse features fit in n dimensions provably."
+  },
+  {
+    "title": "Identifiability of Sparse Autoencoder Dictionaries",
+    "slug": "sae-dictionary-identifiability",
+    "status": "open",
+    "description": "Whether SAE features recover unique ground-truth model features."
+  },
+  {
+    "title": "Feature Splitting Versus True Feature Discovery in SAEs",
+    "slug": "sae-feature-splitting-vs-discovery",
+    "status": "methodologically-blocked",
+    "description": "Distinguishing genuine features from width-induced fragmentation of one feature."
+  },
+  {
+    "title": "Compute-Optimal Embedding Dimension Scaling Law",
+    "slug": "compute-optimal-embedding-dimension",
+    "status": "empirically-open",
+    "description": "Optimal embedding width as a function of training compute."
+  },
+  {
+    "title": "Intrinsic Dimension of Natural Language Representation Manifolds",
+    "slug": "intrinsic-dimension-language-manifolds",
+    "status": "methodologically-blocked",
+    "description": "Estimating true manifold dimension of text representations reliably."
+  },
+  {
+    "title": "Platonic Representation Convergence Across Modalities",
+    "slug": "platonic-representation-convergence",
+    "status": "empirically-open",
+    "description": "Whether independently trained models converge to one shared geometry."
+  },
+  {
+    "title": "Unsupervised Cross-Model Embedding Translation Without Paired Data",
+    "slug": "unsupervised-embedding-space-translation",
+    "status": "partially-solved",
+    "description": "Aligning two embedding spaces with no correspondence supervision."
+  },
+  {
+    "title": "Embedding Inversion and the Limits of Text Recovery",
+    "slug": "embedding-inversion-text-recovery-limits",
+    "status": "open",
+    "description": "How much source text an embedding provably leaks."
+  },
+  {
+    "title": "Information-Theoretic Lower Bound on Retrieval Embedding Size",
+    "slug": "retrieval-embedding-size-lower-bound",
+    "status": "open",
+    "description": "Minimum vector dimension needed for a given corpus recall."
+  },
+  {
+    "title": "Single-Vector Retrieval Expressivity Ceiling",
+    "slug": "single-vector-retrieval-expressivity-ceiling",
+    "status": "partially-solved",
+    "description": "Which query-document relevance sets a single vector cannot represent."
+  },
+  {
+    "title": "Matryoshka Truncation Optimality",
+    "slug": "matryoshka-truncation-optimality",
+    "status": "empirically-open",
+    "description": "Whether nested embeddings lose nothing versus dimension-specific training."
+  },
+  {
+    "title": "Contrastive Learning Negative Sampling Optimality",
+    "slug": "contrastive-negative-sampling-optimality",
+    "status": "open",
+    "description": "The optimal negative distribution for a fixed compute budget."
+  },
+  {
+    "title": "Dimensional Collapse in Self-Supervised Representations",
+    "slug": "dimensional-collapse-self-supervised",
+    "status": "partially-solved",
+    "description": "Why non-contrastive objectives avoid collapse and when they fail."
+  },
+  {
+    "title": "Uniformity-Alignment Tradeoff Beyond the Hypersphere",
+    "slug": "uniformity-alignment-tradeoff-limits",
+    "status": "open",
+    "description": "Whether uniformity and alignment fully predict downstream embedding quality."
+  },
+  {
+    "title": "Tokenizer-Induced Representation Bottlenecks",
+    "slug": "tokenizer-induced-representation-bottleneck",
+    "status": "empirically-open",
+    "description": "How much tokenization choice caps achievable representation quality."
+  },
+  {
+    "title": "Byte-Level Versus Subword Representation Equivalence",
+    "slug": "byte-level-vs-subword-equivalence",
+    "status": "empirically-open",
+    "description": "Whether byte models match subword models at equal compute."
+  },
+  {
+    "title": "Embedding Space Geometry of Negation and Antonymy",
+    "slug": "negation-antonymy-embedding-geometry",
+    "status": "open",
+    "description": "Why embeddings fail to separate a sentence from its negation."
+  },
+  {
+    "title": "Hyperbolic Embeddings for Real Hierarchies at Scale",
+    "slug": "hyperbolic-embeddings-at-scale",
+    "status": "partially-solved",
+    "description": "Whether curved spaces beat Euclidean ones on real hierarchical data."
+  },
+  {
+    "title": "Numerical Stability Limits of Low-Curvature Manifold Embeddings",
+    "slug": "hyperbolic-numerical-precision-limits",
+    "status": "solved-but-impractical",
+    "description": "Float precision destroys hyperbolic gains at useful embedding depths."
+  },
+  {
+    "title": "Provable Guarantees for Binary and Product Quantized Embeddings",
+    "slug": "quantized-embedding-recall-guarantees",
+    "status": "partially-solved",
+    "description": "Recall bounds for compressed vectors under realistic data distributions."
+  },
+  {
+    "title": "Approximate Nearest Neighbor Search Under Adversarial Queries",
+    "slug": "ann-search-adversarial-queries",
+    "status": "open",
+    "description": "Whether graph indices keep recall against worst-case query distributions."
+  },
+  {
+    "title": "Curse of Dimensionality Threshold for Practical Vector Search",
+    "slug": "dimensionality-threshold-vector-search",
+    "status": "open",
+    "description": "The dimension at which ANN indices lose to brute force."
+  },
+  {
+    "title": "Static Versus Contextual Embedding Gap for Lexical Tasks",
+    "slug": "static-vs-contextual-lexical-gap",
+    "status": "empirically-open",
+    "description": "Whether contextual models beat static vectors on word-level semantics."
+  },
+  {
+    "title": "Polysemy Resolution Capacity of a Single Vector",
+    "slug": "polysemy-capacity-single-vector",
+    "status": "open",
+    "description": "How many senses one vector can encode recoverably."
+  },
+  {
+    "title": "Universality of Sparse Features Across Independent Training Runs",
+    "slug": "sae-feature-universality-across-runs",
+    "status": "empirically-open",
+    "description": "Whether separate runs learn the same interpretable feature set."
+  },
+  {
+    "title": "Causal Sufficiency of Probing Directions",
+    "slug": "probe-direction-causal-sufficiency",
+    "status": "methodologically-blocked",
+    "description": "Whether a decodable direction is one the model actually uses."
+  },
+  {
+    "title": "Steering Vector Transfer Across Layers, Models and Scales",
+    "slug": "steering-vector-transfer",
+    "status": "empirically-open",
+    "description": "Whether concept directions transfer between models without refitting."
+  },
+  {
+    "title": "Concept Erasure Guarantees Against Nonlinear Adversaries",
+    "slug": "concept-erasure-nonlinear-guarantees",
+    "status": "partially-solved",
+    "description": "Removing an attribute so no nonlinear probe recovers it."
+  },
+  {
+    "title": "Compositionality of Vector Arithmetic in Modern Embeddings",
+    "slug": "vector-arithmetic-compositionality",
+    "status": "open",
+    "description": "Whether analogy arithmetic survives in large contextual embedding spaces."
+  },
+  {
+    "title": "Cross-Modal Alignment Gap in Contrastive Vision-Language Spaces",
+    "slug": "cross-modal-modality-gap",
+    "status": "open",
+    "description": "Why image and text embeddings stay in separate cones."
+  },
+  {
+    "title": "Embedding Drift and Backward Compatibility of Reindexed Corpora",
+    "slug": "backward-compatible-embedding-updates",
+    "status": "partially-solved",
+    "description": "Upgrading an encoder without reindexing the whole corpus."
+  },
+  {
+    "title": "Long-Context Pooling Without Information Loss",
+    "slug": "long-document-pooling-information-loss",
+    "status": "open",
+    "description": "Pooling long documents into one vector without losing retrievable detail."
+  },
+  {
+    "title": "Multilingual Representation Interference at Fixed Capacity",
+    "slug": "multilingual-capacity-interference",
+    "status": "empirically-open",
+    "description": "How added languages trade off against per-language representation quality."
+  },
+  {
+    "title": "Instruction-Conditioned Embeddings Versus Task-Specific Encoders",
+    "slug": "instruction-conditioned-embedding-generality",
+    "status": "empirically-open",
+    "description": "Whether one instructable encoder matches many specialized encoders."
+  },
+  {
+    "title": "Contamination-Free Measurement of Embedding Generalization",
+    "slug": "embedding-benchmark-contamination",
+    "status": "methodologically-blocked",
+    "description": "Measuring embedding quality without training-data overlap confounds."
+  },
+  {
+    "title": "Graph Embedding Expressivity Beyond Weisfeiler-Leman",
+    "slug": "graph-embedding-expressivity-beyond-wl",
+    "status": "partially-solved",
+    "description": "Practical embeddings that distinguish graphs WL tests cannot."
+  },
+  {
+    "title": "Positional Encoding Geometry and Length Extrapolation",
+    "slug": "positional-encoding-length-extrapolation",
+    "status": "open",
+    "description": "Which positional representation extrapolates past its training length."
+  },
+  {
+    "title": "Optimal Transport Cost as a Representation Similarity Measure",
+    "slug": "representation-similarity-measure-validity",
+    "status": "methodologically-blocked",
+    "description": "Which similarity metric correctly says two representations are the same."
+  }
+]

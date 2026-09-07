@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Superposition Capacity Bounds for Feature Recovery",
+    "slug": "superposition-capacity-bounds",
+    "status": "partially-solved",
+    "description": "How many features can a layer encode and still be recoverable?"
+  },
+  {
+    "title": "Sparse Autoencoder Feature Identifiability",
+    "slug": "sae-feature-identifiability",
+    "status": "open",
+    "description": "Do sparse autoencoders recover unique ground-truth model features?"
+  },
+  {
+    "title": "Ground-Truth Benchmark for Dictionary Learning on Real Models",
+    "slug": "dictionary-learning-ground-truth-benchmark",
+    "status": "methodologically-blocked",
+    "description": "No ground truth exists to score learned feature dictionaries."
+  },
+  {
+    "title": "Feature Absorption in Sparse Dictionaries",
+    "slug": "feature-absorption-sparse-dictionaries",
+    "status": "partially-solved",
+    "description": "Why do sparse features swallow their own hierarchical children?"
+  },
+  {
+    "title": "Scaling Laws for Sparse Autoencoder Reconstruction Quality",
+    "slug": "sae-scaling-laws",
+    "status": "empirically-open",
+    "description": "How does dictionary quality scale with width and compute?"
+  },
+  {
+    "title": "Downstream Task Utility of Interpretability Methods",
+    "slug": "interpretability-downstream-utility",
+    "status": "empirically-open",
+    "description": "Do interpretability tools beat baselines on real debugging tasks?"
+  },
+  {
+    "title": "Causal Faithfulness of Attribution Maps",
+    "slug": "attribution-map-faithfulness",
+    "status": "partially-solved",
+    "description": "Do saliency maps reflect the computation that produced the output?"
+  },
+  {
+    "title": "Chain-of-Thought Faithfulness Measurement",
+    "slug": "chain-of-thought-faithfulness",
+    "status": "methodologically-blocked",
+    "description": "Does stated reasoning cause the model's final answer?"
+  },
+  {
+    "title": "Circuit Discovery Completeness Criteria",
+    "slug": "circuit-completeness-criteria",
+    "status": "methodologically-blocked",
+    "description": "When is a discovered circuit complete rather than partial?"
+  },
+  {
+    "title": "Automated Circuit Discovery at Frontier Scale",
+    "slug": "automated-circuit-discovery-scale",
+    "status": "empirically-open",
+    "description": "Can circuit discovery run on hundred-billion-parameter models?"
+  },
+  {
+    "title": "Activation Patching Distribution Choice",
+    "slug": "activation-patching-distribution",
+    "status": "open",
+    "description": "Which counterfactual distribution makes patching results valid?"
+  },
+  {
+    "title": "Off-Distribution Artifacts from Ablation Interventions",
+    "slug": "ablation-off-distribution-artifacts",
+    "status": "partially-solved",
+    "description": "Do ablations measure importance or just distribution shift?"
+  },
+  {
+    "title": "Linear Representation Hypothesis Scope",
+    "slug": "linear-representation-hypothesis-scope",
+    "status": "open",
+    "description": "Which concepts are linearly encoded and which are not?"
+  },
+  {
+    "title": "Nonlinear and Multi-Dimensional Feature Geometry",
+    "slug": "multidimensional-feature-geometry",
+    "status": "open",
+    "description": "Do irreducibly multi-dimensional features exist in language models?"
+  },
+  {
+    "title": "Universality of Circuits Across Model Seeds",
+    "slug": "circuit-universality-across-seeds",
+    "status": "empirically-open",
+    "description": "Do independently trained models learn the same circuits?"
+  },
+  {
+    "title": "Polysemanticity Without Superposition",
+    "slug": "polysemanticity-without-superposition",
+    "status": "open",
+    "description": "Can neurons be polysemantic for reasons other than superposition?"
+  },
+  {
+    "title": "Grokking and Representation Phase Transitions",
+    "slug": "grokking-representation-transitions",
+    "status": "partially-solved",
+    "description": "What internal change causes delayed generalization?"
+  },
+  {
+    "title": "Interpretability of Attention Heads Beyond Induction",
+    "slug": "attention-head-taxonomy",
+    "status": "open",
+    "description": "Is there a complete functional taxonomy of attention heads?"
+  },
+  {
+    "title": "Probing Versus Use: Encoded but Unused Information",
+    "slug": "probing-encoded-versus-used",
+    "status": "partially-solved",
+    "description": "Does a decodable probe imply the model uses that information?"
+  },
+  {
+    "title": "Selectivity Controls for Probing Classifiers",
+    "slug": "probing-selectivity-controls",
+    "status": "partially-solved",
+    "description": "How to separate probe capacity from representation content?"
+  },
+  {
+    "title": "Steering Vector Side Effects and Specificity",
+    "slug": "steering-vector-specificity",
+    "status": "empirically-open",
+    "description": "Do activation steering edits change only the targeted behavior?"
+  },
+  {
+    "title": "Locality of Factual Knowledge in Transformers",
+    "slug": "factual-knowledge-locality",
+    "status": "open",
+    "description": "Does localization of a fact predict where editing works?"
+  },
+  {
+    "title": "Ripple Effects and Consistency of Model Editing",
+    "slug": "model-editing-ripple-effects",
+    "status": "open",
+    "description": "Do knowledge edits propagate to logically entailed facts?"
+  },
+  {
+    "title": "Sequential Edit Degradation Limits",
+    "slug": "sequential-edit-degradation",
+    "status": "empirically-open",
+    "description": "How many edits can a model absorb before collapsing?"
+  },
+  {
+    "title": "Introspective Self-Report Accuracy",
+    "slug": "introspective-self-report-accuracy",
+    "status": "open",
+    "description": "Can models accurately report their own internal states?"
+  },
+  {
+    "title": "Detecting Deceptive or Sandbagging Behavior from Internals",
+    "slug": "deception-detection-from-internals",
+    "status": "open",
+    "description": "Can internal probes detect intentional underperformance?"
+  },
+  {
+    "title": "Interpretability-Based Backdoor Detection Without Trigger Access",
+    "slug": "backdoor-detection-without-triggers",
+    "status": "open",
+    "description": "Can internals reveal a backdoor when the trigger is unknown?"
+  },
+  {
+    "title": "Automated Interpretability Explanation Scoring",
+    "slug": "auto-interpretability-explanation-scoring",
+    "status": "methodologically-blocked",
+    "description": "How to score natural-language explanations of neuron behavior?"
+  },
+  {
+    "title": "Interpretability of Reasoning in Latent-Space Models",
+    "slug": "latent-space-reasoning-interpretability",
+    "status": "open",
+    "description": "How to read reasoning that never surfaces as tokens?"
+  },
+  {
+    "title": "Cross-Layer Feature Tracking and Residual Stream Identity",
+    "slug": "cross-layer-feature-tracking",
+    "status": "open",
+    "description": "Is a feature at layer k the same feature at layer k+n?"
+  },
+  {
+    "title": "Transcoders and Faithful MLP Replacement",
+    "slug": "transcoder-mlp-replacement",
+    "status": "partially-solved",
+    "description": "Can sparse transcoders replace MLPs without changing behavior?"
+  },
+  {
+    "title": "Attention Superposition and Head Decomposition",
+    "slug": "attention-superposition",
+    "status": "open",
+    "description": "Are attention heads themselves superposed computational units?"
+  },
+  {
+    "title": "Worst-Case Guarantees from Mechanistic Explanations",
+    "slug": "mechanistic-proof-guarantees",
+    "status": "partially-solved",
+    "description": "Can circuit-level explanations yield provable behavioral bounds?"
+  },
+  {
+    "title": "Compression Cost of Interpretable Explanations",
+    "slug": "explanation-compression-cost",
+    "status": "open",
+    "description": "What description length does a faithful model explanation require?"
+  },
+  {
+    "title": "Interpretability Under Adversarial Model Training",
+    "slug": "interpretability-adversarial-obfuscation",
+    "status": "empirically-open",
+    "description": "Can a model be trained to defeat its own interpretability tools?"
+  },
+  {
+    "title": "Feature Emergence Timing During Pretraining",
+    "slug": "feature-emergence-timing",
+    "status": "empirically-open",
+    "description": "When during training do specific interpretable features appear?"
+  },
+  {
+    "title": "Interpretability of Reinforcement-Learning Fine-Tuning Changes",
+    "slug": "rlhf-internal-change-localization",
+    "status": "open",
+    "description": "What does preference fine-tuning actually change inside the model?"
+  },
+  {
+    "title": "Cross-Modal Feature Alignment in Multimodal Models",
+    "slug": "cross-modal-feature-alignment",
+    "status": "open",
+    "description": "Do vision and text share the same internal concept directions?"
+  },
+  {
+    "title": "Sparse Autoencoder Robustness to Distribution Shift",
+    "slug": "sae-distribution-shift-robustness",
+    "status": "empirically-open",
+    "description": "Do learned dictionaries transfer off their training distribution?"
+  },
+  {
+    "title": "Minimal Sufficient Explanation for a Single Model Output",
+    "slug": "minimal-sufficient-output-explanation",
+    "status": "solved-but-impractical",
+    "description": "Finding the smallest causally sufficient subcircuit is intractable."
+  }
+]
