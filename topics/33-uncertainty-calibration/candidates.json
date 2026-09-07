@@ -1,242 +1,242 @@
 [
   {
-    "title": "Distribution-Free Conditional Coverage",
+    "title": "Distribution-Free Conditional Coverage Impossibility",
     "slug": "distribution-free-conditional-coverage",
     "status": "partially-solved",
-    "description": "Exact feature-conditional coverage is impossible without assumptions; how close can we get?"
+    "description": "Can useful conditional coverage be achieved without distributional assumptions?"
   },
   {
-    "title": "Calibration Error Estimation Without Binning",
-    "slug": "calibration-error-estimation-without-binning",
+    "title": "Calibration Error Estimation from Finite Samples",
+    "slug": "calibration-error-finite-sample-estimation",
     "status": "methodologically-blocked",
-    "description": "No consistent low-variance estimator of true calibration error exists."
+    "description": "No consistent low-bias estimator exists for true calibration error."
   },
   {
-    "title": "Sample Complexity of Calibration Testing",
-    "slug": "sample-complexity-calibration-testing",
+    "title": "Binning-Free ECE Estimators with Provable Rates",
+    "slug": "binning-free-ece-estimators",
     "status": "partially-solved",
-    "description": "How many samples decide whether a predictor is calibrated?"
+    "description": "Which continuous calibration estimators have provable convergence rates?"
   },
   {
-    "title": "Calibration Under Distribution Shift",
-    "slug": "calibration-under-distribution-shift",
+    "title": "Calibration Under Distribution Shift Without Target Labels",
+    "slug": "calibration-under-shift-unlabeled",
     "status": "open",
-    "description": "No method guarantees calibration when test distribution differs from training."
+    "description": "Can models recalibrate on shifted data without target labels?"
   },
   {
-    "title": "Multicalibration Sample and Compute Complexity",
-    "slug": "multicalibration-complexity",
+    "title": "Multicalibration Sample Complexity for Rich Group Families",
+    "slug": "multicalibration-sample-complexity",
     "status": "partially-solved",
-    "description": "Cost of multicalibration over rich subgroup families remains unresolved."
+    "description": "How many samples does multicalibration need for expressive group classes?"
   },
   {
-    "title": "Verbalized Confidence Versus Internal Probability",
-    "slug": "verbalized-confidence-versus-internal-probability",
+    "title": "Calibration Versus Accuracy Trade-off Frontier",
+    "slug": "calibration-accuracy-tradeoff-frontier",
+    "status": "open",
+    "description": "Is there a fundamental accuracy cost to perfect calibration?"
+  },
+  {
+    "title": "Verbalized Confidence Faithfulness in Language Models",
+    "slug": "verbalized-confidence-faithfulness",
     "status": "empirically-open",
-    "description": "Do stated LLM confidences track model token probabilities at scale?"
+    "description": "Do stated confidences reflect internal model uncertainty states?"
   },
   {
-    "title": "Calibration of Long-Form Generation",
-    "slug": "calibration-long-form-generation",
+    "title": "Separating Aleatoric from Epistemic Uncertainty Identifiably",
+    "slug": "aleatoric-epistemic-identifiability",
     "status": "methodologically-blocked",
-    "description": "No accepted probability semantics for multi-claim free-text outputs."
+    "description": "Is the aleatoric-epistemic split identifiable from data alone?"
   },
   {
-    "title": "Semantic Entropy Scaling Limits",
-    "slug": "semantic-entropy-scaling-limits",
-    "status": "empirically-open",
-    "description": "Does meaning-clustered entropy detect hallucination at frontier scale?"
-  },
-  {
-    "title": "Aleatoric-Epistemic Decomposition Identifiability",
-    "slug": "aleatoric-epistemic-decomposition-identifiability",
-    "status": "methodologically-blocked",
-    "description": "The split of uncertainty into two parts is not identifiable."
-  },
-  {
-    "title": "Deep Ensembles Versus Exact Bayesian Posteriors",
+    "title": "Deep Ensembles Versus Bayesian Posteriors",
     "slug": "deep-ensembles-versus-bayesian-posteriors",
-    "status": "partially-solved",
-    "description": "Why ensembles beat approximate posteriors on uncertainty tasks is unexplained."
+    "status": "open",
+    "description": "Why do ensembles beat approximate Bayesian inference in deep networks?"
   },
   {
-    "title": "Cold Posterior Effect",
+    "title": "The Cold Posterior Effect Explanation",
     "slug": "cold-posterior-effect",
-    "status": "open",
-    "description": "Why tempered Bayesian neural posteriors outperform the true posterior."
+    "status": "partially-solved",
+    "description": "Why does tempering the Bayesian posterior improve predictive performance?"
   },
   {
-    "title": "Conformal Prediction Under Covariate Shift Without Density Ratios",
-    "slug": "conformal-covariate-shift-without-density-ratios",
-    "status": "open",
-    "description": "Valid conformal coverage when the likelihood ratio is unknown."
-  },
-  {
-    "title": "Efficient Full Conformal Prediction for Deep Networks",
-    "slug": "efficient-full-conformal-deep-networks",
-    "status": "solved-but-impractical",
-    "description": "Full conformal is valid but requires retraining per candidate label."
-  },
-  {
-    "title": "Optimal Conformal Score Functions",
-    "slug": "optimal-conformal-score-functions",
-    "status": "open",
-    "description": "Which nonconformity score minimizes set size at fixed coverage?"
-  },
-  {
-    "title": "Calibration Versus Accuracy Tradeoff Under Fixed Compute",
-    "slug": "calibration-accuracy-tradeoff-fixed-compute",
+    "title": "Scaling Laws for Calibration Error",
+    "slug": "scaling-laws-for-calibration",
     "status": "empirically-open",
-    "description": "Whether calibrating costs accuracy at matched training budget."
+    "description": "How does calibration error scale with parameters, data, compute?"
+  },
+  {
+    "title": "Calibration Damage from RLHF Alignment",
+    "slug": "rlhf-calibration-damage",
+    "status": "empirically-open",
+    "description": "Which alignment stage destroys pretrained model calibration, and why?"
+  },
+  {
+    "title": "Token-Level Versus Claim-Level Uncertainty Aggregation",
+    "slug": "token-to-claim-uncertainty-aggregation",
+    "status": "open",
+    "description": "How to aggregate token probabilities into claim-level confidence correctly?"
+  },
+  {
+    "title": "Semantic Entropy Estimation Cost",
+    "slug": "semantic-entropy-estimation-cost",
+    "status": "solved-but-impractical",
+    "description": "Semantic entropy needs many samples per query to estimate."
+  },
+  {
+    "title": "Conformal Prediction for Autoregressive Generation",
+    "slug": "conformal-prediction-autoregressive-generation",
+    "status": "open",
+    "description": "Can conformal guarantees cover unbounded free-form text outputs?"
+  },
+  {
+    "title": "Exchangeability Violation Bounds for Conformal Prediction",
+    "slug": "conformal-exchangeability-violation-bounds",
+    "status": "partially-solved",
+    "description": "How much coverage is lost when exchangeability fails?"
+  },
+  {
+    "title": "Online Conformal Prediction Under Adversarial Drift",
+    "slug": "online-conformal-adversarial-drift",
+    "status": "partially-solved",
+    "description": "Can adaptive conformal achieve coverage and small sets simultaneously?"
+  },
+  {
+    "title": "Calibration of Long-Horizon Agentic Task Success Predictions",
+    "slug": "agentic-task-success-calibration",
+    "status": "empirically-open",
+    "description": "Are agent self-estimates of multi-step task success calibrated?"
+  },
+  {
+    "title": "Selective Prediction Risk Control at Low Abstention Rates",
+    "slug": "selective-prediction-low-abstention",
+    "status": "open",
+    "description": "Can risk be controlled reliably in the extreme-selectivity regime?"
+  },
+  {
+    "title": "Calibration in the Overparameterized Interpolation Regime",
+    "slug": "calibration-overparameterized-interpolation",
+    "status": "open",
+    "description": "Why do interpolating networks become overconfident, and when?"
   },
   {
     "title": "Temperature Scaling Failure Under Class Imbalance",
     "slug": "temperature-scaling-class-imbalance",
     "status": "partially-solved",
-    "description": "Single-parameter scaling cannot fix per-class miscalibration in long tails."
+    "description": "Single-parameter scaling fails for rare classes; what replaces it?"
   },
   {
-    "title": "Calibration Scaling Laws",
-    "slug": "calibration-scaling-laws",
+    "title": "Calibration Transfer Across Prompt Formats",
+    "slug": "calibration-transfer-across-prompts",
     "status": "empirically-open",
-    "description": "Does calibration error follow a predictable power law in scale?"
+    "description": "Does a calibration map fit on one prompt transfer?"
   },
   {
-    "title": "RLHF-Induced Confidence Collapse",
-    "slug": "rlhf-induced-confidence-collapse",
-    "status": "partially-solved",
-    "description": "Why preference tuning destroys pretrained model calibration."
+    "title": "Out-of-Distribution Detection Without a Reference Distribution",
+    "slug": "ood-detection-without-reference",
+    "status": "methodologically-blocked",
+    "description": "Out-of-distribution is undefined absent a specified reference distribution."
   },
   {
-    "title": "Selective Prediction Risk Control at Low Abstention",
-    "slug": "selective-prediction-risk-control-low-abstention",
+    "title": "Uncertainty Quantification for Reward Models",
+    "slug": "reward-model-uncertainty",
     "status": "open",
-    "description": "Guaranteed risk bounds break down in the rare-abstention regime."
+    "description": "How to quantify and use reward model epistemic uncertainty?"
   },
   {
-    "title": "Out-of-Distribution Detection Impossibility Boundaries",
-    "slug": "ood-detection-impossibility-boundaries",
-    "status": "partially-solved",
-    "description": "Which shifts are provably undetectable from finite in-distribution data?"
-  },
-  {
-    "title": "Uncertainty Propagation Through Agent Tool Chains",
-    "slug": "uncertainty-propagation-agent-tool-chains",
+    "title": "Calibrated Uncertainty Under Label Noise and Disagreement",
+    "slug": "calibration-under-annotator-disagreement",
     "status": "open",
-    "description": "No calculus composes step confidences into trajectory-level reliability."
-  },
-  {
-    "title": "Calibration of Retrieval-Augmented Answers",
-    "slug": "calibration-retrieval-augmented-answers",
-    "status": "empirically-open",
-    "description": "Whether retrieved evidence improves or corrupts confidence estimates."
-  },
-  {
-    "title": "Epistemic Uncertainty From a Single Forward Pass",
-    "slug": "epistemic-uncertainty-single-forward-pass",
-    "status": "open",
-    "description": "Can one deterministic pass recover ensemble-quality epistemic uncertainty?"
-  },
-  {
-    "title": "Calibration Under Label Noise",
-    "slug": "calibration-under-label-noise",
-    "status": "partially-solved",
-    "description": "Recovering true-label calibration when observed labels are corrupted."
+    "description": "What is the calibration target when annotators genuinely disagree?"
   },
   {
     "title": "Proper Scoring Rules for Set-Valued and Structured Outputs",
     "slug": "proper-scoring-rules-structured-outputs",
     "status": "open",
-    "description": "Tractable strictly proper scores for exponentially large output spaces."
+    "description": "Which proper scoring rules exist for structured generative outputs?"
   },
   {
-    "title": "Decision-Theoretic Sufficiency of Calibration",
-    "slug": "decision-theoretic-sufficiency-calibration",
+    "title": "Decision-Theoretic Calibration Sufficiency",
+    "slug": "decision-calibration-sufficiency",
     "status": "partially-solved",
-    "description": "How much regret does approximate calibration actually cost decisions?"
+    "description": "What calibration notion suffices for all downstream decision losses?"
   },
   {
-    "title": "Online Calibration Against Adaptive Adversaries",
-    "slug": "online-calibration-adaptive-adversaries",
-    "status": "partially-solved",
-    "description": "Optimal calibration-error rates in adversarial sequential prediction."
-  },
-  {
-    "title": "Conformal Guarantees for Multi-Step Autoregressive Generation",
-    "slug": "conformal-multistep-autoregressive-generation",
+    "title": "Sharpness Maximization Subject to Calibration Constraints",
+    "slug": "sharpness-under-calibration-constraints",
     "status": "open",
-    "description": "Coverage guarantees compound badly across sequentially generated tokens."
-  },
-  {
-    "title": "Calibration of Reward Models",
-    "slug": "calibration-reward-models",
-    "status": "empirically-open",
-    "description": "Whether preference-model scores are calibrated probabilities of human preference."
-  },
-  {
-    "title": "LLM Judge Confidence Reliability",
-    "slug": "llm-judge-confidence-reliability",
-    "status": "empirically-open",
-    "description": "Do model-graded evaluation scores carry usable uncertainty estimates?"
-  },
-  {
-    "title": "Uncertainty Quantification Under Test-Time Compute Scaling",
-    "slug": "uncertainty-test-time-compute-scaling",
-    "status": "empirically-open",
-    "description": "How reasoning-token budget changes confidence quality is unmeasured."
-  },
-  {
-    "title": "Distinguishing Ambiguity From Ignorance in Model Refusals",
-    "slug": "ambiguity-versus-ignorance-refusals",
-    "status": "methodologically-blocked",
-    "description": "No measurement separates question ambiguity from model knowledge gaps."
-  },
-  {
-    "title": "Calibration Transfer Across Tasks and Domains",
-    "slug": "calibration-transfer-across-domains",
-    "status": "empirically-open",
-    "description": "Whether recalibration on one domain generalizes to unseen domains."
+    "description": "How to maximize sharpness while keeping exact calibration guarantees?"
   },
   {
     "title": "Post-Hoc Recalibration Sample Efficiency Lower Bounds",
-    "slug": "recalibration-sample-efficiency-lower-bounds",
-    "status": "open",
-    "description": "Minimum held-out data needed for a target calibration guarantee."
+    "slug": "recalibration-sample-efficiency-bounds",
+    "status": "partially-solved",
+    "description": "How much held-out data does reliable recalibration require?"
   },
   {
-    "title": "Group-Conditional Coverage Versus Efficiency Frontier",
-    "slug": "group-conditional-coverage-efficiency-frontier",
-    "status": "open",
-    "description": "Quantifying prediction-set inflation required for subgroup validity."
-  },
-  {
-    "title": "Calibration of Generative Model Likelihoods",
-    "slug": "calibration-generative-model-likelihoods",
-    "status": "open",
-    "description": "Why density estimates rank out-of-distribution inputs higher than training data."
-  },
-  {
-    "title": "Uncertainty in Learned Simulators and World Models",
-    "slug": "uncertainty-learned-world-models",
-    "status": "open",
-    "description": "Rollout-horizon error bars for learned dynamics remain uncalibrated."
-  },
-  {
-    "title": "Calibrated Confidence for Code and Formal Outputs",
-    "slug": "calibrated-confidence-code-outputs",
+    "title": "Calibration of Chain-of-Thought Reasoning Traces",
+    "slug": "chain-of-thought-calibration",
     "status": "empirically-open",
-    "description": "Predicting probability that generated code passes hidden tests."
+    "description": "Does explicit reasoning improve or degrade answer-probability calibration?"
   },
   {
-    "title": "Attacking and Certifying Calibration Robustness",
-    "slug": "certifying-calibration-robustness",
+    "title": "Detecting Confidently Wrong Hallucinations from Internal States",
+    "slug": "hallucination-detection-internal-states",
+    "status": "empirically-open",
+    "description": "Do activations linearly encode truthfulness beyond output probabilities?"
+  },
+  {
+    "title": "Uncertainty Propagation Through Multi-Model Pipelines",
+    "slug": "uncertainty-propagation-pipelines",
     "status": "open",
-    "description": "Certificates bounding calibration error under bounded input perturbation."
+    "description": "How does uncertainty compose across chained model components?"
   },
   {
-    "title": "Human-Aligned Uncertainty Communication Thresholds",
-    "slug": "human-aligned-uncertainty-communication",
+    "title": "Calibration of Diffusion Model Likelihoods",
+    "slug": "diffusion-model-likelihood-calibration",
+    "status": "open",
+    "description": "Are diffusion likelihood estimates calibrated for density-based decisions?"
+  },
+  {
+    "title": "Predictive Uncertainty Under Test-Time Compute Scaling",
+    "slug": "test-time-compute-uncertainty",
+    "status": "empirically-open",
+    "description": "How does extra inference compute change uncertainty estimate quality?"
+  },
+  {
+    "title": "Group-Conditional Calibration with Intersecting Attributes",
+    "slug": "intersectional-group-calibration",
+    "status": "partially-solved",
+    "description": "Can calibration hold simultaneously across intersecting demographic subgroups?"
+  },
+  {
+    "title": "Bayesian Neural Network Posterior Approximation Quality Metrics",
+    "slug": "bnn-posterior-approximation-quality",
     "status": "methodologically-blocked",
-    "description": "No validated mapping from model probabilities to trustworthy user-facing language."
+    "description": "No tractable measure of approximate posterior quality at scale."
+  },
+  {
+    "title": "Calibration Under Self-Training and Synthetic Data Loops",
+    "slug": "calibration-synthetic-data-loops",
+    "status": "empirically-open",
+    "description": "Does training on model outputs compound overconfidence over generations?"
+  },
+  {
+    "title": "Conformal Risk Control for Non-Monotone Losses",
+    "slug": "conformal-risk-nonmonotone-losses",
+    "status": "open",
+    "description": "Can risk control extend beyond monotone loss function families?"
+  },
+  {
+    "title": "Uncertainty Estimates That Survive Quantization and Distillation",
+    "slug": "uncertainty-under-compression",
+    "status": "empirically-open",
+    "description": "Do compressed models preserve their teacher's calibration properties?"
+  },
+  {
+    "title": "Elicitation of Second-Order Uncertainty from Models",
+    "slug": "second-order-uncertainty-elicitation",
+    "status": "methodologically-blocked",
+    "description": "Can models report calibrated uncertainty about their own confidence?"
   }
 ]

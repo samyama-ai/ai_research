@@ -1,236 +1,242 @@
 [
   {
-    "title": "Compute-Optimal Embedding Dimension Scaling",
+    "title": "Isotropy and the Anisotropy Bottleneck in Contextual Embeddings",
+    "slug": "anisotropy-bottleneck-contextual-embeddings",
+    "status": "open",
+    "description": "Does embedding anisotropy actually hurt downstream task performance?"
+  },
+  {
+    "title": "Compute-Optimal Embedding Dimension Scaling Law",
     "slug": "compute-optimal-embedding-dimension",
     "status": "empirically-open",
-    "description": "How should embedding width scale with model compute budget?"
+    "description": "What embedding width is optimal for a given compute budget?"
   },
   {
-    "title": "Linear Representation Hypothesis Falsification",
-    "slug": "linear-representation-hypothesis-falsification",
+    "title": "Provable Identifiability of Linear Concept Directions",
+    "slug": "identifiability-linear-concept-directions",
+    "status": "open",
+    "description": "When are concept directions recoverable uniquely from representations?"
+  },
+  {
+    "title": "The Linear Representation Hypothesis Beyond Toy Settings",
+    "slug": "linear-representation-hypothesis-scope",
+    "status": "open",
+    "description": "Which concepts are genuinely linearly encoded in large models?"
+  },
+  {
+    "title": "Superposition Capacity Limits for Sparse Features",
+    "slug": "superposition-capacity-limits",
+    "status": "partially-solved",
+    "description": "How many sparse features fit in d dimensions with bounded interference?"
+  },
+  {
+    "title": "Sparse Autoencoder Feature Ground Truth Validation",
+    "slug": "sae-feature-ground-truth",
     "status": "methodologically-blocked",
-    "description": "Is there a test distinguishing linear from nonlinear feature encoding?"
+    "description": "No ground truth exists to validate sparse autoencoder features."
   },
   {
-    "title": "Superposition Capacity Bounds for Real Networks",
-    "slug": "superposition-capacity-bounds",
-    "status": "partially-solved",
-    "description": "How many features can one layer store without interference?"
-  },
-  {
-    "title": "Identifiability of Sparse Autoencoder Feature Dictionaries",
-    "slug": "sae-dictionary-identifiability",
+    "title": "Feature Splitting versus True Feature Discovery in SAEs",
+    "slug": "sae-feature-splitting",
     "status": "open",
-    "description": "Do sparse autoencoders recover unique ground-truth features?"
+    "description": "Are wider dictionaries finding new features or splitting old ones?"
   },
   {
-    "title": "Anisotropy and the Narrow Cone Effect",
-    "slug": "embedding-anisotropy-narrow-cone",
+    "title": "Universality of Representations Across Independently Trained Models",
+    "slug": "representation-universality-across-models",
+    "status": "empirically-open",
+    "description": "Do independently trained models converge to the same representations?"
+  },
+  {
+    "title": "Zero-Shot Model Stitching Without Paired Anchors",
+    "slug": "zero-shot-model-stitching",
+    "status": "open",
+    "description": "Can two models be aligned without any paired data?"
+  },
+  {
+    "title": "Unsupervised Latent Space Translation Guarantees",
+    "slug": "unsupervised-latent-translation-guarantees",
     "status": "partially-solved",
-    "description": "Why do contextual embeddings occupy a narrow cone?"
+    "description": "When is unpaired embedding space translation provably correct?"
   },
   {
-    "title": "Intrinsic Dimension of Natural Language Representations",
-    "slug": "intrinsic-dimension-language-representations",
+    "title": "Intrinsic Dimension Estimation for High-Dimensional Neural Representations",
+    "slug": "intrinsic-dimension-estimation-representations",
     "status": "methodologically-blocked",
-    "description": "What is the true intrinsic dimension of text embeddings?"
-  },
-  {
-    "title": "Platonic Representation Convergence",
-    "slug": "platonic-representation-convergence",
-    "status": "empirically-open",
-    "description": "Do independently trained models converge to one representation?"
-  },
-  {
-    "title": "Model Stitching Without Retraining",
-    "slug": "model-stitching-without-retraining",
-    "status": "open",
-    "description": "When can layers of different models be swapped directly?"
-  },
-  {
-    "title": "Relative Representations for Zero-Shot Model Alignment",
-    "slug": "relative-representations-zero-shot-alignment",
-    "status": "partially-solved",
-    "description": "Can anchor-based coordinates make embedding spaces universally comparable?"
-  },
-  {
-    "title": "Unsupervised Embedding Space Translation",
-    "slug": "unsupervised-embedding-translation",
-    "status": "empirically-open",
-    "description": "Can two embedding spaces be aligned without paired data?"
-  },
-  {
-    "title": "Embedding Inversion and Text Recoverability Limits",
-    "slug": "embedding-inversion-limits",
-    "status": "open",
-    "description": "How much source text is recoverable from a single vector?"
+    "description": "Intrinsic dimension estimators disagree badly on neural embeddings."
   },
   {
     "title": "Matryoshka Truncation Optimality",
     "slug": "matryoshka-truncation-optimality",
     "status": "empirically-open",
-    "description": "Are nested embeddings Pareto-optimal against dimension-specific training?"
+    "description": "Do nested embeddings lose accuracy versus dimension-matched dedicated models?"
   },
   {
-    "title": "Binary and Quantized Embedding Fidelity Floor",
-    "slug": "quantized-embedding-fidelity-floor",
-    "status": "partially-solved",
-    "description": "What retrieval loss is unavoidable at one bit per dimension?"
-  },
-  {
-    "title": "Single-Vector Retrieval Capacity Limit",
-    "slug": "single-vector-retrieval-capacity",
-    "status": "partially-solved",
-    "description": "How many documents can one dimension-d vector index rank correctly?"
-  },
-  {
-    "title": "Late Interaction Versus Dense Vectors Asymptotics",
-    "slug": "late-interaction-versus-dense-asymptotics",
-    "status": "empirically-open",
-    "description": "Does multi-vector retrieval retain advantage at very large scale?"
-  },
-  {
-    "title": "Contrastive Negative Sampling Optimality",
-    "slug": "contrastive-negative-sampling-optimality",
+    "title": "Embedding Inversion and the Privacy Limits of Vector Databases",
+    "slug": "embedding-inversion-privacy-limits",
     "status": "open",
-    "description": "What negative distribution maximizes downstream retrieval quality?"
+    "description": "How much text is provably recoverable from stored embeddings?"
   },
   {
-    "title": "Dimensional Collapse in Self-Supervised Learning",
-    "slug": "dimensional-collapse-ssl",
+    "title": "Contrastive Learning Sample Complexity Bounds",
+    "slug": "contrastive-sample-complexity",
     "status": "partially-solved",
-    "description": "Why do joint-embedding methods lose effective rank during training?"
+    "description": "How many negatives are needed for a target downstream error?"
+  },
+  {
+    "title": "Dimensional Collapse Prediction in Self-Supervised Learning",
+    "slug": "dimensional-collapse-prediction",
+    "status": "open",
+    "description": "Can collapse be predicted before training rather than diagnosed after?"
   },
   {
     "title": "Why Non-Contrastive Methods Avoid Collapse",
     "slug": "non-contrastive-collapse-avoidance",
     "status": "partially-solved",
-    "description": "What mechanism prevents collapse without explicit negatives?"
+    "description": "No full theory explains why BYOL-style methods do not collapse."
   },
   {
-    "title": "Uniformity-Alignment Tradeoff Beyond the Hypersphere",
-    "slug": "uniformity-alignment-tradeoff",
+    "title": "Optimal Negative Sampling Distribution for Retrieval Embeddings",
+    "slug": "optimal-negative-sampling-retrieval",
     "status": "open",
-    "description": "Do alignment and uniformity predict transfer on non-spherical geometries?"
+    "description": "What hard-negative distribution maximizes retrieval quality per compute?"
   },
   {
-    "title": "Hyperbolic Embeddings at Scale",
-    "slug": "hyperbolic-embeddings-at-scale",
+    "title": "Tokenizer Choice Effects on Multilingual Embedding Quality",
+    "slug": "tokenizer-multilingual-embedding-quality",
     "status": "empirically-open",
-    "description": "Do hyperbolic spaces beat Euclidean ones for large hierarchies?"
+    "description": "How much does tokenization alone cause cross-language representation gaps?"
   },
   {
-    "title": "Tokenizer Choice Effects on Representation Quality",
-    "slug": "tokenizer-effects-on-representations",
-    "status": "empirically-open",
-    "description": "How much does tokenization determine downstream representation geometry?"
+    "title": "Cross-Lingual Representation Alignment Without Parallel Data",
+    "slug": "cross-lingual-alignment-no-parallel-data",
+    "status": "partially-solved",
+    "description": "Fully unsupervised alignment fails for distant language pairs."
   },
   {
-    "title": "Untied Versus Tied Input-Output Embeddings",
-    "slug": "tied-versus-untied-embeddings",
-    "status": "empirically-open",
-    "description": "When does weight tying hurt large-model representation quality?"
-  },
-  {
-    "title": "Positional Encoding and Length Extrapolation Geometry",
-    "slug": "positional-encoding-extrapolation-geometry",
+    "title": "The Modality Gap in Joint Vision-Language Embedding Spaces",
+    "slug": "modality-gap-vision-language",
     "status": "open",
-    "description": "Which positional geometry supports extrapolation beyond training length?"
-  },
-  {
-    "title": "Softmax Bottleneck in Modern Language Models",
-    "slug": "softmax-bottleneck-modern-lms",
-    "status": "partially-solved",
-    "description": "Does low-rank output embedding still limit distribution expressiveness?"
-  },
-  {
-    "title": "Polysemantic Neurons Versus Polysemantic Directions",
-    "slug": "polysemantic-neurons-versus-directions",
-    "status": "open",
-    "description": "Is polysemanticity a basis artifact or an intrinsic property?"
-  },
-  {
-    "title": "Concept Erasure Guarantees Under Nonlinear Probes",
-    "slug": "nonlinear-concept-erasure",
-    "status": "partially-solved",
-    "description": "Can an attribute be provably removed from a representation?"
-  },
-  {
-    "title": "Probing Accuracy Versus Causal Use of Features",
-    "slug": "probing-versus-causal-feature-use",
-    "status": "methodologically-blocked",
-    "description": "Does probe accuracy imply the model uses that feature?"
-  },
-  {
-    "title": "Compositionality Measurement in Learned Embeddings",
-    "slug": "compositionality-measurement-embeddings",
-    "status": "methodologically-blocked",
-    "description": "How do we measure whether a representation composes systematically?"
-  },
-  {
-    "title": "Cross-Modal Embedding Gap in Contrastive Models",
-    "slug": "cross-modal-embedding-gap",
-    "status": "partially-solved",
     "description": "Why do image and text embeddings occupy disjoint cones?"
   },
   {
-    "title": "Binding Problem in Vision-Language Embeddings",
-    "slug": "binding-problem-vision-language-embeddings",
+    "title": "Compositionality Failures in Contrastive Vision-Language Embeddings",
+    "slug": "compositionality-failure-clip-embeddings",
     "status": "open",
-    "description": "Why do joint embeddings fail at attribute-object binding?"
+    "description": "Contrastive embeddings behave like bags of concepts, not compositions."
   },
   {
-    "title": "Graph Embedding Expressiveness Beyond Weisfeiler-Leman",
-    "slug": "graph-embedding-expressiveness-beyond-wl",
-    "status": "partially-solved",
-    "description": "Which graph embeddings exceed one-dimensional Weisfeiler-Leman power?"
-  },
-  {
-    "title": "Distance Distortion Lower Bounds for Learned Embeddings",
-    "slug": "distance-distortion-lower-bounds",
+    "title": "Binding Problem in Distributed Representations",
+    "slug": "binding-problem-distributed-representations",
     "status": "open",
-    "description": "What distortion is unavoidable when embedding real data manifolds?"
+    "description": "How do networks bind attributes to objects without dedicated slots?"
   },
   {
-    "title": "Representation Similarity Metric Validity",
+    "title": "Faithful Similarity Metrics for Representation Comparison",
     "slug": "representation-similarity-metric-validity",
     "status": "methodologically-blocked",
-    "description": "Which similarity measure correctly decides if representations match?"
+    "description": "CKA, SVCCA and RSA disagree on which representations match."
   },
   {
-    "title": "Embedding Drift Under Model Updates",
-    "slug": "embedding-drift-model-updates",
+    "title": "Cosine Similarity Validity in Learned Embedding Spaces",
+    "slug": "cosine-similarity-validity",
     "status": "open",
-    "description": "Can new encoders stay backward compatible without reindexing corpora?"
+    "description": "When does cosine similarity reflect the intended semantic relation?"
   },
   {
-    "title": "Task Vector Arithmetic Reliability",
-    "slug": "task-vector-arithmetic-reliability",
-    "status": "empirically-open",
-    "description": "When does weight-space task arithmetic predictably compose behaviors?"
+    "title": "Embedding Geometry of Hierarchies in Euclidean Space",
+    "slug": "hierarchy-embedding-euclidean-distortion",
+    "status": "partially-solved",
+    "description": "Trees need hyperbolic space, but the practical trade-off is unresolved."
   },
   {
-    "title": "Steering Vector Generalization Out of Distribution",
-    "slug": "steering-vector-generalization",
-    "status": "empirically-open",
-    "description": "Do activation steering directions transfer beyond their extraction distribution?"
-  },
-  {
-    "title": "Memorization Detection From Representation Geometry",
-    "slug": "memorization-detection-representation-geometry",
+    "title": "Curvature Selection for Mixed-Geometry Embeddings",
+    "slug": "curvature-selection-mixed-geometry",
     "status": "open",
-    "description": "Can geometry alone distinguish memorized from generalized examples?"
+    "description": "How to pick per-component curvature for heterogeneous relational data?"
   },
   {
-    "title": "Long-Document Embedding Aggregation",
-    "slug": "long-document-embedding-aggregation",
+    "title": "Numerical Stability Limits of Hyperbolic Embeddings",
+    "slug": "hyperbolic-embedding-numerical-stability",
+    "status": "solved-but-impractical",
+    "description": "Exact hyperbolic training needs precision costs that rule it out."
+  },
+  {
+    "title": "Positional Encoding Extrapolation Beyond Trained Context",
+    "slug": "positional-encoding-extrapolation",
+    "status": "open",
+    "description": "No positional scheme reliably generalizes far past training length."
+  },
+  {
+    "title": "Semantic Drift in Continuously Updated Embedding Indexes",
+    "slug": "semantic-drift-embedding-indexes",
     "status": "empirically-open",
-    "description": "How should long texts collapse into a single vector?"
+    "description": "How fast do production embedding indexes degrade under model updates?"
   },
   {
-    "title": "Instruction-Conditioned Embeddings and Task Specificity",
+    "title": "Backward-Compatible Embedding Model Upgrades",
+    "slug": "backward-compatible-embedding-upgrades",
+    "status": "partially-solved",
+    "description": "Upgrading an encoder without reindexing costs unquantified accuracy."
+  },
+  {
+    "title": "Approximate Nearest Neighbor Recall Under Adversarial Distributions",
+    "slug": "ann-recall-adversarial-distributions",
+    "status": "open",
+    "description": "ANN indexes lack recall guarantees on adversarial embedding distributions."
+  },
+  {
+    "title": "Quantization Floor for Embedding Retrieval Quality",
+    "slug": "embedding-quantization-floor",
+    "status": "empirically-open",
+    "description": "How few bits per dimension preserve retrieval accuracy?"
+  },
+  {
+    "title": "Whitening and Post-Hoc Transforms as Free Lunch",
+    "slug": "whitening-posthoc-embedding-transforms",
+    "status": "open",
+    "description": "When do post-hoc transforms help versus merely mask training defects?"
+  },
+  {
+    "title": "Instruction Conditioning versus Task-Specific Embedding Models",
     "slug": "instruction-conditioned-embeddings",
+    "status": "empirically-open",
+    "description": "Can one instructable encoder match many specialized encoders?"
+  },
+  {
+    "title": "Long-Document Embedding Without Chunking",
+    "slug": "long-document-embedding-without-chunking",
     "status": "open",
-    "description": "Can one encoder serve conflicting task-specific similarity notions?"
+    "description": "No single vector faithfully represents a very long document."
+  },
+  {
+    "title": "Information-Theoretic Limits of Fixed-Size Text Representations",
+    "slug": "fixed-size-representation-information-limits",
+    "status": "open",
+    "description": "What is the maximum information a d-dimensional vector can retrieve?"
+  },
+  {
+    "title": "Probing Classifier Validity as Evidence of Encoding",
+    "slug": "probing-classifier-validity",
+    "status": "methodologically-blocked",
+    "description": "Probe accuracy does not establish that a model uses the information."
+  },
+  {
+    "title": "Provable Concept Erasure from Representations",
+    "slug": "provable-concept-erasure",
+    "status": "partially-solved",
+    "description": "Linear erasure leaves nonlinearly recoverable concept information."
+  },
+  {
+    "title": "Memorization versus Generalization in Retrieval Embedding Spaces",
+    "slug": "memorization-vs-generalization-embeddings",
+    "status": "open",
+    "description": "How much retrieval success is training-set memorization, not generalization?"
+  },
+  {
+    "title": "Emergence Thresholds for Representation Structure During Training",
+    "slug": "representation-structure-emergence-thresholds",
+    "status": "empirically-open",
+    "description": "When during training do structured representations abruptly appear?"
   }
 ]

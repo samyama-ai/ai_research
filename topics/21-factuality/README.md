@@ -5,3 +5,6 @@ Topic `21-factuality` of the [AI Research catalog](../../README.md). See [TAXONO
 
 ## Problems Index
 
+* 🔴 [Abstention Without Accuracy Loss](./abstention-without-accuracy-loss.md)
+* 🔵 [Atomic Claim Decomposition Validity](./atomic-claim-decomposition-validity.md)
+* 🟡 [Intrinsic Hallucination Rate Lower Bound for Calibrated Generators](./calibration-hallucination-rate-lower-bound.md)

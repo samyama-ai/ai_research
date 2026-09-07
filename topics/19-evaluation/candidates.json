@@ -3,234 +3,240 @@
     "title": "Benchmark Contamination Detection Without Training Data Access",
     "slug": "contamination-detection-without-training-access",
     "status": "open",
-    "description": "Detect test set memorization given only black box model access."
+    "description": "Detecting test set leakage using only black-box model access."
   },
   {
-    "title": "Statistical Power of Small Benchmark Suites",
-    "slug": "statistical-power-small-benchmarks",
+    "title": "Statistical Significance for Single-Run LLM Benchmark Comparisons",
+    "slug": "significance-single-run-llm-benchmarks",
     "status": "partially-solved",
-    "description": "How many items are needed to separate close models reliably."
+    "description": "Valid error bars when each model is evaluated once."
   },
   {
-    "title": "Transitivity Violations in Pairwise Model Arenas",
-    "slug": "arena-transitivity-violations",
-    "status": "empirically-open",
-    "description": "Do human preference rankings admit consistent Elo style scores."
+    "title": "Position Bias Correction in LLM-as-Judge Pairwise Comparison",
+    "slug": "position-bias-llm-judge",
+    "status": "partially-solved",
+    "description": "Removing order effects from automated pairwise preference judging."
   },
   {
-    "title": "LLM Judge Self-Preference Bias Quantification",
-    "slug": "llm-judge-self-preference-bias",
+    "title": "Identifiability of Elo Ratings Under Non-Transitive Model Preferences",
+    "slug": "elo-nontransitivity-identifiability",
     "status": "open",
-    "description": "Isolate and correct judges favoring their own outputs."
+    "description": "Elo assumes transitivity that model matchups may violate."
   },
   {
-    "title": "Position Bias Correction in Pairwise Judging",
-    "slug": "position-bias-pairwise-judging",
-    "status": "partially-solved",
-    "description": "Debias order effects without doubling evaluation cost."
+    "title": "Construct Validity of Reasoning Benchmarks",
+    "slug": "construct-validity-reasoning-benchmarks",
+    "status": "methodologically-blocked",
+    "description": "Whether reasoning benchmarks measure reasoning rather than memorized patterns."
   },
   {
-    "title": "Benchmark Saturation Prediction",
+    "title": "Prompt-Sensitivity-Robust Benchmark Scoring",
+    "slug": "prompt-sensitivity-robust-scoring",
+    "status": "open",
+    "description": "Reporting scores invariant to arbitrary prompt formatting choices."
+  },
+  {
+    "title": "Optimal Item Selection for Benchmark Compression",
+    "slug": "benchmark-compression-item-selection",
+    "status": "empirically-open",
+    "description": "Choosing minimal item subsets preserving full-benchmark model rankings."
+  },
+  {
+    "title": "Saturation Prediction for New Benchmarks",
     "slug": "benchmark-saturation-prediction",
-    "status": "empirically-open",
-    "description": "Forecast when a benchmark ceiling will be reached."
+    "status": "open",
+    "description": "Forecasting when a new benchmark will become uninformative."
   },
   {
-    "title": "Construct Validity of Agentic Task Suites",
-    "slug": "construct-validity-agentic-benchmarks",
+    "title": "Measuring Agentic Task Success Beyond Binary Completion",
+    "slug": "agentic-partial-credit-metrics",
     "status": "methodologically-blocked",
-    "description": "Whether agent benchmarks measure the capability they name."
+    "description": "Defining partial credit for long-horizon agent trajectories."
   },
   {
-    "title": "Unbiased Estimation of pass@k Under Sampling Budgets",
-    "slug": "unbiased-pass-at-k-estimation",
-    "status": "partially-solved",
-    "description": "Variance-correct pass@k estimates at realistic sample counts."
-  },
-  {
-    "title": "Held-Out Task Generation That Preserves Difficulty",
-    "slug": "held-out-task-difficulty-preservation",
+    "title": "Reward Hacking Detection in Automated Evaluation Harnesses",
+    "slug": "reward-hacking-detection-eval-harness",
     "status": "open",
-    "description": "Auto-generate fresh items matched in difficulty to originals."
+    "description": "Detecting when agents exploit the grader rather than solve."
   },
   {
-    "title": "Prompt Sensitivity as a Confounder in Rankings",
-    "slug": "prompt-sensitivity-ranking-confound",
-    "status": "empirically-open",
-    "description": "How much model rank order depends on prompt formatting."
-  },
-  {
-    "title": "Measuring Capability Elicitation Gaps",
-    "slug": "capability-elicitation-gap-measurement",
-    "status": "methodologically-blocked",
-    "description": "Distinguish absent capability from failed elicitation in evals."
-  },
-  {
-    "title": "Scoring Rules for Free-Form Long-Form Generation",
-    "slug": "long-form-generation-scoring-rules",
-    "status": "open",
-    "description": "A proper scoring rule for open-ended text quality."
-  },
-  {
-    "title": "Reward Hacking Detection in Automated Benchmarks",
-    "slug": "reward-hacking-detection-benchmarks",
-    "status": "open",
-    "description": "Detect solutions that game the grader rather than solve."
-  },
-  {
-    "title": "Cross-Lingual Benchmark Equivalence",
+    "title": "Cross-Lingual Benchmark Equivalence After Translation",
     "slug": "cross-lingual-benchmark-equivalence",
+    "status": "open",
+    "description": "Whether translated benchmarks measure the same latent ability."
+  },
+  {
+    "title": "Human Baseline Estimation for Superhuman-Claimed Benchmarks",
+    "slug": "human-baseline-estimation-benchmarks",
     "status": "methodologically-blocked",
-    "description": "Whether translated benchmarks measure identical constructs across languages."
+    "description": "Establishing comparable human ceilings on AI benchmark tasks."
   },
   {
-    "title": "Calibration Metrics Robust to Binning Choices",
-    "slug": "binning-robust-calibration-metrics",
+    "title": "Inter-Annotator Disagreement as Signal Versus Noise",
+    "slug": "annotator-disagreement-signal-versus-noise",
+    "status": "open",
+    "description": "Separating legitimate label ambiguity from annotator error."
+  },
+  {
+    "title": "Self-Preference Bias in LLM Judges",
+    "slug": "self-preference-bias-llm-judges",
     "status": "partially-solved",
-    "description": "Estimate calibration error without binning-induced bias."
+    "description": "Judges favoring their own generations, and how to correct."
   },
   {
-    "title": "Evaluating Multi-Turn Interactive Agents Reproducibly",
-    "slug": "reproducible-multi-turn-agent-evaluation",
-    "status": "open",
-    "description": "Deterministic replay for stateful environments and human counterparties."
-  },
-  {
-    "title": "Item Response Theory for Model Benchmarks",
-    "slug": "item-response-theory-model-benchmarks",
+    "title": "Evaluation Metrics Robust to Answer Extraction Failures",
+    "slug": "answer-extraction-robust-metrics",
     "status": "empirically-open",
-    "description": "Do latent ability models fit model responses like humans."
+    "description": "Disentangling parsing failures from genuine model errors."
   },
   {
-    "title": "Contamination-Resistant Benchmark Design",
-    "slug": "contamination-resistant-benchmark-design",
-    "status": "open",
-    "description": "Benchmarks that survive public release without leakage decay."
-  },
-  {
-    "title": "Compute-Matched Comparison Protocols",
-    "slug": "compute-matched-comparison-protocols",
-    "status": "open",
-    "description": "Fair comparison when inference compute varies across systems."
-  },
-  {
-    "title": "Test-Time Compute Scaling Curves as Benchmark Axes",
-    "slug": "test-time-compute-benchmark-axes",
-    "status": "empirically-open",
-    "description": "Report accuracy as a function of inference budget."
-  },
-  {
-    "title": "Human Baseline Validity for Superhuman Claims",
-    "slug": "human-baseline-validity-superhuman-claims",
-    "status": "methodologically-blocked",
-    "description": "What human baseline justifies a superhuman capability claim."
-  },
-  {
-    "title": "Aggregation Across Heterogeneous Benchmark Subtasks",
-    "slug": "heterogeneous-subtask-aggregation",
-    "status": "open",
-    "description": "Principled weighting when subtasks differ in scale and difficulty."
-  },
-  {
-    "title": "Emergence as an Artifact of Discontinuous Metrics",
-    "slug": "emergence-metric-artifact",
+    "title": "Sample-Efficient Estimation of pass@k for Large k",
+    "slug": "sample-efficient-pass-at-k",
     "status": "partially-solved",
-    "description": "Whether sharp capability jumps survive smooth metric choices."
+    "description": "Estimating high-k pass rates without drawing k samples."
   },
   {
-    "title": "Label Noise Ceilings on Established Benchmarks",
-    "slug": "label-noise-ceilings-benchmarks",
+    "title": "Benchmark Difficulty Calibration via Item Response Theory at Scale",
+    "slug": "irt-benchmark-difficulty-calibration",
     "status": "empirically-open",
-    "description": "Estimate irreducible error from annotation errors per benchmark."
+    "description": "Fitting IRT ability parameters across models and benchmark items."
   },
   {
-    "title": "Adversarial Robustness Evaluation Without Attack Overfitting",
-    "slug": "robustness-eval-without-attack-overfitting",
+    "title": "Detecting Benchmark-Specific Overfitting from Public Leaderboards",
+    "slug": "leaderboard-overfitting-detection",
     "status": "open",
-    "description": "Measure robustness that generalizes beyond the tested attack."
+    "description": "Quantifying adaptive overfitting from repeated public leaderboard submissions."
   },
   {
-    "title": "Safety Evaluation Coverage Guarantees",
-    "slug": "safety-eval-coverage-guarantees",
+    "title": "Held-Out Validity of Safety Refusal Benchmarks",
+    "slug": "refusal-benchmark-held-out-validity",
     "status": "open",
-    "description": "Bound the risk of harms unrepresented in the test set."
+    "description": "Whether refusal benchmarks predict refusal on unseen harms."
+  },
+  {
+    "title": "Capability Elicitation Gap in Evaluation",
+    "slug": "capability-elicitation-gap",
+    "status": "open",
+    "description": "Measured capability depends on unknown elicitation effort ceiling."
+  },
+  {
+    "title": "Compute-Matched Comparison Protocols for Test-Time Scaling",
+    "slug": "compute-matched-test-time-scaling-eval",
+    "status": "open",
+    "description": "Fair comparison when models spend different inference compute."
+  },
+  {
+    "title": "Contamination-Free Benchmark Regeneration From Templates",
+    "slug": "template-regenerated-contamination-free-benchmarks",
+    "status": "empirically-open",
+    "description": "Whether procedurally regenerated items preserve original benchmark difficulty."
+  },
+  {
+    "title": "Multi-Turn Dialogue Evaluation Without Human Interlocutors",
+    "slug": "multi-turn-eval-simulated-users",
+    "status": "open",
+    "description": "Validity of simulated users as substitutes for humans."
+  },
+  {
+    "title": "Metric Gaming Resistance of Automatic Summarization Scores",
+    "slug": "summarization-metric-gaming-resistance",
+    "status": "open",
+    "description": "Whether summarization metrics resist adversarial optimization against them."
+  },
+  {
+    "title": "External Validity of Benchmark Scores for Deployment Outcomes",
+    "slug": "benchmark-to-deployment-external-validity",
+    "status": "empirically-open",
+    "description": "Whether benchmark gains predict real user task outcomes."
+  },
+  {
+    "title": "Evaluating Long-Context Models Beyond Needle Retrieval",
+    "slug": "long-context-eval-beyond-needle",
+    "status": "open",
+    "description": "Tasks that require genuine aggregation over full context."
+  },
+  {
+    "title": "Uncertainty Quantification for LLM-Judge Aggregate Scores",
+    "slug": "llm-judge-uncertainty-quantification",
+    "status": "partially-solved",
+    "description": "Confidence intervals that account for judge error correlation."
+  },
+  {
+    "title": "Cost of Verification for Open-Ended Generation Benchmarks",
+    "slug": "verification-cost-open-ended-benchmarks",
+    "status": "solved-but-impractical",
+    "description": "Expert grading is valid but too expensive to scale."
+  },
+  {
+    "title": "Distinguishing Memorization from Generalization on Code Benchmarks",
+    "slug": "memorization-versus-generalization-code-benchmarks",
+    "status": "open",
+    "description": "Separating recalled solutions from synthesized ones in code."
+  },
+  {
+    "title": "Test Suite Adequacy in Program Synthesis Benchmarks",
+    "slug": "test-suite-adequacy-program-synthesis",
+    "status": "partially-solved",
+    "description": "Weak unit tests accept incorrect generated programs."
+  },
+  {
+    "title": "Rank Stability Under Benchmark Resampling",
+    "slug": "rank-stability-benchmark-resampling",
+    "status": "empirically-open",
+    "description": "How leaderboard ranks change under bootstrap item resampling."
+  },
+  {
+    "title": "Evaluating Multimodal Models Without Language-Only Shortcuts",
+    "slug": "multimodal-eval-language-shortcut-removal",
+    "status": "open",
+    "description": "Ensuring visual questions cannot be answered from text alone."
   },
   {
     "title": "Sandbagging Detection in Capability Evaluations",
     "slug": "sandbagging-detection-capability-evals",
     "status": "open",
-    "description": "Detect deliberate underperformance during capability testing."
+    "description": "Detecting deliberate underperformance by models during evaluation."
   },
   {
-    "title": "Reproducibility of Inference Nondeterminism in Scores",
-    "slug": "inference-nondeterminism-score-reproducibility",
-    "status": "empirically-open",
-    "description": "How much benchmark scores move from batching and kernel nondeterminism."
-  },
-  {
-    "title": "External Validity of Code Benchmarks to Real Repositories",
-    "slug": "code-benchmark-external-validity",
-    "status": "empirically-open",
-    "description": "Whether benchmark gains transfer to real software maintenance work."
-  },
-  {
-    "title": "Cost of Verified Ground Truth for Expert Benchmarks",
-    "slug": "verified-ground-truth-cost-expert-benchmarks",
-    "status": "solved-but-impractical",
-    "description": "Expert-verified labels are correct but prohibitively expensive at scale."
-  },
-  {
-    "title": "Sample-Efficient Model Ranking via Adaptive Item Selection",
-    "slug": "adaptive-item-selection-model-ranking",
-    "status": "partially-solved",
-    "description": "Rank models correctly using far fewer benchmark items."
-  },
-  {
-    "title": "Judge-Human Agreement as a Sufficient Validity Criterion",
-    "slug": "judge-human-agreement-validity",
-    "status": "open",
-    "description": "Whether judge-human correlation guarantees valid model rankings."
-  },
-  {
-    "title": "Detecting Benchmark-Specific Fine-Tuning",
-    "slug": "detecting-benchmark-specific-finetuning",
-    "status": "open",
-    "description": "Identify training targeted at a benchmark's format or items."
-  },
-  {
-    "title": "Uncertainty Quantification for Leaderboard Rankings",
-    "slug": "leaderboard-ranking-uncertainty",
-    "status": "partially-solved",
-    "description": "Confidence intervals over ranks, not just scores."
-  },
-  {
-    "title": "Evaluating Retrieval-Augmented Systems Without Corpus Drift",
-    "slug": "rag-evaluation-corpus-drift",
-    "status": "open",
-    "description": "Stable RAG scores when the retrieval corpus changes over time."
-  },
-  {
-    "title": "Measuring Long-Context Use Beyond Needle Retrieval",
-    "slug": "long-context-beyond-needle",
-    "status": "open",
-    "description": "Tasks that require integrating information across the full context."
-  },
-  {
-    "title": "Multimodal Benchmark Shortcut Detection",
-    "slug": "multimodal-benchmark-shortcuts",
-    "status": "empirically-open",
-    "description": "How often vision questions are answerable from text alone."
-  },
-  {
-    "title": "Transfer of Evaluation Results Across Model Scales",
-    "slug": "eval-transfer-across-model-scales",
-    "status": "empirically-open",
-    "description": "Whether small-model eval conclusions predict large-model behavior."
-  },
-  {
-    "title": "Formal Guarantees for Dynamic Benchmark Generators",
-    "slug": "dynamic-benchmark-generator-guarantees",
+    "title": "Aggregation Rules for Multi-Benchmark Composite Scores",
+    "slug": "multi-benchmark-composite-aggregation",
     "status": "methodologically-blocked",
-    "description": "Prove generated instances share a fixed difficulty distribution."
+    "description": "No principled weighting for averaging heterogeneous benchmark scores."
+  },
+  {
+    "title": "Evaluation Under Distribution Shift Between Benchmark and Use",
+    "slug": "eval-under-benchmark-use-distribution-shift",
+    "status": "open",
+    "description": "Bounding score degradation when deployment distribution differs."
+  },
+  {
+    "title": "Reproducibility of Reported Benchmark Numbers Across Harnesses",
+    "slug": "cross-harness-benchmark-reproducibility",
+    "status": "empirically-open",
+    "description": "Same model and benchmark give different scores per harness."
+  },
+  {
+    "title": "Calibration Metrics Robust to Binning Choice",
+    "slug": "calibration-metrics-binning-robustness",
+    "status": "partially-solved",
+    "description": "Expected calibration error depends heavily on arbitrary binning."
+  },
+  {
+    "title": "Dynamic Adversarial Benchmarks That Do Not Drift",
+    "slug": "dynamic-adversarial-benchmark-drift",
+    "status": "open",
+    "description": "Keeping human-adversarial benchmarks comparable across collection rounds."
+  },
+  {
+    "title": "Attribution of Gains to Data Versus Architecture in Benchmark Deltas",
+    "slug": "benchmark-delta-attribution-data-versus-architecture",
+    "status": "empirically-open",
+    "description": "Ablating which change actually caused a benchmark improvement."
+  },
+  {
+    "title": "Evaluating Scientific Novelty of Model-Generated Research",
+    "slug": "evaluating-model-generated-research-novelty",
+    "status": "methodologically-blocked",
+    "description": "No operational measure of novelty for generated research output."
   }
 ]

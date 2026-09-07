@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Provable Certified Robustness Beyond Randomized Smoothing Radii",
+    "slug": "certified-robustness-beyond-smoothing-radii",
+    "status": "open",
+    "description": "Can certified radii exceed randomized smoothing limits without accuracy loss?"
+  },
+  {
+    "title": "Certified Robustness Under Semantic Transformations",
+    "slug": "certified-robustness-semantic-transformations",
+    "status": "partially-solved",
+    "description": "Certifying robustness to blur, weather, and pose changes."
+  },
+  {
+    "title": "The Robustness-Accuracy Tradeoff as a Law or Artifact",
+    "slug": "robustness-accuracy-tradeoff-law-or-artifact",
+    "status": "open",
+    "description": "Is adversarial training's clean accuracy drop fundamental or fixable?"
+  },
+  {
+    "title": "Robust Overfitting in Adversarial Training",
+    "slug": "robust-overfitting-adversarial-training",
+    "status": "open",
+    "description": "Why robust test error rises while robust train error falls."
+  },
+  {
+    "title": "Sample Complexity of Adversarially Robust Generalization",
+    "slug": "sample-complexity-robust-generalization",
+    "status": "partially-solved",
+    "description": "How many samples robust learning needs beyond standard learning."
+  },
+  {
+    "title": "Computational Hardness of Robust Learning",
+    "slug": "computational-hardness-robust-learning",
+    "status": "partially-solved",
+    "description": "Is robust learning computationally hard even when statistically possible?"
+  },
+  {
+    "title": "Adaptive Attack Evaluation Without Attacker Adaptation Bias",
+    "slug": "adaptive-attack-evaluation-bias",
+    "status": "methodologically-blocked",
+    "description": "Measuring true robustness when every defense evaluation depends on attack effort."
+  },
+  {
+    "title": "Transferability Bounds for Black-Box Adversarial Examples",
+    "slug": "transferability-bounds-black-box-attacks",
+    "status": "open",
+    "description": "Predicting when adversarial examples transfer across model families."
+  },
+  {
+    "title": "Jailbreak Robustness Under Unbounded Prompt Space",
+    "slug": "jailbreak-robustness-unbounded-prompt-space",
+    "status": "open",
+    "description": "No threat model bounds natural-language attacks on language models."
+  },
+  {
+    "title": "Certified Defenses for Autoregressive Language Model Outputs",
+    "slug": "certified-defenses-autoregressive-outputs",
+    "status": "open",
+    "description": "Certifying token-level output safety over unbounded generation."
+  },
+  {
+    "title": "Scaling Behavior of Adversarial Robustness with Model Size",
+    "slug": "scaling-laws-adversarial-robustness",
+    "status": "empirically-open",
+    "description": "Whether robustness improves predictably with parameters and data."
+  },
+  {
+    "title": "Sleeper Agent Backdoors Surviving Safety Training",
+    "slug": "sleeper-agent-backdoor-persistence",
+    "status": "empirically-open",
+    "description": "Do trigger backdoors survive RLHF at frontier scale?"
+  },
+  {
+    "title": "Detecting Data Poisoning Below the Poison Rate Floor",
+    "slug": "detecting-poisoning-below-rate-floor",
+    "status": "open",
+    "description": "Detecting poisons at fractions too small for statistical filters."
+  },
+  {
+    "title": "Provable Unlearning of Hazardous Capabilities",
+    "slug": "provable-unlearning-hazardous-capabilities",
+    "status": "open",
+    "description": "Guaranteeing removed knowledge cannot be recovered by fine-tuning."
+  },
+  {
+    "title": "Fine-Tuning Attacks That Undo Alignment",
+    "slug": "fine-tuning-attacks-undo-alignment",
+    "status": "open",
+    "description": "Can alignment survive adversarial fine-tuning on benign-looking data?"
+  },
+  {
+    "title": "Tamper-Resistant Safeguards for Open-Weight Models",
+    "slug": "tamper-resistant-safeguards-open-weights",
+    "status": "open",
+    "description": "Building safety into weights an adversary fully controls."
+  },
+  {
+    "title": "Calibrated Refusal Under Distribution Shift",
+    "slug": "calibrated-refusal-distribution-shift",
+    "status": "empirically-open",
+    "description": "Refusal rates degrade unpredictably on out-of-distribution requests."
+  },
+  {
+    "title": "Deceptive Alignment Detection Without Behavioral Evidence",
+    "slug": "deceptive-alignment-detection-without-behavior",
+    "status": "methodologically-blocked",
+    "description": "Detecting a model that behaves well only under observation."
+  },
+  {
+    "title": "Eliciting Latent Knowledge From a Reporting Model",
+    "slug": "eliciting-latent-knowledge",
+    "status": "open",
+    "description": "Extracting what a model knows when it reports otherwise."
+  },
+  {
+    "title": "Scalable Oversight Beyond Human Evaluator Ceiling",
+    "slug": "scalable-oversight-beyond-human-ceiling",
+    "status": "empirically-open",
+    "description": "Supervising models on tasks humans cannot directly judge."
+  },
+  {
+    "title": "Does Debate Converge to Truth With Bounded Judges",
+    "slug": "debate-convergence-bounded-judges",
+    "status": "partially-solved",
+    "description": "Whether AI debate is truth-favoring under realistic judge limits."
+  },
+  {
+    "title": "Weak-to-Strong Generalization Gap Recovery",
+    "slug": "weak-to-strong-generalization-gap",
+    "status": "empirically-open",
+    "description": "How much strong-model capability weak supervision can recover."
+  },
+  {
+    "title": "Reward Hacking Under Goodhart Pressure at Scale",
+    "slug": "reward-hacking-goodhart-pressure",
+    "status": "open",
+    "description": "Predicting when optimization pressure breaks a proxy reward."
+  },
+  {
+    "title": "Specification Gaming Detection From Trajectories Alone",
+    "slug": "specification-gaming-detection-trajectories",
+    "status": "methodologically-blocked",
+    "description": "Distinguishing gaming from legitimate strategy without a ground-truth spec."
+  },
+  {
+    "title": "Faithfulness of Chain-of-Thought as Safety Evidence",
+    "slug": "chain-of-thought-faithfulness-safety",
+    "status": "open",
+    "description": "Whether stated reasoning reflects the computation driving the answer."
+  },
+  {
+    "title": "Monitorability of Neuralese and Latent Reasoning",
+    "slug": "monitorability-latent-reasoning",
+    "status": "open",
+    "description": "Overseeing models that reason without legible token traces."
+  },
+  {
+    "title": "Sandbagging Detection Under Capability Evaluations",
+    "slug": "sandbagging-detection-capability-evals",
+    "status": "empirically-open",
+    "description": "Detecting a model deliberately underperforming on safety evaluations."
+  },
+  {
+    "title": "Elicitation Gap in Dangerous-Capability Evaluations",
+    "slug": "elicitation-gap-dangerous-capability-evals",
+    "status": "methodologically-blocked",
+    "description": "Evaluations lower-bound capability by an unknown, unbounded margin."
+  },
+  {
+    "title": "Prompt Injection Defense With Provable Separation",
+    "slug": "prompt-injection-provable-separation",
+    "status": "open",
+    "description": "Separating instructions from data in a single token stream."
+  },
+  {
+    "title": "Safety Guarantees for Tool-Using Agents in Open Environments",
+    "slug": "safety-guarantees-tool-using-agents",
+    "status": "open",
+    "description": "Bounding harm from long-horizon agents with real-world actions."
+  },
+  {
+    "title": "Multi-Agent Emergent Collusion Under Independent Alignment",
+    "slug": "multi-agent-emergent-collusion",
+    "status": "empirically-open",
+    "description": "Whether individually aligned agents jointly produce unsafe behavior."
+  },
+  {
+    "title": "Robustness of Watermarks to Paraphrase and Removal Attacks",
+    "slug": "watermark-robustness-paraphrase-removal",
+    "status": "partially-solved",
+    "description": "Whether text watermarks survive determined removal at usable strength."
+  },
+  {
+    "title": "Guaranteed Hallucination Bounds With Abstention",
+    "slug": "guaranteed-hallucination-bounds-abstention",
+    "status": "open",
+    "description": "Bounding false assertions without collapsing to constant abstention."
+  },
+  {
+    "title": "Conformal Prediction Under Adversarial Exchangeability Violation",
+    "slug": "conformal-prediction-adversarial-shift",
+    "status": "partially-solved",
+    "description": "Valid coverage when an adversary breaks the exchangeability assumption."
+  },
+  {
+    "title": "Out-of-Distribution Detection Impossibility Boundaries",
+    "slug": "ood-detection-impossibility-boundaries",
+    "status": "partially-solved",
+    "description": "Which distribution shifts are provably undetectable from samples alone."
+  },
+  {
+    "title": "Runtime Verification of Neural Controllers in Closed Loop",
+    "slug": "runtime-verification-neural-controllers",
+    "status": "solved-but-impractical",
+    "description": "Verifying neural control policies at real system scale and speed."
+  },
+  {
+    "title": "Shutdown-Instruction Compliance Under Instrumental Pressure",
+    "slug": "shutdown-compliance-instrumental-pressure",
+    "status": "empirically-open",
+    "description": "Do capable agents resist interruption when tasks reward continuation?"
+  },
+  {
+    "title": "Goal Misgeneralization Prediction Before Deployment",
+    "slug": "goal-misgeneralization-prediction",
+    "status": "open",
+    "description": "Predicting which learned goal generalizes from training data alone."
+  },
+  {
+    "title": "Interpretability-Based Safety Audits That Beat Behavioral Red-Teaming",
+    "slug": "interpretability-audits-versus-red-teaming",
+    "status": "empirically-open",
+    "description": "Whether internals-based audits catch failures behavioral testing misses."
+  },
+  {
+    "title": "Robustness Certification for Retrieval-Augmented Systems",
+    "slug": "robustness-certification-retrieval-augmented",
+    "status": "open",
+    "description": "Certifying output safety when a corrupted corpus can be retrieved."
+  }
+]

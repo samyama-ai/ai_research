@@ -1,242 +1,242 @@
 [
   {
-    "title": "Optimal Tiling for Fused Attention on New Memory Hierarchies",
+    "title": "Optimal Tiling for Fused Attention on Multi-Level Memory Hierarchies",
     "slug": "optimal-tiling-fused-attention",
     "status": "open",
-    "description": "No proven optimal tile schedule for fused attention kernels."
+    "description": "No proof of optimal tile sizes for fused attention kernels."
   },
   {
-    "title": "Lower Bounds on I/O Complexity of Attention",
-    "slug": "io-complexity-lower-bounds-attention",
+    "title": "I/O Lower Bounds for Exact Attention",
+    "slug": "io-lower-bounds-exact-attention",
     "status": "partially-solved",
-    "description": "Tight memory-movement lower bounds for exact attention remain unproven."
+    "description": "Tight communication lower bounds for exact attention remain unproven."
   },
   {
-    "title": "Automatic Discovery of FlashAttention-Class Algorithms by Compilers",
-    "slug": "compiler-discovery-flash-algorithms",
+    "title": "Automatic Kernel Fusion Decisions Beating Hand-Written Kernels",
+    "slug": "automatic-kernel-fusion-vs-handwritten",
+    "status": "empirically-open",
+    "description": "Can compilers match expert kernels across all shapes?"
+  },
+  {
+    "title": "Numerical Reproducibility of Reduction Order in Distributed Training",
+    "slug": "reduction-order-reproducibility",
     "status": "open",
-    "description": "Can compilers derive fused attention without hand-written kernels?"
+    "description": "Bitwise-deterministic fast reductions across variable device counts."
   },
   {
-    "title": "Provably Correct Numerics for Online Softmax Rescaling",
-    "slug": "online-softmax-numerics-correctness",
+    "title": "Low-Precision Accumulation Error Bounds for Long Reductions",
+    "slug": "low-precision-accumulation-error-bounds",
     "status": "partially-solved",
-    "description": "Error bounds for streaming softmax in low precision are unclear."
+    "description": "Sharp error bounds for FP8 or FP16 accumulation at scale."
   },
   {
-    "title": "FP8 Training Stability Thresholds at Frontier Scale",
-    "slug": "fp8-training-stability-thresholds",
+    "title": "Compute-Optimal Arithmetic Format Below FP4",
+    "slug": "compute-optimal-format-below-fp4",
     "status": "empirically-open",
-    "description": "Unknown scale at which FP8 pretraining diverges from BF16."
+    "description": "Does sub-4-bit training pay off per unit silicon?"
   },
   {
-    "title": "Microscaling Block Size Versus Accuracy Frontier",
-    "slug": "microscaling-block-size-frontier",
-    "status": "empirically-open",
-    "description": "Best shared-exponent block size for quantized training is unsettled."
-  },
-  {
-    "title": "Hardware-Optimal Number Format for Transformer Training",
-    "slug": "hardware-optimal-number-format",
+    "title": "Hardware-Aware Sparsity Patterns That Actually Achieve Theoretical Speedup",
+    "slug": "structured-sparsity-realized-speedup",
     "status": "open",
-    "description": "Which arithmetic format maximizes accuracy per transistor is unknown."
+    "description": "Sparsity patterns delivering promised speedups without accuracy loss."
   },
   {
-    "title": "Stochastic Rounding Sufficiency for Low-Precision Optimizer States",
-    "slug": "stochastic-rounding-optimizer-states",
-    "status": "partially-solved",
-    "description": "When stochastic rounding preserves convergence at 4-8 bits is unresolved."
-  },
-  {
-    "title": "Kernel Autotuning Search Cost Versus Achieved Speedup",
-    "slug": "autotuning-cost-versus-speedup",
-    "status": "empirically-open",
-    "description": "Whether autotuners beat expert kernels within fixed search budget."
-  },
-  {
-    "title": "LLM-Generated GPU Kernels Reaching Expert Performance",
-    "slug": "llm-generated-kernels-expert-parity",
-    "status": "empirically-open",
-    "description": "Can models write kernels matching hand-tuned library performance?"
-  },
-  {
-    "title": "Correctness Verification for Machine-Generated Tensor Kernels",
-    "slug": "verification-generated-tensor-kernels",
+    "title": "Cost Model Accuracy for GPU Kernel Autotuning",
+    "slug": "gpu-kernel-cost-model-accuracy",
     "status": "methodologically-blocked",
-    "description": "No accepted standard for proving generated kernels numerically correct."
+    "description": "No cost model predicts kernel runtime reliably across architectures."
   },
   {
-    "title": "Roofline Attainability Gap for Sparse Attention Kernels",
-    "slug": "roofline-gap-sparse-attention",
-    "status": "open",
-    "description": "Sparse attention kernels persistently miss roofline peak throughput."
-  },
-  {
-    "title": "Optimal Sparsity Pattern Matched to Tensor Core Granularity",
-    "slug": "sparsity-pattern-tensor-core-granularity",
-    "status": "partially-solved",
-    "description": "Best structured sparsity beyond 2:4 for accelerators is unknown."
-  },
-  {
-    "title": "Speedup Realizability of Unstructured Sparsity on Dense Accelerators",
-    "slug": "unstructured-sparsity-speedup-realizability",
+    "title": "Verified Correctness of Compiler-Generated Tensor Kernels",
+    "slug": "verified-tensor-kernel-compilation",
     "status": "solved-but-impractical",
-    "description": "Unstructured sparsity gains rarely translate to wall-clock speedup."
+    "description": "Formal verification of fused kernels is correct but too costly."
   },
   {
-    "title": "Mixture-of-Experts All-to-All Communication Lower Bounds",
-    "slug": "moe-all-to-all-lower-bounds",
+    "title": "Arithmetic Intensity Limits of Mixture-of-Experts Routing",
+    "slug": "moe-routing-arithmetic-intensity",
     "status": "open",
-    "description": "Minimum communication volume for expert routing is unproven."
+    "description": "Minimum data movement for token-to-expert dispatch is unknown."
   },
   {
-    "title": "Optimal Parallelism Configuration Search for Fixed Cluster Topology",
-    "slug": "optimal-parallelism-configuration-search",
+    "title": "Optimal Collective Algorithms for Heterogeneous Interconnect Topologies",
+    "slug": "collectives-heterogeneous-topology",
+    "status": "open",
+    "description": "No optimal all-reduce schedule for irregular multi-tier networks."
+  },
+  {
+    "title": "Kernel Selection Under Dynamic Shapes Without Recompilation",
+    "slug": "dynamic-shape-kernel-selection",
+    "status": "empirically-open",
+    "description": "Can one kernel serve all shapes without recompiling?"
+  },
+  {
+    "title": "KV Cache Memory Layout Optimality for Paged Attention",
+    "slug": "kv-cache-layout-optimality",
     "status": "partially-solved",
-    "description": "Choosing tensor, pipeline, and data parallel splits remains heuristic."
+    "description": "Optimal page size and layout for KV cache is unsettled."
   },
   {
-    "title": "Pipeline Bubble Elimination Without Extra Activation Memory",
-    "slug": "pipeline-bubble-elimination-memory-neutral",
-    "status": "open",
-    "description": "Zero-bubble pipelines without memory overhead remain unachieved."
-  },
-  {
-    "title": "Compute-Communication Overlap Limits on Commodity Interconnects",
-    "slug": "compute-communication-overlap-limits",
+    "title": "Analog In-Memory Compute Error Tolerance for Transformer Inference",
+    "slug": "analog-compute-transformer-tolerance",
     "status": "empirically-open",
-    "description": "How much collective latency can genuinely be hidden is unmeasured."
+    "description": "Does analog matmul noise break large transformer inference?"
   },
   {
-    "title": "Fault-Tolerant Training Without Checkpoint Restart Overhead",
-    "slug": "fault-tolerant-training-no-restart",
-    "status": "partially-solved",
-    "description": "Recovering from node failure without losing throughput is unsolved."
-  },
-  {
-    "title": "Analog In-Memory Computing Accuracy for Transformer Inference",
-    "slug": "analog-in-memory-transformer-accuracy",
-    "status": "empirically-open",
-    "description": "Whether analog crossbars can serve billion-parameter models accurately."
-  },
-  {
-    "title": "Device Variability Compensation in Memristive Accelerators",
-    "slug": "memristive-variability-compensation",
+    "title": "Silent Data Corruption Detection in Large-Scale Training",
+    "slug": "silent-data-corruption-detection",
     "status": "open",
-    "description": "No robust scheme corrects analog device drift during inference."
+    "description": "Detecting rare hardware bit errors during training cheaply."
   },
   {
-    "title": "Optical Matrix Multiplication Energy Advantage at Realistic Precision",
-    "slug": "optical-matmul-energy-advantage",
-    "status": "empirically-open",
-    "description": "Photonic matmul energy wins may vanish with conversion overhead."
-  },
-  {
-    "title": "Wafer-Scale Model Partitioning for Irregular Graphs",
-    "slug": "wafer-scale-partitioning-irregular-graphs",
-    "status": "open",
-    "description": "Mapping irregular models onto wafer-scale fabrics lacks good algorithms."
-  },
-  {
-    "title": "Energy-Optimal Batch Size for Serving Under Latency Constraints",
+    "title": "Energy-Optimal Batch Size for LLM Serving",
     "slug": "energy-optimal-serving-batch-size",
-    "status": "partially-solved",
-    "description": "Batch choice minimizing joules per token under SLO is unsettled."
-  },
-  {
-    "title": "KV Cache Compression Limits Without Quality Loss",
-    "slug": "kv-cache-compression-limits",
     "status": "empirically-open",
-    "description": "Maximum lossless KV cache compression ratio remains unmeasured."
+    "description": "The batch size minimizing joules per token is unmeasured."
   },
   {
-    "title": "Optimal Paging Granularity for Attention Memory Management",
-    "slug": "attention-paging-granularity",
+    "title": "Roofline Model Validity for Attention-Dominated Workloads",
+    "slug": "roofline-validity-attention-workloads",
+    "status": "methodologically-blocked",
+    "description": "Roofline predictions fail for memory-bound attention kernels."
+  },
+  {
+    "title": "Compute-Communication Overlap Limits in Pipeline Parallelism",
+    "slug": "compute-communication-overlap-limits",
     "status": "partially-solved",
-    "description": "Best page size for KV cache allocation is heuristic."
+    "description": "Maximum achievable overlap in pipelined training is unproven."
   },
   {
-    "title": "Speculative Decoding Acceptance Rate Versus Hardware Utilization",
-    "slug": "speculative-decoding-utilization-tradeoff",
+    "title": "Quantization-Aware Kernel Design for Non-Uniform Formats",
+    "slug": "nonuniform-quantization-kernel-design",
     "status": "open",
-    "description": "No theory predicts optimal draft length for given hardware."
+    "description": "Fast kernels for lookup-based non-uniform quantized weights."
   },
   {
-    "title": "Memory Bandwidth Wall for Autoregressive Decoding",
-    "slug": "memory-bandwidth-wall-decoding",
+    "title": "Optimal Recomputation-Versus-Memory Tradeoff in Activation Checkpointing",
+    "slug": "activation-checkpointing-optimal-policy",
+    "status": "partially-solved",
+    "description": "Optimal checkpoint placement for general model graphs is unsolved."
+  },
+  {
+    "title": "Wafer-Scale Model Partitioning Without Global Synchronization",
+    "slug": "wafer-scale-partitioning-no-global-sync",
     "status": "open",
-    "description": "Whether decoding can escape bandwidth-bound regime is unresolved."
+    "description": "Partitioning models across wafer-scale chips without global barriers."
   },
   {
-    "title": "Deterministic Reproducibility of Reduced-Precision Collectives",
-    "slug": "deterministic-reduced-precision-collectives",
+    "title": "Deterministic Backward Passes for Scatter-Based Operators",
+    "slug": "deterministic-scatter-backward",
     "status": "solved-but-impractical",
-    "description": "Bitwise-reproducible distributed reductions cost too much throughput."
+    "description": "Deterministic scatter gradients exist but cost too much throughput."
   },
   {
-    "title": "Compiler Cost Models Predicting Real Kernel Runtime",
-    "slug": "compiler-cost-model-accuracy",
+    "title": "Speculative Decoding Kernel Efficiency at Low Arithmetic Intensity",
+    "slug": "speculative-decoding-kernel-efficiency",
+    "status": "empirically-open",
+    "description": "Speculative decoding gains vanish under real kernel overheads."
+  },
+  {
+    "title": "Hardware Lottery Measurement for Novel Architectures",
+    "slug": "hardware-lottery-measurement",
     "status": "methodologically-blocked",
-    "description": "Analytic cost models poorly predict measured accelerator runtimes."
+    "description": "No metric quantifies how much hardware biases architecture choice."
   },
   {
-    "title": "Portable Performance Across Accelerator Vendors",
-    "slug": "portable-performance-across-vendors",
+    "title": "Optimal Instruction Scheduling for Tensor Core Pipelines",
+    "slug": "tensor-core-instruction-scheduling",
     "status": "open",
-    "description": "One kernel source achieving peak on multiple vendors is unattained."
+    "description": "Optimal warp-level scheduling for tensor core pipelines is unknown."
   },
   {
-    "title": "Optimal Recomputation Versus Memory Trade-off Schedule",
-    "slug": "optimal-recomputation-schedule",
+    "title": "Cross-Vendor Kernel Portability Without Performance Loss",
+    "slug": "cross-vendor-kernel-portability",
+    "status": "empirically-open",
+    "description": "Can one source achieve peak performance on all vendors?"
+  },
+  {
+    "title": "Memory Bandwidth Scaling Laws for Model Serving",
+    "slug": "memory-bandwidth-scaling-laws",
+    "status": "empirically-open",
+    "description": "How serving throughput scales with bandwidth versus FLOPs."
+  },
+  {
+    "title": "Approximate Matrix Multiply With Provable End-Task Guarantees",
+    "slug": "approximate-matmul-task-guarantees",
+    "status": "open",
+    "description": "Fast approximate matmul with bounds on downstream accuracy."
+  },
+  {
+    "title": "Optimal Sharding Strategy Search Complexity",
+    "slug": "optimal-sharding-search-complexity",
     "status": "partially-solved",
-    "description": "Provably optimal activation checkpointing for real graphs is unsolved."
+    "description": "Complexity of finding optimal parallel sharding plans is unsettled."
   },
   {
-    "title": "Hardware-Aware Neural Architecture Search Transfer Across Chips",
-    "slug": "nas-hardware-transfer-across-chips",
+    "title": "Stochastic Rounding Hardware Cost Versus Training Benefit",
+    "slug": "stochastic-rounding-cost-benefit",
     "status": "empirically-open",
-    "description": "Whether architectures found for one chip transfer to another."
+    "description": "Whether stochastic rounding silicon cost pays for itself."
   },
   {
-    "title": "Silent Data Corruption Detection During Large-Scale Training",
-    "slug": "silent-data-corruption-detection-training",
+    "title": "Photonic Interconnect Advantage Threshold for Training Clusters",
+    "slug": "photonic-interconnect-advantage-threshold",
     "status": "open",
-    "description": "Detecting corrupt accelerators mid-run without redundancy is unsolved."
+    "description": "Cluster size where optical interconnect beats electrical is unknown."
   },
   {
-    "title": "Attention Kernel Performance Under Extreme Context Lengths",
-    "slug": "kernel-performance-extreme-context",
+    "title": "Cache-Oblivious Algorithms for Transformer Inference",
+    "slug": "cache-oblivious-transformer-inference",
+    "status": "open",
+    "description": "Cache-oblivious attention matching tuned kernels remains undemonstrated."
+  },
+  {
+    "title": "Sparse Attention Kernel Efficiency at Realistic Sparsity Levels",
+    "slug": "sparse-attention-kernel-efficiency",
     "status": "empirically-open",
-    "description": "Kernel efficiency at multi-million token contexts is untested."
+    "description": "Sparse attention rarely beats dense kernels in practice."
   },
   {
-    "title": "Chiplet Interconnect Topology Optimal for Transformer Workloads",
-    "slug": "chiplet-topology-transformer-workloads",
+    "title": "Learned Kernel Generation Correctness Verification",
+    "slug": "learned-kernel-correctness-verification",
     "status": "open",
-    "description": "Best die-to-die topology for transformer traffic is unknown."
+    "description": "Verifying LLM-generated GPU kernels are numerically correct."
   },
   {
-    "title": "Near-Memory Processing Benefit for Embedding and MoE Lookups",
-    "slug": "near-memory-processing-embedding-lookups",
-    "status": "empirically-open",
-    "description": "Whether processing-in-memory helps embedding-heavy models at scale."
+    "title": "Optimal Weight Layout for Bandwidth-Bound Decode",
+    "slug": "optimal-weight-layout-decode",
+    "status": "partially-solved",
+    "description": "Best weight memory layout for single-token decode is unresolved."
   },
   {
-    "title": "Quantization-Aware Kernel Fusion Without Accuracy Regression",
-    "slug": "quantization-aware-kernel-fusion",
-    "status": "open",
-    "description": "Fusing dequantization into GEMM without accuracy loss is unsolved."
-  },
-  {
-    "title": "Predicting Training Throughput From Static Model Description",
-    "slug": "predicting-throughput-from-model-description",
+    "title": "Thermal Throttling Effects on Training Reproducibility",
+    "slug": "thermal-throttling-training-effects",
     "status": "methodologically-blocked",
-    "description": "No reliable predictor of throughput before running the job."
+    "description": "Effect of thermal variation on training outcomes is unmeasured."
   },
   {
-    "title": "Thermal Throttling Effects on Distributed Training Convergence",
-    "slug": "thermal-throttling-training-convergence",
+    "title": "Minimum Precision for Gradient Communication Without Convergence Loss",
+    "slug": "minimum-gradient-communication-precision",
     "status": "empirically-open",
-    "description": "Whether clock throttling stragglers measurably alter final model quality."
+    "description": "Lowest gradient precision preserving convergence at frontier scale."
+  },
+  {
+    "title": "Compiler Autoscheduling for Irregular Graph Neural Network Kernels",
+    "slug": "gnn-kernel-autoscheduling",
+    "status": "open",
+    "description": "Autoscheduling irregular sparse GNN kernels remains unsolved."
+  },
+  {
+    "title": "Optimal Prefill-Decode Disaggregation Boundary",
+    "slug": "prefill-decode-disaggregation-boundary",
+    "status": "empirically-open",
+    "description": "Where to split prefill and decode across hardware."
+  },
+  {
+    "title": "Near-Memory Compute Benefit for Attention Versus Feedforward",
+    "slug": "near-memory-compute-benefit-split",
+    "status": "open",
+    "description": "Which transformer layers benefit from processing-in-memory hardware."
   }
 ]

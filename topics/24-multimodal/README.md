@@ -5,3 +5,6 @@ Topic `24-multimodal` of the [AI Research catalog](../../README.md). See [TAXONO
 
 ## Problems Index
 
+* 🟢 [Any-to-Any Modality Scaling Beyond Two Modalities](./any-to-any-modality-scaling.md)
+* 🟢 [Catastrophic Text Forgetting from Vision Instruction Tuning](./catastrophic-text-forgetting-vision-tuning.md)
+* 🔴 [Compositional Binding Failure in Vision-Language Models](./compositional-binding-failure.md)

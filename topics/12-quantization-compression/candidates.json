@@ -1,242 +1,242 @@
 [
   {
-    "title": "Optimal Rate-Distortion Bounds for Post-Training Weight Quantization",
-    "slug": "rate-distortion-bounds-ptq",
+    "title": "Optimal Bit Allocation Across Layers",
+    "slug": "optimal-bit-allocation-across-layers",
     "status": "open",
-    "description": "No tight bound links bits per weight to loss increase."
+    "description": "No principled rule assigns per-layer bitwidths under a global budget."
   },
   {
-    "title": "Provable Optimality of GPTQ-Style Error Compensation",
-    "slug": "gptq-error-compensation-optimality",
+    "title": "Quantization Scaling Laws for Post-Training Precision",
+    "slug": "quantization-scaling-laws-post-training",
+    "status": "empirically-open",
+    "description": "Do degradation laws hold beyond trillion-token, hundred-billion-parameter regimes?"
+  },
+  {
+    "title": "Existence of a Critical Precision Floor",
+    "slug": "critical-precision-floor",
+    "status": "open",
+    "description": "Is there a bitwidth below which no training recovers quality?"
+  },
+  {
+    "title": "Outlier Emergence Cause in Transformer Activations",
+    "slug": "activation-outlier-emergence-cause",
+    "status": "open",
+    "description": "Why do massive activation outliers appear at specific channels?"
+  },
+  {
+    "title": "Rotation Invariance Limits for Outlier Suppression",
+    "slug": "rotation-invariance-limits-outlier-suppression",
     "status": "partially-solved",
-    "description": "Greedy layerwise rounding lacks optimality guarantees beyond convex proxies."
+    "description": "How much can incoherence processing reduce quantization error provably?"
   },
   {
-    "title": "Layerwise Proxy Loss Versus End-to-End Loss Mismatch",
-    "slug": "layerwise-proxy-loss-mismatch",
+    "title": "Optimal Rounding is NP-Hard but Approximable",
+    "slug": "optimal-rounding-approximability",
     "status": "open",
-    "description": "Minimizing layer output error does not minimize final loss."
+    "description": "Can layerwise optimal rounding be approximated with proven guarantees?"
   },
   {
-    "title": "Existence of a 1.58-Bit Compute-Optimal Scaling Law",
-    "slug": "ternary-scaling-law",
-    "status": "empirically-open",
-    "description": "Whether ternary training matches FP16 scaling at large budgets."
-  },
-  {
-    "title": "Quantization-Aware Training Gradient Estimator Bias",
-    "slug": "ste-bias-quantization",
-    "status": "open",
-    "description": "Straight-through estimator bias has no general convergence theory."
-  },
-  {
-    "title": "Emergent Outlier Features and Their Necessity",
-    "slug": "emergent-outlier-necessity",
-    "status": "open",
-    "description": "Are activation outliers functionally required or a training artifact?"
-  },
-  {
-    "title": "Minimum Bit Width Preserving In-Context Learning",
-    "slug": "min-bits-in-context-learning",
-    "status": "empirically-open",
-    "description": "Bit floor below which in-context learning collapses is unmeasured."
-  },
-  {
-    "title": "Quantization Effects on Long-Chain Reasoning Depth",
-    "slug": "quantization-reasoning-depth",
-    "status": "empirically-open",
-    "description": "Does low-bit inference shorten reliable multi-step reasoning chains?"
-  },
-  {
-    "title": "Rotation-Invariance Limits of Incoherence Processing",
-    "slug": "incoherence-rotation-limits",
-    "status": "partially-solved",
-    "description": "How much can random rotations reduce weight outliers provably?"
-  },
-  {
-    "title": "Optimal Codebook Design for Vector Quantized Weights",
-    "slug": "optimal-weight-codebook-design",
-    "status": "open",
-    "description": "Best lattice or codebook for transformer weight distributions unknown."
-  },
-  {
-    "title": "KV Cache Quantization Error Accumulation Over Context",
-    "slug": "kv-cache-error-accumulation",
-    "status": "open",
-    "description": "How cache quantization error compounds with sequence length."
-  },
-  {
-    "title": "Joint Optimization of Sparsity and Quantization",
-    "slug": "joint-sparsity-quantization",
-    "status": "open",
-    "description": "Optimal allocation between pruning and bit reduction is unsolved."
-  },
-  {
-    "title": "Mixed-Precision Bit Allocation as a Tractable Problem",
-    "slug": "mixed-precision-bit-allocation",
-    "status": "solved-but-impractical",
-    "description": "Exact per-layer bit assignment is combinatorially expensive to solve."
-  },
-  {
-    "title": "Calibration Set Size and Distribution Sensitivity",
-    "slug": "calibration-set-sensitivity",
-    "status": "empirically-open",
-    "description": "How calibration data choice changes post-training quantization outcomes."
-  },
-  {
-    "title": "Quantization and Memorized Knowledge Erasure",
-    "slug": "quantization-knowledge-erasure",
-    "status": "open",
-    "description": "Which facts disappear first under aggressive weight compression?"
-  },
-  {
-    "title": "Safety Alignment Degradation Under Compression",
-    "slug": "alignment-degradation-compression",
-    "status": "empirically-open",
-    "description": "Whether quantization selectively removes refusal and safety behavior."
-  },
-  {
-    "title": "Measuring Compression Damage Beyond Perplexity",
-    "slug": "compression-damage-metrics",
+    "title": "Calibration Set Size and Composition Theory",
+    "slug": "calibration-set-theory",
     "status": "methodologically-blocked",
-    "description": "No agreed metric captures capability loss that perplexity misses."
+    "description": "No theory predicts calibration data needed for stable quantization."
   },
   {
-    "title": "Optimal Rounding Under Non-Uniform Weight Importance",
-    "slug": "importance-weighted-rounding",
-    "status": "open",
-    "description": "How to define and use per-weight importance for rounding."
-  },
-  {
-    "title": "Quantized Fine-Tuning Fidelity Versus Full-Precision Adaptation",
-    "slug": "quantized-finetuning-fidelity",
-    "status": "partially-solved",
-    "description": "Whether low-rank adapters on quantized bases match full fine-tuning."
-  },
-  {
-    "title": "Distillation Data Requirements for Lossless Compression",
-    "slug": "distillation-data-requirements",
-    "status": "open",
-    "description": "How many tokens recover a compressed model's original behavior?"
-  },
-  {
-    "title": "Compression Effects on Multilingual and Low-Resource Performance",
-    "slug": "compression-multilingual-disparity",
+    "title": "Quantization Effects on Long-Context Retrieval",
+    "slug": "quantization-long-context-retrieval",
     "status": "empirically-open",
-    "description": "Whether quantization harms low-resource languages disproportionately."
+    "description": "Does KV cache quantization break retrieval at extreme context lengths?"
   },
   {
-    "title": "Hardware-Faithful Cost Models for Quantized Inference",
-    "slug": "hardware-faithful-cost-models",
+    "title": "KV Cache Compression Information-Theoretic Lower Bound",
+    "slug": "kv-cache-compression-lower-bound",
+    "status": "open",
+    "description": "What is the minimum bits per token for lossless attention?"
+  },
+  {
+    "title": "Reasoning Degradation Under Compression",
+    "slug": "reasoning-degradation-under-compression",
+    "status": "empirically-open",
+    "description": "Do chain-of-thought abilities degrade faster than perplexity suggests?"
+  },
+  {
+    "title": "Perplexity as a Sufficient Compression Metric",
+    "slug": "perplexity-sufficiency-compression-metric",
     "status": "methodologically-blocked",
-    "description": "Reported bit widths rarely predict real latency or energy."
+    "description": "Perplexity may not detect capability loss from quantization."
   },
   {
-    "title": "Activation Quantization Below Eight Bits Without Retraining",
-    "slug": "sub-8bit-activation-ptq",
-    "status": "open",
-    "description": "Robust training-free low-bit activation quantization remains unachieved."
-  },
-  {
-    "title": "Attention Score Precision Floor",
-    "slug": "attention-score-precision-floor",
+    "title": "Ternary and Binary Network Training Scaling",
+    "slug": "ternary-binary-training-scaling",
     "status": "empirically-open",
-    "description": "Minimum precision for softmax logits preserving attention behavior."
+    "description": "Do 1.58-bit models match FP baselines at frontier scale?"
   },
   {
-    "title": "Quantization Robustness Under Distribution Shift",
-    "slug": "quantization-distribution-shift",
+    "title": "Straight-Through Estimator Convergence Guarantees",
+    "slug": "straight-through-estimator-convergence",
+    "status": "partially-solved",
+    "description": "When does the straight-through gradient converge to good minima?"
+  },
+  {
+    "title": "Optimal Numerical Format Beyond Floating Point",
+    "slug": "optimal-numerical-format-beyond-float",
     "status": "open",
-    "description": "Calibrated quantized models may fail on out-of-distribution inputs."
+    "description": "Which low-bit format minimizes error per hardware cost?"
   },
   {
-    "title": "Extreme Low-Bit Embedding and Output Layer Compression",
-    "slug": "low-bit-embedding-compression",
-    "status": "open",
-    "description": "Embedding and unembedding layers resist aggressive bit reduction."
-  },
-  {
-    "title": "Compressibility Scaling With Training Token Count",
-    "slug": "compressibility-versus-training-tokens",
+    "title": "Microscaling Block Size Optimality",
+    "slug": "microscaling-block-size-optimality",
     "status": "empirically-open",
-    "description": "Overtrained models appear harder to quantize; mechanism unconfirmed."
+    "description": "What shared-scale block granularity optimizes accuracy per bit?"
   },
   {
-    "title": "Information-Theoretic Limit of Model Weight Entropy",
-    "slug": "weight-entropy-limit",
+    "title": "Lottery Ticket Existence at Initialization",
+    "slug": "lottery-ticket-existence-at-initialization",
+    "status": "open",
+    "description": "Can winning sparse subnetworks be found without training?"
+  },
+  {
+    "title": "Structured versus Unstructured Sparsity Gap",
+    "slug": "structured-unstructured-sparsity-gap",
+    "status": "open",
+    "description": "Why does structured pruning lag unstructured at equal sparsity?"
+  },
+  {
+    "title": "Sparsity Scaling Laws for Pretrained Models",
+    "slug": "sparsity-scaling-laws-pretrained",
+    "status": "empirically-open",
+    "description": "How does optimal sparsity scale with parameters and tokens?"
+  },
+  {
+    "title": "Knowledge Distillation Capacity Gap",
+    "slug": "distillation-capacity-gap",
+    "status": "open",
+    "description": "Why do larger teachers sometimes distill worse into small students?"
+  },
+  {
+    "title": "Compression Effects on Memorized Training Data",
+    "slug": "compression-effects-memorization",
+    "status": "empirically-open",
+    "description": "Does quantization selectively erase memorized rare examples?"
+  },
+  {
+    "title": "Compression and Safety Alignment Erosion",
+    "slug": "compression-safety-alignment-erosion",
+    "status": "empirically-open",
+    "description": "Does low-bit quantization disproportionately remove refusal behavior?"
+  },
+  {
+    "title": "Quantization-Robust Pretraining Objectives",
+    "slug": "quantization-robust-pretraining-objectives",
+    "status": "open",
+    "description": "Can pretraining be modified so models quantize losslessly later?"
+  },
+  {
+    "title": "Hessian Approximation Fidelity in One-Shot Pruning",
+    "slug": "hessian-approximation-fidelity-pruning",
+    "status": "partially-solved",
+    "description": "Layerwise Hessian proxies ignore cross-layer error propagation."
+  },
+  {
+    "title": "Error Accumulation Across Sequential Layer Quantization",
+    "slug": "sequential-layer-error-accumulation",
+    "status": "open",
+    "description": "No tight bound on compounding error through quantized depth."
+  },
+  {
+    "title": "Optimal Codebook Learning for Vector Quantized Weights",
+    "slug": "optimal-codebook-learning-weights",
+    "status": "open",
+    "description": "Finding globally optimal weight codebooks remains computationally intractable."
+  },
+  {
+    "title": "Lattice versus Learned Quantizers at Extreme Compression",
+    "slug": "lattice-versus-learned-quantizers",
+    "status": "empirically-open",
+    "description": "Do structured lattices beat learned codebooks below two bits?"
+  },
+  {
+    "title": "Low-Rank Plus Quantized Decomposition Optimality",
+    "slug": "low-rank-plus-quantized-decomposition",
+    "status": "open",
+    "description": "Best split between low-rank residual and quantized base unknown."
+  },
+  {
+    "title": "Quantized Fine-Tuning Fidelity Gap",
+    "slug": "quantized-finetuning-fidelity-gap",
+    "status": "empirically-open",
+    "description": "Does adapter tuning on quantized bases match full-precision tuning?"
+  },
+  {
+    "title": "Mixture-of-Experts Specific Compression Theory",
+    "slug": "moe-specific-compression-theory",
+    "status": "open",
+    "description": "Expert redundancy and routing sensitivity under quantization are uncharacterized."
+  },
+  {
+    "title": "Hardware-Faithful Compression Benchmarking",
+    "slug": "hardware-faithful-compression-benchmarking",
     "status": "methodologically-blocked",
-    "description": "True information content of trained weights is not measurable."
+    "description": "Reported compression ratios rarely translate to measured latency gains."
   },
   {
-    "title": "Optimal Quantization Grid for Non-Gaussian Weight Tails",
-    "slug": "non-gaussian-quantization-grid",
+    "title": "Activation Quantization Below Eight Bits at Scale",
+    "slug": "activation-quantization-below-eight-bits",
+    "status": "empirically-open",
+    "description": "Can four-bit activations work in frontier-scale inference?"
+  },
+  {
+    "title": "Gradient and Optimizer State Compression Limits",
+    "slug": "optimizer-state-compression-limits",
+    "status": "open",
+    "description": "Minimum precision for optimizer states without training divergence."
+  },
+  {
+    "title": "Compression Transfer Across Model Families",
+    "slug": "compression-transfer-across-families",
+    "status": "empirically-open",
+    "description": "Do quantization recipes transfer between architectures without retuning?"
+  },
+  {
+    "title": "Quantization Effects on Multilingual and Low-Resource Performance",
+    "slug": "quantization-multilingual-disparity",
+    "status": "empirically-open",
+    "description": "Does compression harm low-resource languages more than English?"
+  },
+  {
+    "title": "Embedding and Vocabulary Compression Limits",
+    "slug": "embedding-vocabulary-compression-limits",
+    "status": "open",
+    "description": "How far can embedding tables compress before token confusion?"
+  },
+  {
+    "title": "Non-Uniform Quantization Grid Optimality",
+    "slug": "non-uniform-quantization-grid-optimality",
     "status": "partially-solved",
-    "description": "Grid design assumes Gaussianity that real weights violate."
+    "description": "Optimal grids under non-Gaussian weight distributions remain uncharacterized."
   },
   {
-    "title": "Error Feedback Guarantees in Quantized Distributed Training",
-    "slug": "quantized-training-error-feedback",
+    "title": "Compression-Induced Distribution Shift in Generation",
+    "slug": "compression-induced-generation-shift",
+    "status": "methodologically-blocked",
+    "description": "No agreed measure of output distribution drift from quantization."
+  },
+  {
+    "title": "Provable Guarantees for Post-Training Quantization Error",
+    "slug": "provable-post-training-quantization-guarantees",
     "status": "partially-solved",
-    "description": "Gradient compression convergence proofs need unrealistic bounded-variance assumptions."
+    "description": "Error bounds exist only for single layers and random data."
   },
   {
-    "title": "Compression of Mixture-of-Experts Routing Behavior",
-    "slug": "moe-routing-compression",
+    "title": "Speculative Decoding Draft Model Compression Tradeoff",
+    "slug": "speculative-draft-compression-tradeoff",
     "status": "open",
-    "description": "Quantization can silently change expert routing decisions."
+    "description": "Optimal draft-model compression level for maximum end-to-end speedup."
   },
   {
-    "title": "Quantization Effects on Speculative Decoding Acceptance",
-    "slug": "quantization-speculative-acceptance",
-    "status": "empirically-open",
-    "description": "How draft model quantization changes acceptance rates and speed."
-  },
-  {
-    "title": "Reversibility of Quantization Damage by Continued Pretraining",
-    "slug": "quantization-damage-reversibility",
-    "status": "empirically-open",
-    "description": "Whether lost capability returns after post-quantization training."
-  },
-  {
-    "title": "Watermark and Fingerprint Survival Under Compression",
-    "slug": "watermark-survival-compression",
+    "title": "Diffusion Model Quantization Across Denoising Steps",
+    "slug": "diffusion-quantization-across-timesteps",
     "status": "open",
-    "description": "Do model fingerprints persist through aggressive quantization?"
-  },
-  {
-    "title": "Privacy Leakage Change Under Model Compression",
-    "slug": "compression-privacy-leakage",
-    "status": "open",
-    "description": "Whether compression increases or reduces training-data extraction risk."
-  },
-  {
-    "title": "Optimal Sub-Byte Numeric Format Selection",
-    "slug": "sub-byte-format-selection",
-    "status": "open",
-    "description": "Best four-bit float, integer, or hybrid format is undetermined."
-  },
-  {
-    "title": "Per-Token Dynamic Precision Allocation",
-    "slug": "dynamic-per-token-precision",
-    "status": "empirically-open",
-    "description": "Whether adaptive precision per token beats fixed uniform precision."
-  },
-  {
-    "title": "Quantization Error Propagation Through Deep Residual Stacks",
-    "slug": "error-propagation-residual-stacks",
-    "status": "open",
-    "description": "No predictive theory of depthwise quantization error growth."
-  },
-  {
-    "title": "Compressing Long-Context Positional Extrapolation Ability",
-    "slug": "compression-long-context-extrapolation",
-    "status": "empirically-open",
-    "description": "Does quantization break length extrapolation beyond training context?"
-  },
-  {
-    "title": "Verifiable Equivalence Checking for Compressed Models",
-    "slug": "compressed-model-equivalence-checking",
-    "status": "open",
-    "description": "No practical certificate that a compressed model matches the original."
+    "description": "Per-timestep sensitivity prevents a single quantization scheme working."
   }
 ]

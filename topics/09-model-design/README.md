@@ -5,3 +5,6 @@ Topic `09-model-design` of the [AI Research catalog](../../README.md). See [TAXO
 
 ## Problems Index
 
+* 🟢 [Activation Function Choice at Scale](./activation-function-scale-dependence.md)
+* 🔴 [Architectural Causes of Loss Spikes](./architectural-causes-loss-spikes.md)
+* 🔴 [Architectural Determinants of Quantization Robustness](./architecture-quantization-robustness.md)

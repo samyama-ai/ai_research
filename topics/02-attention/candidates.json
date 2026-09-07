@@ -1,242 +1,242 @@
 [
   {
-    "title": "Softmax Attention Cannot Be Sub-Quadratic Under SETH",
-    "slug": "softmax-attention-subquadratic-seth-barrier",
+    "title": "Softmax Attention Entropy Collapse at Scale",
+    "slug": "softmax-attention-entropy-collapse",
     "status": "partially-solved",
-    "description": "Do fine-grained lower bounds rule out exact fast attention?"
+    "description": "Why attention entropy collapses during large-model training."
   },
   {
-    "title": "Expressivity Gap Between Linear and Softmax Attention",
-    "slug": "linear-vs-softmax-attention-expressivity-gap",
-    "status": "open",
-    "description": "Which functions softmax attention learns that linear attention cannot?"
-  },
-  {
-    "title": "Attention Weights as Faithful Explanations",
-    "slug": "attention-weights-faithfulness",
-    "status": "methodologically-blocked",
-    "description": "No agreed definition makes attention explanation claims testable."
+    "title": "Expressivity Separation Between Softmax and Linear Attention",
+    "slug": "softmax-vs-linear-attention-expressivity",
+    "status": "partially-solved",
+    "description": "Which tasks linear attention provably cannot represent."
   },
   {
     "title": "Length Generalization of Positional Encodings",
     "slug": "positional-encoding-length-generalization",
-    "status": "partially-solved",
-    "description": "Which position schemes extrapolate beyond trained context length?"
+    "status": "open",
+    "description": "Which position schemes extrapolate beyond training context length."
   },
   {
-    "title": "Origin and Necessity of Attention Sinks",
-    "slug": "attention-sink-origin",
+    "title": "RoPE Base Frequency Scaling Law",
+    "slug": "rope-base-frequency-scaling-law",
+    "status": "empirically-open",
+    "description": "Optimal RoPE base as function of context length."
+  },
+  {
+    "title": "Attention Sink Necessity",
+    "slug": "attention-sink-necessity",
     "status": "open",
-    "description": "Why do transformers dump attention mass on first tokens?"
+    "description": "Whether attention sinks are required or merely emergent artifacts."
+  },
+  {
+    "title": "Subquadratic Exact Attention Lower Bound",
+    "slug": "subquadratic-exact-attention-lower-bound",
+    "status": "partially-solved",
+    "description": "Can exact attention beat quadratic time under SETH."
+  },
+  {
+    "title": "Induction Head Formation Phase Transition",
+    "slug": "induction-head-phase-transition",
+    "status": "partially-solved",
+    "description": "What triggers the abrupt emergence of induction heads."
+  },
+  {
+    "title": "Attention Weights as Faithful Explanations",
+    "slug": "attention-as-faithful-explanation",
+    "status": "methodologically-blocked",
+    "description": "Whether attention maps faithfully explain model predictions."
+  },
+  {
+    "title": "Optimal Head Count versus Head Dimension Tradeoff",
+    "slug": "head-count-vs-head-dimension",
+    "status": "empirically-open",
+    "description": "Compute-optimal allocation between number and width of heads."
+  },
+  {
+    "title": "KV Cache Compression Information Limit",
+    "slug": "kv-cache-compression-limit",
+    "status": "open",
+    "description": "Minimum KV cache bits preserving exact next-token behavior."
+  },
+  {
+    "title": "Grouped-Query Attention Quality Loss Scaling",
+    "slug": "gqa-quality-loss-scaling",
+    "status": "empirically-open",
+    "description": "How GQA group count degrades loss at fixed compute."
+  },
+  {
+    "title": "Sparse Attention Pattern Learnability",
+    "slug": "sparse-attention-pattern-learnability",
+    "status": "open",
+    "description": "Whether optimal sparsity patterns can be learned end-to-end."
+  },
+  {
+    "title": "Retrieval Head Localization and Sufficiency",
+    "slug": "retrieval-head-sufficiency",
+    "status": "partially-solved",
+    "description": "Whether few retrieval heads suffice for long-context recall."
+  },
+  {
+    "title": "Softmax Bottleneck in Attention Logit Rank",
+    "slug": "attention-logit-rank-bottleneck",
+    "status": "open",
+    "description": "Does low-rank QK limit representable attention distributions."
+  },
+  {
+    "title": "In-Context Learning as Implicit Gradient Descent",
+    "slug": "icl-implicit-gradient-descent",
+    "status": "partially-solved",
+    "description": "Whether attention layers truly implement gradient descent internally."
+  },
+  {
+    "title": "Attention Temperature and Logit Scaling for Long Context",
+    "slug": "attention-temperature-long-context",
+    "status": "empirically-open",
+    "description": "Correct logit scaling as sequence length grows."
+  },
+  {
+    "title": "Provable Benefit of Multi-Head over Single-Head Attention",
+    "slug": "multi-head-vs-single-head-separation",
+    "status": "partially-solved",
+    "description": "Formal separation showing multiple heads are necessary."
+  },
+  {
+    "title": "State-Space Models versus Attention on Recall Tasks",
+    "slug": "ssm-vs-attention-recall-gap",
+    "status": "partially-solved",
+    "description": "Whether recurrent models can close the associative recall gap."
+  },
+  {
+    "title": "Attention Head Superposition and Polysemanticity",
+    "slug": "attention-head-superposition",
+    "status": "open",
+    "description": "How many distinct functions a single head encodes."
+  },
+  {
+    "title": "Optimal Sliding Window Size for Local Attention",
+    "slug": "optimal-sliding-window-size",
+    "status": "empirically-open",
+    "description": "Compute-optimal local window width versus global layer count."
+  },
+  {
+    "title": "Cross-Attention Necessity in Multimodal Fusion",
+    "slug": "cross-attention-necessity-multimodal",
+    "status": "empirically-open",
+    "description": "Whether cross-attention beats concatenated self-attention at scale."
+  },
+  {
+    "title": "Attention Entropy Regularization for Training Stability",
+    "slug": "attention-entropy-regularization",
+    "status": "partially-solved",
+    "description": "Does entropy control prevent large-model training divergence."
   },
   {
     "title": "Massive Activations and Outlier Features in Attention",
-    "slug": "massive-activation-outlier-features",
+    "slug": "massive-activations-attention-outliers",
     "status": "open",
-    "description": "What causes extreme-magnitude hidden dimensions that break quantization?"
+    "description": "Why extreme activation outliers form and whether removable."
   },
   {
-    "title": "Optimal Head Count Versus Head Dimension Tradeoff",
-    "slug": "head-count-vs-head-dimension-tradeoff",
-    "status": "empirically-open",
-    "description": "How should heads and per-head width scale with compute?"
-  },
-  {
-    "title": "Induction Heads as Sufficient Cause of In-Context Learning",
-    "slug": "induction-heads-icl-sufficiency",
+    "title": "Linear Attention Memory Capacity Bound",
+    "slug": "linear-attention-memory-capacity",
     "status": "partially-solved",
-    "description": "Do induction heads fully account for in-context learning?"
+    "description": "How many key-value pairs fixed-size recurrent state can store."
   },
   {
-    "title": "Provable Convergence of Attention Training Dynamics",
-    "slug": "attention-training-dynamics-convergence",
-    "status": "partially-solved",
-    "description": "When does gradient descent on attention provably reach a global optimum?"
-  },
-  {
-    "title": "Rank Collapse and Token Uniformity in Deep Attention Stacks",
-    "slug": "attention-rank-collapse",
-    "status": "partially-solved",
-    "description": "What exactly prevents depth-induced token representation collapse?"
-  },
-  {
-    "title": "KV Cache Compression Without Task-Dependent Loss",
-    "slug": "kv-cache-compression-lossless-bound",
-    "status": "open",
-    "description": "What is the minimum KV memory preserving all queries?"
-  },
-  {
-    "title": "Retrieval Head Universality Across Architectures",
-    "slug": "retrieval-head-universality",
+    "title": "Attention Sparsity at Inference without Retraining",
+    "slug": "training-free-attention-sparsification",
     "status": "empirically-open",
-    "description": "Do the same sparse retrieval heads appear in every model?"
+    "description": "How much attention can be dropped losslessly at inference."
   },
   {
-    "title": "Sparse Attention Patterns Learned Versus Imposed",
-    "slug": "learned-vs-imposed-sparse-attention",
-    "status": "empirically-open",
-    "description": "Can learned sparsity beat fixed patterns at scale?"
-  },
-  {
-    "title": "Exact Equivalence of Linear Attention and Fast Weight Memory",
-    "slug": "linear-attention-fast-weight-equivalence",
+    "title": "Depth versus Attention Width for Composition Tasks",
+    "slug": "depth-vs-attention-width-composition",
     "status": "partially-solved",
-    "description": "How far does the linear attention to fast weights mapping extend?"
+    "description": "Layer depth needed for multi-hop compositional reasoning."
   },
   {
-    "title": "Softmax Temperature Scaling With Context Length",
-    "slug": "softmax-entropy-collapse-long-context",
-    "status": "open",
-    "description": "Does fixed temperature force attention entropy collapse at long context?"
-  },
-  {
-    "title": "Attention Head Redundancy and Prunability Limits",
-    "slug": "attention-head-prunability-limit",
+    "title": "Query-Key Normalization Effect on Scaling",
+    "slug": "qk-normalization-scaling-effect",
     "status": "empirically-open",
-    "description": "How many heads can be removed without capability loss?"
+    "description": "Whether QK-norm changes loss scaling exponents."
   },
   {
-    "title": "Circuit-Level Account of Multi-Hop Attention Reasoning",
-    "slug": "multi-hop-attention-circuit-account",
-    "status": "open",
-    "description": "Which attention compositions implement multi-step factual lookup?"
-  },
-  {
-    "title": "Do State Space Models Need Attention At All",
-    "slug": "ssm-attention-necessity",
-    "status": "partially-solved",
-    "description": "Which tasks strictly require attention over recurrent state models?"
-  },
-  {
-    "title": "Optimal Placement of Global Layers in Hybrid Attention Stacks",
-    "slug": "hybrid-global-local-layer-placement",
-    "status": "empirically-open",
-    "description": "Where should full-attention layers sit in a hybrid stack?"
-  },
-  {
-    "title": "Attention Approximation Error Propagation Through Depth",
+    "title": "Attention Approximation Error Propagation Across Layers",
     "slug": "attention-approximation-error-propagation",
     "status": "open",
-    "description": "How do per-layer attention approximation errors compound end-to-end?"
+    "description": "How per-layer attention approximation error compounds with depth."
   },
   {
-    "title": "Numerical Nonassociativity and Attention Reproducibility",
-    "slug": "attention-numerical-reproducibility",
+    "title": "Learned versus Fixed Attention Masks for Causality",
+    "slug": "learned-vs-fixed-causal-masks",
+    "status": "empirically-open",
+    "description": "Can learned masking outperform fixed causal masking."
+  },
+  {
+    "title": "Positional Information Emergence Without Explicit Encoding",
+    "slug": "nopos-positional-emergence",
+    "status": "partially-solved",
+    "description": "How decoder-only models infer position without encodings."
+  },
+  {
+    "title": "Attention Head Pruning Redundancy Limit",
+    "slug": "attention-head-pruning-limit",
+    "status": "empirically-open",
+    "description": "Maximum fraction of heads removable without quality loss."
+  },
+  {
+    "title": "Long-Context Effective Utilization Measurement",
+    "slug": "effective-context-length-measurement",
+    "status": "methodologically-blocked",
+    "description": "Defining how much context a model actually uses."
+  },
+  {
+    "title": "Attention Circuit Universality Across Random Seeds",
+    "slug": "attention-circuit-universality",
+    "status": "empirically-open",
+    "description": "Whether identical circuits form across independent training runs."
+  },
+  {
+    "title": "Optimal Attention Kernel Beyond Exponential Softmax",
+    "slug": "beyond-softmax-attention-kernels",
+    "status": "open",
+    "description": "Is exponential softmax the optimal similarity kernel."
+  },
+  {
+    "title": "Attention Bias Terms and Extrapolation Tradeoff",
+    "slug": "attention-bias-extrapolation-tradeoff",
+    "status": "partially-solved",
+    "description": "Do additive position biases trade recall for extrapolation."
+  },
+  {
+    "title": "Hardware-Aware Attention Optimality Under IO Bounds",
+    "slug": "io-optimal-attention",
     "status": "solved-but-impractical",
-    "description": "Bitwise-reproducible attention exists but costs too much throughput."
+    "description": "Proving IO-optimality of attention kernels on real hardware."
   },
   {
-    "title": "Query-Key Normalization Versus Logit Growth Instability",
-    "slug": "qk-norm-logit-growth-instability",
+    "title": "Attention Dynamics as Clustering and Token Collapse",
+    "slug": "attention-token-collapse-dynamics",
     "status": "partially-solved",
-    "description": "Does QK normalization remove all attention logit divergence?"
+    "description": "Whether deep attention necessarily collapses tokens to clusters."
   },
   {
-    "title": "Cross-Attention Versus Self-Attention for Modality Fusion",
-    "slug": "cross-versus-self-attention-fusion",
-    "status": "empirically-open",
-    "description": "Which fusion mechanism scales better for multimodal models?"
-  },
-  {
-    "title": "Attention Entropy as a Predictor of Training Collapse",
-    "slug": "attention-entropy-collapse-predictor",
-    "status": "empirically-open",
-    "description": "Can head entropy forecast divergence before loss spikes?"
-  },
-  {
-    "title": "Lower Bound on Heads Needed for Exact Copying",
-    "slug": "heads-needed-for-copying-lower-bound",
+    "title": "Sample Complexity of Learning a Single Attention Layer",
+    "slug": "single-attention-layer-sample-complexity",
     "status": "partially-solved",
-    "description": "How many heads and layers does exact copying require?"
+    "description": "Samples required to learn one attention layer provably."
   },
   {
-    "title": "Chain-of-Thought Expressivity Gains From Attention Depth",
-    "slug": "cot-versus-attention-depth-expressivity",
-    "status": "partially-solved",
-    "description": "Does extra decoding time substitute for attention layers?"
-  },
-  {
-    "title": "Position Interpolation Versus True Long-Context Learning",
-    "slug": "position-interpolation-vs-true-long-context",
-    "status": "empirically-open",
-    "description": "Does RoPE rescaling give real or superficial long-context ability?"
-  },
-  {
-    "title": "Attention Sparsity Under Quantization Interaction",
-    "slug": "sparse-attention-quantization-interaction",
-    "status": "empirically-open",
-    "description": "Do sparsity and low-bit quantization errors compound multiplicatively?"
-  },
-  {
-    "title": "Grouped-Query Attention Quality Loss Scaling Law",
-    "slug": "gqa-quality-loss-scaling-law",
-    "status": "empirically-open",
-    "description": "How does quality degrade as KV heads are shared?"
-  },
-  {
-    "title": "Superposition Limits in Attention Head Feature Coding",
-    "slug": "attention-head-superposition-limits",
+    "title": "Attention Robustness to Adversarial Context Injection",
+    "slug": "attention-adversarial-context-injection",
     "status": "open",
-    "description": "How many distinct behaviors can one head encode?"
+    "description": "Bounding how injected context hijacks attention allocation."
   },
   {
-    "title": "Attention Over Latent Compressed States Versus Tokens",
-    "slug": "latent-versus-token-attention",
+    "title": "Speculative Decoding Interaction with Attention Sparsity",
+    "slug": "speculative-decoding-attention-sparsity",
     "status": "empirically-open",
-    "description": "Can latent-state attention match token attention on retrieval?"
-  },
-  {
-    "title": "Provable Robustness of Attention to Adversarial Context Insertion",
-    "slug": "attention-adversarial-context-robustness",
-    "status": "open",
-    "description": "Can attention be certified robust against injected distractor spans?"
-  },
-  {
-    "title": "Attention Score Distribution Shift Between Prefill and Decode",
-    "slug": "prefill-decode-attention-distribution-shift",
-    "status": "empirically-open",
-    "description": "Do training and autoregressive decoding attention statistics diverge systematically?"
-  },
-  {
-    "title": "Softmax Alternatives and the Normalization Requirement",
-    "slug": "softmax-normalization-necessity",
-    "status": "open",
-    "description": "Is probability-simplex normalization necessary for attention to work?"
-  },
-  {
-    "title": "Depth Versus Context Length Tradeoff at Fixed Compute",
-    "slug": "depth-versus-context-length-tradeoff",
-    "status": "empirically-open",
-    "description": "Should extra compute buy more layers or longer context?"
-  },
-  {
-    "title": "Attention Head Transfer Across Fine-Tuned Model Descendants",
-    "slug": "attention-head-transfer-across-finetunes",
-    "status": "empirically-open",
-    "description": "Do identified heads keep their function after fine-tuning?"
-  },
-  {
-    "title": "Lost-in-the-Middle Positional Bias Mechanism",
-    "slug": "lost-in-the-middle-mechanism",
-    "status": "open",
-    "description": "What mechanism causes mid-context retrieval degradation?"
-  },
-  {
-    "title": "Memory-Bandwidth-Optimal Attention Kernel Lower Bound",
-    "slug": "attention-io-complexity-lower-bound",
-    "status": "partially-solved",
-    "description": "Is FlashAttention IO-optimal for all hardware memory hierarchies?"
-  },
-  {
-    "title": "Continuous-Time Limit of Attention as Interacting Particle Flow",
-    "slug": "attention-particle-flow-limit",
-    "status": "partially-solved",
-    "description": "Does the mean-field attention limit predict finite-depth behavior?"
-  },
-  {
-    "title": "Identifiability of Attention Weights From Model Behavior",
-    "slug": "attention-weight-identifiability",
-    "status": "open",
-    "description": "Can different attention weights produce identical model behavior?"
+    "description": "Whether sparse attention drafts preserve target model distribution."
   }
 ]

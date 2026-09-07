@@ -1,236 +1,242 @@
 [
   {
-    "title": "State Size Lower Bounds for Associative Recall",
-    "slug": "state-size-lower-bound-associative-recall",
+    "title": "Expressivity Gap Between Diagonal and Dense Linear Recurrences",
+    "slug": "diagonal-vs-dense-recurrence-expressivity",
     "status": "partially-solved",
-    "description": "Minimum recurrent state bits needed for exact multi-query recall."
+    "description": "Do diagonal SSMs lose expressive power versus dense ones?"
   },
   {
-    "title": "Length Generalization of Selective State-Space Models",
-    "slug": "ssm-length-generalization",
+    "title": "State Tracking Beyond TC0 in Linear-Time Recurrent Models",
+    "slug": "state-tracking-beyond-tc0-recurrent",
+    "status": "partially-solved",
+    "description": "Which recurrent architectures can track non-solvable group products?"
+  },
+  {
+    "title": "Fixed-State Memory Capacity Scaling Law",
+    "slug": "fixed-state-memory-capacity-law",
     "status": "empirically-open",
-    "description": "Do selective SSMs extrapolate far beyond training context length?"
+    "description": "How many recallable tokens fit per unit of state?"
   },
   {
-    "title": "Optimal Hybrid Attention-to-SSM Layer Ratio",
+    "title": "Length Generalization of Selective SSMs",
+    "slug": "length-generalization-selective-ssm",
+    "status": "open",
+    "description": "Why do selective SSMs fail beyond training length?"
+  },
+  {
+    "title": "Optimal Initialization of State Matrices Beyond HiPPO",
+    "slug": "state-matrix-initialization-beyond-hippo",
+    "status": "open",
+    "description": "Is HiPPO initialization necessary or merely sufficient?"
+  },
+  {
+    "title": "Associative Recall Lower Bounds for Constant-State Models",
+    "slug": "associative-recall-state-lower-bounds",
+    "status": "partially-solved",
+    "description": "Proven state size needed for multi-query associative recall."
+  },
+  {
+    "title": "Hybrid Attention-SSM Layer Ratio Optimality",
     "slug": "hybrid-attention-ssm-layer-ratio",
     "status": "empirically-open",
-    "description": "What fraction of layers should be attention in hybrids?"
+    "description": "What attention-to-recurrence ratio is compute-optimal?"
   },
   {
-    "title": "HiPPO Initialization Necessity at Scale",
-    "slug": "hippo-initialization-necessity",
-    "status": "empirically-open",
-    "description": "Does structured initialization still matter for large trained SSMs?"
-  },
-  {
-    "title": "Recurrent State Capacity Scaling Law",
-    "slug": "recurrent-state-capacity-scaling-law",
+    "title": "In-Context Learning Mechanism in State-Space Models",
+    "slug": "in-context-learning-mechanism-ssm",
     "status": "open",
-    "description": "How should state size scale with parameters and data?"
+    "description": "Do SSMs implement gradient descent in context like transformers?"
   },
   {
-    "title": "Provable Stability of Trained Diagonal Recurrences",
-    "slug": "diagonal-recurrence-stability-guarantees",
+    "title": "Numerical Stability of Long-Horizon Parallel Scans",
+    "slug": "parallel-scan-numerical-stability",
     "status": "partially-solved",
-    "description": "Guaranteeing bounded dynamics without constraining trained eigenvalues."
+    "description": "When do associative scans lose precision at long context?"
   },
   {
-    "title": "State-Space Models and Formal Language Hierarchies",
-    "slug": "ssm-formal-language-hierarchy",
-    "status": "partially-solved",
-    "description": "Exact circuit-complexity class of fixed-depth linear recurrent networks."
-  },
-  {
-    "title": "In-Context Learning Mechanism in Linear Recurrences",
-    "slug": "in-context-learning-linear-recurrence",
-    "status": "open",
-    "description": "How recurrent models implement in-context regression without attention."
-  },
-  {
-    "title": "Test-Time State Editing and Knowledge Injection",
-    "slug": "test-time-state-editing",
-    "status": "open",
-    "description": "Can recurrent state be directly edited to insert facts?"
-  },
-  {
-    "title": "Compressive Memory Loss Metric for Recurrent States",
-    "slug": "state-compression-loss-metric",
-    "status": "methodologically-blocked",
-    "description": "No agreed measure of what recurrent state discards."
-  },
-  {
-    "title": "Gradient Flow Through Very Long Recurrences",
-    "slug": "long-horizon-gradient-signal",
-    "status": "open",
-    "description": "Whether useful gradient signal survives millions of recurrent steps."
-  },
-  {
-    "title": "Parallel Scan Numerical Precision Limits",
-    "slug": "parallel-scan-numerical-precision",
-    "status": "partially-solved",
-    "description": "Low-precision associative scans lose accuracy at long sequence lengths."
-  },
-  {
-    "title": "Selectivity Versus Time-Invariance Necessity",
-    "slug": "selectivity-necessity",
+    "title": "Distillation of Transformers into Recurrent Students",
+    "slug": "transformer-to-recurrent-distillation",
     "status": "empirically-open",
-    "description": "Which tasks genuinely require input-dependent rather than fixed dynamics."
+    "description": "Can attention be distilled to recurrence without recall loss?"
   },
   {
-    "title": "State-Space Models for Retrieval-Heavy Tasks",
-    "slug": "ssm-retrieval-deficit",
-    "status": "empirically-open",
-    "description": "Can architectural changes close the copy-and-retrieve gap?"
-  },
-  {
-    "title": "Optimal Decay Spectrum Parameterization",
-    "slug": "decay-spectrum-parameterization",
+    "title": "Recurrent Depth Versus Width Tradeoff for Sequence Reasoning",
+    "slug": "recurrent-depth-width-tradeoff",
     "status": "open",
-    "description": "Best distribution of forgetting rates across recurrent channels."
+    "description": "Does layer depth substitute for larger recurrent state?"
   },
   {
-    "title": "Delta Rule Recurrences Versus Linear Attention",
-    "slug": "delta-rule-versus-linear-attention",
+    "title": "Gating Functions and the Forgetting Spectrum",
+    "slug": "gating-forgetting-spectrum",
+    "status": "open",
+    "description": "Which gate parameterizations yield the right timescale distribution?"
+  },
+  {
+    "title": "Test-Time Training Recurrences as Online Learners",
+    "slug": "test-time-training-recurrence-theory",
+    "status": "open",
+    "description": "Do TTT-style updates provably beat fixed-rule state updates?"
+  },
+  {
+    "title": "Chunkwise Parallel Form for Nonlinear Recurrences",
+    "slug": "chunkwise-parallel-nonlinear-recurrence",
+    "status": "open",
+    "description": "Can nonlinear RNNs be parallelized over sequence length?"
+  },
+  {
+    "title": "Delta Rule Versus Softmax Attention Sample Efficiency",
+    "slug": "delta-rule-vs-softmax-sample-efficiency",
+    "status": "empirically-open",
+    "description": "Does delta-rule memory match attention at scale?"
+  },
+  {
+    "title": "State Compression Rate Limits for Retrieval Tasks",
+    "slug": "state-compression-retrieval-limits",
     "status": "partially-solved",
-    "description": "When does online-learning-style state update beat additive accumulation?"
+    "description": "Information-theoretic bound on retrieval from compressed state."
   },
   {
-    "title": "Chunkwise Parallel Form Optimality",
-    "slug": "chunkwise-parallel-form-optimality",
+    "title": "Copying Task Separation Between SSMs and Attention",
+    "slug": "copying-task-ssm-attention-separation",
+    "status": "partially-solved",
+    "description": "Is the copying gap fundamental or training-induced?"
+  },
+  {
+    "title": "Extrapolation of Continuous-Time Discretization Step Size",
+    "slug": "discretization-step-extrapolation",
     "status": "open",
-    "description": "Optimal chunk size trading FLOPs against memory bandwidth."
+    "description": "Can trained SSMs transfer across sampling rates?"
   },
   {
-    "title": "Distillation From Transformers Into Recurrent Models",
-    "slug": "transformer-to-ssm-distillation",
-    "status": "empirically-open",
-    "description": "How much capability survives converting attention layers to recurrences."
-  },
-  {
-    "title": "State Space Duality Beyond Semiseparable Matrices",
-    "slug": "state-space-duality-generalization",
+    "title": "Optimal Kernel Feature Maps for Linear Attention",
+    "slug": "linear-attention-feature-map-choice",
     "status": "open",
-    "description": "Which recurrences admit efficient matrix-form dual algorithms."
+    "description": "Which feature map maximizes linear-attention quality per state."
   },
   {
     "title": "Recurrent Models and Chain-of-Thought Compute Equivalence",
     "slug": "recurrent-chain-of-thought-equivalence",
-    "status": "partially-solved",
-    "description": "Does reasoning-step scratchpad recover attention-level expressivity in recurrences?"
+    "status": "open",
+    "description": "Does chain-of-thought close the recurrent expressivity gap?"
   },
   {
-    "title": "Interpretability of Distributed Recurrent State",
-    "slug": "recurrent-state-interpretability",
+    "title": "Catastrophic Forgetting of Early Context in Gated Recurrences",
+    "slug": "early-context-forgetting-gated-recurrence",
+    "status": "empirically-open",
+    "description": "Measuring where gated models silently drop old tokens."
+  },
+  {
+    "title": "State-Space Model Scaling Laws Versus Transformers",
+    "slug": "ssm-versus-transformer-scaling-laws",
+    "status": "empirically-open",
+    "description": "Do SSM loss curves have a different irreducible term?"
+  },
+  {
+    "title": "Quantization Sensitivity of Recurrent State",
+    "slug": "recurrent-state-quantization-sensitivity",
+    "status": "empirically-open",
+    "description": "How low can recurrent state precision go?"
+  },
+  {
+    "title": "Provable Gradient Stability Over Unbounded Horizons",
+    "slug": "unbounded-horizon-gradient-stability",
+    "status": "partially-solved",
+    "description": "Conditions for non-vanishing gradients at arbitrary sequence length."
+  },
+  {
+    "title": "Interpretability Primitives for Recurrent State",
+    "slug": "recurrent-state-interpretability-primitives",
     "status": "methodologically-blocked",
-    "description": "No reliable method to read features from recurrent hidden state."
+    "description": "No agreed unit of analysis inside a recurrent state."
   },
   {
-    "title": "Nonlinear Versus Linear Recurrence Necessity",
-    "slug": "nonlinear-recurrence-necessity",
+    "title": "Speculative Decoding Gains for Constant-Memory Models",
+    "slug": "speculative-decoding-recurrent-models",
     "status": "empirically-open",
-    "description": "Whether nonlinear state transitions buy anything at scale."
+    "description": "Do recurrent models benefit from speculative decoding equally?"
   },
   {
-    "title": "Optimal Convolution Kernel Length in SSM Blocks",
-    "slug": "ssm-short-convolution-role",
+    "title": "Effective Context Length Metric for Recurrent Models",
+    "slug": "effective-context-length-metric",
+    "status": "methodologically-blocked",
+    "description": "No principled way to measure a model's usable context."
+  },
+  {
+    "title": "Higher-Order and Matrix-Valued State Update Rules",
+    "slug": "matrix-valued-state-update-rules",
+    "status": "open",
+    "description": "Do higher-rank state updates pay for their cost?"
+  },
+  {
+    "title": "Recurrent Architectures for Multimodal Streaming Input",
+    "slug": "recurrent-multimodal-streaming",
     "status": "empirically-open",
-    "description": "Why short depthwise convolutions are needed alongside recurrence."
+    "description": "Can one recurrent state serve audio, video, and text?"
   },
   {
-    "title": "Continuous-Time Discretization Choice Effects",
-    "slug": "ssm-discretization-choice",
+    "title": "Continual Learning via Persistent Recurrent State",
+    "slug": "persistent-state-continual-learning",
+    "status": "open",
+    "description": "Can inference-time state serve as durable long-term memory?"
+  },
+  {
+    "title": "Optimal Eigenvalue Distribution on the Unit Disk",
+    "slug": "recurrence-eigenvalue-distribution",
+    "status": "open",
+    "description": "Which spectral radius distribution best fits natural language?"
+  },
+  {
+    "title": "Hardware-Optimal State Size Under Memory Bandwidth",
+    "slug": "hardware-optimal-state-size",
+    "status": "empirically-open",
+    "description": "What state size maximizes throughput per accuracy point?"
+  },
+  {
+    "title": "Recurrent Model Robustness to Adversarial Long Prefixes",
+    "slug": "adversarial-long-prefix-robustness",
+    "status": "empirically-open",
+    "description": "Can crafted prefixes erase a recurrent model's memory?"
+  },
+  {
+    "title": "Learning Rate and Timescale Coupling in SSM Training",
+    "slug": "learning-rate-timescale-coupling",
+    "status": "open",
+    "description": "Why do state parameters need separate optimizer treatment?"
+  },
+  {
+    "title": "Recurrent Models on Formal Language Hierarchies",
+    "slug": "recurrent-formal-language-hierarchy",
     "status": "partially-solved",
-    "description": "Does discretization rule matter once step size is learned?"
+    "description": "Exact placement of modern SSMs in the Chomsky hierarchy."
   },
   {
-    "title": "Recurrent Models Under Irregular and Missing-Time Data",
-    "slug": "irregular-time-series-recurrence",
-    "status": "open",
-    "description": "Principled recurrent handling of unevenly sampled event streams."
-  },
-  {
-    "title": "State-Space Models for Long-Range Reinforcement Learning Credit Assignment",
-    "slug": "ssm-rl-credit-assignment",
-    "status": "empirically-open",
-    "description": "Do recurrent states solve long-delay credit assignment better than transformers?"
-  },
-  {
-    "title": "Recurrent Model Quantization of the State Tensor",
-    "slug": "recurrent-state-quantization",
-    "status": "open",
-    "description": "How far the recurrent state can be quantized without drift."
-  },
-  {
-    "title": "Speculative Decoding Efficiency for Recurrent Models",
-    "slug": "speculative-decoding-recurrent",
-    "status": "open",
-    "description": "Efficient state rollback and verification during speculative generation."
-  },
-  {
-    "title": "Recurrent Models and Multi-Query Batched State Sharing",
-    "slug": "batched-state-sharing-serving",
-    "status": "open",
-    "description": "Sharing prefix state across requests without a key-value cache."
-  },
-  {
-    "title": "Emergence Thresholds Differ Between Recurrent and Attention Models",
-    "slug": "recurrent-emergence-thresholds",
-    "status": "empirically-open",
-    "description": "Do capabilities appear at different scales in recurrent architectures?"
-  },
-  {
-    "title": "Recall Versus Memory Efficiency Pareto Frontier",
-    "slug": "recall-memory-pareto-frontier",
-    "status": "partially-solved",
-    "description": "Is the recall-throughput tradeoff a hard architectural law?"
-  },
-  {
-    "title": "Training Instabilities Specific to Deep Recurrent Stacks",
-    "slug": "deep-recurrent-training-instability",
-    "status": "open",
-    "description": "Cause and cure of loss spikes in large SSM training."
-  },
-  {
-    "title": "State Initialization Transfer Across Contexts",
+    "title": "State Initialization Transfer Across Prompts",
     "slug": "state-initialization-transfer",
+    "status": "open",
+    "description": "Can a cached state be reused across different prompts?"
+  },
+  {
+    "title": "Sparse Mixture of Recurrent Experts Routing Stability",
+    "slug": "mixture-of-recurrent-experts-routing",
     "status": "empirically-open",
-    "description": "Can a cached state serve as reusable task prompt?"
+    "description": "Does expert routing destabilize sequential state updates?"
   },
   {
-    "title": "Recurrent Models for Bidirectional Encoding",
-    "slug": "bidirectional-recurrence-encoders",
+    "title": "Recurrent Models for Reinforcement Learning Credit Assignment",
+    "slug": "recurrent-rl-credit-assignment",
+    "status": "open",
+    "description": "Do SSMs improve long-horizon credit assignment over LSTMs?"
+  },
+  {
+    "title": "Bidirectional and Non-Causal State-Space Formulations",
+    "slug": "bidirectional-state-space-formulations",
+    "status": "open",
+    "description": "Best way to make recurrences non-causal without doubling cost."
+  },
+  {
+    "title": "Sharpness and Loss Landscape Geometry of Recurrent Layers",
+    "slug": "recurrent-loss-landscape-geometry",
     "status": "empirically-open",
-    "description": "Do recurrent encoders match bidirectional attention on representation tasks?"
-  },
-  {
-    "title": "Optimal Head and Channel Grouping in Gated Recurrences",
-    "slug": "gated-recurrence-head-structure",
-    "status": "open",
-    "description": "How to partition state across heads for best capacity."
-  },
-  {
-    "title": "Provable Expressivity of Input-Dependent Gating",
-    "slug": "input-dependent-gating-expressivity",
-    "status": "open",
-    "description": "Formal separation between gated and ungated linear recurrences."
-  },
-  {
-    "title": "Recurrent Models on Non-Text Ultra-Long Modalities",
-    "slug": "ssm-ultralong-modalities",
-    "status": "empirically-open",
-    "description": "Do SSM advantages hold on million-token genomic and audio streams."
-  },
-  {
-    "title": "Context Extension Without Retraining for Recurrent Models",
-    "slug": "recurrent-context-extension",
-    "status": "open",
-    "description": "Post-hoc methods to extend usable context in trained recurrences."
-  },
-  {
-    "title": "Hardware-Optimal State Layout for Recurrent Inference",
-    "slug": "recurrent-state-hardware-layout",
-    "status": "open",
-    "description": "Memory layout minimizing bandwidth cost of large recurrent states."
+    "description": "Do recurrent layers have systematically sharper minima?"
   }
 ]

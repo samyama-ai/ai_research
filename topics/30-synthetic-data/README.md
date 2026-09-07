@@ -5,3 +5,6 @@ Topic `30-synthetic-data` of the [AI Research catalog](../../README.md). See [TA
 
 ## Problems Index
 
+* 🟢 [Optimal Compute Split Between Generation and Training](./compute-split-generation-training.md)
+* 🔴 [Contamination Detection for Synthetically Paraphrased Benchmarks](./contamination-detection-paraphrased-benchmarks.md)
+* 🟡 [Counterfactual Data Augmentation and Spurious Correlation Removal](./counterfactual-augmentation-spurious-removal.md)

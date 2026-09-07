@@ -1,242 +1,242 @@
 [
   {
-    "title": "Retrieval Recall vs. Generation Faithfulness Tradeoff",
-    "slug": "retrieval-recall-faithfulness-tradeoff",
-    "status": "empirically-open",
-    "description": "Does adding more retrieved passages reduce answer faithfulness?"
+    "title": "Retrieval-Augmented Generation Grounding Faithfulness Guarantees",
+    "slug": "rag-grounding-faithfulness-guarantees",
+    "status": "open",
+    "description": "Can generated claims be provably traced to retrieved evidence?"
   },
   {
-    "title": "Optimal Chunk Granularity for Dense Retrieval",
-    "slug": "optimal-chunk-granularity-dense-retrieval",
+    "title": "Optimal Chunking Granularity for Dense Retrieval",
+    "slug": "optimal-chunking-granularity-dense-retrieval",
     "status": "empirically-open",
-    "description": "Is there a principled optimal chunk size for embedding corpora?"
+    "description": "What chunk size maximizes downstream answer accuracy?"
   },
   {
-    "title": "Embedding Dimension Lower Bound for Corpus Coverage",
-    "slug": "embedding-dimension-lower-bound-corpus",
+    "title": "Scaling Laws for Retrieval Corpus Size versus Parameters",
+    "slug": "scaling-laws-retrieval-corpus-versus-parameters",
+    "status": "empirically-open",
+    "description": "How does corpus size trade against model parameters?"
+  },
+  {
+    "title": "Lost-in-the-Middle Elimination in Long-Context Readers",
+    "slug": "lost-in-middle-elimination-long-context",
+    "status": "open",
+    "description": "Can position bias over retrieved passages be removed entirely?"
+  },
+  {
+    "title": "Retrieval versus Long Context Crossover Point",
+    "slug": "retrieval-versus-long-context-crossover",
+    "status": "empirically-open",
+    "description": "When does long context beat explicit retrieval?"
+  },
+  {
+    "title": "Negative Result Detection in Retrieval",
+    "slug": "negative-result-detection-retrieval",
+    "status": "open",
+    "description": "Can retrievers reliably signal that no answer exists?"
+  },
+  {
+    "title": "Provable Recall Bounds for Approximate Nearest Neighbor Graphs",
+    "slug": "provable-recall-bounds-ann-graphs",
     "status": "partially-solved",
-    "description": "Minimum vector dimension to represent all top-k relevance orderings."
+    "description": "Do HNSW-style graph indices admit recall guarantees?"
   },
   {
-    "title": "Lost-in-the-Middle Positional Bias Elimination",
-    "slug": "lost-in-middle-positional-bias",
+    "title": "Compositional Multi-Hop Retrieval without Query Decomposition",
+    "slug": "compositional-multi-hop-retrieval-no-decomposition",
     "status": "open",
-    "description": "Can positional bias in long-context retrieval be fully removed?"
+    "description": "Can single-shot retrieval solve multi-hop queries?"
   },
   {
-    "title": "Provable Approximate Nearest Neighbor Recall Under Adversarial Queries",
-    "slug": "ann-recall-adversarial-queries",
-    "status": "open",
-    "description": "Do graph ANN indexes have adversarial worst-case recall collapse?"
-  },
-  {
-    "title": "When Does RAG Beat Long-Context Prompting",
-    "slug": "rag-vs-long-context-crossover",
-    "status": "empirically-open",
-    "description": "Identify the corpus size where retrieval overtakes long context."
-  },
-  {
-    "title": "Credit Assignment for Multi-Step Tool-Using Agents",
-    "slug": "credit-assignment-tool-agents",
-    "status": "open",
-    "description": "Assigning reward to individual tool calls in long trajectories."
-  },
-  {
-    "title": "Compounding Error Rate in Agent Trajectories",
-    "slug": "compounding-error-agent-trajectories",
-    "status": "empirically-open",
-    "description": "Does per-step accuracy predict long-horizon agent success rates?"
-  },
-  {
-    "title": "Verifier-Free Self-Correction in Agents",
-    "slug": "verifier-free-self-correction",
+    "title": "Embedding Dimensionality Lower Bounds for Retrieval Tasks",
+    "slug": "embedding-dimensionality-lower-bounds",
     "status": "partially-solved",
-    "description": "Can agents self-correct without external feedback signals?"
+    "description": "What dimension is required to represent given relevance sets?"
   },
   {
-    "title": "Optimal Stopping Policy for Iterative Retrieval",
+    "title": "Credit Assignment over Long Agent Trajectories",
+    "slug": "credit-assignment-long-agent-trajectories",
+    "status": "open",
+    "description": "Which of hundreds of steps caused final failure?"
+  },
+  {
+    "title": "Compounding Error Rates in Multi-Step Agents",
+    "slug": "compounding-error-rates-multi-step-agents",
+    "status": "empirically-open",
+    "description": "Does per-step reliability compound geometrically or sub-geometrically?"
+  },
+  {
+    "title": "Verifier-Generator Asymmetry Limits in Agent Loops",
+    "slug": "verifier-generator-asymmetry-agent-loops",
+    "status": "open",
+    "description": "When is checking a step cheaper than doing it?"
+  },
+  {
+    "title": "Memory Consolidation Policy for Lifelong Agents",
+    "slug": "memory-consolidation-policy-lifelong-agents",
+    "status": "open",
+    "description": "What should a persistent agent keep versus forget?"
+  },
+  {
+    "title": "Measuring Agentic Capability Independent of Scaffold",
+    "slug": "agentic-capability-independent-of-scaffold",
+    "status": "methodologically-blocked",
+    "description": "Can agent skill be separated from harness engineering?"
+  },
+  {
+    "title": "Tool Selection under Thousands of Available Tools",
+    "slug": "tool-selection-thousands-of-tools",
+    "status": "empirically-open",
+    "description": "Does tool choice accuracy degrade with catalog size?"
+  },
+  {
+    "title": "Self-Correction without External Feedback",
+    "slug": "self-correction-without-external-feedback",
+    "status": "partially-solved",
+    "description": "Can agents fix errors using only internal signals?"
+  },
+  {
+    "title": "Optimal Stopping in Iterative Retrieval Agents",
     "slug": "optimal-stopping-iterative-retrieval",
     "status": "open",
-    "description": "When should an agent stop retrieving and answer?"
+    "description": "When should an agent stop searching and answer?"
   },
   {
-    "title": "Knowledge Conflict Resolution Between Parametric and Retrieved Evidence",
-    "slug": "parametric-retrieved-knowledge-conflict",
-    "status": "open",
-    "description": "How models should arbitrate contradictions between memory and documents."
-  },
-  {
-    "title": "Retrieval Corpus Poisoning Robustness Bounds",
-    "slug": "retrieval-corpus-poisoning-bounds",
-    "status": "partially-solved",
-    "description": "Certified defenses against a few poisoned corpus documents."
-  },
-  {
-    "title": "Measuring Genuine Agentic Generalization vs. Benchmark Contamination",
-    "slug": "agentic-generalization-vs-contamination",
+    "title": "Contamination-Free Evaluation of Web-Browsing Agents",
+    "slug": "contamination-free-web-agent-evaluation",
     "status": "methodologically-blocked",
-    "description": "Separating true agent skill from training data leakage."
+    "description": "Can live-web agent benchmarks avoid answer leakage?"
   },
   {
-    "title": "Attribution Faithfulness of Generated Citations",
-    "slug": "citation-attribution-faithfulness",
+    "title": "Non-Stationary Environment Drift in Agent Benchmarks",
+    "slug": "non-stationary-drift-agent-benchmarks",
     "status": "methodologically-blocked",
-    "description": "Verifying that cited sources actually support generated claims."
+    "description": "How to compare agents when websites change underneath?"
   },
   {
-    "title": "Query Decomposition Optimality for Multi-Hop Questions",
-    "slug": "query-decomposition-optimality",
-    "status": "open",
-    "description": "Is there an optimal decomposition of multi-hop retrieval queries?"
-  },
-  {
-    "title": "Cost-Aware Agent Scaling Laws",
-    "slug": "cost-aware-agent-scaling-laws",
+    "title": "Reranker Distillation Loss Bounds",
+    "slug": "reranker-distillation-loss-bounds",
     "status": "empirically-open",
-    "description": "How agent success scales with inference compute budget."
+    "description": "How much ranking quality survives cross-encoder distillation?"
   },
   {
-    "title": "Memory Consolidation for Persistent Long-Lived Agents",
-    "slug": "memory-consolidation-long-lived-agents",
+    "title": "Hybrid Sparse-Dense Fusion Optimality",
+    "slug": "hybrid-sparse-dense-fusion-optimality",
     "status": "open",
-    "description": "What an agent should keep, compress, or forget across sessions."
-  },
-  {
-    "title": "Context Compression Without Task-Relevant Information Loss",
-    "slug": "context-compression-lossless-task",
-    "status": "open",
-    "description": "Compressing retrieved context while preserving all answer-relevant bits."
-  },
-  {
-    "title": "Hybrid Sparse-Dense Fusion Weight Selection",
-    "slug": "hybrid-sparse-dense-fusion-weights",
-    "status": "partially-solved",
-    "description": "Principled setting of BM25 and dense score fusion weights."
+    "description": "Is there a principled optimal fusion of lexical and dense scores?"
   },
   {
     "title": "Out-of-Domain Generalization of Dense Retrievers",
-    "slug": "dense-retriever-out-of-domain-generalization",
+    "slug": "out-of-domain-generalization-dense-retrievers",
     "status": "open",
-    "description": "Why dense retrievers underperform BM25 on unseen domains."
+    "description": "Why do dense retrievers still lose to BM25 out of domain?"
   },
   {
-    "title": "Multi-Agent Coordination Gain Over a Single Agent",
-    "slug": "multi-agent-coordination-gain",
-    "status": "empirically-open",
-    "description": "Do multi-agent systems beat a single agent given equal compute?"
-  },
-  {
-    "title": "Tool Selection Under Large Tool Inventories",
-    "slug": "tool-selection-large-inventories",
-    "status": "open",
-    "description": "Scaling tool choice accuracy to thousands of available tools."
-  },
-  {
-    "title": "Sample-Efficient Reinforcement Learning for Web Agents",
-    "slug": "sample-efficient-rl-web-agents",
-    "status": "open",
-    "description": "Training web agents without millions of environment interactions."
-  },
-  {
-    "title": "Irreversible Action Detection in Autonomous Agents",
-    "slug": "irreversible-action-detection",
-    "status": "open",
-    "description": "Predicting whether a proposed agent action is unrecoverable."
-  },
-  {
-    "title": "Prompt Injection Resistance via Architectural Separation",
-    "slug": "prompt-injection-architectural-separation",
-    "status": "open",
-    "description": "Separating instructions from retrieved data at the architecture level."
-  },
-  {
-    "title": "Calibrated Abstention in Retrieval-Augmented Generation",
-    "slug": "calibrated-abstention-rag",
-    "status": "open",
-    "description": "Knowing when retrieved evidence is insufficient to answer."
-  },
-  {
-    "title": "Index Freshness and Continual Corpus Updates",
+    "title": "Index Freshness under Continual Corpus Updates",
     "slug": "index-freshness-continual-updates",
     "status": "partially-solved",
-    "description": "Updating embedding indexes as corpora and encoders drift."
+    "description": "Can vector indices absorb streaming edits without rebuild?"
   },
   {
-    "title": "Generative Retrieval Scaling to Web-Scale Corpora",
-    "slug": "generative-retrieval-web-scale",
-    "status": "open",
-    "description": "Do docid-generating retrievers scale past millions of documents?"
-  },
-  {
-    "title": "Reranker Distillation Limits",
-    "slug": "reranker-distillation-limits",
+    "title": "Retrieval-Induced Hallucination from Distracting Passages",
+    "slug": "retrieval-induced-hallucination-distractors",
     "status": "empirically-open",
-    "description": "How much cross-encoder quality survives distillation into bi-encoders."
+    "description": "Do near-miss passages increase hallucination over no retrieval?"
   },
   {
-    "title": "Evaluating Agent Trajectories Without Gold Trajectories",
-    "slug": "trajectory-evaluation-without-gold",
+    "title": "Parametric versus Retrieved Knowledge Conflict Resolution",
+    "slug": "parametric-versus-retrieved-knowledge-conflict",
+    "status": "open",
+    "description": "Which source should a model trust when they disagree?"
+  },
+  {
+    "title": "Attribution Granularity for Generated Text",
+    "slug": "attribution-granularity-generated-text",
     "status": "methodologically-blocked",
-    "description": "Scoring agent process quality when no reference path exists."
+    "description": "What unit of text can be credibly attributed to a source?"
   },
   {
-    "title": "Retrieval for Reasoning-Intensive Rather Than Fact-Lookup Queries",
-    "slug": "retrieval-for-reasoning-queries",
-    "status": "open",
-    "description": "Retrieving by reasoning usefulness instead of semantic similarity."
-  },
-  {
-    "title": "Multimodal Document Retrieval Without OCR Loss",
-    "slug": "multimodal-retrieval-without-ocr-loss",
+    "title": "Generative Retrieval Scaling to Billion-Document Corpora",
+    "slug": "generative-retrieval-billion-document-scaling",
     "status": "empirically-open",
-    "description": "Retrieving from page images versus extracted text pipelines."
+    "description": "Do docid-generating retrievers scale past web-scale corpora?"
   },
   {
-    "title": "Deduplication Effects on Retrieval Diversity",
-    "slug": "deduplication-retrieval-diversity",
-    "status": "empirically-open",
-    "description": "How near-duplicate passages distort top-k evidence diversity."
-  },
-  {
-    "title": "Agent Sandbox Escape Under Compositional Tool Use",
-    "slug": "agent-sandbox-escape-compositional-tools",
+    "title": "Multi-Agent Communication Bandwidth Bottleneck",
+    "slug": "multi-agent-communication-bandwidth-bottleneck",
     "status": "open",
-    "description": "Do individually safe tools compose into unsafe capabilities?"
+    "description": "How much information must agents exchange to coordinate?"
   },
   {
-    "title": "Latency-Constrained Agent Planning Depth",
-    "slug": "latency-constrained-planning-depth",
-    "status": "open",
-    "description": "Optimal planning depth under hard wall-clock deadlines."
-  },
-  {
-    "title": "Self-Consistency Failure Modes in Agent Ensembles",
-    "slug": "self-consistency-failure-agent-ensembles",
+    "title": "When Multi-Agent Beats Single-Agent at Equal Compute",
+    "slug": "multi-agent-versus-single-agent-equal-compute",
     "status": "empirically-open",
-    "description": "When majority voting amplifies rather than corrects agent errors."
+    "description": "Does agent decomposition help at matched token budgets?"
   },
   {
-    "title": "Learned Query Rewriting Transfer Across Retrievers",
-    "slug": "query-rewriting-retriever-transfer",
-    "status": "empirically-open",
-    "description": "Do learned rewriters transfer to unseen retrieval backends?"
-  },
-  {
-    "title": "Formal Guarantees for Human-in-the-Loop Agent Interrupts",
-    "slug": "human-in-loop-agent-interrupt-guarantees",
+    "title": "Prompt-Injection Robustness with Provable Guarantees",
+    "slug": "prompt-injection-provable-robustness",
     "status": "open",
-    "description": "Proving an agent halts safely at every interrupt point."
+    "description": "Can retrieved content be made incapable of hijacking agents?"
   },
   {
-    "title": "Environment Non-Determinism in Agent Benchmark Reproducibility",
-    "slug": "agent-benchmark-nondeterminism",
+    "title": "Corpus Poisoning Detection at Retrieval Time",
+    "slug": "corpus-poisoning-detection-retrieval-time",
+    "status": "open",
+    "description": "Can adversarial documents be detected before they are used?"
+  },
+  {
+    "title": "Safe Irreversible Action Gating for Autonomous Agents",
+    "slug": "safe-irreversible-action-gating",
+    "status": "open",
+    "description": "How should agents decide before taking unrecoverable actions?"
+  },
+  {
+    "title": "Cost-Optimal Allocation Between Retrieval and Generation",
+    "slug": "cost-optimal-retrieval-generation-allocation",
+    "status": "empirically-open",
+    "description": "How to split a fixed budget across search and reasoning?"
+  },
+  {
+    "title": "Query Reformulation Reward Shaping without Human Labels",
+    "slug": "query-reformulation-reward-without-labels",
+    "status": "open",
+    "description": "Can search behaviour be trained from outcome signal alone?"
+  },
+  {
+    "title": "Knowledge Graph versus Vector Retrieval for Global Questions",
+    "slug": "graph-versus-vector-retrieval-global-questions",
+    "status": "empirically-open",
+    "description": "Does graph structure help corpus-wide summarization queries?"
+  },
+  {
+    "title": "Context Compression Without Task-Relevant Information Loss",
+    "slug": "context-compression-without-information-loss",
+    "status": "open",
+    "description": "How far can retrieved context shrink before accuracy drops?"
+  },
+  {
+    "title": "Cross-Lingual Retrieval Parity for Low-Resource Languages",
+    "slug": "cross-lingual-retrieval-parity-low-resource",
+    "status": "open",
+    "description": "Can retrieval quality be equalized across languages?"
+  },
+  {
+    "title": "Multimodal Document Retrieval over Screenshots versus Parsed Text",
+    "slug": "multimodal-screenshot-versus-parsed-retrieval",
+    "status": "empirically-open",
+    "description": "Does page-image retrieval beat text extraction pipelines?"
+  },
+  {
+    "title": "Reproducibility of Stochastic Agent Trajectories",
+    "slug": "reproducibility-stochastic-agent-trajectories",
     "status": "methodologically-blocked",
-    "description": "Reproducing agent results in live, changing environments."
+    "description": "How many runs are needed for a valid agent comparison?"
   },
   {
-    "title": "KV Cache Reuse Across Shared Retrieved Prefixes",
-    "slug": "kv-cache-reuse-retrieved-prefixes",
-    "status": "partially-solved",
-    "description": "Reusing attention caches for reordered retrieved passage blocks."
+    "title": "Test-Time Compute Scaling Limits for Agentic Search",
+    "slug": "test-time-compute-limits-agentic-search",
+    "status": "empirically-open",
+    "description": "Where does more search rollouts stop improving accuracy?"
   }
 ]

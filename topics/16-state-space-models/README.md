@@ -5,3 +5,6 @@ Topic `16-state-space-models` of the [AI Research catalog](../../README.md). See
 
 ## Problems Index
 
+* 🔴 [Recurrent Models and Multi-Query Batched State Sharing](./batched-state-sharing-serving.md)
+* 🔴 [Chunkwise Parallel Form Optimality](./chunkwise-parallel-form-optimality.md)
+* 🔴 [Optimal Decay Spectrum Parameterization](./decay-spectrum-parameterization.md)

@@ -5,3 +5,6 @@ Topic `05-retrieval-and-agents` of the [AI Research catalog](../../README.md). S
 
 ## Problems Index
 
+* 🔵 [Environment Non-Determinism in Agent Benchmark Reproducibility](./agent-benchmark-nondeterminism.md)
+* 🔵 [Measuring Genuine Agentic Generalization vs. Benchmark Contamination](./agentic-generalization-vs-contamination.md)
+* 🔴 [Provable Approximate Nearest Neighbor Recall Under Adversarial Queries](./ann-recall-adversarial-queries.md)

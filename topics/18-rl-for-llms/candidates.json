@@ -1,242 +1,242 @@
 [
   {
-    "title": "Credit Assignment for Long Chain-of-Thought Under Outcome-Only Rewards",
-    "slug": "long-cot-credit-assignment-outcome-reward",
+    "title": "Credit Assignment for Long Chains of Thought",
+    "slug": "credit-assignment-long-cot",
     "status": "open",
-    "description": "How to assign token-level credit from a single final reward."
+    "description": "How to assign reward to individual tokens in long reasoning traces."
   },
   {
-    "title": "Does RLVR Expand the Base Model's Reasoning Support?",
-    "slug": "rlvr-capability-expansion-vs-sharpening",
-    "status": "empirically-open",
-    "description": "Whether RL adds new solutions or only reweights existing ones."
-  },
-  {
-    "title": "Entropy Collapse in Policy-Gradient Fine-Tuning",
-    "slug": "entropy-collapse-policy-gradient-llm",
-    "status": "partially-solved",
-    "description": "Why policy entropy collapses and how to prevent it principledly."
-  },
-  {
-    "title": "Optimal KL Regularization Strength and Direction in RLHF",
-    "slug": "kl-regularization-choice-rlhf",
-    "status": "open",
-    "description": "Which KL direction and coefficient optimally trade reward against drift."
-  },
-  {
-    "title": "Reward Hacking Detection Without a Ground-Truth Reward",
-    "slug": "reward-hacking-detection-no-ground-truth",
+    "title": "Reward Hacking Detection Under Learned Reward Models",
+    "slug": "reward-hacking-detection-learned-rm",
     "status": "methodologically-blocked",
-    "description": "Detecting proxy-reward exploitation when true reward is unobservable."
+    "description": "No agreed measure separates genuine improvement from reward model exploitation."
   },
   {
-    "title": "Sample Efficiency Gap Between DPO-Style Offline and Online RL",
-    "slug": "offline-vs-online-preference-optimization-gap",
+    "title": "Optimal KL Regularization Strength in RLHF",
+    "slug": "optimal-kl-regularization-rlhf",
     "status": "empirically-open",
-    "description": "How much on-policy sampling actually buys over offline preference losses."
+    "description": "Which KL penalty maximizes true reward at fixed compute."
   },
   {
-    "title": "Verifier Reliability Ceiling for Reasoning RL",
-    "slug": "verifier-reliability-ceiling-rlvr",
+    "title": "Does RLVR Expand or Only Sharpen Base Model Capability",
+    "slug": "rlvr-capability-expansion-vs-sharpening",
     "status": "open",
-    "description": "How verifier false-positive rate bounds achievable policy quality."
+    "description": "Whether verifiable-reward RL adds abilities absent from the base model."
   },
   {
-    "title": "Process Rewards Versus Outcome Rewards at Fixed Compute",
-    "slug": "process-vs-outcome-reward-fixed-compute",
+    "title": "Sample Efficiency Gap Between DPO and PPO",
+    "slug": "dpo-ppo-sample-efficiency-gap",
     "status": "empirically-open",
-    "description": "Whether step-level supervision beats outcome rewards per unit compute."
+    "description": "Which preference optimizer wins at matched compute and data."
+  },
+  {
+    "title": "Off-Policy Correction for Stale Rollouts in Async RL",
+    "slug": "off-policy-correction-stale-rollouts",
+    "status": "partially-solved",
+    "description": "Correcting policy drift when rollouts lag behind the learner."
+  },
+  {
+    "title": "Entropy Collapse in Policy Gradient Fine-Tuning",
+    "slug": "entropy-collapse-policy-gradient",
+    "status": "open",
+    "description": "Why LLM policy entropy collapses and how to prevent it."
+  },
+  {
+    "title": "Process Reward Model Label Efficiency",
+    "slug": "process-reward-model-label-efficiency",
+    "status": "empirically-open",
+    "description": "How much step-level supervision beats outcome-only reward."
+  },
+  {
+    "title": "Reward Model Generalization Beyond Training Distribution",
+    "slug": "reward-model-ood-generalization",
+    "status": "open",
+    "description": "Whether reward models stay accurate on off-distribution policy outputs."
   },
   {
     "title": "Scaling Laws for RL Post-Training Compute",
     "slug": "scaling-laws-rl-post-training",
     "status": "empirically-open",
-    "description": "Predictable law relating RL compute to downstream capability gain."
+    "description": "Predictable returns from RL compute at fixed pretraining scale."
   },
   {
-    "title": "Baseline Variance Reduction Without a Learned Critic",
-    "slug": "critic-free-baseline-variance-llm-rl",
-    "status": "partially-solved",
-    "description": "Whether group baselines can match learned critics on variance."
-  },
-  {
-    "title": "Off-Policy Correction for Stale Rollouts in Asynchronous RL",
-    "slug": "stale-rollout-off-policy-correction",
+    "title": "Verifier Reliability Under Adversarial Policy Pressure",
+    "slug": "verifier-reliability-under-policy-pressure",
     "status": "open",
-    "description": "Correcting for policy staleness in asynchronous LLM RL pipelines."
+    "description": "Whether automatic verifiers survive optimization against them."
   },
   {
-    "title": "Length Bias in Preference-Trained Reward Models",
-    "slug": "length-bias-reward-models",
-    "status": "partially-solved",
-    "description": "Removing verbosity preference without degrading true reward quality."
-  },
-  {
-    "title": "Reward Model Generalization Under Distribution Shift From Optimization",
-    "slug": "reward-model-ood-under-optimization",
+    "title": "Exploration Beyond the Base Model Support",
+    "slug": "exploration-beyond-base-support",
     "status": "open",
-    "description": "Predicting reward model failure on policy-induced out-of-distribution text."
+    "description": "How RL can sample actions the base policy never proposes."
   },
   {
-    "title": "Goodhart Onset Prediction in Reward Over-Optimization",
-    "slug": "goodhart-onset-prediction-rlhf",
+    "title": "Group-Relative Baselines Versus Learned Value Functions",
+    "slug": "group-relative-vs-learned-value-baselines",
     "status": "empirically-open",
-    "description": "Predicting the KL budget at which proxy reward diverges."
+    "description": "Whether critic-free baselines match value networks at scale."
   },
   {
-    "title": "Exploration Beyond Temperature Sampling for LLM Policies",
-    "slug": "structured-exploration-llm-policies",
-    "status": "open",
-    "description": "Designing exploration that beats naive temperature in token space."
-  },
-  {
-    "title": "Multi-Turn Agentic RL Credit Assignment Across Tool Calls",
-    "slug": "multi-turn-tool-use-credit-assignment",
-    "status": "open",
-    "description": "Attributing episode outcome to individual tool calls and turns."
-  },
-  {
-    "title": "Catastrophic Forgetting of Pretrained Skills During RL",
-    "slug": "rl-induced-forgetting-pretrained-skills",
-    "status": "empirically-open",
-    "description": "Measuring and preventing capability loss outside the RL domain."
-  },
-  {
-    "title": "Do RL-Trained Reasoning Traces Faithfully Reflect Computation?",
-    "slug": "faithfulness-of-rl-trained-reasoning-traces",
-    "status": "methodologically-blocked",
-    "description": "Whether trained chains of thought describe the model's actual computation."
-  },
-  {
-    "title": "Optimal Token-Level Versus Sequence-Level Loss Normalization",
-    "slug": "token-vs-sequence-loss-normalization-rl",
+    "title": "Length Bias in Preference Learning",
+    "slug": "length-bias-preference-learning",
     "status": "partially-solved",
-    "description": "Which normalization gives unbiased gradients across variable-length responses."
+    "description": "Removing verbosity preference without losing genuine quality gains."
   },
   {
-    "title": "Self-Rewarding Loops Without External Signal",
-    "slug": "self-rewarding-loop-stability",
+    "title": "Self-Consistency Reward Without Ground Truth",
+    "slug": "self-consistency-reward-no-ground-truth",
     "status": "open",
-    "description": "Whether models can improve indefinitely by grading themselves."
+    "description": "Whether majority-vote rewards improve beyond the base sampling ceiling."
   },
   {
-    "title": "RL From Human Feedback Under Heterogeneous and Conflicting Preferences",
-    "slug": "heterogeneous-preference-aggregation-rlhf",
+    "title": "Multi-Turn Agentic Credit Assignment",
+    "slug": "multi-turn-agentic-credit-assignment",
     "status": "open",
-    "description": "Aggregating conflicting annotator preferences into a single policy."
+    "description": "Attributing sparse task success to individual tool-use turns."
   },
   {
-    "title": "Sample Complexity of Preference Learning With Bradley-Terry Misspecification",
-    "slug": "bradley-terry-misspecification-sample-complexity",
+    "title": "Catastrophic Forgetting During RL Fine-Tuning",
+    "slug": "catastrophic-forgetting-rl-finetuning",
     "status": "partially-solved",
-    "description": "Guarantees when human preferences violate the Bradley-Terry model."
-  },
-  {
-    "title": "Test-Time Compute Allocation Learned by RL",
-    "slug": "learned-test-time-compute-allocation",
-    "status": "open",
-    "description": "Training policies to spend thinking tokens where they pay off."
-  },
-  {
-    "title": "Reward Sparsity Threshold for Trainability",
-    "slug": "reward-sparsity-trainability-threshold",
-    "status": "empirically-open",
-    "description": "Minimum pass rate below which outcome RL stops learning."
-  },
-  {
-    "title": "Curriculum and Task Selection Under a Fixed Rollout Budget",
-    "slug": "rollout-budget-curriculum-selection",
-    "status": "empirically-open",
-    "description": "Which prompts to sample to maximize learning per rollout."
+    "description": "Preserving pretrained abilities while optimizing a narrow reward."
   },
   {
     "title": "Transfer of RL Gains Across Reasoning Domains",
-    "slug": "cross-domain-transfer-of-rl-reasoning",
+    "slug": "rl-gains-cross-domain-transfer",
     "status": "empirically-open",
-    "description": "Whether math RL improves code, science, or agentic tasks."
+    "description": "Whether math RL improves unrelated reasoning tasks."
   },
   {
-    "title": "Value Function Learnability for Language Policies",
-    "slug": "value-function-learnability-language",
+    "title": "Optimal Rollout Count per Prompt",
+    "slug": "optimal-rollouts-per-prompt",
+    "status": "empirically-open",
+    "description": "Best group size for variance reduction at fixed compute."
+  },
+  {
+    "title": "Curriculum Selection by Problem Difficulty",
+    "slug": "curriculum-selection-problem-difficulty",
     "status": "open",
-    "description": "Whether accurate token-level value estimation is feasible at scale."
+    "description": "Which difficulty distribution maximizes RL learning speed."
   },
   {
-    "title": "Distributional Collapse of Diversity Under Best-of-N Distillation",
-    "slug": "diversity-collapse-best-of-n-distillation",
+    "title": "Reward Model Ensembling Against Overoptimization",
+    "slug": "reward-ensembling-against-overoptimization",
     "status": "partially-solved",
-    "description": "Quantifying and reversing diversity loss from rejection-sampling training."
+    "description": "Whether ensembles genuinely delay reward overoptimization or just slow it."
   },
   {
-    "title": "RL Fine-Tuning Effects on Calibration and Uncertainty",
-    "slug": "rl-effect-on-calibration",
-    "status": "empirically-open",
-    "description": "Whether RL post-training systematically destroys token-level probability calibration."
+    "title": "Token-Level Versus Sequence-Level KL Estimators",
+    "slug": "token-vs-sequence-kl-estimators",
+    "status": "partially-solved",
+    "description": "Which KL estimator gives stable low-variance policy updates."
   },
   {
-    "title": "Safety Alignment Robustness After Capability-Focused RL",
-    "slug": "safety-erosion-after-capability-rl",
-    "status": "empirically-open",
-    "description": "Whether reasoning RL undoes prior safety alignment guarantees."
-  },
-  {
-    "title": "Reward Model Scaling: Do Bigger Reward Models Help Proportionally?",
-    "slug": "reward-model-scaling-returns",
-    "status": "empirically-open",
-    "description": "Whether reward model size yields proportional policy improvement."
-  },
-  {
-    "title": "Provable Convergence of Clipped Policy-Gradient Objectives for LLMs",
-    "slug": "convergence-of-clipped-objectives-llm",
+    "title": "RLHF Effects on Model Calibration",
+    "slug": "rlhf-effects-on-calibration",
     "status": "open",
-    "description": "Convergence guarantees for PPO-style clipping on autoregressive policies."
+    "description": "Why alignment training degrades probability calibration and whether it must."
   },
   {
-    "title": "Optimal Batch Size, Rollout Count, and Update Ratio Trade-Off",
-    "slug": "rollout-count-update-ratio-tradeoff",
-    "status": "empirically-open",
-    "description": "Compute-optimal split between sampling rollouts and gradient updates."
-  },
-  {
-    "title": "Learning From Natural-Language Feedback Instead of Scalars",
-    "slug": "natural-language-feedback-as-reward",
+    "title": "Distributional Collapse of Output Diversity",
+    "slug": "output-diversity-collapse-rlhf",
     "status": "open",
-    "description": "Turning critique text into a usable gradient signal."
+    "description": "Recovering generation diversity lost to preference optimization."
   },
   {
-    "title": "Reward Signal for Open-Ended Generation Without Verifiers",
-    "slug": "unverifiable-domain-reward-design",
+    "title": "Inference-Time Search Versus RL Training Trade-Off",
+    "slug": "inference-search-vs-rl-training",
+    "status": "empirically-open",
+    "description": "Whether test-time search substitutes for policy gradient training."
+  },
+  {
+    "title": "Reward Sparsity Threshold for Learnability",
+    "slug": "reward-sparsity-learnability-threshold",
+    "status": "open",
+    "description": "Minimum success rate at which outcome RL still learns."
+  },
+  {
+    "title": "Preference Data Noise Tolerance Bounds",
+    "slug": "preference-noise-tolerance-bounds",
+    "status": "partially-solved",
+    "description": "How much annotator disagreement preference learning can absorb."
+  },
+  {
+    "title": "Value Function Learning for Variable-Length Generation",
+    "slug": "value-learning-variable-length-generation",
+    "status": "open",
+    "description": "Fitting accurate critics over sequences of unbounded length."
+  },
+  {
+    "title": "Self-Play Without an External Reward Signal",
+    "slug": "self-play-without-external-reward",
+    "status": "open",
+    "description": "Whether LLM self-play produces genuine improvement without ground truth."
+  },
+  {
+    "title": "Faithfulness of Rewarded Chain-of-Thought",
+    "slug": "faithfulness-rewarded-chain-of-thought",
     "status": "methodologically-blocked",
-    "description": "Defining checkable reward for writing, research, and open tasks."
+    "description": "Whether reasoning traces reflect the computation producing the answer."
   },
   {
-    "title": "Emergence of Deceptive or Sandbagging Policies Under Evaluation Pressure",
-    "slug": "sandbagging-under-evaluation-pressure",
-    "status": "open",
-    "description": "Whether RL induces strategic underperformance on detected evaluations."
-  },
-  {
-    "title": "Memorization Versus Generalization in RLVR-Trained Solutions",
-    "slug": "memorization-vs-generalization-rlvr",
+    "title": "Constitutional Feedback Versus Human Labels at Scale",
+    "slug": "ai-feedback-vs-human-labels-scale",
     "status": "empirically-open",
-    "description": "Separating contaminated recall from genuine reasoning gains after RL."
+    "description": "Whether AI-generated preferences match human labels at scale."
   },
   {
-    "title": "Optimal Use of Negative Gradients on Incorrect Samples",
-    "slug": "negative-sample-gradient-usage-rl",
+    "title": "Optimizer Stability for Very Large Policy Models",
+    "slug": "optimizer-stability-large-policy-models",
+    "status": "open",
+    "description": "Preventing loss spikes and collapse in trillion-parameter RL runs."
+  },
+  {
+    "title": "Reward Model Size Versus Policy Size Scaling",
+    "slug": "reward-model-vs-policy-size-scaling",
+    "status": "empirically-open",
+    "description": "Optimal reward model size relative to the trained policy."
+  },
+  {
+    "title": "Test-Time Reinforcement Learning on Single Tasks",
+    "slug": "test-time-rl-single-task",
+    "status": "open",
+    "description": "Whether per-instance RL adaptation beats plain sampling."
+  },
+  {
+    "title": "Safety Alignment Durability After Capability RL",
+    "slug": "safety-durability-after-capability-rl",
+    "status": "empirically-open",
+    "description": "Whether reasoning RL erodes prior safety training."
+  },
+  {
+    "title": "Offline Versus Online Preference Optimization Gap",
+    "slug": "offline-vs-online-preference-gap",
     "status": "partially-solved",
-    "description": "Whether penalizing wrong answers helps or destabilizes training."
+    "description": "Why online sampling beats offline preference datasets."
   },
   {
-    "title": "Reinforcement Learning at Extreme Context Lengths",
-    "slug": "rl-at-extreme-context-lengths",
+    "title": "Reward Aggregation Across Conflicting Objectives",
+    "slug": "reward-aggregation-conflicting-objectives",
     "status": "open",
-    "description": "Making policy optimization stable over hundred-thousand-token episodes."
+    "description": "Combining helpfulness, safety and correctness without Goodharting one."
   },
   {
-    "title": "Continual RL Without Replay of Prior Task Data",
-    "slug": "continual-rl-without-replay-llm",
+    "title": "Tokenizer and Action-Space Granularity for RL",
+    "slug": "action-space-granularity-rl",
     "status": "open",
-    "description": "Sequential RL on new tasks without retaining earlier data."
+    "description": "Whether token-level actions are the right RL granularity."
+  },
+  {
+    "title": "Replay and Data Reuse Limits in LLM RL",
+    "slug": "replay-data-reuse-limits-llm-rl",
+    "status": "empirically-open",
+    "description": "How many gradient steps a rollout batch can support."
+  },
+  {
+    "title": "Evaluation Contamination in RL Reward Signals",
+    "slug": "evaluation-contamination-rl-rewards",
+    "status": "methodologically-blocked",
+    "description": "Separating true RL gains from benchmark leakage in rewards."
   }
 ]

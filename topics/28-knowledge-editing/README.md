@@ -5,3 +5,6 @@ Topic `28-knowledge-editing` of the [AI Research catalog](../../README.md). See 
 
 ## Problems Index
 
+* 🟡 [Causal Tracing Does Not Localize Editable Sites](./causal-tracing-does-not-localize-edit-sites.md)
+* 🟠 [Certified Machine Unlearning for Large Language Models](./certified-unlearning-llms.md)
+* 🔴 [Compositional Edits That Must Interact](./compositional-interacting-edits.md)

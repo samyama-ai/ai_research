@@ -1,236 +1,242 @@
 [
   {
-    "title": "Model Collapse Threshold Under Data Mixing",
-    "slug": "model-collapse-mixing-threshold",
+    "title": "Model Collapse Thresholds Under Data Accumulation",
+    "slug": "model-collapse-accumulation-threshold",
     "status": "open",
-    "description": "How much real data prevents collapse in recursive synthetic training?"
+    "description": "What mixing ratio of real data prevents recursive generative degradation?"
   },
   {
-    "title": "Verifiability Gap in Self-Generated Reasoning Traces",
-    "slug": "verifiability-gap-reasoning-traces",
-    "status": "empirically-open",
-    "description": "Do wrong traces with right answers hurt distilled reasoning models?"
-  },
-  {
-    "title": "Formal Sample Complexity of Synthetic Data Augmentation",
-    "slug": "sample-complexity-synthetic-augmentation",
+    "title": "Information-Theoretic Ceiling of Self-Generated Training Data",
+    "slug": "self-generated-data-information-ceiling",
     "status": "open",
-    "description": "When does generated data beat its generator's training set?"
+    "description": "Can a model exceed its own entropy by self-training?"
   },
   {
-    "title": "Differential Privacy Accounting for LLM-Generated Text",
-    "slug": "dp-accounting-llm-synthetic-text",
+    "title": "Provable Utility Bounds for Differentially Private Synthetic Tabular Data",
+    "slug": "dp-synthetic-tabular-utility-bounds",
     "status": "partially-solved",
-    "description": "Tight privacy bounds for text sampled from fine-tuned models."
+    "description": "Tight accuracy limits for private synthetic data on arbitrary queries."
   },
   {
-    "title": "Membership Inference Against Synthetic Tabular Releases",
-    "slug": "membership-inference-synthetic-tabular",
+    "title": "Membership Inference Leakage from Synthetic Records",
+    "slug": "synthetic-record-membership-leakage",
+    "status": "empirically-open",
+    "description": "How much training membership leaks through purely synthetic outputs?"
+  },
+  {
+    "title": "Verifier-Free Correctness Filtering for Synthetic Reasoning Traces",
+    "slug": "verifier-free-trace-filtering",
     "status": "open",
-    "description": "Can synthetic tables leak membership without model access?"
+    "description": "Filtering wrong reasoning chains without an external correctness oracle."
   },
   {
     "title": "Diversity Metrics That Predict Downstream Gain",
-    "slug": "diversity-metrics-predict-downstream",
+    "slug": "synthetic-diversity-downstream-predictor",
     "status": "methodologically-blocked",
-    "description": "No diversity measure reliably predicts synthetic data usefulness."
+    "description": "No diversity measure reliably predicts synthetic data training benefit."
   },
   {
     "title": "Scaling Laws for Synthetic Pretraining Tokens",
-    "slug": "scaling-laws-synthetic-tokens",
+    "slug": "synthetic-token-scaling-laws",
     "status": "empirically-open",
-    "description": "Does synthetic token value decay with a known exponent?"
+    "description": "Exchange rate between synthetic and real pretraining tokens."
   },
   {
-    "title": "Weak-to-Strong Generation Ceiling",
-    "slug": "weak-to-strong-generation-ceiling",
+    "title": "Optimal Teacher-Student Capacity Gap in Distillation Data Generation",
+    "slug": "teacher-student-capacity-gap-synthesis",
     "status": "open",
-    "description": "Can a weaker generator's data train a stronger student?"
+    "description": "Which teacher size maximizes synthetic data value per compute?"
   },
   {
-    "title": "Self-Consistency Filtering Versus Distribution Narrowing",
-    "slug": "self-consistency-filtering-narrowing",
+    "title": "Sim-to-Real Gap Prediction Without Real Rollouts",
+    "slug": "sim-to-real-gap-prediction",
+    "status": "open",
+    "description": "Predicting real-world transfer from simulator statistics alone."
+  },
+  {
+    "title": "Synthetic Data for Long-Tail Rare Event Detection",
+    "slug": "synthetic-long-tail-rare-events",
     "status": "empirically-open",
-    "description": "Does answer-agreement filtering trade diversity for accuracy irreversibly?"
+    "description": "Can generated rare events replace real ones for detectors?"
   },
   {
-    "title": "Sim-to-Real Transfer Bound for Domain Randomization",
-    "slug": "sim-to-real-randomization-bound",
+    "title": "Identifiability of Generative Models Trained on Their Own Samples",
+    "slug": "self-sample-training-identifiability",
     "status": "open",
-    "description": "No theory sets randomization width for guaranteed real transfer."
+    "description": "Does recursive retraining preserve the original distribution's identifiability?"
   },
   {
-    "title": "Detecting Synthetic Text in Web Pretraining Corpora",
-    "slug": "detecting-synthetic-text-in-corpora",
+    "title": "Copyright and Memorization Transfer Through Synthetic Corpora",
+    "slug": "memorization-transfer-synthetic-corpora",
+    "status": "empirically-open",
+    "description": "Do students memorize teacher training text via synthetic data?"
+  },
+  {
+    "title": "Counterfactual Validity of Synthetic Causal Datasets",
+    "slug": "synthetic-causal-counterfactual-validity",
     "status": "methodologically-blocked",
-    "description": "No reliable way to measure synthetic fraction of web crawls."
+    "description": "Validating synthetic data that must preserve causal counterfactuals."
   },
   {
-    "title": "Copyright and Memorization Leakage Through Synthetic Proxies",
-    "slug": "memorization-leakage-synthetic-proxies",
+    "title": "Compute-Optimal Allocation Between Generation and Training",
+    "slug": "generation-versus-training-compute-split",
     "status": "open",
-    "description": "Do synthetic datasets carry verbatim memorization of source text?"
+    "description": "How to split a compute budget between synthesizing and training?"
   },
   {
-    "title": "Optimal Real-to-Synthetic Curriculum Ordering",
-    "slug": "real-synthetic-curriculum-ordering",
-    "status": "empirically-open",
-    "description": "Does ordering real before synthetic data change final loss?"
+    "title": "Detecting Synthetic Contamination in Web-Scale Corpora",
+    "slug": "synthetic-contamination-detection-web",
+    "status": "open",
+    "description": "Reliably identifying machine-generated text in crawled pretraining data."
   },
   {
-    "title": "Fidelity-Utility-Privacy Trilemma for Tabular Generators",
-    "slug": "fidelity-utility-privacy-trilemma",
+    "title": "Self-Consistency as a Substitute for Ground Truth Labels",
+    "slug": "self-consistency-versus-ground-truth",
     "status": "partially-solved",
-    "description": "Is the three-way tradeoff provably unavoidable at useful accuracy?"
+    "description": "When does majority-vote labeling match true label supervision?"
   },
   {
-    "title": "Rare-Class Coverage in Generated Long-Tail Data",
-    "slug": "rare-class-coverage-long-tail",
+    "title": "Mode Coverage Guarantees for Instruction Data Synthesis",
+    "slug": "instruction-synthesis-mode-coverage",
     "status": "open",
-    "description": "Can generators produce tail modes absent from training data?"
+    "description": "Guaranteeing generated instructions cover the target task space."
   },
   {
-    "title": "Textbook-Quality Data Definition",
-    "slug": "textbook-quality-data-definition",
+    "title": "Synthetic Preference Data Versus Human Preferences",
+    "slug": "synthetic-preference-fidelity",
+    "status": "empirically-open",
+    "description": "How far AI feedback diverges from human preference at scale."
+  },
+  {
+    "title": "Curriculum Ordering of Synthetic Difficulty Levels",
+    "slug": "synthetic-difficulty-curriculum-ordering",
+    "status": "empirically-open",
+    "description": "Does difficulty-ordered synthetic data beat random ordering?"
+  },
+  {
+    "title": "Formal Grammar Coverage Limits for Program Synthesis Data",
+    "slug": "program-synthesis-grammar-coverage",
+    "status": "open",
+    "description": "Can grammar-sampled programs cover real code distributions?"
+  },
+  {
+    "title": "Privacy-Utility Pareto Frontier for Synthetic Images",
+    "slug": "synthetic-image-privacy-utility-frontier",
+    "status": "open",
+    "description": "Characterizing achievable privacy and utility tradeoffs for image synthesis."
+  },
+  {
+    "title": "Distribution Shift Robustness Trained Only on Synthetic Data",
+    "slug": "synthetic-only-ood-robustness",
+    "status": "empirically-open",
+    "description": "Do synthetic-only models generalize out of distribution?"
+  },
+  {
+    "title": "Reward Hacking in Self-Generated Training Signals",
+    "slug": "self-generated-reward-hacking",
+    "status": "open",
+    "description": "Preventing models from optimizing artifacts of their own generators."
+  },
+  {
+    "title": "Minimum Real-Data Anchor for Stable Iterative Self-Training",
+    "slug": "minimum-real-anchor-self-training",
+    "status": "open",
+    "description": "Smallest real-data fraction keeping iterative self-training stable."
+  },
+  {
+    "title": "Synthetic Data Attribution and Provenance Watermarking",
+    "slug": "synthetic-provenance-watermarking",
+    "status": "partially-solved",
+    "description": "Robustly tracing which generator produced a given sample."
+  },
+  {
+    "title": "Fidelity Metrics Decoupled from the Generator's Own Likelihood",
+    "slug": "generator-independent-fidelity-metrics",
     "status": "methodologically-blocked",
-    "description": "Quality in curated synthetic pretraining lacks an operational definition."
+    "description": "Measuring synthetic realism without reusing the generating model."
   },
   {
-    "title": "Reward Hacking in Synthetic Preference Data",
-    "slug": "reward-hacking-synthetic-preferences",
-    "status": "open",
-    "description": "Do model-labeled preferences amplify judge idiosyncrasies over iterations?"
-  },
-  {
-    "title": "Contamination Detection for Synthetically Paraphrased Benchmarks",
-    "slug": "contamination-detection-paraphrased-benchmarks",
-    "status": "open",
-    "description": "Detecting benchmark leakage when items were synthetically rewritten."
-  },
-  {
-    "title": "Provable Bounds for Knowledge Distillation via Sampling",
-    "slug": "distillation-sampling-bounds",
-    "status": "partially-solved",
-    "description": "How many teacher samples are needed to match teacher risk?"
-  },
-  {
-    "title": "Synthetic Data for Multi-Step Agentic Tool Use",
-    "slug": "synthetic-agentic-tool-use-data",
+    "title": "Synthetic Data for Multilingual Low-Resource Transfer",
+    "slug": "synthetic-low-resource-multilingual",
     "status": "empirically-open",
-    "description": "Can generated trajectories teach tool use without real environments?"
+    "description": "Can translation-generated corpora substitute for native low-resource text?"
   },
   {
-    "title": "Counterfactual Data Augmentation and Spurious Correlation Removal",
-    "slug": "counterfactual-augmentation-spurious-removal",
-    "status": "partially-solved",
-    "description": "Do generated counterfactuals actually break the intended shortcut?"
-  },
-  {
-    "title": "Verifier-Generator Capability Asymmetry",
-    "slug": "verifier-generator-asymmetry",
+    "title": "Bias Amplification Through Generative Data Loops",
+    "slug": "generative-loop-bias-amplification",
     "status": "open",
-    "description": "When is checking generated data easier than generating it?"
+    "description": "Whether demographic bias compounds across synthetic training generations."
   },
   {
-    "title": "Synthetic Data for Low-Resource Language Pretraining",
-    "slug": "synthetic-low-resource-languages",
+    "title": "Optimal Sampling Temperature for Training-Data Generation",
+    "slug": "optimal-generation-temperature",
     "status": "empirically-open",
-    "description": "Does translated synthetic text beat scarce native text?"
+    "description": "Which decoding temperature maximizes downstream student accuracy?"
   },
   {
-    "title": "Entropy Collapse in Iterated Instruction Generation",
-    "slug": "entropy-collapse-instruction-generation",
-    "status": "open",
-    "description": "Why does self-instruct diversity fall across generation rounds?"
-  },
-  {
-    "title": "Grounding Synthetic Facts Without Hallucination Propagation",
-    "slug": "synthetic-fact-hallucination-propagation",
-    "status": "open",
-    "description": "Can generated factual corpora avoid encoding generator falsehoods?"
-  },
-  {
-    "title": "Optimal Compute Split Between Generation and Training",
-    "slug": "compute-split-generation-training",
-    "status": "empirically-open",
-    "description": "How should FLOPs divide between data generation and training?"
-  },
-  {
-    "title": "Statistical Tests for Synthetic Tabular Fidelity",
-    "slug": "statistical-tests-tabular-fidelity",
+    "title": "Deduplication Semantics for Near-Identical Synthetic Samples",
+    "slug": "synthetic-near-duplicate-deduplication",
     "status": "methodologically-blocked",
-    "description": "No agreed test decides whether synthetic tables match real joints."
+    "description": "Defining meaningful duplication among paraphrase-level synthetic samples."
   },
   {
-    "title": "Synthetic Data Effects on Model Calibration",
-    "slug": "synthetic-data-calibration-effects",
-    "status": "empirically-open",
-    "description": "Does synthetic training systematically miscalibrate downstream confidence estimates?"
+    "title": "Synthetic Benchmarks Free of Train-Test Leakage by Construction",
+    "slug": "leakage-free-synthetic-benchmarks",
+    "status": "open",
+    "description": "Constructing evaluations provably uncontaminated by pretraining data."
   },
   {
-    "title": "Program-Verified Code Data at Pretraining Scale",
-    "slug": "verified-code-data-at-scale",
-    "status": "empirically-open",
-    "description": "Does execution-verified synthetic code beat unverified scraped code?"
-  },
-  {
-    "title": "Generative Replay Versus Rehearsal for Continual Learning",
-    "slug": "generative-replay-versus-rehearsal",
+    "title": "Guarantees for Synthetic Data in Federated Knowledge Sharing",
+    "slug": "federated-synthetic-knowledge-sharing",
     "status": "partially-solved",
-    "description": "Can generated replay match stored exemplars under equal memory?"
+    "description": "Do shared synthetic surrogates preserve client privacy and utility?"
   },
   {
-    "title": "Attribution of Downstream Gains to Individual Synthetic Examples",
-    "slug": "per-example-synthetic-attribution",
+    "title": "Physically Consistent Synthetic Data for Scientific Surrogates",
+    "slug": "physics-consistent-synthetic-surrogates",
+    "status": "open",
+    "description": "Enforcing conservation laws in generated scientific training data."
+  },
+  {
+    "title": "Value of Synthetic Negatives in Contrastive Representation Learning",
+    "slug": "synthetic-negatives-contrastive-value",
+    "status": "empirically-open",
+    "description": "Do generated hard negatives beat mined real negatives?"
+  },
+  {
+    "title": "Sample Complexity of Learning from Model-Generated Labels",
+    "slug": "model-label-sample-complexity",
+    "status": "partially-solved",
+    "description": "How noisy pseudo-labels change required training set size."
+  },
+  {
+    "title": "Synthetic Data Efficiency for Long-Context Capability",
+    "slug": "synthetic-long-context-training",
+    "status": "empirically-open",
+    "description": "Can synthetic long documents teach genuine long-range dependency use?"
+  },
+  {
+    "title": "Exact Cost of Rejection Sampling in Data Synthesis Pipelines",
+    "slug": "rejection-sampling-synthesis-cost",
     "status": "solved-but-impractical",
-    "description": "Exact influence of one synthetic example is computable but costly."
+    "description": "Correct filtering exists but its acceptance rate is prohibitive."
   },
   {
-    "title": "Bias Amplification Through Synthetic Balancing",
-    "slug": "bias-amplification-synthetic-balancing",
-    "status": "open",
-    "description": "Does generated rebalancing reduce or relabel demographic bias?"
-  },
-  {
-    "title": "Synthetic Evaluation Sets That Track Real Rankings",
-    "slug": "synthetic-eval-rank-fidelity",
+    "title": "Transferability of Synthetic Data Recipes Across Model Families",
+    "slug": "synthetic-recipe-cross-family-transfer",
     "status": "empirically-open",
-    "description": "Do model-generated benchmarks preserve true model orderings?"
+    "description": "Do data recipes tuned on one family help another?"
   },
   {
-    "title": "Bounds on Self-Improvement Without External Signal",
-    "slug": "self-improvement-without-external-signal",
+    "title": "Agentic Environment Synthesis for Tool-Use Training",
+    "slug": "agentic-environment-synthesis",
     "status": "open",
-    "description": "Can a model exceed its own distribution with no oracle?"
+    "description": "Generating executable environments that teach transferable tool use."
   },
   {
-    "title": "Synthetic Data for Long-Context Skill Acquisition",
-    "slug": "synthetic-long-context-skills",
-    "status": "empirically-open",
-    "description": "Do synthetic long documents teach genuine long-range retrieval?"
-  },
-  {
-    "title": "Distribution Shift Between Generated Prompts and Real Users",
-    "slug": "generated-versus-real-prompt-shift",
+    "title": "Statistical Tests Certifying Synthetic Data Sufficiency",
+    "slug": "synthetic-sufficiency-certification",
     "status": "methodologically-blocked",
-    "description": "No measure quantifies gap between synthetic and real queries."
-  },
-  {
-    "title": "Guarantees for Privacy-Preserving Synthetic Image Release",
-    "slug": "private-synthetic-image-guarantees",
-    "status": "partially-solved",
-    "description": "DP image generators lose utility far below practical thresholds."
-  },
-  {
-    "title": "Deduplication Semantics for Near-Duplicate Synthetic Text",
-    "slug": "near-duplicate-synthetic-dedup",
-    "status": "open",
-    "description": "What similarity threshold defines a redundant synthetic example?"
-  },
-  {
-    "title": "Recovering Tail Knowledge Lost to Iterative Filtering",
-    "slug": "tail-knowledge-loss-filtering",
-    "status": "open",
-    "description": "Can quality filters be inverted to restore discarded rare knowledge?"
+    "description": "No accepted test certifies a synthetic set as sufficient."
   }
 ]

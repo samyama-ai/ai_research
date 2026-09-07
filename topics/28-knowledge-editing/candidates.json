@@ -1,236 +1,242 @@
 [
   {
-    "title": "Locality Guarantees for Rank-One Weight Edits",
-    "slug": "locality-guarantees-rank-one-edits",
+    "title": "Locality of Rank-One Edits Under Composition",
+    "slug": "locality-rank-one-edit-composition",
     "status": "open",
-    "description": "Can a closed-form edit provably bound damage to unrelated facts?"
+    "description": "Do sequential rank-one edits provably preserve unrelated model behavior?"
   },
   {
-    "title": "Sequential Edit Capacity of a Transformer Layer",
-    "slug": "sequential-edit-capacity-transformer-layer",
-    "status": "partially-solved",
-    "description": "How many edits can one layer hold before collapse?"
-  },
-  {
-    "title": "Ripple Effects of Edited Facts",
-    "slug": "ripple-effects-edited-facts",
-    "status": "open",
-    "description": "Making edits propagate to logically entailed consequences reliably."
-  },
-  {
-    "title": "Causal Tracing Does Not Localize Editable Sites",
-    "slug": "causal-tracing-does-not-localize-edit-sites",
-    "status": "partially-solved",
-    "description": "Why editing success is uncorrelated with causal tracing peaks."
-  },
-  {
-    "title": "Editing Versus Fine-Tuning Equivalence",
-    "slug": "editing-versus-finetuning-equivalence",
+    "title": "Edit Capacity Scaling Law",
+    "slug": "edit-capacity-scaling-law",
     "status": "empirically-open",
-    "description": "Is knowledge editing just constrained fine-tuning at matched compute?"
+    "description": "How many facts can a model absorb before collapse?"
   },
   {
-    "title": "Reversibility of Knowledge Edits",
-    "slug": "reversibility-knowledge-edits",
+    "title": "Causal Tracing as Edit-Site Evidence",
+    "slug": "causal-tracing-edit-site-validity",
+    "status": "partially-solved",
+    "description": "Does activation localization actually predict effective edit locations?"
+  },
+  {
+    "title": "Ripple Effects of Single Fact Edits",
+    "slug": "ripple-effects-single-fact-edits",
     "status": "open",
-    "description": "Can an edit be exactly undone restoring original behavior?"
+    "description": "Can edits propagate to all logically entailed consequences?"
   },
   {
-    "title": "Measuring Whether a Fact Was Erased or Suppressed",
-    "slug": "erased-versus-suppressed-knowledge",
+    "title": "Bidirectional Consistency After Editing",
+    "slug": "bidirectional-consistency-after-editing",
+    "status": "open",
+    "description": "Editing forward relations rarely updates their inverse."
+  },
+  {
+    "title": "Multi-Hop Reasoning Over Edited Facts",
+    "slug": "multi-hop-reasoning-edited-facts",
+    "status": "open",
+    "description": "Edited facts fail to chain through multi-step inference."
+  },
+  {
+    "title": "Sequential Editing Without Catastrophic Drift",
+    "slug": "sequential-editing-catastrophic-drift",
+    "status": "empirically-open",
+    "description": "Thousands of successive edits degrade general model ability."
+  },
+  {
+    "title": "Formal Guarantee of Unlearning by Editing",
+    "slug": "formal-unlearning-guarantee-editing",
+    "status": "open",
+    "description": "Editing gives no certificate that knowledge is truly removed."
+  },
+  {
+    "title": "Latent Knowledge Persistence After Deletion",
+    "slug": "latent-knowledge-persistence-after-deletion",
+    "status": "open",
+    "description": "Deleted facts remain recoverable via probes or paraphrase."
+  },
+  {
+    "title": "Editing Under Quantization and Distillation",
+    "slug": "editing-under-quantization-distillation",
+    "status": "empirically-open",
+    "description": "Do edits survive compression of the edited model?"
+  },
+  {
+    "title": "Cross-Lingual Propagation of Edits",
+    "slug": "cross-lingual-propagation-of-edits",
+    "status": "open",
+    "description": "Edits made in one language rarely transfer to others."
+  },
+  {
+    "title": "Editing Multimodal Grounded Knowledge",
+    "slug": "editing-multimodal-grounded-knowledge",
+    "status": "open",
+    "description": "Updating a fact across text and image modalities simultaneously."
+  },
+  {
+    "title": "Definition of Edit Locality Metric",
+    "slug": "edit-locality-metric-definition",
     "status": "methodologically-blocked",
-    "description": "No accepted test distinguishing deletion from output-level suppression."
+    "description": "No agreed measure of what counts as unrelated behavior."
   },
   {
-    "title": "Unlearning Robust to Relearning Attacks",
-    "slug": "unlearning-robust-to-relearning",
+    "title": "Parameter-Space vs Context-Space Editing Equivalence",
+    "slug": "parameter-vs-context-editing-equivalence",
     "status": "open",
-    "description": "Unlearned facts return after brief benign fine-tuning."
+    "description": "Is in-context editing formally equivalent to weight editing?"
   },
   {
-    "title": "Edit Persistence Through Downstream Fine-Tuning",
-    "slug": "edit-persistence-through-finetuning",
-    "status": "empirically-open",
-    "description": "Do edits survive later instruction tuning or RLHF?"
+    "title": "Memory-Based Editors at Million-Edit Scale",
+    "slug": "memory-editors-million-edit-scale",
+    "status": "solved-but-impractical",
+    "description": "Retrieval editors scale correctly but cost too much."
   },
   {
-    "title": "Editing Knowledge Stored in Attention Rather Than MLPs",
-    "slug": "editing-attention-stored-knowledge",
+    "title": "Identifiability of the Knowledge Storage Location",
+    "slug": "knowledge-storage-location-identifiability",
+    "status": "methodologically-blocked",
+    "description": "Whether a fact has a well-defined parameter location."
+  },
+  {
+    "title": "Editing Reasoning Chains Rather Than Facts",
+    "slug": "editing-reasoning-procedures",
     "status": "open",
-    "description": "Locating and editing facts that MLP-targeted methods miss."
+    "description": "Can procedural skills be edited like declarative facts?"
   },
   {
-    "title": "Multilingual Propagation of Monolingual Edits",
-    "slug": "multilingual-propagation-monolingual-edits",
-    "status": "partially-solved",
-    "description": "Edits in English rarely transfer to other languages."
-  },
-  {
-    "title": "Editing Multi-Hop Reasoning Chains",
-    "slug": "editing-multihop-reasoning-chains",
+    "title": "Reversibility of Model Edits",
+    "slug": "reversibility-of-model-edits",
     "status": "open",
-    "description": "Edited premises fail to change multi-hop answers."
+    "description": "Can an applied edit be exactly undone later?"
   },
   {
-    "title": "Capacity Scaling Law for Model Editing",
-    "slug": "editing-capacity-scaling-law",
-    "status": "empirically-open",
-    "description": "How editable capacity scales with parameters and data."
-  },
-  {
-    "title": "Provable Non-Interference Between Concurrent Edits",
-    "slug": "non-interference-concurrent-edits",
+    "title": "Detecting Malicious Backdoors Injected as Edits",
+    "slug": "detecting-edit-injected-backdoors",
     "status": "open",
-    "description": "Bounding pairwise interference when many edits are applied jointly."
+    "description": "Edits can implant backdoors that current audits miss."
   },
   {
-    "title": "Detecting Whether a Deployed Model Has Been Edited",
-    "slug": "detecting-edited-models",
+    "title": "Edit Conflict Resolution Under Contradiction",
+    "slug": "edit-conflict-resolution-contradiction",
     "status": "open",
-    "description": "Black-box forensics for identifying tampered model weights."
+    "description": "How should a model resolve two contradictory injected facts?"
   },
   {
-    "title": "Malicious Editing as a Supply-Chain Backdoor",
-    "slug": "malicious-editing-backdoor",
-    "status": "empirically-open",
-    "description": "Stealthy weight edits that survive standard safety evaluation."
-  },
-  {
-    "title": "Edit Generalization Across Paraphrase Distributions",
-    "slug": "edit-generalization-paraphrase",
-    "status": "partially-solved",
-    "description": "Edits succeed on templates but fail on natural rephrasings."
-  },
-  {
-    "title": "In-Context Editing Versus Weight Editing Tradeoff",
-    "slug": "in-context-versus-weight-editing",
-    "status": "empirically-open",
-    "description": "When does context beat parameter modification for updates?"
-  },
-  {
-    "title": "Retrieval Augmentation as a Substitute for Editing",
-    "slug": "retrieval-as-substitute-for-editing",
-    "status": "empirically-open",
-    "description": "Does retrieval dominate editing under fair compute budgets?"
-  },
-  {
-    "title": "Editing Procedural Skills Rather Than Facts",
-    "slug": "editing-procedural-skills",
+    "title": "Temporal Validity and Fact Expiry",
+    "slug": "temporal-validity-fact-expiry",
     "status": "open",
-    "description": "Whether algorithms and skills are localizable and editable."
-  },
-  {
-    "title": "Time-Indexed Knowledge and Fact Expiry",
-    "slug": "time-indexed-knowledge-expiry",
-    "status": "open",
-    "description": "Storing facts with valid-until conditions the model respects."
-  },
-  {
-    "title": "Editing Without Access to the Original Training Data",
-    "slug": "editing-without-training-data",
-    "status": "partially-solved",
-    "description": "Preserving unrelated behavior with no retain set available."
-  },
-  {
-    "title": "Catastrophic Forgetting Onset in Lifelong Editing",
-    "slug": "lifelong-editing-forgetting-onset",
-    "status": "empirically-open",
-    "description": "Predicting the edit count where general ability degrades."
+    "description": "Models cannot represent that a fact was true before."
   },
   {
     "title": "Editing Mixture-of-Experts Models",
-    "slug": "editing-mixture-of-experts",
-    "status": "open",
-    "description": "Routing makes fact localization and edit locality unstable."
-  },
-  {
-    "title": "Editing Quantized and Compressed Models",
-    "slug": "editing-quantized-models",
+    "slug": "editing-mixture-of-experts-models",
     "status": "empirically-open",
-    "description": "Do edits survive quantization and does quantization undo them?"
+    "description": "Sparse routing breaks assumptions of dense-layer editing methods."
   },
   {
-    "title": "Verification of Edits Under Adversarial Probing",
-    "slug": "adversarial-edit-verification",
-    "status": "open",
-    "description": "Adversarial prompts recover pre-edit answers from edited models."
-  },
-  {
-    "title": "Sample Complexity Lower Bounds for Single-Fact Editing",
-    "slug": "sample-complexity-single-fact-editing",
-    "status": "open",
-    "description": "Minimum examples needed for a provably general edit."
-  },
-  {
-    "title": "Editing Beliefs Versus Editing Outputs",
-    "slug": "editing-beliefs-versus-outputs",
-    "status": "methodologically-blocked",
-    "description": "No definition separating a model's belief from its output."
-  },
-  {
-    "title": "Edit Metrics That Are Not Gamed by Templates",
-    "slug": "non-gameable-edit-metrics",
-    "status": "methodologically-blocked",
-    "description": "Standard editing benchmarks reward template overfitting."
-  },
-  {
-    "title": "Editing Long-Tail Versus Head Facts",
-    "slug": "editing-longtail-versus-head-facts",
+    "title": "Calibration and Confidence After Editing",
+    "slug": "calibration-after-editing",
     "status": "empirically-open",
-    "description": "Does edit difficulty scale with pretraining fact frequency?"
+    "description": "Whether edited facts inherit appropriate uncertainty estimates."
   },
   {
-    "title": "Compositional Edits That Must Interact",
-    "slug": "compositional-interacting-edits",
+    "title": "Editing Long-Context and Retrieval-Augmented Systems",
+    "slug": "editing-retrieval-augmented-systems",
     "status": "open",
-    "description": "Two edits whose correct joint behavior is a composition."
+    "description": "Weight edits conflict with contradicting retrieved documents."
   },
   {
-    "title": "Cost-Optimal Choice Between Retraining and Editing",
-    "slug": "retrain-versus-edit-cost-optimum",
+    "title": "Theoretical Limits of Closed-Form Editors",
+    "slug": "closed-form-editor-theoretical-limits",
+    "status": "partially-solved",
+    "description": "Least-squares editors have unproven capacity and error bounds."
+  },
+  {
+    "title": "Detecting Whether a Model Has Been Edited",
+    "slug": "detecting-model-has-been-edited",
     "status": "open",
-    "description": "Deciding when accumulated edits justify full retraining."
+    "description": "No reliable forensic test distinguishes edited from fine-tuned weights."
   },
   {
-    "title": "Editing Vision-Language and Multimodal Models",
-    "slug": "editing-multimodal-models",
+    "title": "Edit Generalization to Downstream Agentic Behavior",
+    "slug": "edit-generalization-agentic-behavior",
+    "status": "empirically-open",
+    "description": "Do edits change tool-using agent decisions, not just answers?"
+  },
+  {
+    "title": "Superposition Limits on Fact-Level Editing",
+    "slug": "superposition-limits-fact-editing",
     "status": "open",
-    "description": "Cross-modal edits fail to transfer between image and text."
+    "description": "Feature superposition may make surgical fact edits impossible."
   },
   {
-    "title": "Certified Machine Unlearning for Large Language Models",
-    "slug": "certified-unlearning-llms",
+    "title": "Continual Pretraining Versus Editing Tradeoff",
+    "slug": "continual-pretraining-versus-editing",
+    "status": "empirically-open",
+    "description": "At what update volume does retraining beat editing?"
+  },
+  {
+    "title": "Editing Safety Alignment Without Breaking It",
+    "slug": "editing-safety-alignment-preservation",
+    "status": "open",
+    "description": "Knowledge edits can silently remove refusal behavior."
+  },
+  {
+    "title": "Ground-Truth Counterfactuals for Edit Evaluation",
+    "slug": "ground-truth-counterfactuals-edit-evaluation",
+    "status": "methodologically-blocked",
+    "description": "No dataset defines the full correct post-edit behavior set."
+  },
+  {
+    "title": "Editing Facts the Model Never Knew",
+    "slug": "editing-unknown-facts-insertion",
+    "status": "open",
+    "description": "Inserting novel knowledge differs from overwriting existing knowledge."
+  },
+  {
+    "title": "Edit Robustness to Adversarial Paraphrase",
+    "slug": "edit-robustness-adversarial-paraphrase",
+    "status": "open",
+    "description": "Attackers can restore the pre-edit answer via rephrasing."
+  },
+  {
+    "title": "Compositional Editing of Relational Schemas",
+    "slug": "compositional-editing-relational-schemas",
+    "status": "open",
+    "description": "Editing a type-level rule rather than individual instances."
+  },
+  {
+    "title": "Hyperparameter Transfer of Editors Across Scale",
+    "slug": "editor-hyperparameter-transfer-across-scale",
+    "status": "empirically-open",
+    "description": "Editor settings tuned small may not transfer to large models."
+  },
+  {
+    "title": "Privacy Certification for Right-to-Be-Forgotten Edits",
+    "slug": "privacy-certification-forgetting-edits",
     "status": "solved-but-impractical",
-    "description": "Exact unlearning guarantees exist but cost full retraining."
+    "description": "Certified deletion exists only under retraining-equivalent cost."
   },
   {
-    "title": "Editing Facts Represented Superposed Across Features",
-    "slug": "editing-superposed-features",
+    "title": "Interaction Between Editing and In-Context Override",
+    "slug": "editing-versus-in-context-override",
     "status": "open",
-    "description": "Editing entangled features without disturbing co-located ones."
+    "description": "Which source wins when prompt contradicts edited weights?"
   },
   {
-    "title": "Self-Consistency of an Edited Model Under Interrogation",
-    "slug": "edited-model-self-consistency",
-    "status": "empirically-open",
-    "description": "Edited models contradict themselves across question formats."
-  },
-  {
-    "title": "Edit Transfer Between Model Checkpoints and Sizes",
-    "slug": "edit-transfer-across-checkpoints",
+    "title": "Sample Complexity of Learning an Edit Function",
+    "slug": "sample-complexity-hypernetwork-editors",
     "status": "open",
-    "description": "Reusing a computed edit on a different model version."
+    "description": "How much data trains a generalizing hypernetwork editor?"
   },
   {
-    "title": "Hyperparameter-Free Layer Selection for Editing",
-    "slug": "hyperparameter-free-layer-selection",
+    "title": "Editing Without Access to Gradients or Weights",
+    "slug": "black-box-api-model-editing",
     "status": "open",
-    "description": "Choosing the edit layer without per-model tuning sweeps."
+    "description": "Updating a model reachable only through an API."
   },
   {
-    "title": "Editing Under Differential Privacy or Audit Constraints",
-    "slug": "editing-under-privacy-constraints",
-    "status": "open",
-    "description": "Deleting personal data provably without leaking through the edit."
+    "title": "Verification of Edit Completeness",
+    "slug": "verification-of-edit-completeness",
+    "status": "methodologically-blocked",
+    "description": "No procedure certifies an edit reached every affected behavior."
   }
 ]

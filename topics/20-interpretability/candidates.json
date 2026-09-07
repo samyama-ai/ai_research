@@ -1,230 +1,242 @@
 [
   {
-    "title": "Identifiability of Sparse Autoencoder Feature Bases",
+    "title": "Superposition Capacity Bounds for Feature Recovery",
+    "slug": "superposition-capacity-bounds",
+    "status": "partially-solved",
+    "description": "How many features can a layer encode and still be recoverable?"
+  },
+  {
+    "title": "Sparse Autoencoder Feature Identifiability",
     "slug": "sae-feature-identifiability",
     "status": "open",
-    "description": "Do sparse autoencoders recover unique true feature bases?"
+    "description": "Do SAEs recover unique ground-truth features or arbitrary bases?"
   },
   {
-    "title": "Feature Splitting Versus True Feature Count",
-    "slug": "feature-splitting-versus-true-features",
-    "status": "methodologically-blocked",
-    "description": "Distinguishing genuine features from dictionary width artifacts."
-  },
-  {
-    "title": "Ground-Truth Benchmarks for Dictionary Learning",
-    "slug": "ground-truth-dictionary-benchmarks",
+    "title": "Dictionary Width Scaling Law for SAEs",
+    "slug": "sae-dictionary-width-scaling",
     "status": "empirically-open",
-    "description": "No model with known features validates dictionary methods."
+    "description": "How should dictionary size scale with model width and compute?"
   },
   {
-    "title": "Causal Faithfulness of Attribution Methods",
-    "slug": "attribution-causal-faithfulness",
-    "status": "partially-solved",
-    "description": "Do saliency maps reflect actual causal computation?"
+    "title": "Feature Absorption in Sparse Dictionaries",
+    "slug": "feature-absorption-sparse-dictionaries",
+    "status": "open",
+    "description": "Why do latents swallow subordinate concepts, and can it be prevented?"
   },
   {
-    "title": "Activation Patching Hypothesis Space Explosion",
-    "slug": "activation-patching-search-cost",
-    "status": "solved-but-impractical",
-    "description": "Exhaustive circuit search costs scale prohibitively with model size."
+    "title": "Reconstruction-Loss Versus Downstream-Utility Gap",
+    "slug": "reconstruction-utility-gap",
+    "status": "methodologically-blocked",
+    "description": "Better SAE reconstruction does not predict better interpretability utility."
+  },
+  {
+    "title": "Causal Faithfulness Metrics for Explanations",
+    "slug": "causal-faithfulness-metrics",
+    "status": "methodologically-blocked",
+    "description": "No agreed definition of when an explanation is faithful."
   },
   {
     "title": "Circuit Discovery Under Distribution Shift",
     "slug": "circuit-discovery-distribution-shift",
-    "status": "open",
-    "description": "Do discovered circuits persist off the discovery distribution?"
-  },
-  {
-    "title": "The Linear Representation Hypothesis at Scale",
-    "slug": "linear-representation-hypothesis",
     "status": "empirically-open",
-    "description": "Are all semantic concepts encoded as linear directions?"
+    "description": "Do discovered circuits transfer off the discovery distribution?"
   },
   {
-    "title": "Nonlinear Feature Geometry Beyond Directions",
-    "slug": "nonlinear-feature-geometry",
+    "title": "Completeness of Discovered Circuits",
+    "slug": "circuit-completeness-verification",
     "status": "open",
-    "description": "How to interpret circular and manifold-valued representations?"
+    "description": "Can we prove a circuit explains all task-relevant computation?"
   },
   {
-    "title": "Interpretability Illusions from Probe Overfitting",
-    "slug": "probe-overfitting-illusions",
+    "title": "Attribution Patching Approximation Error",
+    "slug": "attribution-patching-error-bounds",
     "status": "partially-solved",
-    "description": "Probes may learn structure the model never uses."
+    "description": "When do gradient approximations to activation patching fail?"
   },
   {
-    "title": "Necessary and Sufficient Conditions for Probe Causality",
-    "slug": "probe-causal-sufficiency",
+    "title": "Off-Distribution Artifacts of Activation Patching",
+    "slug": "activation-patching-off-distribution",
     "status": "open",
-    "description": "When does a probe direction causally steer behaviour?"
+    "description": "Do patched activations create behaviors absent in normal running?"
   },
   {
-    "title": "Automated Neuron Explanation Scoring Validity",
-    "slug": "neuron-explanation-scoring-validity",
-    "status": "methodologically-blocked",
-    "description": "Explanation scores may not measure explanatory quality."
+    "title": "Automated Circuit Discovery at Frontier Scale",
+    "slug": "automated-circuit-discovery-scale",
+    "status": "empirically-open",
+    "description": "Can circuit search run on hundred-billion-parameter models?"
+  },
+  {
+    "title": "Universality of Features Across Random Seeds",
+    "slug": "feature-universality-across-seeds",
+    "status": "empirically-open",
+    "description": "Do independently trained models learn the same features?"
+  },
+  {
+    "title": "Cross-Architecture Feature Correspondence",
+    "slug": "cross-architecture-feature-correspondence",
+    "status": "open",
+    "description": "Do transformers and state-space models share internal features?"
   },
   {
     "title": "Polysemanticity Without Superposition",
     "slug": "polysemanticity-without-superposition",
     "status": "open",
-    "description": "Can polysemantic neurons arise from other causes?"
+    "description": "Are there neuron-level causes of polysemanticity besides feature packing?"
   },
   {
-    "title": "Attention Head Ablation Redundancy and Self-Repair",
-    "slug": "attention-self-repair",
+    "title": "Linear Representation Hypothesis Scope",
+    "slug": "linear-representation-hypothesis-scope",
     "status": "partially-solved",
-    "description": "Why does ablation get compensated by downstream components?"
+    "description": "Which concepts are linearly encoded and which are not?"
   },
   {
-    "title": "Universality of Circuits Across Random Seeds",
-    "slug": "circuit-universality-across-seeds",
+    "title": "Nonlinear and Circular Feature Geometry",
+    "slug": "nonlinear-circular-feature-geometry",
+    "status": "open",
+    "description": "How to systematically discover non-linear multidimensional representations?"
+  },
+  {
+    "title": "Attention Head Function Taxonomy Coverage",
+    "slug": "attention-head-taxonomy-coverage",
     "status": "empirically-open",
-    "description": "Do independently trained models learn the same circuits?"
+    "description": "What fraction of heads have identified functional roles?"
+  },
+  {
+    "title": "Chain-of-Thought Faithfulness Measurement",
+    "slug": "chain-of-thought-faithfulness",
+    "status": "open",
+    "description": "Does stated reasoning reflect the computation producing the answer?"
+  },
+  {
+    "title": "Introspective Self-Report Accuracy",
+    "slug": "introspective-self-report-accuracy",
+    "status": "open",
+    "description": "Can models accurately report their own internal states?"
+  },
+  {
+    "title": "Detecting Deceptive Alignment From Internals",
+    "slug": "deception-detection-from-internals",
+    "status": "open",
+    "description": "Can activations reveal intentional deception before behavior does?"
+  },
+  {
+    "title": "Latent Knowledge Elicitation Without Labels",
+    "slug": "latent-knowledge-elicitation",
+    "status": "open",
+    "description": "Can truth be read from activations without supervised labels?"
+  },
+  {
+    "title": "Probe Causality Versus Correlation",
+    "slug": "probe-causality-versus-correlation",
+    "status": "partially-solved",
+    "description": "When does a decodable probe imply the model uses it?"
+  },
+  {
+    "title": "Concept Erasure Under Adaptive Recovery",
+    "slug": "concept-erasure-adaptive-recovery",
+    "status": "partially-solved",
+    "description": "Can erased concepts be recovered by stronger downstream readers?"
+  },
+  {
+    "title": "Steering Vector Side-Effect Quantification",
+    "slug": "steering-vector-side-effects",
+    "status": "empirically-open",
+    "description": "What unintended capabilities change when steering a single direction?"
+  },
+  {
+    "title": "Locality of Factual Knowledge in Weights",
+    "slug": "factual-knowledge-locality",
+    "status": "open",
+    "description": "Do editing localization results identify where facts are stored?"
+  },
+  {
+    "title": "Ripple Effects of Model Editing",
+    "slug": "model-editing-ripple-effects",
+    "status": "open",
+    "description": "How to measure and bound edits' downstream logical consequences?"
+  },
+  {
+    "title": "Grokking Phase Transitions Mechanism",
+    "slug": "grokking-mechanism",
+    "status": "partially-solved",
+    "description": "What internal change causes delayed generalization at fixed loss?"
+  },
+  {
+    "title": "Emergent Capability Onset Prediction From Internals",
+    "slug": "emergent-capability-onset-prediction",
+    "status": "empirically-open",
+    "description": "Can internals predict a capability before behavior shows it?"
+  },
+  {
+    "title": "Developmental Interpretability of Training Phase Changes",
+    "slug": "developmental-phase-change-detection",
+    "status": "open",
+    "description": "Can training-time structure changes be detected without prior labels?"
+  },
+  {
+    "title": "In-Context Learning Algorithm Identification",
+    "slug": "in-context-learning-algorithm-identification",
+    "status": "partially-solved",
+    "description": "Which algorithm does in-context learning actually implement?"
+  },
+  {
+    "title": "Induction Head Necessity for In-Context Learning",
+    "slug": "induction-head-necessity",
+    "status": "empirically-open",
+    "description": "Are induction heads required for in-context learning at scale?"
   },
   {
     "title": "Interpretability of Mixture-of-Experts Routing",
     "slug": "moe-routing-interpretability",
     "status": "open",
-    "description": "Do experts specialize in humanly nameable domains?"
+    "description": "Do experts correspond to interpretable specializations?"
   },
   {
-    "title": "Cross-Layer Feature Tracking and the Residual Stream Basis",
-    "slug": "cross-layer-feature-tracking",
-    "status": "open",
-    "description": "How to match features across layers reliably?"
-  },
-  {
-    "title": "Sparse Autoencoder Reconstruction Error Blind Spots",
-    "slug": "sae-error-blind-spots",
-    "status": "empirically-open",
-    "description": "What computation hides in unexplained reconstruction residual?"
-  },
-  {
-    "title": "Downstream Task Value of Interpretability Methods",
-    "slug": "interpretability-downstream-utility",
-    "status": "empirically-open",
-    "description": "Do interpretability tools beat baselines on real tasks?"
-  },
-  {
-    "title": "Formal Definition of Mechanistic Faithfulness",
-    "slug": "mechanistic-faithfulness-definition",
-    "status": "methodologically-blocked",
-    "description": "No agreed formal criterion for a correct explanation."
-  },
-  {
-    "title": "Complexity of Exact Circuit Minimization",
-    "slug": "circuit-minimization-complexity",
+    "title": "MLP Key-Value Memory Interpretation Validity",
+    "slug": "mlp-key-value-memory-validity",
     "status": "partially-solved",
-    "description": "Is finding the minimal faithful subgraph NP-hard?"
-  },
-  {
-    "title": "Interpretability of In-Context Learning as Implicit Optimization",
-    "slug": "in-context-learning-implicit-optimization",
-    "status": "partially-solved",
-    "description": "Do transformers really run gradient descent internally?"
-  },
-  {
-    "title": "Grokking Phase Transitions and Representation Change",
-    "slug": "grokking-representation-transition",
-    "status": "partially-solved",
-    "description": "What internal change causes delayed generalization?"
-  },
-  {
-    "title": "Predicting Emergent Capabilities from Internal Structure",
-    "slug": "predicting-emergence-from-internals",
-    "status": "open",
-    "description": "Can internals forecast capabilities before they appear behaviorally?"
-  },
-  {
-    "title": "Detecting Deceptive or Sandbagging Computation Internally",
-    "slug": "internal-deception-detection",
-    "status": "open",
-    "description": "Can activations reveal deliberate underperformance or deception?"
-  },
-  {
-    "title": "Robustness of Steering Vectors Across Contexts",
-    "slug": "steering-vector-robustness",
-    "status": "empirically-open",
-    "description": "Do activation steering vectors generalize beyond their derivation set?"
-  },
-  {
-    "title": "Concept Erasure Completeness Guarantees",
-    "slug": "concept-erasure-completeness",
-    "status": "partially-solved",
-    "description": "Does linear erasure remove concepts from all readers?"
-  },
-  {
-    "title": "Scaling Laws for Interpretability Coverage",
-    "slug": "interpretability-coverage-scaling",
-    "status": "empirically-open",
-    "description": "Does explained fraction of computation shrink with scale?"
-  },
-  {
-    "title": "Weight-Space Versus Activation-Space Interpretability",
-    "slug": "weight-versus-activation-interpretability",
-    "status": "open",
-    "description": "Can circuits be read from weights without data?"
-  },
-  {
-    "title": "Interpretability of Learned Optimizers and Meta-Learners",
-    "slug": "learned-optimizer-interpretability",
-    "status": "open",
-    "description": "What algorithms do learned optimizers actually implement?"
-  },
-  {
-    "title": "Tokenizer Artifacts Masquerading as Semantic Features",
-    "slug": "tokenizer-artifacts-as-features",
-    "status": "empirically-open",
-    "description": "How much of found structure is tokenization residue?"
-  },
-  {
-    "title": "Interpretability Under Finetuning and RLHF Drift",
-    "slug": "interpretability-under-finetuning-drift",
-    "status": "empirically-open",
-    "description": "Do pretrained circuits survive alignment finetuning intact?"
-  },
-  {
-    "title": "Causal Abstraction Search Tractability",
-    "slug": "causal-abstraction-search-tractability",
-    "status": "solved-but-impractical",
-    "description": "Finding valid alignments between algorithms and networks is expensive."
-  },
-  {
-    "title": "Human Evaluation Validity for Interpretability Claims",
-    "slug": "human-evaluation-validity",
-    "status": "methodologically-blocked",
-    "description": "Human plausibility ratings may not track correctness."
-  },
-  {
-    "title": "Interpretability of Diffusion Model Denoising Trajectories",
-    "slug": "diffusion-trajectory-interpretability",
-    "status": "open",
-    "description": "What features control generation at each denoising step?"
-  },
-  {
-    "title": "Memorization Localization in Model Weights",
-    "slug": "memorization-localization",
-    "status": "partially-solved",
-    "description": "Can specific memorized facts be localized and edited?"
-  },
-  {
-    "title": "Model Editing Ripple Effects and Locality",
-    "slug": "model-editing-ripple-effects",
-    "status": "open",
-    "description": "Why do targeted edits corrupt unrelated knowledge?"
-  },
-  {
-    "title": "Interpretability of Long-Context Retrieval Mechanisms",
-    "slug": "long-context-retrieval-mechanisms",
-    "status": "empirically-open",
-    "description": "How do models retrieve across very long contexts?"
+    "description": "Do MLP layers really act as retrievable key-value memories?"
   },
   {
     "title": "Adversarial Robustness of Interpretability Methods",
     "slug": "adversarial-robustness-of-interpretability",
     "status": "partially-solved",
-    "description": "Can models be trained to fool interpretability tools?"
+    "description": "Can models be trained to fool their own explanations?"
+  },
+  {
+    "title": "Auto-Interpretability Label Validation",
+    "slug": "auto-interp-label-validation",
+    "status": "methodologically-blocked",
+    "description": "Do LLM-generated feature labels predict held-out activations reliably?"
+  },
+  {
+    "title": "Interpretability Illusions From Cherry-Picked Data",
+    "slug": "interpretability-illusions-data-selection",
+    "status": "open",
+    "description": "How much of reported structure is a dataset-selection artifact?"
+  },
+  {
+    "title": "Weight-Space Versus Activation-Space Explanation Equivalence",
+    "slug": "weight-versus-activation-explanations",
+    "status": "open",
+    "description": "Do weight-based and activation-based accounts ever conflict?"
+  },
+  {
+    "title": "Compression Bounds on Human-Understandable Explanations",
+    "slug": "explanation-compression-bounds",
+    "status": "open",
+    "description": "Is there a minimum description length for faithful model explanations?"
+  },
+  {
+    "title": "Interpretability of Reasoning in Latent Space Models",
+    "slug": "latent-space-reasoning-interpretability",
+    "status": "open",
+    "description": "How to inspect reasoning that never surfaces as tokens?"
+  },
+  {
+    "title": "Scalable Verification of Safety Properties From Internals",
+    "slug": "internals-based-safety-verification",
+    "status": "solved-but-impractical",
+    "description": "Can formal guarantees be derived from interpretability artifacts?"
   }
 ]
