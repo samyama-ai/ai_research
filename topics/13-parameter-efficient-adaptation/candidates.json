@@ -1,242 +1,242 @@
 [
   {
-    "title": "Intrinsic Dimension Scaling Law for LoRA Rank",
-    "slug": "lora-rank-intrinsic-dimension-scaling",
+    "title": "Optimal LoRA Rank Allocation Across Layers",
+    "slug": "optimal-lora-rank-allocation",
+    "status": "open",
+    "description": "How to provably choose per-layer adapter ranks under a budget."
+  },
+  {
+    "title": "Intrinsic Dimension Scaling of Fine-Tuning Tasks",
+    "slug": "intrinsic-dimension-scaling",
     "status": "empirically-open",
-    "description": "How required adapter rank scales with model size and task."
+    "description": "How task intrinsic dimension scales with model size and data."
   },
   {
-    "title": "Expressivity Gap Between LoRA and Full Fine-Tuning",
-    "slug": "lora-full-finetuning-expressivity-gap",
+    "title": "LoRA Versus Full Fine-Tuning Capacity Gap",
+    "slug": "lora-full-finetuning-capacity-gap",
     "status": "partially-solved",
-    "description": "Which target functions low-rank updates provably cannot reach."
+    "description": "When low-rank updates provably cannot match full fine-tuning."
   },
   {
-    "title": "Optimal Layer Allocation of a Fixed Adapter Budget",
-    "slug": "adapter-budget-layer-allocation",
+    "title": "Expressivity Lower Bounds for Prompt Tuning",
+    "slug": "prompt-tuning-expressivity-bounds",
+    "status": "partially-solved",
+    "description": "Which functions soft prompts of length k cannot represent."
+  },
+  {
+    "title": "Adapter Composition Without Interference",
+    "slug": "adapter-composition-interference",
+    "status": "open",
+    "description": "Merging many adapters without degrading each constituent skill."
+  },
+  {
+    "title": "Catastrophic Forgetting Bounds Under Low-Rank Updates",
+    "slug": "forgetting-bounds-low-rank-updates",
+    "status": "open",
+    "description": "Provable forgetting limits as a function of adapter rank."
+  },
+  {
+    "title": "Quantization-Adaptation Interaction Error",
+    "slug": "quantization-adaptation-interaction-error",
     "status": "empirically-open",
-    "description": "Where to spend a fixed parameter budget across layers."
+    "description": "How quantization error compounds with adapter training at scale."
   },
   {
-    "title": "Provable Convergence of Quantized-Base Adapter Training",
-    "slug": "qlora-convergence-guarantees",
-    "status": "open",
-    "description": "Does adapter training on quantized weights converge to useful optima?"
-  },
-  {
-    "title": "Quantization-Adaptation Error Decoupling",
-    "slug": "quantization-adaptation-error-decoupling",
+    "title": "Initialization Sensitivity of Low-Rank Adapters",
+    "slug": "lora-initialization-sensitivity",
     "status": "partially-solved",
-    "description": "Can quantization error and adaptation error be separated cleanly?"
+    "description": "Which adapter initializations guarantee stable, fast convergence."
   },
   {
-    "title": "Adapter Initialization Scale and Feature Learning Regime",
-    "slug": "adapter-initialization-feature-learning",
+    "title": "Learning Rate Scaling Rules for Adapter Width",
+    "slug": "adapter-learning-rate-scaling",
     "status": "partially-solved",
-    "description": "Which initialization puts adapters in feature-learning not lazy regime."
+    "description": "Correct muP-style scaling for adapter rank and alpha."
   },
   {
-    "title": "Transfer of Optimal PEFT Hyperparameters Across Model Scale",
-    "slug": "peft-hyperparameter-transfer-scale",
+    "title": "Parameter-Efficient Adaptation Scaling Laws",
+    "slug": "peft-scaling-laws",
     "status": "empirically-open",
-    "description": "Do muP-style transfer rules hold for adapter hyperparameters?"
+    "description": "Predictive law linking trainable parameters, data, and downstream loss."
   },
   {
-    "title": "Catastrophic Forgetting Bound as a Function of Adapter Rank",
-    "slug": "forgetting-bound-versus-adapter-rank",
+    "title": "Sparse Versus Low-Rank Update Equivalence",
+    "slug": "sparse-low-rank-update-equivalence",
     "status": "open",
-    "description": "Can rank bound how much pretrained capability is lost?"
+    "description": "Whether sparse and low-rank adaptation reach the same solutions."
   },
   {
-    "title": "Composability of Independently Trained Adapters",
-    "slug": "independent-adapter-composition",
-    "status": "partially-solved",
-    "description": "When does merging separately trained adapters preserve both skills?"
-  },
-  {
-    "title": "Interference Metric for Adapter Arithmetic",
-    "slug": "adapter-arithmetic-interference-metric",
-    "status": "methodologically-blocked",
-    "description": "No agreed measure of interference between merged task vectors."
-  },
-  {
-    "title": "Rank Necessity for Instruction Following versus Knowledge Injection",
-    "slug": "rank-necessity-skill-versus-knowledge",
+    "title": "Optimal Placement of Adapter Modules",
+    "slug": "optimal-adapter-placement",
     "status": "empirically-open",
-    "description": "Do new facts require higher rank than new behaviors?"
+    "description": "Which modules and depths to adapt for best return."
   },
   {
-    "title": "Sample Complexity Separation Between Prompt Tuning and LoRA",
-    "slug": "prompt-tuning-lora-sample-complexity",
-    "status": "open",
-    "description": "Which method needs fewer examples for a given task?"
-  },
-  {
-    "title": "Prompt Tuning Universality at Finite Prefix Length",
-    "slug": "prompt-tuning-finite-length-universality",
-    "status": "partially-solved",
-    "description": "What can finite soft prefixes provably not express?"
-  },
-  {
-    "title": "Optimization Landscape of Soft Prompt Tuning",
-    "slug": "soft-prompt-optimization-landscape",
-    "status": "open",
-    "description": "Why is prompt tuning unstable and can it be fixed?"
-  },
-  {
-    "title": "Adapter Capacity Under Continual Task Streams",
-    "slug": "adapter-capacity-continual-streams",
+    "title": "Reinforcement Learning With Low-Rank Adapters",
+    "slug": "rl-with-low-rank-adapters",
     "status": "empirically-open",
-    "description": "How many sequential tasks can one adapter absorb?"
+    "description": "Whether RL post-training needs more capacity than adapters offer."
   },
   {
-    "title": "Provable Privacy Amplification from Low-Rank Updates",
-    "slug": "low-rank-update-privacy-amplification",
-    "status": "open",
-    "description": "Do rank constraints reduce training data memorization or leakage?"
-  },
-  {
-    "title": "Adapter Extraction of Training Data",
-    "slug": "adapter-training-data-extraction",
-    "status": "empirically-open",
-    "description": "Can a published adapter reveal its fine-tuning corpus?"
-  },
-  {
-    "title": "Safety Alignment Erosion by Benign Adapters",
-    "slug": "benign-adapter-safety-erosion",
+    "title": "Adapter Serving Throughput Under Heavy Multiplexing",
+    "slug": "multi-adapter-serving-throughput",
     "status": "partially-solved",
-    "description": "Why harmless fine-tuning removes refusal behavior so easily."
+    "description": "Serving thousands of adapters without per-request latency collapse."
   },
   {
-    "title": "Rank-Constrained Defenses Against Adapter Jailbreaking",
-    "slug": "rank-constrained-jailbreak-defense",
+    "title": "Safety Alignment Erosion by Benign Adapter Tuning",
+    "slug": "safety-erosion-adapter-tuning",
     "status": "open",
-    "description": "Can a subspace restriction provably block harmful adaptation?"
+    "description": "Why small benign adapter updates break alignment guardrails."
   },
   {
-    "title": "Adapter Backdoor Detectability",
-    "slug": "adapter-backdoor-detectability",
-    "status": "open",
-    "description": "Can trojans hidden in low-rank weights be reliably detected?"
-  },
-  {
-    "title": "Optimal Sparsity Pattern Selection for Sparse Fine-Tuning",
-    "slug": "sparse-finetuning-mask-selection",
-    "status": "open",
-    "description": "Which weights to update given a sparsity budget."
-  },
-  {
-    "title": "Equivalence Class of PEFT Methods Under Reparameterization",
-    "slug": "peft-method-reparameterization-equivalence",
+    "title": "Task Vector Arithmetic Validity Conditions",
+    "slug": "task-vector-arithmetic-conditions",
     "status": "partially-solved",
-    "description": "Are adapters, prefixes, and scaling all one family?"
+    "description": "When adding or negating task vectors behaves predictably."
   },
   {
-    "title": "Serving Throughput Limit for Thousands of Concurrent Adapters",
-    "slug": "multi-adapter-serving-throughput-limit",
-    "status": "partially-solved",
-    "description": "How many distinct adapters can one batch serve efficiently?"
-  },
-  {
-    "title": "Adapter Merging Without Access to Task Data",
-    "slug": "data-free-adapter-merging",
+    "title": "Cross-Model Adapter Transfer",
+    "slug": "cross-model-adapter-transfer",
     "status": "open",
-    "description": "Merging many adapters with no validation data available."
+    "description": "Transferring an adapter between different base checkpoints or architectures."
   },
   {
     "title": "Rank Adaptivity During Training",
-    "slug": "dynamic-rank-allocation-during-training",
+    "slug": "dynamic-rank-adaptation",
     "status": "empirically-open",
-    "description": "Can rank be grown or pruned online without loss?"
+    "description": "Whether online rank growth beats fixed-rank adapter training."
   },
   {
-    "title": "PEFT for Reinforcement Learning from Human Feedback",
-    "slug": "peft-under-rlhf-objectives",
-    "status": "empirically-open",
-    "description": "Does low-rank training match full tuning under RL objectives?"
+    "title": "Memory-Optimal Backward Pass for Adapters",
+    "slug": "memory-optimal-adapter-backward",
+    "status": "solved-but-impractical",
+    "description": "Reaching activation-memory lower bounds for adapter gradient computation."
   },
   {
-    "title": "Gradient Noise Scale Under Parameter-Efficient Constraints",
-    "slug": "gradient-noise-scale-peft",
+    "title": "Differential Privacy Cost of Parameter-Efficient Tuning",
+    "slug": "dp-cost-parameter-efficient-tuning",
     "status": "open",
-    "description": "How adapter constraints change critical batch size."
+    "description": "Whether fewer trainable parameters improve private fine-tuning utility."
   },
   {
-    "title": "Memory-Optimal Adapter Placement Under Activation Recomputation",
-    "slug": "memory-optimal-adapter-placement",
-    "status": "partially-solved",
-    "description": "Placement that minimizes activation memory, not parameter count."
-  },
-  {
-    "title": "Low-Rank Adaptation of Attention versus MLP Subspaces",
-    "slug": "attention-versus-mlp-adapter-placement",
-    "status": "empirically-open",
-    "description": "Which module family carries most task-specific update signal."
-  },
-  {
-    "title": "Effective Learning Rate Coupling Between Adapter Factors",
-    "slug": "lora-factor-learning-rate-coupling",
-    "status": "partially-solved",
-    "description": "Correct per-factor learning rates for asymmetric low-rank products."
-  },
-  {
-    "title": "Generalization Bounds That Actually Depend on Adapter Rank",
-    "slug": "nonvacuous-rank-dependent-generalization-bounds",
-    "status": "open",
-    "description": "No nonvacuous bound yet improves with lower rank."
-  },
-  {
-    "title": "Adapter Transfer Across Base Model Checkpoints",
-    "slug": "adapter-portability-across-checkpoints",
-    "status": "empirically-open",
-    "description": "Can adapters be reused after the base model updates?"
-  },
-  {
-    "title": "Cross-Architecture Adapter Transfer",
-    "slug": "cross-architecture-adapter-transfer",
-    "status": "open",
-    "description": "Mapping an adapter between differently shaped base models."
-  },
-  {
-    "title": "Task Similarity Predictor for Adapter Retrieval",
-    "slug": "task-similarity-adapter-retrieval",
+    "title": "Adapter Capacity Metric Definition",
+    "slug": "adapter-capacity-metric",
     "status": "methodologically-blocked",
-    "description": "No reliable metric picks the right adapter for a query."
+    "description": "No agreed measure of how much an adapter can learn."
   },
   {
-    "title": "Rank Requirements for Multimodal Adaptation",
-    "slug": "multimodal-adapter-rank-requirements",
-    "status": "empirically-open",
-    "description": "Whether vision-language alignment needs higher rank than text."
-  },
-  {
-    "title": "PEFT Under Extreme Quantization Below Four Bits",
-    "slug": "peft-below-four-bit-base-weights",
+    "title": "Continual Adaptation With Bounded Parameter Growth",
+    "slug": "continual-adaptation-bounded-growth",
     "status": "open",
-    "description": "Can adaptation recover accuracy at two-bit base weights?"
+    "description": "Learning unbounded task streams with sublinear parameter growth."
   },
   {
-    "title": "Identifiability of the Update Subspace",
-    "slug": "update-subspace-identifiability",
-    "status": "open",
-    "description": "Is the learned low-rank subspace unique across random seeds."
-  },
-  {
-    "title": "Adapter Compression Limit for Task Vectors",
-    "slug": "task-vector-compression-limit",
+    "title": "Long-Context Extension via Parameter-Efficient Methods",
+    "slug": "long-context-extension-peft",
     "status": "empirically-open",
-    "description": "Minimum bits needed to store a task-specific update."
+    "description": "Whether adapters alone can extend usable context length."
   },
   {
-    "title": "Scaling Law Crossover Between PEFT and Full Fine-Tuning",
-    "slug": "peft-full-finetuning-crossover-scaling-law",
-    "status": "empirically-open",
-    "description": "At what data scale does full tuning overtake adapters?"
-  },
-  {
-    "title": "Mixture-of-Adapters Routing Without Task Labels",
-    "slug": "unsupervised-adapter-routing",
+    "title": "Knowledge Injection Limits of Low-Rank Updates",
+    "slug": "knowledge-injection-limits-lora",
     "status": "open",
-    "description": "Learning to route tokens to adapters without task supervision."
+    "description": "How many new facts a rank-r adapter can store."
+  },
+  {
+    "title": "Adapter Gradient Noise and Batch Size Scaling",
+    "slug": "adapter-gradient-noise-batch-scaling",
+    "status": "empirically-open",
+    "description": "How critical batch size changes when only adapters train."
+  },
+  {
+    "title": "Provable Convergence of Factorized Adapter Optimization",
+    "slug": "factorized-adapter-convergence",
+    "status": "partially-solved",
+    "description": "Convergence guarantees for nonconvex two-factor adapter parameterizations."
+  },
+  {
+    "title": "Detecting Hidden Adapters in Deployed Models",
+    "slug": "detecting-hidden-adapters",
+    "status": "open",
+    "description": "Auditing whether a served model carries an undisclosed adapter."
+  },
+  {
+    "title": "Backdoor Robustness of Shared Adapter Hubs",
+    "slug": "adapter-hub-backdoor-robustness",
+    "status": "open",
+    "description": "Certifying downloaded adapters as free of implanted behaviors."
+  },
+  {
+    "title": "Representation Drift Under Adapter Training",
+    "slug": "representation-drift-adapters",
+    "status": "methodologically-blocked",
+    "description": "Measuring how far adapters move internal representations."
+  },
+  {
+    "title": "Multimodal Adapter Alignment Bottleneck",
+    "slug": "multimodal-adapter-alignment-bottleneck",
+    "status": "empirically-open",
+    "description": "Whether adapters suffice to align new modality encoders."
+  },
+  {
+    "title": "Federated Adaptation With Heterogeneous Ranks",
+    "slug": "federated-heterogeneous-rank-adaptation",
+    "status": "open",
+    "description": "Aggregating client adapters that use different ranks correctly."
+  },
+  {
+    "title": "Sample Complexity of Prompt Tuning Versus Weight Tuning",
+    "slug": "prompt-versus-weight-tuning-sample-complexity",
+    "status": "open",
+    "description": "Which adaptation family needs fewer labeled examples provably."
+  },
+  {
+    "title": "Adapter Merging as Model Souping Limit",
+    "slug": "adapter-merging-souping-limit",
+    "status": "partially-solved",
+    "description": "How many adapters can merge before accuracy collapses."
+  },
+  {
+    "title": "Structured Sparsity Selection Without Search",
+    "slug": "structured-sparsity-selection",
+    "status": "open",
+    "description": "Choosing which parameters to unfreeze without expensive search."
+  },
+  {
+    "title": "Adapter Robustness to Distribution Shift",
+    "slug": "adapter-distribution-shift-robustness",
+    "status": "empirically-open",
+    "description": "Whether adapters generalize out of distribution worse than full tuning."
+  },
+  {
+    "title": "Inference-Time Merging Versus Runtime Adapter Overhead",
+    "slug": "inference-merging-versus-runtime-overhead",
+    "status": "partially-solved",
+    "description": "Trading merge latency against per-token adapter compute cost."
+  },
+  {
+    "title": "Optimizer State Reduction Interaction With Adapters",
+    "slug": "optimizer-state-adapter-interaction",
+    "status": "empirically-open",
+    "description": "Whether memory-efficient optimizers and adapters give additive savings."
+  },
+  {
+    "title": "Distillation of Full Fine-Tuning Into Adapters",
+    "slug": "distilling-full-finetuning-into-adapters",
+    "status": "open",
+    "description": "Recovering full fine-tuning behavior inside a fixed adapter budget."
+  },
+  {
+    "title": "Layerwise Gradient Signal Attribution for Adapter Choice",
+    "slug": "layerwise-gradient-attribution-adapter-choice",
+    "status": "methodologically-blocked",
+    "description": "No reliable signal predicting which layers benefit from adaptation."
+  },
+  {
+    "title": "Adaptation Under Frozen Quantized Weights at Extreme Bitwidths",
+    "slug": "adaptation-extreme-low-bitwidth",
+    "status": "empirically-open",
+    "description": "Whether adapters recover quality on ternary or binary backbones."
   }
 ]

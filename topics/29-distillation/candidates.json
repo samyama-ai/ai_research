@@ -1,0 +1,236 @@
+[
+  {
+    "title": "Capacity Gap in Knowledge Distillation",
+    "slug": "capacity-gap-knowledge-distillation",
+    "status": "open",
+    "description": "Why do stronger teachers often produce weaker students?"
+  },
+  {
+    "title": "Optimal Distillation Temperature Selection",
+    "slug": "optimal-distillation-temperature",
+    "status": "empirically-open",
+    "description": "No principled rule sets softmax temperature for distillation."
+  },
+  {
+    "title": "Dark Knowledge Identification",
+    "slug": "dark-knowledge-identification",
+    "status": "methodologically-blocked",
+    "description": "What information in soft labels actually helps students?"
+  },
+  {
+    "title": "Distillation Scaling Laws Across Teacher-Student Pairs",
+    "slug": "distillation-scaling-laws",
+    "status": "empirically-open",
+    "description": "Predicting student loss from teacher and student compute."
+  },
+  {
+    "title": "Sample Complexity Advantage of Soft Labels",
+    "slug": "soft-label-sample-complexity",
+    "status": "partially-solved",
+    "description": "Provable data savings from soft targets beyond linear models."
+  },
+  {
+    "title": "Self-Distillation Generalization Mechanism",
+    "slug": "self-distillation-mechanism",
+    "status": "partially-solved",
+    "description": "Why does distilling a model into itself improve accuracy?"
+  },
+  {
+    "title": "Data-Free Distillation Fidelity Limits",
+    "slug": "data-free-distillation-limits",
+    "status": "open",
+    "description": "How close can synthetic-data distillation get to real data?"
+  },
+  {
+    "title": "Layerwise Feature Matching Layer Selection",
+    "slug": "feature-matching-layer-selection",
+    "status": "empirically-open",
+    "description": "Which intermediate layers should be matched during distillation?"
+  },
+  {
+    "title": "Distillation of In-Context Learning Ability",
+    "slug": "distilling-in-context-learning",
+    "status": "open",
+    "description": "Can few-shot ability transfer to smaller models at all?"
+  },
+  {
+    "title": "Chain-of-Thought Rationale Distillation Faithfulness",
+    "slug": "cot-rationale-distillation-faithfulness",
+    "status": "methodologically-blocked",
+    "description": "Do distilled reasoning traces reflect the student's actual computation?"
+  },
+  {
+    "title": "Reasoning Distillation Emergence Threshold",
+    "slug": "reasoning-distillation-threshold",
+    "status": "empirically-open",
+    "description": "Minimum student scale for reasoning transfer to succeed."
+  },
+  {
+    "title": "On-Policy versus Off-Policy Distillation Data",
+    "slug": "on-policy-vs-off-policy-distillation",
+    "status": "partially-solved",
+    "description": "When does student-generated data beat teacher-generated data?"
+  },
+  {
+    "title": "Divergence Choice in Sequence-Level Distillation",
+    "slug": "divergence-choice-sequence-distillation",
+    "status": "open",
+    "description": "Which f-divergence best matches autoregressive student objectives?"
+  },
+  {
+    "title": "Mode Collapse in Sequence-Level Distillation",
+    "slug": "sequence-distillation-mode-collapse",
+    "status": "partially-solved",
+    "description": "Forward KL distillation collapses diversity by unknown amount."
+  },
+  {
+    "title": "Cross-Tokenizer Distillation Alignment",
+    "slug": "cross-tokenizer-distillation",
+    "status": "open",
+    "description": "Distilling between models with incompatible vocabularies lacks principled alignment."
+  },
+  {
+    "title": "Distillation of Multi-Step Agentic Behavior",
+    "slug": "agentic-behavior-distillation",
+    "status": "empirically-open",
+    "description": "Can long-horizon tool use transfer to small models?"
+  },
+  {
+    "title": "Speculative Decoding Draft Model Distillation Objective",
+    "slug": "draft-model-distillation-objective",
+    "status": "partially-solved",
+    "description": "Optimal loss for maximizing draft acceptance rate is unsettled."
+  },
+  {
+    "title": "Distillation of Safety Alignment",
+    "slug": "safety-alignment-distillation",
+    "status": "empirically-open",
+    "description": "Does refusal behavior survive distillation to small students?"
+  },
+  {
+    "title": "Backdoor Transfer Through Distillation",
+    "slug": "backdoor-transfer-distillation",
+    "status": "open",
+    "description": "Whether distillation reliably removes or preserves teacher backdoors."
+  },
+  {
+    "title": "Model Extraction Query Complexity Bounds",
+    "slug": "model-extraction-query-complexity",
+    "status": "partially-solved",
+    "description": "Queries needed to clone a black-box model's function."
+  },
+  {
+    "title": "Detecting Distillation From a Proprietary Teacher",
+    "slug": "detecting-distillation-provenance",
+    "status": "methodologically-blocked",
+    "description": "No reliable test that a model was distilled."
+  },
+  {
+    "title": "Watermark Survival Under Distillation",
+    "slug": "watermark-survival-distillation",
+    "status": "empirically-open",
+    "description": "Do output watermarks transfer to distilled student models?"
+  },
+  {
+    "title": "Dataset Distillation Scaling to ImageNet-Scale Budgets",
+    "slug": "dataset-distillation-scaling",
+    "status": "open",
+    "description": "Synthetic-set methods degrade sharply at large image budgets."
+  },
+  {
+    "title": "Dataset Distillation Cross-Architecture Transfer",
+    "slug": "dataset-distillation-cross-architecture",
+    "status": "open",
+    "description": "Distilled datasets rarely transfer between network architectures."
+  },
+  {
+    "title": "Information-Theoretic Limit of Dataset Compression",
+    "slug": "dataset-compression-information-limit",
+    "status": "open",
+    "description": "Minimum synthetic samples needed to reach target accuracy."
+  },
+  {
+    "title": "Negative Transfer Prediction in Fine-Tuning",
+    "slug": "negative-transfer-prediction",
+    "status": "empirically-open",
+    "description": "Predicting when pretraining hurts downstream task performance."
+  },
+  {
+    "title": "Transferability Metrics Without Target Training",
+    "slug": "transferability-metrics-without-training",
+    "status": "partially-solved",
+    "description": "Cheap scores that rank checkpoints for an unseen task."
+  },
+  {
+    "title": "Catastrophic Forgetting Rate Laws",
+    "slug": "forgetting-rate-laws",
+    "status": "empirically-open",
+    "description": "Quantitative law relating fine-tuning compute to knowledge loss."
+  },
+  {
+    "title": "Model Merging Versus Distillation Tradeoff",
+    "slug": "model-merging-versus-distillation",
+    "status": "empirically-open",
+    "description": "Which better consolidates many specialists into one model?"
+  },
+  {
+    "title": "Cross-Modal Distillation Without Paired Data",
+    "slug": "cross-modal-distillation-unpaired",
+    "status": "open",
+    "description": "Transferring representations across modalities lacking aligned examples."
+  },
+  {
+    "title": "Distilling Mixture-of-Experts Into Dense Models",
+    "slug": "moe-to-dense-distillation",
+    "status": "empirically-open",
+    "description": "Can sparse expert capacity compress into dense students?"
+  },
+  {
+    "title": "Attention-Free Student Distillation Limits",
+    "slug": "attention-free-student-limits",
+    "status": "open",
+    "description": "Can recurrent students match transformer teachers on recall tasks?"
+  },
+  {
+    "title": "Quantization-Aware Distillation Optimal Bit Allocation",
+    "slug": "quantization-aware-distillation-bits",
+    "status": "partially-solved",
+    "description": "Jointly choosing precision and distillation loss remains unsolved."
+  },
+  {
+    "title": "Teacher Ensemble Aggregation for Distillation",
+    "slug": "teacher-ensemble-aggregation",
+    "status": "open",
+    "description": "How to combine disagreeing teachers into one target."
+  },
+  {
+    "title": "Curriculum Ordering in Progressive Distillation",
+    "slug": "progressive-distillation-curriculum",
+    "status": "empirically-open",
+    "description": "Optimal intermediate teacher sizes for stepwise compression."
+  },
+  {
+    "title": "Distillation Under Distribution Shift Guarantees",
+    "slug": "distillation-distribution-shift",
+    "status": "open",
+    "description": "Bounds on student error off the distillation distribution."
+  },
+  {
+    "title": "Recursive Distillation and Model Collapse Threshold",
+    "slug": "recursive-distillation-collapse",
+    "status": "partially-solved",
+    "description": "How many distillation generations before capability collapse occurs."
+  },
+  {
+    "title": "Distilling Uncertainty and Calibration",
+    "slug": "distilling-uncertainty-calibration",
+    "status": "empirically-open",
+    "description": "Can students inherit teacher calibration, not just accuracy?"
+  },
+  {
+    "title": "Weak-to-Strong Generalization Limits",
+    "slug": "weak-to-strong-generalization-limits",
+    "status": "open",
+    "description": "How far can a weak supervisor elicit strong capability?"
+  }
+]

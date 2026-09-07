@@ -1,0 +1,230 @@
+[
+  {
+    "title": "Optimal Communication-Computation Overlap Scheduling",
+    "slug": "optimal-comm-compute-overlap-scheduling",
+    "status": "open",
+    "description": "Provably optimal overlap schedules for collective communication and compute."
+  },
+  {
+    "title": "Asynchronous SGD Staleness Bounds at LLM Scale",
+    "slug": "async-sgd-staleness-bounds-llm-scale",
+    "status": "empirically-open",
+    "description": "How much gradient staleness large language model pretraining tolerates."
+  },
+  {
+    "title": "Lossless Gradient Compression Ratio Limits",
+    "slug": "lossless-gradient-compression-limits",
+    "status": "open",
+    "description": "Maximum compression preserving final model quality exactly."
+  },
+  {
+    "title": "Error Feedback Convergence Under Non-Convex Heterogeneity",
+    "slug": "error-feedback-nonconvex-heterogeneity",
+    "status": "partially-solved",
+    "description": "Convergence guarantees for compressed SGD with heterogeneous workers."
+  },
+  {
+    "title": "Optimal 3D Parallelism Partitioning as an NP-Hard Search",
+    "slug": "optimal-3d-parallelism-partitioning",
+    "status": "open",
+    "description": "Finding globally optimal tensor, pipeline, and data splits."
+  },
+  {
+    "title": "Pipeline Bubble Elimination Without Memory Blowup",
+    "slug": "pipeline-bubble-elimination-memory",
+    "status": "partially-solved",
+    "description": "Zero-bubble pipelines without activation memory growth."
+  },
+  {
+    "title": "Provable Equivalence of Pipeline Schedules to Synchronous SGD",
+    "slug": "pipeline-schedule-sgd-equivalence",
+    "status": "partially-solved",
+    "description": "When interleaved pipeline updates match synchronous training exactly."
+  },
+  {
+    "title": "Federated Optimization Under Arbitrary Client Drift",
+    "slug": "federated-optimization-client-drift",
+    "status": "open",
+    "description": "Guaranteed convergence with unbounded client data heterogeneity."
+  },
+  {
+    "title": "Local SGD Communication Frequency Scaling Law",
+    "slug": "local-sgd-communication-frequency-law",
+    "status": "empirically-open",
+    "description": "How local step count should scale with model size."
+  },
+  {
+    "title": "DiLoCo Generalization to Trillion-Parameter Models",
+    "slug": "diloco-trillion-parameter-generalization",
+    "status": "empirically-open",
+    "description": "Whether low-communication training holds at frontier scale."
+  },
+  {
+    "title": "Cross-Datacenter Training Bandwidth Floor",
+    "slug": "cross-datacenter-bandwidth-floor",
+    "status": "empirically-open",
+    "description": "Minimum inter-site bandwidth for viable frontier model training."
+  },
+  {
+    "title": "Elastic Training Without Loss-Curve Discontinuity",
+    "slug": "elastic-training-loss-continuity",
+    "status": "open",
+    "description": "Changing worker count mid-run without harming final quality."
+  },
+  {
+    "title": "Optimal Checkpoint Interval Under Correlated Failures",
+    "slug": "checkpoint-interval-correlated-failures",
+    "status": "partially-solved",
+    "description": "Checkpoint scheduling when hardware failures are statistically correlated."
+  },
+  {
+    "title": "Silent Data Corruption Detection in Training Clusters",
+    "slug": "silent-data-corruption-detection",
+    "status": "methodologically-blocked",
+    "description": "Detecting hardware bit-flips that silently degrade trained models."
+  },
+  {
+    "title": "Byzantine-Robust Aggregation at Frontier Scale",
+    "slug": "byzantine-robust-aggregation-frontier-scale",
+    "status": "solved-but-impractical",
+    "description": "Robust aggregation rules whose cost is affordable at scale."
+  },
+  {
+    "title": "Determinism and Bitwise Reproducibility in Distributed Training",
+    "slug": "bitwise-reproducibility-distributed-training",
+    "status": "solved-but-impractical",
+    "description": "Reproducing runs bitwise without sacrificing throughput."
+  },
+  {
+    "title": "Straggler Mitigation Without Redundant Compute",
+    "slug": "straggler-mitigation-without-redundancy",
+    "status": "open",
+    "description": "Handling slow workers without wasting duplicate computation."
+  },
+  {
+    "title": "Optimal Collective Algorithms for Heterogeneous Topologies",
+    "slug": "collectives-heterogeneous-topologies",
+    "status": "open",
+    "description": "Bandwidth-optimal all-reduce on irregular, mixed-speed networks."
+  },
+  {
+    "title": "Memory-Optimal Activation Recomputation Policy",
+    "slug": "memory-optimal-activation-recomputation",
+    "status": "partially-solved",
+    "description": "Choosing recompute points to minimize time under memory limits."
+  },
+  {
+    "title": "Sharded Optimizer State Numerical Fidelity",
+    "slug": "sharded-optimizer-numerical-fidelity",
+    "status": "empirically-open",
+    "description": "Whether ZeRO-style sharding changes optimizer trajectories measurably."
+  },
+  {
+    "title": "Low-Precision Collective Communication Error Accumulation",
+    "slug": "low-precision-collective-error-accumulation",
+    "status": "empirically-open",
+    "description": "Long-horizon effects of FP8 or lower all-reduce arithmetic."
+  },
+  {
+    "title": "Expert Parallelism Load Balancing Under Routing Drift",
+    "slug": "expert-parallelism-load-balancing",
+    "status": "open",
+    "description": "Keeping MoE experts balanced as routing changes during training."
+  },
+  {
+    "title": "Sequence Parallelism for Million-Token Contexts",
+    "slug": "sequence-parallelism-million-token-contexts",
+    "status": "empirically-open",
+    "description": "Attention sharding that scales to extreme context lengths."
+  },
+  {
+    "title": "Automatic Parallelization Search Cost Amortization",
+    "slug": "auto-parallelization-search-amortization",
+    "status": "open",
+    "description": "Finding good parallel plans cheaper than trial execution."
+  },
+  {
+    "title": "Accuracy of Distributed Training Performance Simulators",
+    "slug": "distributed-training-simulator-accuracy",
+    "status": "empirically-open",
+    "description": "Whether simulators predict real cluster throughput within useful error."
+  },
+  {
+    "title": "Gradient Accumulation Versus True Large Batch Equivalence",
+    "slug": "gradient-accumulation-large-batch-equivalence",
+    "status": "empirically-open",
+    "description": "Whether accumulation exactly reproduces true large-batch training."
+  },
+  {
+    "title": "Data Loading Order Invariance Under Resharding",
+    "slug": "data-order-invariance-resharding",
+    "status": "open",
+    "description": "Preserving sample ordering guarantees when worker count changes."
+  },
+  {
+    "title": "Optimal Placement of Model Shards Under Network Contention",
+    "slug": "shard-placement-network-contention",
+    "status": "open",
+    "description": "Assigning shards to nodes when links are shared."
+  },
+  {
+    "title": "Decentralized Training Without a Parameter Server or All-Reduce",
+    "slug": "decentralized-training-gossip-convergence",
+    "status": "partially-solved",
+    "description": "Gossip-based training matching centralized quality at scale."
+  },
+  {
+    "title": "Communication-Efficient Second-Order Methods at Scale",
+    "slug": "distributed-second-order-methods",
+    "status": "empirically-open",
+    "description": "Whether distributed preconditioners beat first-order methods per wall-clock."
+  },
+  {
+    "title": "Overlap-Aware Learning Rate Schedules for Variable Batch Size",
+    "slug": "variable-batch-size-lr-schedules",
+    "status": "open",
+    "description": "Adjusting learning rate when effective batch size fluctuates."
+  },
+  {
+    "title": "Fault-Tolerant Training Without Global Rollback",
+    "slug": "fault-tolerance-without-global-rollback",
+    "status": "open",
+    "description": "Recovering from node failure without restarting all workers."
+  },
+  {
+    "title": "Attribution of Throughput Loss in Production Clusters",
+    "slug": "throughput-loss-attribution",
+    "status": "methodologically-blocked",
+    "description": "Measuring which factor actually causes lost training throughput."
+  },
+  {
+    "title": "Energy-Optimal Distributed Training Configuration",
+    "slug": "energy-optimal-training-configuration",
+    "status": "methodologically-blocked",
+    "description": "Minimizing joules per unit of model quality achieved."
+  },
+  {
+    "title": "Heterogeneous Accelerator Training with Mixed GPU Generations",
+    "slug": "heterogeneous-accelerator-training",
+    "status": "empirically-open",
+    "description": "Training efficiently across mixed and unequal accelerator types."
+  },
+  {
+    "title": "Convergence Guarantees for Asynchronous Pipeline Weight Staleness",
+    "slug": "async-pipeline-weight-staleness-convergence",
+    "status": "partially-solved",
+    "description": "Proving convergence when pipeline stages use stale weights."
+  },
+  {
+    "title": "Scaling Laws for Distributed Training Inefficiency",
+    "slug": "scaling-laws-distributed-inefficiency",
+    "status": "open",
+    "description": "Predicting efficiency loss as cluster size grows."
+  },
+  {
+    "title": "Reinforcement Learning Rollout-Trainer Weight Synchronization Lag",
+    "slug": "rl-rollout-trainer-sync-lag",
+    "status": "empirically-open",
+    "description": "Acceptable policy staleness between rollout workers and trainers."
+  }
+]

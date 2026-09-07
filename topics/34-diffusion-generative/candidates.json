@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Exact Likelihood Gap Between Diffusion ELBO and True Log-Likelihood",
+    "slug": "diffusion-elbo-likelihood-gap",
+    "status": "open",
+    "description": "How tight is the diffusion ELBO against true data log-likelihood?"
+  },
+  {
+    "title": "Optimal Noise Schedule for Fixed Sampling Budget",
+    "slug": "optimal-noise-schedule-fixed-budget",
+    "status": "empirically-open",
+    "description": "Which noise schedule minimizes error at fixed step count?"
+  },
+  {
+    "title": "Provable Sample Complexity of Score Matching in High Dimensions",
+    "slug": "score-matching-sample-complexity",
+    "status": "partially-solved",
+    "description": "How many samples are needed to learn accurate scores?"
+  },
+  {
+    "title": "Why Classifier-Free Guidance Improves FID While Hurting Likelihood",
+    "slug": "cfg-fid-likelihood-tradeoff",
+    "status": "open",
+    "description": "Why does guidance improve perceptual metrics but worsen density?"
+  },
+  {
+    "title": "Minimum Number of Function Evaluations for Exact Sampling",
+    "slug": "minimum-nfe-exact-sampling",
+    "status": "open",
+    "description": "What is the lower bound on steps for exact sampling?"
+  },
+  {
+    "title": "Memorization Versus Generalization Threshold in Diffusion Training",
+    "slug": "diffusion-memorization-threshold",
+    "status": "empirically-open",
+    "description": "At what dataset size do diffusion models stop memorizing?"
+  },
+  {
+    "title": "Identifiability of the Data Manifold from a Learned Score",
+    "slug": "manifold-identifiability-from-score",
+    "status": "open",
+    "description": "Can the data manifold be recovered from learned scores?"
+  },
+  {
+    "title": "Discrete Diffusion Versus Autoregressive Scaling Crossover",
+    "slug": "discrete-diffusion-ar-crossover",
+    "status": "empirically-open",
+    "description": "Does discrete diffusion ever beat autoregressive models at scale?"
+  },
+  {
+    "title": "Consistency Model Distillation Without Quality Collapse at One Step",
+    "slug": "one-step-distillation-quality-gap",
+    "status": "partially-solved",
+    "description": "Can one-step distillation fully match teacher sample quality?"
+  },
+  {
+    "title": "Mode Coverage Measurement for Billion-Scale Generative Models",
+    "slug": "mode-coverage-measurement-at-scale",
+    "status": "methodologically-blocked",
+    "description": "How do we measure mode coverage without a reference density?"
+  },
+  {
+    "title": "Provable Convergence of Flow Matching Under Model Misspecification",
+    "slug": "flow-matching-misspecification-convergence",
+    "status": "open",
+    "description": "Does flow matching converge when the velocity field is misspecified?"
+  },
+  {
+    "title": "Optimal Coupling Choice in Rectified and Optimal-Transport Flows",
+    "slug": "optimal-coupling-rectified-flow",
+    "status": "open",
+    "description": "Which coupling minimizes path curvature and sampling cost?"
+  },
+  {
+    "title": "Latent Space Dimensionality Versus Reconstruction-Generation Tradeoff",
+    "slug": "latent-dimension-generation-tradeoff",
+    "status": "empirically-open",
+    "description": "What latent dimension optimally balances reconstruction and generation?"
+  },
+  {
+    "title": "Score Error to Sample Quality Transfer Constant",
+    "slug": "score-error-sample-quality-constant",
+    "status": "open",
+    "description": "How does score estimation error translate into perceptual quality?"
+  },
+  {
+    "title": "Whether Diffusion Models Learn a Compositional Factorization",
+    "slug": "diffusion-compositional-factorization",
+    "status": "empirically-open",
+    "description": "Do diffusion models compose unseen attribute combinations reliably?"
+  },
+  {
+    "title": "Exact Role of Architecture Inductive Bias in Score Generalization",
+    "slug": "architecture-bias-score-generalization",
+    "status": "open",
+    "description": "Why do convolutional and transformer denoisers generalize past memorization?"
+  },
+  {
+    "title": "Provable Guarantees for Training-Free Guidance on Nondifferentiable Rewards",
+    "slug": "training-free-guidance-guarantees",
+    "status": "open",
+    "description": "Can training-free guidance provably sample the tilted distribution?"
+  },
+  {
+    "title": "Detection of Training Data Extraction Risk Before Deployment",
+    "slug": "pre-deployment-extraction-risk-detection",
+    "status": "methodologically-blocked",
+    "description": "Can extraction risk be certified before a model ships?"
+  },
+  {
+    "title": "Compute-Optimal Allocation Between Diffusion Training and Sampling Steps",
+    "slug": "compute-optimal-train-sample-allocation",
+    "status": "empirically-open",
+    "description": "How should compute split between training and inference steps?"
+  },
+  {
+    "title": "Continuous-Time Discretization Error Lower Bounds for SDE Samplers",
+    "slug": "sde-sampler-discretization-lower-bounds",
+    "status": "partially-solved",
+    "description": "What are tight lower bounds on SDE sampler discretization error?"
+  },
+  {
+    "title": "Whether Diffusion Models Can Represent Heavy-Tailed Distributions",
+    "slug": "diffusion-heavy-tailed-representation",
+    "status": "open",
+    "description": "Can Gaussian-noise diffusion capture heavy-tailed data distributions?"
+  },
+  {
+    "title": "Guidance Scale Selection Without a Reference Metric",
+    "slug": "guidance-scale-selection-without-reference",
+    "status": "methodologically-blocked",
+    "description": "How to pick guidance strength without a reference dataset?"
+  },
+  {
+    "title": "Exact Equivalence Class of Forward Corruption Processes",
+    "slug": "forward-corruption-equivalence-class",
+    "status": "open",
+    "description": "Which non-Gaussian corruptions yield equally learnable reverse processes?"
+  },
+  {
+    "title": "Scaling Laws for Diffusion Model Loss Versus Sample Quality",
+    "slug": "diffusion-scaling-law-quality-link",
+    "status": "empirically-open",
+    "description": "Does denoising loss predict downstream sample quality at scale?"
+  },
+  {
+    "title": "Provably Correct Inpainting from an Unconditional Diffusion Model",
+    "slug": "exact-inpainting-from-unconditional-model",
+    "status": "solved-but-impractical",
+    "description": "Can conditional inpainting be exact given only unconditional scores?"
+  },
+  {
+    "title": "Video Diffusion Temporal Consistency Without Explicit Motion Priors",
+    "slug": "video-temporal-consistency-no-motion-prior",
+    "status": "open",
+    "description": "Can long-horizon temporal consistency emerge without motion supervision?"
+  },
+  {
+    "title": "Length and Resolution Extrapolation in Diffusion Transformers",
+    "slug": "resolution-extrapolation-diffusion-transformers",
+    "status": "empirically-open",
+    "description": "Why do diffusion transformers fail beyond trained resolutions?"
+  },
+  {
+    "title": "Reward Hacking Boundary in Diffusion Preference Fine-Tuning",
+    "slug": "diffusion-rlhf-reward-hacking-boundary",
+    "status": "open",
+    "description": "When does preference fine-tuning collapse diffusion sample diversity?"
+  },
+  {
+    "title": "Model Collapse Rate Under Recursive Synthetic Data Training",
+    "slug": "generative-model-collapse-rate",
+    "status": "partially-solved",
+    "description": "How fast does quality degrade under recursive synthetic retraining?"
+  },
+  {
+    "title": "Watermark Robustness Under Adaptive Regeneration Attacks",
+    "slug": "generative-watermark-adaptive-robustness",
+    "status": "open",
+    "description": "Can any generative watermark survive adaptive regeneration attacks?"
+  },
+  {
+    "title": "Exact Sampling from Products of Independently Trained Diffusion Models",
+    "slug": "product-of-diffusion-experts-sampling",
+    "status": "partially-solved",
+    "description": "Can composed diffusion models be sampled from exactly?"
+  },
+  {
+    "title": "Whether Diffusion Beats Autoregression for Molecular and Protein Structures",
+    "slug": "diffusion-vs-ar-structure-generation",
+    "status": "empirically-open",
+    "description": "Which generative family wins on 3D structure generation?"
+  },
+  {
+    "title": "Nonasymptotic Guarantees for Latent Diffusion With Learned Encoders",
+    "slug": "latent-diffusion-encoder-guarantees",
+    "status": "open",
+    "description": "Do latent diffusion guarantees survive a learned imperfect encoder?"
+  },
+  {
+    "title": "Time-Step Weighting That Provably Optimizes Perceptual Quality",
+    "slug": "optimal-timestep-loss-weighting",
+    "status": "open",
+    "description": "Which loss weighting over noise levels is provably optimal?"
+  },
+  {
+    "title": "Diversity Metric That Separates Novelty From Reconstruction Error",
+    "slug": "novelty-versus-error-diversity-metric",
+    "status": "methodologically-blocked",
+    "description": "Can novelty be measured separately from generation error?"
+  },
+  {
+    "title": "Sampling from Multimodal Energy Landscapes with Diffusion Samplers",
+    "slug": "diffusion-sampler-multimodal-energy",
+    "status": "open",
+    "description": "Can diffusion samplers mix across separated energy modes?"
+  },
+  {
+    "title": "Exact Cost of Exact Log-Likelihood Evaluation in Continuous Flows",
+    "slug": "exact-likelihood-evaluation-cost",
+    "status": "solved-but-impractical",
+    "description": "Can exact continuous-flow likelihoods be computed at practical cost?"
+  },
+  {
+    "title": "Quantization Limits for Diffusion Model Inference",
+    "slug": "diffusion-inference-quantization-limit",
+    "status": "empirically-open",
+    "description": "How low can diffusion weight and activation precision go?"
+  },
+  {
+    "title": "Prompt-Faithfulness Versus Image-Quality Frontier in Text-to-Image Models",
+    "slug": "faithfulness-quality-frontier-t2i",
+    "status": "open",
+    "description": "Is there a fundamental tradeoff between prompt fidelity and realism?"
+  },
+  {
+    "title": "Whether Masked Diffusion Language Models Have a Parallel Decoding Limit",
+    "slug": "masked-diffusion-parallel-decoding-limit",
+    "status": "open",
+    "description": "How many tokens can be decoded in parallel correctly?"
+  }
+]

@@ -8,44 +8,38 @@
   {
     "title": "Optimal Learning Rate Schedule Shape",
     "slug": "optimal-learning-rate-schedule-shape",
-    "status": "open",
-    "description": "Which schedule shape provably minimizes loss at fixed step budget."
+    "status": "partially-solved",
+    "description": "Which schedule shape is provably optimal for fixed compute budgets."
   },
   {
-    "title": "Adam's Advantage Over SGD on Transformers",
-    "slug": "adam-advantage-over-sgd-transformers",
+    "title": "Why Adam Beats SGD on Transformers",
+    "slug": "adam-vs-sgd-transformers",
     "status": "open",
-    "description": "Why Adam beats SGD for language models but not vision."
+    "description": "Mechanism behind Adam's large advantage over SGD on language models."
   },
   {
-    "title": "Muon and Spectral Optimizer Scaling Laws",
+    "title": "Muon and Spectral Optimizer Scaling Limits",
     "slug": "muon-spectral-optimizer-scaling",
     "status": "empirically-open",
-    "description": "Whether spectral-norm optimizers keep their edge at frontier scale."
+    "description": "Whether matrix-norm optimizers keep their edge at frontier scale."
+  },
+  {
+    "title": "Hyperparameter Transfer Beyond Width",
+    "slug": "hyperparameter-transfer-beyond-width",
+    "status": "partially-solved",
+    "description": "Zero-shot transfer of hyperparameters across depth, data, and batch size."
   },
   {
     "title": "Critical Batch Size Prediction",
     "slug": "critical-batch-size-prediction",
-    "status": "partially-solved",
-    "description": "Predicting the batch size beyond which parallelism stops helping."
+    "status": "empirically-open",
+    "description": "Predicting the batch size where data parallel speedup saturates."
   },
   {
-    "title": "Loss Spike Mechanism and Prevention",
-    "slug": "loss-spike-mechanism",
+    "title": "Loss Spikes in Large Model Training",
+    "slug": "loss-spikes-large-model-training",
     "status": "open",
-    "description": "What causes mid-training loss spikes and how to prevent them."
-  },
-  {
-    "title": "Warmup Necessity and Duration",
-    "slug": "warmup-necessity-duration",
-    "status": "partially-solved",
-    "description": "Why learning rate warmup is needed and how long it must be."
-  },
-  {
-    "title": "muP Transfer Beyond Width",
-    "slug": "mup-transfer-beyond-width",
-    "status": "partially-solved",
-    "description": "Whether hyperparameter transfer holds across depth, data, and batch size."
+    "description": "What causes sudden divergence spikes and how to prevent them."
   },
   {
     "title": "Grokking Onset Time Prediction",
@@ -54,189 +48,195 @@
     "description": "Predicting when delayed generalization occurs from training signals alone."
   },
   {
-    "title": "Second-Order Preconditioning at Scale",
-    "slug": "second-order-preconditioning-at-scale",
-    "status": "solved-but-impractical",
-    "description": "Whether full curvature preconditioning beats cheap approximations at frontier cost."
+    "title": "Implicit Bias of Adaptive Methods",
+    "slug": "implicit-bias-adaptive-methods",
+    "status": "open",
+    "description": "Which solutions adaptive optimizers implicitly select among minima."
   },
   {
-    "title": "Emergent Ability Discontinuity",
-    "slug": "emergent-ability-discontinuity",
+    "title": "Warmup Necessity and Optimal Length",
+    "slug": "warmup-necessity-optimal-length",
+    "status": "partially-solved",
+    "description": "Whether learning rate warmup is necessary and how long."
+  },
+  {
+    "title": "Emergent Abilities as Optimization Phase Transitions",
+    "slug": "emergence-phase-transitions",
     "status": "methodologically-blocked",
-    "description": "Whether capability jumps are real or metric artifacts."
+    "description": "Whether capability jumps are real transitions or metric artifacts."
   },
   {
-    "title": "Optimal Data Ordering and Curriculum",
-    "slug": "optimal-data-ordering-curriculum",
+    "title": "Data Ordering and Curriculum Effects at Scale",
+    "slug": "data-ordering-curriculum-scale",
     "status": "empirically-open",
-    "description": "Whether any example ordering beats random shuffling at pretraining scale."
+    "description": "Whether training data order changes final loss at scale."
   },
   {
-    "title": "Repeated Data Value Under Token Scarcity",
-    "slug": "repeated-data-value",
-    "status": "partially-solved",
-    "description": "How many epochs of repeated data remain worth their compute."
+    "title": "Second Order Optimizers at Frontier Scale",
+    "slug": "second-order-optimizers-frontier-scale",
+    "status": "solved-but-impractical",
+    "description": "Making curvature-aware methods cheap enough for frontier pretraining."
   },
   {
-    "title": "Learning Rate Decay and Loss Plateau Coupling",
-    "slug": "lr-decay-loss-plateau-coupling",
+    "title": "Weight Decay's True Mechanism",
+    "slug": "weight-decay-mechanism",
     "status": "open",
-    "description": "Why loss drops sharply exactly when learning rate decays."
+    "description": "Why decoupled weight decay improves loss beyond regularization accounts."
   },
   {
-    "title": "Gradient Noise Scale as a Batch Size Predictor",
-    "slug": "gradient-noise-scale-predictor",
-    "status": "partially-solved",
-    "description": "Whether measured gradient noise reliably predicts optimal batch size."
+    "title": "Gradient Noise Scale as Training Diagnostic",
+    "slug": "gradient-noise-scale-diagnostic",
+    "status": "methodologically-blocked",
+    "description": "Whether gradient noise scale reliably predicts batch size limits."
   },
   {
-    "title": "Weight Decay's True Mechanism in Adam",
-    "slug": "weight-decay-mechanism-adam",
+    "title": "Sharpness-Generalization Correlation",
+    "slug": "sharpness-generalization-correlation",
     "status": "open",
-    "description": "Whether decoupled weight decay acts as regularizer or effective-LR control."
+    "description": "Whether flat minima causally generalize better than sharp ones."
   },
   {
-    "title": "Depth Scaling Instability in Deep Transformers",
-    "slug": "depth-scaling-instability",
+    "title": "Learning Rate and Batch Size Scaling Law",
+    "slug": "lr-batch-size-scaling-law",
     "status": "partially-solved",
-    "description": "What normalization and init keep very deep transformers trainable."
-  },
-  {
-    "title": "Attention Logit Growth and Entropy Collapse",
-    "slug": "attention-logit-growth-collapse",
-    "status": "partially-solved",
-    "description": "Why attention logits diverge during training and how to bound them."
+    "description": "Correct joint scaling rule for learning rate with batch size."
   },
   {
     "title": "Optimizer State Precision Floor",
     "slug": "optimizer-state-precision-floor",
     "status": "empirically-open",
-    "description": "Lowest precision for optimizer states without loss degradation at scale."
+    "description": "Lowest precision for optimizer states without degrading final loss."
   },
   {
-    "title": "Low-Precision Training Scaling Laws",
-    "slug": "low-precision-training-scaling-laws",
+    "title": "Low-Precision Training Instability Threshold",
+    "slug": "low-precision-training-instability",
     "status": "empirically-open",
-    "description": "How quantized training changes the compute-optimal frontier."
+    "description": "Where FP8 and FP4 training breaks down as scale grows."
   },
   {
-    "title": "Implicit Bias of Adaptive Methods",
-    "slug": "implicit-bias-adaptive-methods",
+    "title": "Gradient Clipping Threshold Selection",
+    "slug": "gradient-clipping-threshold-selection",
     "status": "open",
-    "description": "Which solutions adaptive optimizers implicitly prefer among many minima."
-  },
-  {
-    "title": "Linear Mode Connectivity Across Seeds",
-    "slug": "linear-mode-connectivity-seeds",
-    "status": "partially-solved",
-    "description": "When independently trained networks connect linearly after permutation alignment."
-  },
-  {
-    "title": "Loss Landscape Sharpness and Generalization",
-    "slug": "sharpness-generalization-link",
-    "status": "methodologically-blocked",
-    "description": "Whether any reparameterization-invariant sharpness measure predicts generalization."
-  },
-  {
-    "title": "Sharpness-Aware Minimization at Scale",
-    "slug": "sam-at-scale",
-    "status": "empirically-open",
-    "description": "Whether SAM's gains survive at large-scale language pretraining."
+    "description": "Principled choice of clipping threshold rather than tuned constant."
   },
   {
     "title": "Continual Pretraining Without Forgetting",
     "slug": "continual-pretraining-forgetting",
     "status": "open",
-    "description": "How to add new data to a checkpoint without degrading old capabilities."
+    "description": "Adding new data to a trained model without losing capability."
   },
   {
-    "title": "Learning Rate Rewarming After a Data Shift",
-    "slug": "lr-rewarming-data-shift",
+    "title": "Learning Rate Rewarming After Checkpoint Resume",
+    "slug": "lr-rewarming-checkpoint-resume",
     "status": "empirically-open",
-    "description": "Optimal rewarming policy when continuing training on new distributions."
+    "description": "Optimal schedule when resuming training on new data distributions."
   },
   {
-    "title": "Checkpoint Averaging Versus Schedule Decay",
-    "slug": "checkpoint-averaging-vs-decay",
+    "title": "Lottery Ticket Existence at Scale",
+    "slug": "lottery-ticket-existence-scale",
+    "status": "empirically-open",
+    "description": "Whether trainable sparse subnetworks exist in billion-parameter models."
+  },
+  {
+    "title": "Depth Scaling and Signal Propagation Limits",
+    "slug": "depth-scaling-signal-propagation",
     "status": "partially-solved",
-    "description": "Whether weight averaging can fully replace learning rate decay."
-  },
-  {
-    "title": "Gradient Clipping Threshold Selection",
-    "slug": "gradient-clipping-threshold",
-    "status": "open",
-    "description": "Principled rule for choosing a clipping threshold across scales."
-  },
-  {
-    "title": "Batch Size Warmup Schedules",
-    "slug": "batch-size-warmup-schedules",
-    "status": "empirically-open",
-    "description": "Whether growing batch size beats a fixed batch at equal compute."
-  },
-  {
-    "title": "Optimizer Benchmarking Under Equal Tuning Budget",
-    "slug": "optimizer-benchmarking-equal-budget",
-    "status": "methodologically-blocked",
-    "description": "How to compare optimizers fairly given unequal tuning effort."
+    "description": "Parameterization that keeps very deep transformers trainable at fixed cost."
   },
   {
     "title": "Mixture-of-Experts Router Load Balancing Dynamics",
     "slug": "moe-router-balancing-dynamics",
     "status": "open",
-    "description": "Why routers collapse and which auxiliary losses provably prevent it."
+    "description": "Preventing expert collapse without auxiliary losses that hurt loss."
   },
   {
-    "title": "Scaling Laws for Reinforcement Learning Post-Training",
-    "slug": "rl-posttraining-scaling-laws",
+    "title": "Compute-Optimal Model Shape Beyond Parameter Count",
+    "slug": "compute-optimal-model-shape",
     "status": "empirically-open",
-    "description": "Whether RL fine-tuning compute obeys a predictable scaling law."
+    "description": "Whether aspect ratio matters beyond total parameters in scaling laws."
   },
   {
-    "title": "Entropy Collapse in Policy Gradient Fine-Tuning",
-    "slug": "entropy-collapse-policy-gradient",
-    "status": "open",
-    "description": "How to keep exploration alive during long RL fine-tuning runs."
-  },
-  {
-    "title": "Plasticity Loss in Long Training Runs",
-    "slug": "plasticity-loss-long-runs",
+    "title": "Data Repetition and Epoch Budget Limits",
+    "slug": "data-repetition-epoch-limits",
     "status": "partially-solved",
-    "description": "Why networks lose ability to fit new data over time."
+    "description": "How many epochs before repeated data stops helping."
   },
   {
-    "title": "Data Mixture Weights as an Optimization Variable",
-    "slug": "data-mixture-weight-optimization",
+    "title": "Loss Landscape Connectivity and Mode Merging",
+    "slug": "mode-connectivity-merging",
+    "status": "partially-solved",
+    "description": "When independently trained models can be merged without loss."
+  },
+  {
+    "title": "Batch Normalization Alternatives in Sequence Models",
+    "slug": "normalization-choice-training-dynamics",
+    "status": "open",
+    "description": "Which normalization placement causally stabilizes deep transformer training."
+  },
+  {
+    "title": "Attention Logit Growth and Entropy Collapse",
+    "slug": "attention-entropy-collapse",
+    "status": "partially-solved",
+    "description": "Preventing runaway attention logits during long pretraining runs."
+  },
+  {
+    "title": "Predicting Downstream Ability from Pretraining Loss",
+    "slug": "loss-to-downstream-prediction",
     "status": "empirically-open",
-    "description": "Whether learned mixture weights beat hand-tuned ones at scale."
+    "description": "Whether pretraining loss alone predicts downstream task performance."
   },
   {
-    "title": "Loss Curve Extrapolation From Early Training",
-    "slug": "loss-curve-extrapolation",
+    "title": "Optimizer Comparison Under Equal Tuning Budget",
+    "slug": "optimizer-comparison-equal-tuning",
+    "status": "methodologically-blocked",
+    "description": "Fair protocol for comparing optimizers with equal tuning effort."
+  },
+  {
+    "title": "Memorization Onset During Training",
+    "slug": "memorization-onset-training",
     "status": "open",
-    "description": "Predicting final loss from a small fraction of training."
+    "description": "When and why models memorize specific training examples."
   },
   {
-    "title": "Optimal Model Shape at Fixed Parameter Count",
-    "slug": "optimal-model-shape-fixed-params",
-    "status": "partially-solved",
-    "description": "Best width-depth-heads allocation for a fixed parameter budget."
-  },
-  {
-    "title": "Feature Learning Versus Lazy Regime Boundary",
-    "slug": "feature-learning-lazy-boundary",
-    "status": "partially-solved",
-    "description": "Where practical networks sit between kernel and feature-learning regimes."
+    "title": "Sample Efficiency Limits of Reinforcement Learning Fine-Tuning",
+    "slug": "rl-finetuning-sample-efficiency",
+    "status": "open",
+    "description": "Whether RL post-training adds capability or only reweights existing behavior."
   },
   {
     "title": "Gradient Accumulation Equivalence to Large Batches",
     "slug": "gradient-accumulation-equivalence",
-    "status": "open",
-    "description": "When accumulated microbatches differ measurably from a true large batch."
+    "status": "partially-solved",
+    "description": "Whether accumulated microbatches truly match single large-batch training."
   },
   {
-    "title": "Deterministic Reproducibility of Large Training Runs",
-    "slug": "deterministic-reproducibility-large-runs",
-    "status": "methodologically-blocked",
-    "description": "Whether frontier runs can be bitwise reproduced across hardware."
+    "title": "Scaling Law Extrapolation Error Bounds",
+    "slug": "scaling-law-extrapolation-bounds",
+    "status": "open",
+    "description": "Confidence bounds on scaling law predictions beyond fitted range."
+  },
+  {
+    "title": "Learning Rate Decay to Zero versus Constant Plus Cooldown",
+    "slug": "decay-versus-cooldown-schedules",
+    "status": "empirically-open",
+    "description": "Whether constant-then-cooldown matches cosine decay at large scale."
+  },
+  {
+    "title": "Initialization Scale Effects Beyond Early Training",
+    "slug": "initialization-scale-long-run-effects",
+    "status": "empirically-open",
+    "description": "Whether initialization choice affects loss after long training runs."
+  },
+  {
+    "title": "Stochastic Differential Equation Validity for Deep Nets",
+    "slug": "sde-approximation-validity",
+    "status": "partially-solved",
+    "description": "When continuous-time SGD approximations describe real training dynamics."
+  },
+  {
+    "title": "Curvature-Aware Preconditioner Staleness Tolerance",
+    "slug": "preconditioner-staleness-tolerance",
+    "status": "empirically-open",
+    "description": "How stale a preconditioner can be before optimization degrades."
   }
 ]

@@ -1,242 +1,242 @@
 [
   {
-    "title": "Optimal Expert Granularity Scaling Law",
-    "slug": "optimal-expert-granularity-scaling-law",
-    "status": "empirically-open",
-    "description": "How expert size and count jointly set compute-optimal MoE loss."
-  },
-  {
-    "title": "Top-k Routing Discreteness and Gradient Bias",
-    "slug": "topk-routing-gradient-bias",
-    "status": "open",
-    "description": "Quantify bias from ignoring non-selected experts in router gradients."
-  },
-  {
-    "title": "Load-Balancing Loss versus Quality Trade-off Frontier",
-    "slug": "load-balancing-quality-tradeoff",
-    "status": "empirically-open",
-    "description": "Exact cost in loss of enforcing perfect expert balance."
-  },
-  {
-    "title": "Provable Convergence of Sparse Gating with Discrete Selection",
-    "slug": "sparse-gating-convergence-proof",
-    "status": "open",
-    "description": "Prove convergence of top-k gated networks beyond toy settings."
-  },
-  {
-    "title": "Expert Specialization Metric Definition",
-    "slug": "expert-specialization-metric",
-    "status": "methodologically-blocked",
-    "description": "No agreed measure of what an expert specializes in."
-  },
-  {
-    "title": "Token Dropping Effects on Long-Context Reasoning",
-    "slug": "token-dropping-long-context",
-    "status": "empirically-open",
-    "description": "Does capacity-factor dropping degrade long-range dependency handling?"
-  },
-  {
-    "title": "Router Collapse Onset Prediction",
-    "slug": "router-collapse-onset-prediction",
-    "status": "open",
-    "description": "Predict when routers collapse to few experts during training."
-  },
-  {
-    "title": "MoE Sample Efficiency versus Dense at Equal Parameters",
-    "slug": "moe-sample-efficiency-equal-params",
-    "status": "empirically-open",
-    "description": "Do MoEs need more tokens than dense at matched parameters?"
-  },
-  {
-    "title": "Optimal Shared-Expert Fraction",
-    "slug": "optimal-shared-expert-fraction",
-    "status": "empirically-open",
-    "description": "What fraction of FLOPs should go to always-on experts?"
-  },
-  {
-    "title": "Expressivity Separation Between Sparse and Dense Networks",
-    "slug": "sparse-dense-expressivity-separation",
-    "status": "open",
-    "description": "Prove a function class sparse MoEs represent and dense cannot."
-  },
-  {
-    "title": "Upcycling versus From-Scratch Crossover Point",
-    "slug": "upcycling-crossover-point",
-    "status": "empirically-open",
-    "description": "Token budget where sparse upcycling loses to training fresh."
-  },
-  {
-    "title": "Auxiliary-Loss-Free Balancing Guarantees",
-    "slug": "auxiliary-loss-free-balancing-guarantees",
+    "title": "Provable Expert Specialization Under Gradient Descent",
+    "slug": "provable-expert-specialization-gradient-descent",
     "status": "partially-solved",
-    "description": "Prove bias-based load balancing converges to balanced routing."
+    "description": "When does training provably drive experts to distinct functions?"
   },
   {
-    "title": "Expert Count Limits Before Diminishing Returns",
-    "slug": "expert-count-diminishing-returns",
+    "title": "Optimal Top-k for a Fixed Compute Budget",
+    "slug": "optimal-top-k-fixed-compute-budget",
     "status": "empirically-open",
-    "description": "Where adding experts stops improving loss per FLOP."
+    "description": "Which k maximizes quality at fixed FLOPs and parameters?"
   },
   {
-    "title": "Routing Stability Across Fine-Tuning",
-    "slug": "routing-stability-fine-tuning",
-    "status": "empirically-open",
-    "description": "Does fine-tuning rewrite routing or only expert weights?"
+    "title": "MoE Scaling Law with Expert Count as a Free Variable",
+    "slug": "moe-scaling-law-expert-count",
+    "status": "partially-solved",
+    "description": "How does loss scale jointly with experts, granularity, and tokens?"
   },
   {
-    "title": "MoE Instruction-Tuning Generalization Gap",
-    "slug": "moe-instruction-tuning-gap",
+    "title": "Discrete Routing Without Auxiliary Load-Balancing Losses",
+    "slug": "routing-without-auxiliary-losses",
     "status": "empirically-open",
-    "description": "Why sparse models overfit small fine-tuning sets more."
+    "description": "Can balance emerge without an auxiliary loss at scale?"
   },
   {
-    "title": "Optimal Placement of MoE Layers in Depth",
-    "slug": "moe-layer-depth-placement",
+    "title": "Router Gradient Bias from Straight-Through Estimators",
+    "slug": "router-straight-through-gradient-bias",
+    "status": "open",
+    "description": "Bound the bias of surrogate gradients through discrete routing."
+  },
+  {
+    "title": "Load Balance Versus Quality Frontier",
+    "slug": "load-balance-quality-frontier",
+    "status": "open",
+    "description": "Quantify the exact cost of forcing balanced expert loads."
+  },
+  {
+    "title": "Token Dropping and Its Effect on Long-Tail Performance",
+    "slug": "token-dropping-long-tail-effect",
     "status": "empirically-open",
-    "description": "Which layers should be sparse for best quality per FLOP."
+    "description": "Which capabilities degrade when capacity factors drop tokens?"
+  },
+  {
+    "title": "Training Instability of Router Logits at Scale",
+    "slug": "router-logit-training-instability",
+    "status": "partially-solved",
+    "description": "Why do router logits diverge and what provably prevents it?"
+  },
+  {
+    "title": "Expert Choice Versus Token Choice Under Causal Decoding",
+    "slug": "expert-choice-causal-decoding",
+    "status": "open",
+    "description": "Can expert-choice routing be made causal without quality loss?"
+  },
+  {
+    "title": "Identifiability of Learned Expert Assignments",
+    "slug": "identifiability-expert-assignments",
+    "status": "methodologically-blocked",
+    "description": "Are expert partitions identifiable or arbitrary across seeds?"
+  },
+  {
+    "title": "Compute-Optimal Granularity of Experts",
+    "slug": "compute-optimal-expert-granularity",
+    "status": "empirically-open",
+    "description": "What expert width minimizes loss at fixed active parameters?"
+  },
+  {
+    "title": "Upcycling Dense Checkpoints Into Sparse Models",
+    "slug": "dense-to-moe-upcycling",
+    "status": "partially-solved",
+    "description": "When does upcycling beat training a MoE from scratch?"
+  },
+  {
+    "title": "MoE Inference Memory Wall Under Batch Serving",
+    "slug": "moe-inference-memory-wall",
+    "status": "open",
+    "description": "Minimize expert weight movement per token under realistic batching."
+  },
+  {
+    "title": "Provable Guarantees for Expert Offloading and Prefetching",
+    "slug": "expert-offloading-prefetch-guarantees",
+    "status": "open",
+    "description": "Bound cache miss rate for predicted expert access sequences."
+  },
+  {
+    "title": "Router Predictability Across Layers",
+    "slug": "cross-layer-router-predictability",
+    "status": "empirically-open",
+    "description": "How far ahead can later-layer expert choices be predicted?"
   },
   {
     "title": "Expert Pruning Without Retraining",
     "slug": "expert-pruning-without-retraining",
     "status": "partially-solved",
-    "description": "Drop experts at inference with bounded quality loss."
+    "description": "Which experts can be removed with bounded loss increase?"
   },
   {
-    "title": "Compute-Optimal Sparsity Ratio Under Memory Constraints",
-    "slug": "compute-optimal-sparsity-memory-constrained",
+    "title": "Expert Merging as Lossless Compression",
+    "slug": "expert-merging-lossless-compression",
     "status": "open",
-    "description": "Best active-to-total parameter ratio given fixed memory budget."
+    "description": "Can similar experts merge without measurable capability loss?"
   },
   {
-    "title": "Expert Merging as a Capacity-Preserving Operation",
-    "slug": "expert-merging-capacity-preserving",
+    "title": "Sparse Upcycling of Attention Layers",
+    "slug": "mixture-of-attention-experts",
+    "status": "empirically-open",
+    "description": "Does sparsifying attention heads pay off like sparse FFNs?"
+  },
+  {
+    "title": "MoE Behavior Under Reinforcement Learning Fine-Tuning",
+    "slug": "moe-under-rl-finetuning",
+    "status": "empirically-open",
+    "description": "Does RL training collapse routing diversity in sparse models?"
+  },
+  {
+    "title": "Catastrophic Routing Drift in Continual Learning",
+    "slug": "catastrophic-routing-drift",
     "status": "open",
-    "description": "Can experts merge without losing the function they encode?"
+    "description": "Do routers reassign tokens destructively when the data shifts?"
   },
   {
-    "title": "Causal Test of Routing Necessity",
-    "slug": "causal-test-routing-necessity",
+    "title": "Optimal Shared-Expert Fraction",
+    "slug": "optimal-shared-expert-fraction",
     "status": "empirically-open",
-    "description": "Does learned routing beat fixed hash routing at scale?"
+    "description": "How much capacity should be always-on versus routed?"
   },
   {
-    "title": "Load Imbalance Tail Latency in Distributed Serving",
-    "slug": "moe-tail-latency-imbalance",
-    "status": "open",
-    "description": "Bound serving latency under adversarial token routing skew."
-  },
-  {
-    "title": "Expert Offloading Prefetch Predictability",
-    "slug": "expert-offload-prefetch-predictability",
-    "status": "empirically-open",
-    "description": "How far ahead are expert activations reliably predictable?"
-  },
-  {
-    "title": "Quantization Sensitivity of Router Logits",
-    "slug": "router-logit-quantization-sensitivity",
-    "status": "empirically-open",
-    "description": "Minimum router precision before routing decisions flip harmfully."
-  },
-  {
-    "title": "Continuous Relaxations Matching Hard Top-k Quality",
-    "slug": "soft-routing-matching-hard-topk",
-    "status": "open",
-    "description": "Can soft routing match hard top-k at large scale?"
-  },
-  {
-    "title": "MoE Behavior Under Distribution Shift",
-    "slug": "moe-distribution-shift-routing",
-    "status": "empirically-open",
-    "description": "Do routers misroute out-of-distribution tokens into wrong experts?"
-  },
-  {
-    "title": "Batch-Level Routing Dependence and Inference Non-Determinism",
-    "slug": "batch-level-routing-nondeterminism",
-    "status": "open",
-    "description": "Eliminate cross-token routing dependence without quality loss."
-  },
-  {
-    "title": "Optimal Capacity Factor Schedule",
-    "slug": "optimal-capacity-factor-schedule",
-    "status": "empirically-open",
-    "description": "Should capacity factor vary over training and depth?"
-  },
-  {
-    "title": "Expert Redundancy Measurement",
-    "slug": "expert-redundancy-measurement",
-    "status": "methodologically-blocked",
-    "description": "No reliable way to count functionally distinct experts."
-  },
-  {
-    "title": "Attention-Layer Mixture of Experts Payoff",
-    "slug": "attention-moe-payoff",
-    "status": "empirically-open",
-    "description": "Does sparsifying attention heads pay off like FFN sparsity?"
-  },
-  {
-    "title": "Multimodal Modality-Specific Routing Emergence",
-    "slug": "multimodal-modality-routing-emergence",
-    "status": "empirically-open",
-    "description": "Do experts split by modality without explicit supervision?"
-  },
-  {
-    "title": "Router Interpretability from Token Identity Alone",
-    "slug": "router-interpretability-token-identity",
-    "status": "open",
-    "description": "How much routing is explained by token identity versus context?"
-  },
-  {
-    "title": "Reinforcement Learning Stability with Sparse Experts",
-    "slug": "rl-stability-sparse-experts",
-    "status": "empirically-open",
-    "description": "Does RL post-training destabilize routing in sparse models?"
-  },
-  {
-    "title": "Theoretical Gain of Mixture Models Under Cluster Structure",
-    "slug": "moe-cluster-structure-theory",
+    "title": "Expressivity Separation Between Sparse and Dense Networks",
+    "slug": "sparse-dense-expressivity-separation",
     "status": "partially-solved",
-    "description": "Prove MoE advantage when data has latent clusters."
+    "description": "Prove functions cheap for MoE but costly for dense models."
   },
   {
-    "title": "Expert Capacity Allocation Per Token Difficulty",
-    "slug": "per-token-adaptive-expert-count",
+    "title": "Router Robustness to Adversarial Token Perturbations",
+    "slug": "router-adversarial-robustness",
     "status": "open",
-    "description": "Choose k per token by difficulty with provable budget control."
+    "description": "Can attackers flip routing to degrade or overload a model?"
   },
   {
-    "title": "Scaling Laws for MoE Inference Cost, Not Training",
-    "slug": "moe-inference-cost-scaling-law",
+    "title": "Cross-Batch Information Leakage Through Shared Expert Capacity",
+    "slug": "moe-batch-dependence-leakage",
+    "status": "partially-solved",
+    "description": "Batching makes outputs depend on other users' tokens."
+  },
+  {
+    "title": "Deterministic Inference Under Capacity-Constrained Routing",
+    "slug": "deterministic-moe-inference",
+    "status": "open",
+    "description": "Guarantee identical outputs regardless of batch composition."
+  },
+  {
+    "title": "Optimal Expert Parallel Placement Under Network Topology",
+    "slug": "expert-parallel-placement",
+    "status": "partially-solved",
+    "description": "Assign experts to devices minimizing all-to-all communication cost."
+  },
+  {
+    "title": "All-to-All Communication Lower Bounds for MoE Training",
+    "slug": "all-to-all-lower-bounds-moe",
+    "status": "open",
+    "description": "Prove minimum communication volume for sparse expert training."
+  },
+  {
+    "title": "Quantization Sensitivity of Router Weights",
+    "slug": "router-quantization-sensitivity",
     "status": "empirically-open",
-    "description": "Compute-optimal MoE shape when serving cost dominates."
+    "description": "How low can router precision go before routing flips?"
   },
   {
-    "title": "Cross-Layer Router Coordination",
-    "slug": "cross-layer-router-coordination",
-    "status": "open",
-    "description": "Do independent per-layer routers leave joint gains unclaimed?"
-  },
-  {
-    "title": "Fault Tolerance to Missing Experts",
-    "slug": "fault-tolerance-missing-experts",
+    "title": "Mixture-of-Depths Versus Mixture-of-Experts at Equal Compute",
+    "slug": "depth-versus-expert-sparsity",
     "status": "empirically-open",
-    "description": "Quality degradation when random experts become unavailable."
+    "description": "Is per-token depth skipping better than expert sparsity?"
   },
   {
-    "title": "Memorization Localization in Individual Experts",
-    "slug": "memorization-localization-experts",
+    "title": "Emergence of Domain Experts Versus Token Experts",
+    "slug": "domain-versus-token-specialization",
+    "status": "methodologically-blocked",
+    "description": "Do experts specialize semantically or by surface token identity?"
+  },
+  {
+    "title": "Measuring Effective Capacity of a Sparse Model",
+    "slug": "effective-capacity-sparse-models",
+    "status": "methodologically-blocked",
+    "description": "Define a parameter count predicting MoE quality across configs."
+  },
+  {
+    "title": "Router Entropy Collapse and Its Reversibility",
+    "slug": "router-entropy-collapse",
+    "status": "open",
+    "description": "Can a collapsed router recover diversity without restarting training?"
+  },
+  {
+    "title": "Data Mixture Interaction With Expert Allocation",
+    "slug": "data-mixture-expert-allocation",
     "status": "empirically-open",
-    "description": "Is training-data memorization concentrated in specific experts?"
+    "description": "Should expert counts follow domain proportions in the corpus?"
   },
   {
-    "title": "Distillation of Sparse Models into Dense Students",
-    "slug": "sparse-to-dense-distillation-limit",
-    "status": "open",
-    "description": "Recoverable fraction of MoE quality in a dense student."
+    "title": "Continuous Relaxations That Match Discrete Routing Quality",
+    "slug": "continuous-routing-relaxations",
+    "status": "solved-but-impractical",
+    "description": "Soft routing matches quality but loses all compute savings."
   },
   {
-    "title": "Router Training Signal Beyond Language Model Loss",
-    "slug": "router-auxiliary-training-signal",
+    "title": "Optimal Router Depth and Input Representation",
+    "slug": "router-input-representation",
+    "status": "empirically-open",
+    "description": "Should routers see hidden states, embeddings, or context?"
+  },
+  {
+    "title": "Expert Utilization Under Long-Context Inference",
+    "slug": "expert-utilization-long-context",
+    "status": "empirically-open",
+    "description": "Does routing change systematically deep into long sequences?"
+  },
+  {
+    "title": "Fine-Tuning Sparse Models Without Overfitting Few Experts",
+    "slug": "moe-finetuning-overfitting",
+    "status": "partially-solved",
+    "description": "Sparse models overfit small downstream datasets more than dense."
+  },
+  {
+    "title": "Speculative Decoding for Sparse Expert Models",
+    "slug": "speculative-decoding-for-moe",
     "status": "open",
-    "description": "Better router objectives than gradients from next-token loss."
+    "description": "Design drafters exploiting expert structure for verified speedups."
+  },
+  {
+    "title": "Interpretability of Individual Experts as Circuit Units",
+    "slug": "experts-as-interpretable-units",
+    "status": "methodologically-blocked",
+    "description": "Are experts meaningful units for mechanistic interpretability?"
+  },
+  {
+    "title": "Optimal Expert Count Under Fixed Memory Rather Than FLOPs",
+    "slug": "expert-count-under-memory-budget",
+    "status": "empirically-open",
+    "description": "Best sparsity when memory, not compute, is the binding constraint."
   }
 ]

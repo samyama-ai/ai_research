@@ -1,242 +1,236 @@
 [
   {
-    "title": "Anisotropy and the Narrow Cone Effect in Contextual Embeddings",
-    "slug": "anisotropy-narrow-cone-contextual-embeddings",
-    "status": "open",
-    "description": "Why contextual embeddings occupy a narrow cone, and whether it hurts."
-  },
-  {
-    "title": "Linear Representation Hypothesis Beyond Curated Concepts",
-    "slug": "linear-representation-hypothesis-scope",
-    "status": "empirically-open",
-    "description": "Which features are linearly encoded and which are irreducibly nonlinear."
-  },
-  {
-    "title": "Superposition Capacity Bounds for Realistic Feature Distributions",
-    "slug": "superposition-capacity-bounds",
-    "status": "partially-solved",
-    "description": "How many sparse features fit in n dimensions provably."
-  },
-  {
-    "title": "Identifiability of Sparse Autoencoder Dictionaries",
-    "slug": "sae-dictionary-identifiability",
-    "status": "open",
-    "description": "Whether SAE features recover unique ground-truth model features."
-  },
-  {
-    "title": "Feature Splitting Versus True Feature Discovery in SAEs",
-    "slug": "sae-feature-splitting-vs-discovery",
-    "status": "methodologically-blocked",
-    "description": "Distinguishing genuine features from width-induced fragmentation of one feature."
-  },
-  {
-    "title": "Compute-Optimal Embedding Dimension Scaling Law",
+    "title": "Compute-Optimal Embedding Dimension Scaling",
     "slug": "compute-optimal-embedding-dimension",
     "status": "empirically-open",
-    "description": "Optimal embedding width as a function of training compute."
+    "description": "How should embedding width scale with model compute budget?"
   },
   {
-    "title": "Intrinsic Dimension of Natural Language Representation Manifolds",
-    "slug": "intrinsic-dimension-language-manifolds",
+    "title": "Linear Representation Hypothesis Falsification",
+    "slug": "linear-representation-hypothesis-falsification",
     "status": "methodologically-blocked",
-    "description": "Estimating true manifold dimension of text representations reliably."
+    "description": "Is there a test distinguishing linear from nonlinear feature encoding?"
   },
   {
-    "title": "Platonic Representation Convergence Across Modalities",
+    "title": "Superposition Capacity Bounds for Real Networks",
+    "slug": "superposition-capacity-bounds",
+    "status": "partially-solved",
+    "description": "How many features can one layer store without interference?"
+  },
+  {
+    "title": "Identifiability of Sparse Autoencoder Feature Dictionaries",
+    "slug": "sae-dictionary-identifiability",
+    "status": "open",
+    "description": "Do sparse autoencoders recover unique ground-truth features?"
+  },
+  {
+    "title": "Anisotropy and the Narrow Cone Effect",
+    "slug": "embedding-anisotropy-narrow-cone",
+    "status": "partially-solved",
+    "description": "Why do contextual embeddings occupy a narrow cone?"
+  },
+  {
+    "title": "Intrinsic Dimension of Natural Language Representations",
+    "slug": "intrinsic-dimension-language-representations",
+    "status": "methodologically-blocked",
+    "description": "What is the true intrinsic dimension of text embeddings?"
+  },
+  {
+    "title": "Platonic Representation Convergence",
     "slug": "platonic-representation-convergence",
     "status": "empirically-open",
-    "description": "Whether independently trained models converge to one shared geometry."
+    "description": "Do independently trained models converge to one representation?"
   },
   {
-    "title": "Unsupervised Cross-Model Embedding Translation Without Paired Data",
-    "slug": "unsupervised-embedding-space-translation",
-    "status": "partially-solved",
-    "description": "Aligning two embedding spaces with no correspondence supervision."
-  },
-  {
-    "title": "Embedding Inversion and the Limits of Text Recovery",
-    "slug": "embedding-inversion-text-recovery-limits",
+    "title": "Model Stitching Without Retraining",
+    "slug": "model-stitching-without-retraining",
     "status": "open",
-    "description": "How much source text an embedding provably leaks."
+    "description": "When can layers of different models be swapped directly?"
   },
   {
-    "title": "Information-Theoretic Lower Bound on Retrieval Embedding Size",
-    "slug": "retrieval-embedding-size-lower-bound",
-    "status": "open",
-    "description": "Minimum vector dimension needed for a given corpus recall."
-  },
-  {
-    "title": "Single-Vector Retrieval Expressivity Ceiling",
-    "slug": "single-vector-retrieval-expressivity-ceiling",
+    "title": "Relative Representations for Zero-Shot Model Alignment",
+    "slug": "relative-representations-zero-shot-alignment",
     "status": "partially-solved",
-    "description": "Which query-document relevance sets a single vector cannot represent."
+    "description": "Can anchor-based coordinates make embedding spaces universally comparable?"
+  },
+  {
+    "title": "Unsupervised Embedding Space Translation",
+    "slug": "unsupervised-embedding-translation",
+    "status": "empirically-open",
+    "description": "Can two embedding spaces be aligned without paired data?"
+  },
+  {
+    "title": "Embedding Inversion and Text Recoverability Limits",
+    "slug": "embedding-inversion-limits",
+    "status": "open",
+    "description": "How much source text is recoverable from a single vector?"
   },
   {
     "title": "Matryoshka Truncation Optimality",
     "slug": "matryoshka-truncation-optimality",
     "status": "empirically-open",
-    "description": "Whether nested embeddings lose nothing versus dimension-specific training."
+    "description": "Are nested embeddings Pareto-optimal against dimension-specific training?"
   },
   {
-    "title": "Contrastive Learning Negative Sampling Optimality",
+    "title": "Binary and Quantized Embedding Fidelity Floor",
+    "slug": "quantized-embedding-fidelity-floor",
+    "status": "partially-solved",
+    "description": "What retrieval loss is unavoidable at one bit per dimension?"
+  },
+  {
+    "title": "Single-Vector Retrieval Capacity Limit",
+    "slug": "single-vector-retrieval-capacity",
+    "status": "partially-solved",
+    "description": "How many documents can one dimension-d vector index rank correctly?"
+  },
+  {
+    "title": "Late Interaction Versus Dense Vectors Asymptotics",
+    "slug": "late-interaction-versus-dense-asymptotics",
+    "status": "empirically-open",
+    "description": "Does multi-vector retrieval retain advantage at very large scale?"
+  },
+  {
+    "title": "Contrastive Negative Sampling Optimality",
     "slug": "contrastive-negative-sampling-optimality",
     "status": "open",
-    "description": "The optimal negative distribution for a fixed compute budget."
+    "description": "What negative distribution maximizes downstream retrieval quality?"
   },
   {
-    "title": "Dimensional Collapse in Self-Supervised Representations",
-    "slug": "dimensional-collapse-self-supervised",
+    "title": "Dimensional Collapse in Self-Supervised Learning",
+    "slug": "dimensional-collapse-ssl",
     "status": "partially-solved",
-    "description": "Why non-contrastive objectives avoid collapse and when they fail."
+    "description": "Why do joint-embedding methods lose effective rank during training?"
+  },
+  {
+    "title": "Why Non-Contrastive Methods Avoid Collapse",
+    "slug": "non-contrastive-collapse-avoidance",
+    "status": "partially-solved",
+    "description": "What mechanism prevents collapse without explicit negatives?"
   },
   {
     "title": "Uniformity-Alignment Tradeoff Beyond the Hypersphere",
-    "slug": "uniformity-alignment-tradeoff-limits",
+    "slug": "uniformity-alignment-tradeoff",
     "status": "open",
-    "description": "Whether uniformity and alignment fully predict downstream embedding quality."
+    "description": "Do alignment and uniformity predict transfer on non-spherical geometries?"
   },
   {
-    "title": "Tokenizer-Induced Representation Bottlenecks",
-    "slug": "tokenizer-induced-representation-bottleneck",
-    "status": "empirically-open",
-    "description": "How much tokenization choice caps achievable representation quality."
-  },
-  {
-    "title": "Byte-Level Versus Subword Representation Equivalence",
-    "slug": "byte-level-vs-subword-equivalence",
-    "status": "empirically-open",
-    "description": "Whether byte models match subword models at equal compute."
-  },
-  {
-    "title": "Embedding Space Geometry of Negation and Antonymy",
-    "slug": "negation-antonymy-embedding-geometry",
-    "status": "open",
-    "description": "Why embeddings fail to separate a sentence from its negation."
-  },
-  {
-    "title": "Hyperbolic Embeddings for Real Hierarchies at Scale",
+    "title": "Hyperbolic Embeddings at Scale",
     "slug": "hyperbolic-embeddings-at-scale",
-    "status": "partially-solved",
-    "description": "Whether curved spaces beat Euclidean ones on real hierarchical data."
-  },
-  {
-    "title": "Numerical Stability Limits of Low-Curvature Manifold Embeddings",
-    "slug": "hyperbolic-numerical-precision-limits",
-    "status": "solved-but-impractical",
-    "description": "Float precision destroys hyperbolic gains at useful embedding depths."
-  },
-  {
-    "title": "Provable Guarantees for Binary and Product Quantized Embeddings",
-    "slug": "quantized-embedding-recall-guarantees",
-    "status": "partially-solved",
-    "description": "Recall bounds for compressed vectors under realistic data distributions."
-  },
-  {
-    "title": "Approximate Nearest Neighbor Search Under Adversarial Queries",
-    "slug": "ann-search-adversarial-queries",
-    "status": "open",
-    "description": "Whether graph indices keep recall against worst-case query distributions."
-  },
-  {
-    "title": "Curse of Dimensionality Threshold for Practical Vector Search",
-    "slug": "dimensionality-threshold-vector-search",
-    "status": "open",
-    "description": "The dimension at which ANN indices lose to brute force."
-  },
-  {
-    "title": "Static Versus Contextual Embedding Gap for Lexical Tasks",
-    "slug": "static-vs-contextual-lexical-gap",
     "status": "empirically-open",
-    "description": "Whether contextual models beat static vectors on word-level semantics."
+    "description": "Do hyperbolic spaces beat Euclidean ones for large hierarchies?"
   },
   {
-    "title": "Polysemy Resolution Capacity of a Single Vector",
-    "slug": "polysemy-capacity-single-vector",
-    "status": "open",
-    "description": "How many senses one vector can encode recoverably."
-  },
-  {
-    "title": "Universality of Sparse Features Across Independent Training Runs",
-    "slug": "sae-feature-universality-across-runs",
+    "title": "Tokenizer Choice Effects on Representation Quality",
+    "slug": "tokenizer-effects-on-representations",
     "status": "empirically-open",
-    "description": "Whether separate runs learn the same interpretable feature set."
+    "description": "How much does tokenization determine downstream representation geometry?"
   },
   {
-    "title": "Causal Sufficiency of Probing Directions",
-    "slug": "probe-direction-causal-sufficiency",
+    "title": "Untied Versus Tied Input-Output Embeddings",
+    "slug": "tied-versus-untied-embeddings",
+    "status": "empirically-open",
+    "description": "When does weight tying hurt large-model representation quality?"
+  },
+  {
+    "title": "Positional Encoding and Length Extrapolation Geometry",
+    "slug": "positional-encoding-extrapolation-geometry",
+    "status": "open",
+    "description": "Which positional geometry supports extrapolation beyond training length?"
+  },
+  {
+    "title": "Softmax Bottleneck in Modern Language Models",
+    "slug": "softmax-bottleneck-modern-lms",
+    "status": "partially-solved",
+    "description": "Does low-rank output embedding still limit distribution expressiveness?"
+  },
+  {
+    "title": "Polysemantic Neurons Versus Polysemantic Directions",
+    "slug": "polysemantic-neurons-versus-directions",
+    "status": "open",
+    "description": "Is polysemanticity a basis artifact or an intrinsic property?"
+  },
+  {
+    "title": "Concept Erasure Guarantees Under Nonlinear Probes",
+    "slug": "nonlinear-concept-erasure",
+    "status": "partially-solved",
+    "description": "Can an attribute be provably removed from a representation?"
+  },
+  {
+    "title": "Probing Accuracy Versus Causal Use of Features",
+    "slug": "probing-versus-causal-feature-use",
     "status": "methodologically-blocked",
-    "description": "Whether a decodable direction is one the model actually uses."
+    "description": "Does probe accuracy imply the model uses that feature?"
   },
   {
-    "title": "Steering Vector Transfer Across Layers, Models and Scales",
-    "slug": "steering-vector-transfer",
-    "status": "empirically-open",
-    "description": "Whether concept directions transfer between models without refitting."
-  },
-  {
-    "title": "Concept Erasure Guarantees Against Nonlinear Adversaries",
-    "slug": "concept-erasure-nonlinear-guarantees",
-    "status": "partially-solved",
-    "description": "Removing an attribute so no nonlinear probe recovers it."
-  },
-  {
-    "title": "Compositionality of Vector Arithmetic in Modern Embeddings",
-    "slug": "vector-arithmetic-compositionality",
-    "status": "open",
-    "description": "Whether analogy arithmetic survives in large contextual embedding spaces."
-  },
-  {
-    "title": "Cross-Modal Alignment Gap in Contrastive Vision-Language Spaces",
-    "slug": "cross-modal-modality-gap",
-    "status": "open",
-    "description": "Why image and text embeddings stay in separate cones."
-  },
-  {
-    "title": "Embedding Drift and Backward Compatibility of Reindexed Corpora",
-    "slug": "backward-compatible-embedding-updates",
-    "status": "partially-solved",
-    "description": "Upgrading an encoder without reindexing the whole corpus."
-  },
-  {
-    "title": "Long-Context Pooling Without Information Loss",
-    "slug": "long-document-pooling-information-loss",
-    "status": "open",
-    "description": "Pooling long documents into one vector without losing retrievable detail."
-  },
-  {
-    "title": "Multilingual Representation Interference at Fixed Capacity",
-    "slug": "multilingual-capacity-interference",
-    "status": "empirically-open",
-    "description": "How added languages trade off against per-language representation quality."
-  },
-  {
-    "title": "Instruction-Conditioned Embeddings Versus Task-Specific Encoders",
-    "slug": "instruction-conditioned-embedding-generality",
-    "status": "empirically-open",
-    "description": "Whether one instructable encoder matches many specialized encoders."
-  },
-  {
-    "title": "Contamination-Free Measurement of Embedding Generalization",
-    "slug": "embedding-benchmark-contamination",
+    "title": "Compositionality Measurement in Learned Embeddings",
+    "slug": "compositionality-measurement-embeddings",
     "status": "methodologically-blocked",
-    "description": "Measuring embedding quality without training-data overlap confounds."
+    "description": "How do we measure whether a representation composes systematically?"
   },
   {
-    "title": "Graph Embedding Expressivity Beyond Weisfeiler-Leman",
-    "slug": "graph-embedding-expressivity-beyond-wl",
+    "title": "Cross-Modal Embedding Gap in Contrastive Models",
+    "slug": "cross-modal-embedding-gap",
     "status": "partially-solved",
-    "description": "Practical embeddings that distinguish graphs WL tests cannot."
+    "description": "Why do image and text embeddings occupy disjoint cones?"
   },
   {
-    "title": "Positional Encoding Geometry and Length Extrapolation",
-    "slug": "positional-encoding-length-extrapolation",
+    "title": "Binding Problem in Vision-Language Embeddings",
+    "slug": "binding-problem-vision-language-embeddings",
     "status": "open",
-    "description": "Which positional representation extrapolates past its training length."
+    "description": "Why do joint embeddings fail at attribute-object binding?"
   },
   {
-    "title": "Optimal Transport Cost as a Representation Similarity Measure",
-    "slug": "representation-similarity-measure-validity",
+    "title": "Graph Embedding Expressiveness Beyond Weisfeiler-Leman",
+    "slug": "graph-embedding-expressiveness-beyond-wl",
+    "status": "partially-solved",
+    "description": "Which graph embeddings exceed one-dimensional Weisfeiler-Leman power?"
+  },
+  {
+    "title": "Distance Distortion Lower Bounds for Learned Embeddings",
+    "slug": "distance-distortion-lower-bounds",
+    "status": "open",
+    "description": "What distortion is unavoidable when embedding real data manifolds?"
+  },
+  {
+    "title": "Representation Similarity Metric Validity",
+    "slug": "representation-similarity-metric-validity",
     "status": "methodologically-blocked",
-    "description": "Which similarity metric correctly says two representations are the same."
+    "description": "Which similarity measure correctly decides if representations match?"
+  },
+  {
+    "title": "Embedding Drift Under Model Updates",
+    "slug": "embedding-drift-model-updates",
+    "status": "open",
+    "description": "Can new encoders stay backward compatible without reindexing corpora?"
+  },
+  {
+    "title": "Task Vector Arithmetic Reliability",
+    "slug": "task-vector-arithmetic-reliability",
+    "status": "empirically-open",
+    "description": "When does weight-space task arithmetic predictably compose behaviors?"
+  },
+  {
+    "title": "Steering Vector Generalization Out of Distribution",
+    "slug": "steering-vector-generalization",
+    "status": "empirically-open",
+    "description": "Do activation steering directions transfer beyond their extraction distribution?"
+  },
+  {
+    "title": "Memorization Detection From Representation Geometry",
+    "slug": "memorization-detection-representation-geometry",
+    "status": "open",
+    "description": "Can geometry alone distinguish memorized from generalized examples?"
+  },
+  {
+    "title": "Long-Document Embedding Aggregation",
+    "slug": "long-document-embedding-aggregation",
+    "status": "empirically-open",
+    "description": "How should long texts collapse into a single vector?"
+  },
+  {
+    "title": "Instruction-Conditioned Embeddings and Task Specificity",
+    "slug": "instruction-conditioned-embeddings",
+    "status": "open",
+    "description": "Can one encoder serve conflicting task-specific similarity notions?"
   }
 ]

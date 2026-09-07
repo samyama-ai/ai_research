@@ -1,242 +1,230 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size",
-    "slug": "compute-optimal-vocabulary-size",
-    "status": "empirically-open",
-    "description": "How should tokenizer vocabulary scale with model and data budget?"
-  },
-  {
-    "title": "Chinchilla Coefficient Reproduction Gap",
-    "slug": "chinchilla-coefficient-reproduction-gap",
+    "title": "Reconciling Kaplan and Chinchilla Exponents",
+    "slug": "kaplan-chinchilla-exponent-discrepancy",
     "status": "partially-solved",
-    "description": "Original Chinchilla fits disagree with reanalyses of their own data."
+    "description": "Which methodological choices explain conflicting compute-optimal scaling exponents?"
   },
   {
-    "title": "Data-Constrained Repetition Exponents",
-    "slug": "data-constrained-repetition-exponents",
-    "status": "empirically-open",
-    "description": "How many epochs of repeated data remain compute-efficient?"
-  },
-  {
-    "title": "Scaling Laws for Mixture-of-Experts Sparsity",
-    "slug": "scaling-laws-mixture-of-experts-sparsity",
-    "status": "empirically-open",
-    "description": "Optimal expert count and granularity as compute grows."
+    "title": "Irreducible Loss Term Identifiability",
+    "slug": "irreducible-loss-identifiability",
+    "status": "methodologically-blocked",
+    "description": "Can the entropy floor in fitted scaling laws be measured separately?"
   },
   {
     "title": "Inference-Aware Compute-Optimal Model Sizing",
-    "slug": "inference-aware-compute-optimal-sizing",
+    "slug": "inference-aware-optimal-sizing",
     "status": "partially-solved",
-    "description": "Joint training-plus-serving budget changes the optimal parameter count."
+    "description": "How does expected serving demand change optimal parameter-token allocation?"
   },
   {
-    "title": "Train-Test Compute Tradeoff Frontier",
-    "slug": "train-test-compute-tradeoff-frontier",
+    "title": "Data-Constrained Scaling and Epoch Value Decay",
+    "slug": "data-constrained-repeat-scaling",
+    "status": "partially-solved",
+    "description": "How fast does repeated data lose value across scales?"
+  },
+  {
+    "title": "Scaling Laws for Synthetic Data Fraction",
+    "slug": "synthetic-data-fraction-scaling",
     "status": "empirically-open",
-    "description": "Exchange rate between pretraining FLOPs and test-time search FLOPs."
+    "description": "What synthetic-to-real mixing ratio is compute-optimal at scale?"
   },
   {
-    "title": "Test-Time Scaling Law Saturation Point",
-    "slug": "test-time-scaling-saturation-point",
-    "status": "empirically-open",
-    "description": "Where does accuracy versus reasoning-token curve provably flatten?"
-  },
-  {
-    "title": "Predicting Emergent Capabilities From Loss",
-    "slug": "predicting-emergence-from-loss",
+    "title": "Model Collapse Thresholds Under Recursive Training",
+    "slug": "model-collapse-threshold",
     "status": "open",
-    "description": "Can downstream capability jumps be forecast from smooth loss curves?"
+    "description": "What real-data fraction provably prevents recursive generative collapse?"
   },
   {
-    "title": "Metric-Induced Emergence Artifacts",
-    "slug": "metric-induced-emergence-artifacts",
+    "title": "Compute-Optimal Data Mixture Weights",
+    "slug": "compute-optimal-data-mixtures",
+    "status": "empirically-open",
+    "description": "Do optimal domain mixture weights shift predictably with scale?"
+  },
+  {
+    "title": "Predicting Emergent Capabilities Before They Appear",
+    "slug": "predicting-emergent-capabilities",
+    "status": "open",
+    "description": "Can downstream capability jumps be forecast from smaller-scale runs?"
+  },
+  {
+    "title": "Loss-to-Downstream-Accuracy Transfer Functions",
+    "slug": "loss-to-downstream-transfer",
     "status": "partially-solved",
-    "description": "Which emergent jumps survive continuous, non-thresholded metrics?"
+    "description": "Is the map from pretraining loss to task accuracy universal?"
   },
   {
-    "title": "Loss-to-Benchmark Transfer Functions",
-    "slug": "loss-to-benchmark-transfer-functions",
-    "status": "methodologically-blocked",
-    "description": "No validated mapping from pretraining loss to task accuracy."
+    "title": "Scaling Exponents for Mixture-of-Experts Sparsity",
+    "slug": "moe-sparsity-scaling-exponents",
+    "status": "partially-solved",
+    "description": "How do expert count and granularity trade against dense compute?"
+  },
+  {
+    "title": "Optimal Depth-to-Width Ratio Across Scale",
+    "slug": "optimal-depth-width-ratio",
+    "status": "empirically-open",
+    "description": "Does the compute-optimal aspect ratio drift with model size?"
   },
   {
     "title": "Hyperparameter Transfer Beyond muP",
     "slug": "hyperparameter-transfer-beyond-mup",
     "status": "partially-solved",
-    "description": "Does zero-shot hyperparameter transfer hold across depth and data scaling?"
+    "description": "Which hyperparameters transfer across width, depth, and data simultaneously?"
   },
   {
-    "title": "Optimal Depth-Width Aspect Ratio Scaling",
-    "slug": "optimal-depth-width-aspect-ratio",
-    "status": "empirically-open",
-    "description": "How should layers versus width scale with total parameters?"
-  },
-  {
-    "title": "Critical Batch Size Scaling Law",
-    "slug": "critical-batch-size-scaling-law",
+    "title": "Batch Size Critical Point Scaling",
+    "slug": "critical-batch-size-scaling",
     "status": "partially-solved",
-    "description": "Does critical batch size scale with data or with model size?"
+    "description": "How does the critical batch size scale with loss and data?"
   },
   {
     "title": "Learning Rate Schedule Effects on Fitted Exponents",
-    "slug": "lr-schedule-effects-on-exponents",
+    "slug": "lr-schedule-scaling-exponent-bias",
     "status": "empirically-open",
-    "description": "Do cosine versus WSD schedules change measured scaling exponents?"
+    "description": "Do schedule choices bias measured compute-optimal scaling exponents?"
   },
   {
-    "title": "Scaling Law Extrapolation Error Bars",
-    "slug": "scaling-law-extrapolation-error-bars",
-    "status": "methodologically-blocked",
-    "description": "No principled uncertainty quantification for order-of-magnitude extrapolations."
+    "title": "Scaling Laws for Reinforcement Learning from Verifiable Rewards",
+    "slug": "rlvr-compute-scaling-laws",
+    "status": "open",
+    "description": "Does RL post-training compute yield predictable capability returns?"
   },
   {
-    "title": "Data Quality as a Scaling Law Variable",
-    "slug": "data-quality-scaling-variable",
-    "status": "methodologically-blocked",
-    "description": "Data quality lacks a scalar that enters scaling laws."
-  },
-  {
-    "title": "Optimal Data Mixture Weights at Scale",
-    "slug": "optimal-data-mixture-weights-scale",
+    "title": "Test-Time Compute versus Pretraining Compute Exchange Rate",
+    "slug": "test-time-vs-pretraining-compute",
     "status": "empirically-open",
-    "description": "Do proxy-model-selected domain mixtures remain optimal at target scale?"
+    "description": "How many pretraining FLOPs does one inference FLOP replace?"
   },
   {
-    "title": "Scaling Laws for Multilingual Transfer",
-    "slug": "scaling-laws-multilingual-transfer",
-    "status": "empirically-open",
-    "description": "How does per-language loss trade off with language count?"
-  },
-  {
-    "title": "Intrinsic Dimension Origin of Power Laws",
-    "slug": "intrinsic-dimension-origin-power-laws",
+    "title": "Diminishing Returns in Parallel Sampling",
+    "slug": "parallel-sampling-return-scaling",
     "status": "partially-solved",
-    "description": "Is the data manifold dimension the true source of exponents?"
+    "description": "Why does best-of-n coverage saturate and at what n?"
   },
   {
-    "title": "Irreducible Loss Term Identifiability",
-    "slug": "irreducible-loss-identifiability",
+    "title": "Chain-of-Thought Length Scaling Optimum",
+    "slug": "cot-length-scaling-optimum",
     "status": "open",
-    "description": "Can entropy floor be separated from finite-scale curvature?"
+    "description": "What reasoning trace length maximizes accuracy per inference FLOP?"
   },
   {
-    "title": "Broken Neural Scaling Law Predictivity",
-    "slug": "broken-scaling-law-predictivity",
-    "status": "empirically-open",
-    "description": "Do multi-break functional forms forecast rather than merely fit?"
-  },
-  {
-    "title": "Scaling Laws for Distillation Budgets",
-    "slug": "scaling-laws-distillation-budgets",
+    "title": "Distillation Compute Allocation Between Teacher and Student",
+    "slug": "distillation-compute-allocation",
     "status": "partially-solved",
-    "description": "How to split compute between teacher and student training."
+    "description": "How to split a budget between training teacher and student?"
   },
   {
-    "title": "Compute-Optimal Quantized Training Precision",
-    "slug": "compute-optimal-training-precision",
-    "status": "empirically-open",
-    "description": "Which bit width maximizes accuracy per hardware FLOP?"
-  },
-  {
-    "title": "Post-Training Quantization Degradation Versus Token Count",
-    "slug": "quantization-degradation-versus-tokens",
-    "status": "empirically-open",
-    "description": "Do overtrained models quantize measurably worse?"
-  },
-  {
-    "title": "Sparse Pruning Compute-Optimality Frontier",
-    "slug": "sparse-pruning-compute-optimality",
-    "status": "open",
-    "description": "Is train-then-prune ever better than training smaller dense models?"
-  },
-  {
-    "title": "Context Length Scaling Exponents",
-    "slug": "context-length-scaling-exponents",
-    "status": "empirically-open",
-    "description": "How does loss scale with sequence length at fixed compute?"
-  },
-  {
-    "title": "Scaling Laws for Retrieval-Augmented Models",
-    "slug": "scaling-laws-retrieval-augmented",
-    "status": "empirically-open",
-    "description": "Datastore size versus parameter count as substitutable resources."
-  },
-  {
-    "title": "RL Post-Training Compute Scaling Law",
-    "slug": "rl-post-training-compute-scaling",
-    "status": "open",
-    "description": "Does reasoning RL show a stable, extrapolable compute-performance curve?"
-  },
-  {
-    "title": "Reward Model Overoptimization Scaling",
-    "slug": "reward-model-overoptimization-scaling",
+    "title": "Quantization-Aware Scaling Laws",
+    "slug": "quantization-aware-scaling-laws",
     "status": "partially-solved",
-    "description": "How does Goodhart drift scale with policy and reward size?"
+    "description": "How does precision interact with parameter and token counts?"
   },
   {
-    "title": "Compute Allocation Between Pretraining and Post-Training",
-    "slug": "pretrain-versus-posttrain-allocation",
+    "title": "Scaling Laws for Pruning and Sparsity at Inference",
+    "slug": "pruning-sparsity-scaling-laws",
     "status": "empirically-open",
-    "description": "Optimal split of a fixed budget across training stages."
+    "description": "What sparsity level is optimal given fixed inference compute?"
   },
   {
-    "title": "Scaling Laws Under Synthetic Data Feedback Loops",
-    "slug": "scaling-under-synthetic-data-loops",
+    "title": "Context Length Scaling Law",
+    "slug": "context-length-scaling-law",
     "status": "open",
-    "description": "Do model-generated corpora break the data scaling exponent?"
-  },
-  {
-    "title": "Transfer Scaling Laws for Fine-Tuning Data",
-    "slug": "transfer-scaling-laws-finetuning",
-    "status": "partially-solved",
-    "description": "Effective data transferred from pretraining to a downstream task."
-  },
-  {
-    "title": "Architecture-Independence of Scaling Exponents",
-    "slug": "architecture-independence-of-exponents",
-    "status": "open",
-    "description": "Do exponents depend on architecture or only on data?"
-  },
-  {
-    "title": "State-Space Versus Attention Scaling Crossover",
-    "slug": "ssm-versus-attention-crossover",
-    "status": "empirically-open",
-    "description": "At what compute do recurrent models overtake or lose to transformers?"
+    "description": "How does loss scale with training context window length?"
   },
   {
     "title": "Multimodal Compute Allocation Across Modalities",
     "slug": "multimodal-compute-allocation",
     "status": "empirically-open",
-    "description": "How to split parameters and tokens across vision, text, audio."
+    "description": "How should FLOPs be split across text, image, audio tokens?"
   },
   {
-    "title": "Scaling Laws for Agentic Multi-Step Tasks",
-    "slug": "scaling-laws-agentic-tasks",
+    "title": "Transfer Scaling Laws for Fine-Tuning Data",
+    "slug": "finetuning-transfer-scaling",
+    "status": "partially-solved",
+    "description": "How much pretraining substitutes for downstream fine-tuning examples?"
+  },
+  {
+    "title": "Functional Form Selection for Scaling Laws",
+    "slug": "scaling-law-functional-form",
     "status": "methodologically-blocked",
-    "description": "No stable metric for horizon length versus compute."
+    "description": "Which parametric family is correct beyond fitted data ranges?"
   },
   {
-    "title": "Overtraining Ratio Limits for Small Models",
-    "slug": "overtraining-ratio-limits",
-    "status": "empirically-open",
-    "description": "Where does extreme token-per-parameter overtraining stop paying off."
-  },
-  {
-    "title": "Ensembling Versus Scaling Compute Equivalence",
-    "slug": "ensembling-versus-scaling-equivalence",
+    "title": "Broken Neural Scaling and Break Point Prediction",
+    "slug": "broken-scaling-breakpoint-prediction",
     "status": "open",
-    "description": "Is an ensemble worth a single model of equal FLOPs?"
+    "description": "Can inflection points in scaling curves be predicted beforehand?"
   },
   {
-    "title": "Downstream Scaling Law Breakdown Under Contamination",
-    "slug": "scaling-breakdown-under-contamination",
-    "status": "methodologically-blocked",
-    "description": "Contamination confounds measured downstream scaling curves."
+    "title": "Data Quality Filtering versus Quantity Tradeoff",
+    "slug": "data-quality-quantity-tradeoff",
+    "status": "empirically-open",
+    "description": "How aggressively should data be filtered at each compute scale?"
+  },
+  {
+    "title": "Scaling Laws for Multilingual Capacity Allocation",
+    "slug": "multilingual-capacity-allocation",
+    "status": "open",
+    "description": "How does per-language performance scale under fixed shared capacity?"
+  },
+  {
+    "title": "Memorization versus Generalization Capacity Scaling",
+    "slug": "memorization-capacity-scaling",
+    "status": "partially-solved",
+    "description": "How many bits per parameter does a model memorize?"
+  },
+  {
+    "title": "Scaling Laws for Reward Model Overoptimization",
+    "slug": "reward-model-overoptimization-scaling",
+    "status": "partially-solved",
+    "description": "How does proxy reward divergence scale with policy optimization compute?"
   },
   {
     "title": "Compute-Optimal Curriculum Ordering",
     "slug": "compute-optimal-curriculum-ordering",
+    "status": "empirically-open",
+    "description": "Does data ordering change asymptotic scaling or only constants?"
+  },
+  {
+    "title": "Scaling Laws Under Architecture Changes",
+    "slug": "architecture-invariance-of-scaling-exponents",
     "status": "open",
-    "description": "Does data ordering change the scaling exponent or only the constant?"
+    "description": "Are scaling exponents architecture-invariant or only prefactors?"
+  },
+  {
+    "title": "Intrinsic Data Dimension as Scaling Exponent Predictor",
+    "slug": "intrinsic-dimension-scaling-exponent",
+    "status": "partially-solved",
+    "description": "Does manifold dimension predict measured neural scaling exponents?"
+  },
+  {
+    "title": "Scaling Laws for Agentic Multi-Step Task Success",
+    "slug": "agentic-task-horizon-scaling",
+    "status": "empirically-open",
+    "description": "How does achievable task horizon scale with training compute?"
+  },
+  {
+    "title": "Overtrained Model Scaling Beyond Chinchilla Ratios",
+    "slug": "overtraining-beyond-chinchilla",
+    "status": "partially-solved",
+    "description": "How far past compute-optimal does extra training remain useful?"
+  },
+  {
+    "title": "Compute Allocation Between Pretraining and Data Curation",
+    "slug": "curation-versus-training-compute",
+    "status": "open",
+    "description": "What share of budget should go to curating data?"
+  },
+  {
+    "title": "Scaling Laws for Continual and Incremental Pretraining",
+    "slug": "continual-pretraining-scaling",
+    "status": "empirically-open",
+    "description": "Can continued pretraining match from-scratch runs at equal compute?"
+  },
+  {
+    "title": "Loss Prediction Under Hardware and Numerics Variation",
+    "slug": "loss-prediction-numerics-variation",
+    "status": "methodologically-blocked",
+    "description": "How much fitted-law error comes from nondeterminism and precision?"
   }
 ]

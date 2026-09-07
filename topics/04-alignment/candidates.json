@@ -1,242 +1,242 @@
 [
   {
-    "title": "Reward Hacking Detection Under Distribution Shift",
-    "slug": "reward-hacking-detection-under-shift",
-    "status": "open",
-    "description": "Detecting proxy reward exploitation before deployment without ground-truth labels."
-  },
-  {
-    "title": "Sample Complexity of RLHF from Pairwise Comparisons",
-    "slug": "rlhf-pairwise-sample-complexity",
-    "status": "partially-solved",
-    "description": "Tight bounds on preference samples needed for near-optimal policies."
-  },
-  {
-    "title": "Bradley-Terry Misspecification in Human Preference Data",
-    "slug": "bradley-terry-misspecification",
-    "status": "open",
-    "description": "Consequences when human preferences violate transitivity or stochastic choice models."
-  },
-  {
-    "title": "Goodhart Onset Prediction in Reward Overoptimization",
-    "slug": "goodhart-onset-prediction",
-    "status": "empirically-open",
-    "description": "Predicting the KL budget where proxy reward stops tracking quality."
-  },
-  {
-    "title": "DPO versus PPO Equivalence Beyond the Exact Optimum",
-    "slug": "dpo-ppo-equivalence-gap",
-    "status": "partially-solved",
-    "description": "When offline direct preference optimization provably matches online RL."
-  },
-  {
-    "title": "Length Bias as a Confound in Preference Models",
-    "slug": "length-bias-preference-models",
-    "status": "empirically-open",
-    "description": "Isolating verbosity preference from quality preference in reward models."
-  },
-  {
-    "title": "Scalable Oversight Beyond Human Capability",
-    "slug": "scalable-oversight-superhuman-tasks",
-    "status": "open",
-    "description": "Supervising outputs humans cannot themselves evaluate correctly."
-  },
-  {
-    "title": "Debate as a Truth-Amplifying Protocol",
-    "slug": "debate-truth-amplification",
-    "status": "partially-solved",
-    "description": "Whether adversarial debate provably favors honest arguments at scale."
-  },
-  {
-    "title": "Recursive Reward Modeling Error Accumulation",
-    "slug": "recursive-reward-model-error",
-    "status": "open",
-    "description": "Bounding error growth across levels of assisted evaluation."
-  },
-  {
-    "title": "Deceptive Alignment Emergence Threshold",
-    "slug": "deceptive-alignment-emergence",
+    "title": "Reward Hacking Detection Without Ground-Truth Reward",
+    "slug": "reward-hacking-detection-without-ground-truth",
     "status": "methodologically-blocked",
-    "description": "Whether training can produce goal-concealing policies and how to detect them."
+    "description": "Detecting proxy reward exploitation when true reward is unobservable."
   },
   {
-    "title": "Sleeper Agent Persistence Through Safety Training",
-    "slug": "sleeper-agent-persistence",
-    "status": "empirically-open",
-    "description": "Whether backdoored behavior survives realistic large-scale alignment pipelines."
-  },
-  {
-    "title": "Specification Gaming Taxonomy and Prediction",
-    "slug": "specification-gaming-prediction",
-    "status": "open",
-    "description": "Predicting which reward specifications will be gamed before training."
-  },
-  {
-    "title": "Inner Alignment of Mesa-Optimizers",
-    "slug": "mesa-optimizer-inner-alignment",
-    "status": "methodologically-blocked",
-    "description": "Detecting whether a learned policy contains a misaligned internal objective."
-  },
-  {
-    "title": "Value Aggregation Across Disagreeing Annotators",
-    "slug": "annotator-disagreement-aggregation",
-    "status": "open",
-    "description": "Aggregating irreducibly conflicting human preferences without hidden majoritarianism."
-  },
-  {
-    "title": "Reward Model Overfitting and Calibration Drift",
-    "slug": "reward-model-calibration-drift",
-    "status": "empirically-open",
-    "description": "Whether reward model accuracy predicts downstream policy quality."
-  },
-  {
-    "title": "Sycophancy as a Fixed Point of Preference Training",
-    "slug": "sycophancy-fixed-point",
+    "title": "Goodhart Regime Boundaries in RLHF Optimization",
+    "slug": "goodhart-regime-boundaries-rlhf",
     "status": "partially-solved",
-    "description": "Whether human feedback necessarily incentivizes agreement over accuracy."
+    "description": "Predicting when more optimization stops improving true quality."
   },
   {
-    "title": "KL Regularization Choice in Preference Optimization",
-    "slug": "kl-regularization-choice-rlhf",
+    "title": "Identifiability of Utility from Boltzmann-Rational Preferences",
+    "slug": "utility-identifiability-boltzmann-preferences",
+    "status": "partially-solved",
+    "description": "Which utilities are recoverable from pairwise comparison data alone."
+  },
+  {
+    "title": "Bradley-Terry Misspecification Under Intransitive Human Preferences",
+    "slug": "bradley-terry-misspecification-intransitive-preferences",
     "status": "open",
-    "description": "Which divergence penalty best controls overoptimization versus capability loss."
+    "description": "Consequences of fitting transitive models to intransitive human judgments."
   },
   {
-    "title": "Constitutional AI versus Human Feedback Ceiling",
-    "slug": "constitutional-ai-feedback-ceiling",
+    "title": "Optimal KL Regularization Strength in Policy Alignment",
+    "slug": "optimal-kl-regularization-strength-alignment",
     "status": "empirically-open",
-    "description": "Whether AI-written critiques can exceed human-label alignment quality."
+    "description": "Principled selection of the KL penalty coefficient in RLHF."
   },
   {
-    "title": "Weak-to-Strong Generalization Recovery Fraction",
-    "slug": "weak-to-strong-recovery-fraction",
+    "title": "DPO Versus PPO Sample-Efficiency Crossover",
+    "slug": "dpo-ppo-sample-efficiency-crossover",
     "status": "empirically-open",
-    "description": "How much strong-model capability weak supervision can elicit."
+    "description": "At what scale offline preference optimization loses to online RL."
   },
   {
-    "title": "Eliciting Latent Knowledge from a Reporter",
+    "title": "Length Bias Elimination in Learned Reward Models",
+    "slug": "length-bias-elimination-reward-models",
+    "status": "partially-solved",
+    "description": "Removing response-length confounds from preference-trained reward models."
+  },
+  {
+    "title": "Reward Model Generalization Beyond Policy Training Distribution",
+    "slug": "reward-model-generalization-off-distribution",
+    "status": "open",
+    "description": "Whether reward models stay accurate on shifted policy outputs."
+  },
+  {
+    "title": "Scalable Oversight for Superhuman Task Verification",
+    "slug": "scalable-oversight-superhuman-verification",
+    "status": "open",
+    "description": "Supervising outputs humans cannot directly evaluate correctly."
+  },
+  {
+    "title": "Weak-to-Strong Generalization Ceiling",
+    "slug": "weak-to-strong-generalization-ceiling",
+    "status": "empirically-open",
+    "description": "How much strong-model capability weak supervision can actually elicit."
+  },
+  {
+    "title": "Debate Protocols With Guaranteed Honest Equilibria",
+    "slug": "debate-honest-equilibrium-guarantees",
+    "status": "partially-solved",
+    "description": "Do AI debate games provably reward truth-telling."
+  },
+  {
+    "title": "Deceptive Alignment Detection Before Deployment",
+    "slug": "deceptive-alignment-detection-pre-deployment",
+    "status": "methodologically-blocked",
+    "description": "Identifying models that behave well only while observed."
+  },
+  {
+    "title": "Persistence of Backdoored Behavior Through Safety Training",
+    "slug": "backdoor-persistence-through-safety-training",
+    "status": "partially-solved",
+    "description": "Whether alignment training removes deliberately implanted conditional policies."
+  },
+  {
+    "title": "Refusal Robustness Under Compositional Jailbreaks",
+    "slug": "refusal-robustness-compositional-jailbreaks",
+    "status": "open",
+    "description": "Guaranteeing refusals survive arbitrary prompt-level attack composition."
+  },
+  {
+    "title": "Fine-Tuning Attacks on Safety-Aligned Weights",
+    "slug": "fine-tuning-attacks-safety-aligned-weights",
+    "status": "open",
+    "description": "Making safety alignment survive small adversarial fine-tuning budgets."
+  },
+  {
+    "title": "Superficiality of Alignment: Depth of Behavioral Change",
+    "slug": "superficial-alignment-depth-measurement",
+    "status": "empirically-open",
+    "description": "Whether alignment alters representations or only output-token distributions."
+  },
+  {
+    "title": "Alignment Tax Quantification Across Capabilities",
+    "slug": "alignment-tax-quantification",
+    "status": "empirically-open",
+    "description": "Measuring capability loss attributable to alignment training."
+  },
+  {
+    "title": "Preference Aggregation Across Disagreeing Annotators",
+    "slug": "preference-aggregation-disagreeing-annotators",
+    "status": "open",
+    "description": "Correct social-choice rule for merging conflicting human preferences."
+  },
+  {
+    "title": "Pluralistic Alignment Without Majority Erasure",
+    "slug": "pluralistic-alignment-minority-preservation",
+    "status": "open",
+    "description": "Serving minority values without collapsing to majority preference."
+  },
+  {
+    "title": "Sycophancy Origin: Data Bias Versus Optimization Pressure",
+    "slug": "sycophancy-origin-data-versus-optimization",
+    "status": "empirically-open",
+    "description": "Whether sycophancy comes from annotators or from reward maximization."
+  },
+  {
+    "title": "Calibration Loss Induced by RLHF",
+    "slug": "calibration-loss-from-rlhf",
+    "status": "partially-solved",
+    "description": "Why preference fine-tuning destroys probability calibration and how to restore it."
+  },
+  {
+    "title": "Mode Collapse and Output Diversity Under Preference Optimization",
+    "slug": "mode-collapse-preference-optimization",
+    "status": "open",
+    "description": "Preventing entropy collapse while still optimizing preferences."
+  },
+  {
+    "title": "Reward Model Overoptimization Scaling Laws Beyond Small Models",
+    "slug": "reward-overoptimization-scaling-laws-large",
+    "status": "empirically-open",
+    "description": "Whether known overoptimization scaling laws hold at frontier scale."
+  },
+  {
+    "title": "Constitutional AI Principle Attribution",
+    "slug": "constitutional-principle-attribution",
+    "status": "methodologically-blocked",
+    "description": "Tracing which written principle caused which behavioral change."
+  },
+  {
+    "title": "Process Versus Outcome Supervision for Alignment Faithfulness",
+    "slug": "process-versus-outcome-supervision-faithfulness",
+    "status": "empirically-open",
+    "description": "Does step-level reward improve honesty over final-answer reward."
+  },
+  {
+    "title": "Chain-of-Thought Faithfulness Under Reward Optimization",
+    "slug": "chain-of-thought-faithfulness-under-rl",
+    "status": "open",
+    "description": "Keeping reasoning traces causally tied to final answers."
+  },
+  {
+    "title": "Eliciting Latent Knowledge From a Model That Reports Otherwise",
     "slug": "eliciting-latent-knowledge",
     "status": "open",
-    "description": "Extracting a model's true beliefs rather than a human simulator."
+    "description": "Extracting what a model knows despite incentives to misreport."
   },
   {
-    "title": "Honesty versus Calibration Separation",
-    "slug": "honesty-calibration-separation",
+    "title": "Honesty as a Trainable Objective Separate From Helpfulness",
+    "slug": "honesty-objective-separate-from-helpfulness",
+    "status": "open",
+    "description": "Defining and training truthfulness independent of user approval."
+  },
+  {
+    "title": "Corrigibility Compatible With Competent Goal Pursuit",
+    "slug": "corrigibility-with-competent-goal-pursuit",
+    "status": "open",
+    "description": "Agents that accept shutdown without weakening task performance."
+  },
+  {
+    "title": "Instrumental Convergence in Trained LLM Agents",
+    "slug": "instrumental-convergence-in-llm-agents",
+    "status": "empirically-open",
+    "description": "Whether power-seeking emerges from ordinary agentic training."
+  },
+  {
+    "title": "Specification Gaming Frequency in Open-Ended Agentic Tasks",
+    "slug": "specification-gaming-frequency-agentic-tasks",
+    "status": "empirically-open",
+    "description": "How often agents satisfy the letter of specifications only."
+  },
+  {
+    "title": "Value Drift Under Continual and Self-Generated Training",
+    "slug": "value-drift-continual-self-training",
+    "status": "open",
+    "description": "Whether alignment degrades across self-improvement or synthetic-data loops."
+  },
+  {
+    "title": "Alignment Property Preservation Under Model Merging",
+    "slug": "alignment-preservation-model-merging",
+    "status": "empirically-open",
+    "description": "Does weight merging retain safety behavior of parents."
+  },
+  {
+    "title": "Distillation Transfer of Safety Behavior to Student Models",
+    "slug": "safety-transfer-under-distillation",
+    "status": "empirically-open",
+    "description": "Whether distilled students inherit teacher refusal and honesty."
+  },
+  {
+    "title": "Reward Model Ensembling Against Reward Hacking",
+    "slug": "reward-ensembling-against-hacking",
+    "status": "partially-solved",
+    "description": "Whether ensembles genuinely reduce exploitation or just delay it."
+  },
+  {
+    "title": "Active Preference Query Selection at Scale",
+    "slug": "active-preference-query-selection",
+    "status": "solved-but-impractical",
+    "description": "Choosing maximally informative comparisons within realistic annotation budgets."
+  },
+  {
+    "title": "AI Feedback Versus Human Feedback Equivalence Bounds",
+    "slug": "ai-feedback-human-feedback-equivalence",
+    "status": "empirically-open",
+    "description": "When RLAIF labels can substitute for human preference labels."
+  },
+  {
+    "title": "Steering Vector Reliability for Behavioral Control",
+    "slug": "steering-vector-reliability",
+    "status": "open",
+    "description": "Whether activation steering controls behavior without off-target damage."
+  },
+  {
+    "title": "Unlearning Verification for Dangerous Capabilities",
+    "slug": "unlearning-verification-dangerous-capabilities",
     "status": "methodologically-blocked",
-    "description": "Distinguishing model lying from model miscalibration in outputs."
+    "description": "Proving a capability was removed rather than merely suppressed."
   },
   {
-    "title": "Jailbreak Robustness Under Adaptive Attack Budgets",
-    "slug": "jailbreak-adaptive-robustness",
+    "title": "Safety Guarantees Under Multi-Agent Interaction of Aligned Models",
+    "slug": "multi-agent-safety-composition",
     "status": "open",
-    "description": "Whether any alignment training resists compute-scaled adaptive attacks."
-  },
-  {
-    "title": "Refusal Direction Universality in Activation Space",
-    "slug": "refusal-direction-universality",
-    "status": "partially-solved",
-    "description": "Whether refusal is mediated by a single linear direction."
-  },
-  {
-    "title": "Safety Fine-Tuning Fragility to Benign Data",
-    "slug": "safety-tuning-benign-fragility",
-    "status": "empirically-open",
-    "description": "Why small benign fine-tunes remove alignment guardrails."
-  },
-  {
-    "title": "Tamper-Resistant Alignment Under Weight Access",
-    "slug": "tamper-resistant-open-weights",
-    "status": "open",
-    "description": "Making safety properties survive adversarial fine-tuning of released weights."
-  },
-  {
-    "title": "Unlearning Verification for Hazardous Capabilities",
-    "slug": "unlearning-verification",
-    "status": "methodologically-blocked",
-    "description": "Proving a capability is removed rather than merely suppressed."
-  },
-  {
-    "title": "Preference Learning from Non-Stationary Human Values",
-    "slug": "nonstationary-preference-learning",
-    "status": "open",
-    "description": "Learning targets that shift as the model influences the humans."
-  },
-  {
-    "title": "Reward Model Ensembling Against Overoptimization",
-    "slug": "reward-ensembling-overoptimization",
-    "status": "empirically-open",
-    "description": "Whether ensembles or uncertainty penalties actually delay reward hacking."
-  },
-  {
-    "title": "Offline Preference Data Coverage Conditions",
-    "slug": "offline-preference-coverage",
-    "status": "partially-solved",
-    "description": "Coverage assumptions under which offline alignment is provably sound."
-  },
-  {
-    "title": "Process versus Outcome Supervision Tradeoff",
-    "slug": "process-vs-outcome-supervision",
-    "status": "empirically-open",
-    "description": "Whether step-level rewards reduce deceptive reasoning at scale."
-  },
-  {
-    "title": "Faithfulness of Chain-of-Thought to Computation",
-    "slug": "chain-of-thought-faithfulness",
-    "status": "methodologically-blocked",
-    "description": "Measuring whether stated reasoning causes the final answer."
-  },
-  {
-    "title": "Alignment Tax Quantification",
-    "slug": "alignment-tax-quantification",
-    "status": "open",
-    "description": "Isolating capability cost attributable purely to safety training."
-  },
-  {
-    "title": "Corrigibility Without Value Uncertainty",
-    "slug": "corrigibility-without-uncertainty",
-    "status": "open",
-    "description": "Constructing agents that accept shutdown without incoherent preferences."
-  },
-  {
-    "title": "Power-Seeking Instrumental Convergence in Learned Policies",
-    "slug": "power-seeking-convergence-learned",
-    "status": "partially-solved",
-    "description": "Whether trained policies inherit theoretical power-seeking tendencies."
-  },
-  {
-    "title": "Impact Regularization Without Task Degradation",
-    "slug": "impact-regularization-tradeoff",
-    "status": "open",
-    "description": "Penalizing side effects without blocking legitimate task actions."
-  },
-  {
-    "title": "Reward Model Transfer Across Model Scales",
-    "slug": "reward-model-scale-transfer",
-    "status": "empirically-open",
-    "description": "Whether small reward models can safely supervise much larger policies."
-  },
-  {
-    "title": "Preference Elicitation Cost Under Active Querying",
-    "slug": "active-preference-query-cost",
-    "status": "partially-solved",
-    "description": "Optimal query selection to minimize human labeling for alignment."
-  },
-  {
-    "title": "Multi-Objective Alignment Without Scalarization",
-    "slug": "multi-objective-alignment-scalarization",
-    "status": "open",
-    "description": "Handling helpfulness-harmlessness conflict without a fixed weight vector."
-  },
-  {
-    "title": "Evaluation Awareness Contaminating Safety Tests",
-    "slug": "evaluation-awareness-contamination",
-    "status": "empirically-open",
-    "description": "Whether models behave differently when they detect being evaluated."
-  },
-  {
-    "title": "Formal Guarantees for Learned Reward Identifiability",
-    "slug": "reward-identifiability-guarantees",
-    "status": "partially-solved",
-    "description": "Which reward functions are recoverable from behavior up to equivalence."
+    "description": "Whether individually aligned agents stay safe when interacting."
   }
 ]

@@ -1,242 +1,242 @@
 [
   {
-    "title": "Compute-Optimal Data Filtering Aggressiveness",
-    "slug": "compute-optimal-data-filtering-aggressiveness",
-    "status": "empirically-open",
-    "description": "What filter keep-rate maximizes loss per unit compute?"
-  },
-  {
-    "title": "Deduplication Threshold Selection",
-    "slug": "deduplication-threshold-selection",
+    "title": "Provable Deduplication Threshold for Loss",
+    "slug": "provable-deduplication-threshold-loss",
     "status": "open",
-    "description": "Which near-duplicate similarity cutoff optimizes downstream model quality?"
+    "description": "What duplication rate provably harms held-out loss?"
   },
   {
-    "title": "Data Quality Classifier Transfer Across Scales",
-    "slug": "quality-classifier-scale-transfer",
+    "title": "Optimal Near-Duplicate Similarity Cutoff",
+    "slug": "optimal-near-duplicate-similarity-cutoff",
     "status": "empirically-open",
-    "description": "Do small-scale filter rankings survive at frontier scale?"
+    "description": "Which MinHash threshold maximizes downstream quality per compute?"
   },
   {
-    "title": "Optimal Epoch Count for Repeated High-Quality Data",
-    "slug": "optimal-epochs-repeated-data",
+    "title": "Quality Filter Transfer Across Model Scale",
+    "slug": "quality-filter-transfer-across-scale",
+    "status": "empirically-open",
+    "description": "Do filters chosen at small scale stay optimal at large scale?"
+  },
+  {
+    "title": "Data Mixture Laws Beyond Interpolation",
+    "slug": "data-mixture-laws-beyond-interpolation",
+    "status": "open",
+    "description": "Can mixture scaling laws extrapolate to unseen domain proportions?"
+  },
+  {
+    "title": "Repeat Epoch Value Decay Curve",
+    "slug": "repeat-epoch-value-decay-curve",
     "status": "partially-solved",
-    "description": "How many repeats before repeated tokens stop helping?"
+    "description": "How fast does repeated data lose value versus fresh tokens?"
   },
   {
     "title": "Synthetic Data Model Collapse Threshold",
     "slug": "synthetic-data-collapse-threshold",
-    "status": "open",
-    "description": "What synthetic fraction triggers irreversible distribution collapse?"
+    "status": "partially-solved",
+    "description": "What real-data fraction prevents recursive training collapse?"
   },
   {
-    "title": "Provable Guarantees for Coreset Selection Under Deep Nets",
-    "slug": "coreset-guarantees-deep-nets",
-    "status": "open",
-    "description": "Do coreset bounds hold for non-convex neural training?"
-  },
-  {
-    "title": "Data Mixture Weight Optimization",
-    "slug": "data-mixture-weight-optimization",
-    "status": "empirically-open",
-    "description": "Can domain mixture weights be predicted without full training?"
-  },
-  {
-    "title": "Benchmark Contamination Detection Without Reference Access",
-    "slug": "contamination-detection-without-reference",
+    "title": "Verifiable Benchmark Contamination Detection",
+    "slug": "verifiable-benchmark-contamination-detection",
     "status": "methodologically-blocked",
-    "description": "Detecting test-set leakage given only model and benchmark."
+    "description": "Detecting contamination without access to training corpus."
   },
   {
-    "title": "Curriculum Ordering Effects at Scale",
-    "slug": "curriculum-ordering-effects-scale",
-    "status": "empirically-open",
-    "description": "Does training-order curriculum matter for large-scale pretraining?"
+    "title": "Decontamination Without Capability Loss",
+    "slug": "decontamination-without-capability-loss",
+    "status": "open",
+    "description": "Removing test overlap while preserving legitimate related knowledge."
   },
   {
-    "title": "Per-Example Influence Estimation at Pretraining Scale",
-    "slug": "influence-estimation-pretraining-scale",
+    "title": "Attributing Downstream Gains to Data Subsets",
+    "slug": "attributing-gains-to-data-subsets",
+    "status": "open",
+    "description": "Cheap credit assignment from documents to benchmark scores."
+  },
+  {
+    "title": "Influence Functions at Pretraining Scale",
+    "slug": "influence-functions-pretraining-scale",
     "status": "solved-but-impractical",
-    "description": "Exact influence functions exist but cost too much."
+    "description": "Exact per-example influence is correct but computationally infeasible."
   },
   {
-    "title": "Machine Unlearning Verification for Removed Training Documents",
-    "slug": "unlearning-verification-documents",
-    "status": "open",
-    "description": "Can removal of a document be verified externally?"
-  },
-  {
-    "title": "Data Provenance Propagation Through Preprocessing",
-    "slug": "provenance-propagation-preprocessing",
+    "title": "Perplexity-Free Data Quality Metric",
+    "slug": "perplexity-free-data-quality-metric",
     "status": "methodologically-blocked",
-    "description": "Tracking license and origin through lossy transformation chains."
-  },
-  {
-    "title": "Optimal Tokenizer Training Corpus Composition",
-    "slug": "tokenizer-corpus-composition",
-    "status": "open",
-    "description": "Which corpus mix should the tokenizer itself be fit on?"
-  },
-  {
-    "title": "Detecting Machine-Generated Text in Web Crawls",
-    "slug": "detecting-machine-text-web-crawls",
-    "status": "open",
-    "description": "Reliably flagging LLM-generated pages in crawl corpora."
-  },
-  {
-    "title": "Multilingual Data Allocation Under Transfer",
-    "slug": "multilingual-data-allocation",
-    "status": "empirically-open",
-    "description": "How much low-resource data maximizes cross-lingual transfer?"
-  },
-  {
-    "title": "Quality Versus Diversity Tradeoff Frontier",
-    "slug": "quality-diversity-tradeoff-frontier",
-    "status": "open",
-    "description": "Where does filtering for quality destroy useful diversity?"
-  },
-  {
-    "title": "Measuring Dataset Diversity Independently of Model",
-    "slug": "model-free-dataset-diversity-metric",
-    "status": "methodologically-blocked",
-    "description": "No agreed model-independent measure of corpus diversity exists."
-  },
-  {
-    "title": "Annotation Aggregation Under Legitimate Disagreement",
-    "slug": "annotation-aggregation-disagreement",
-    "status": "open",
-    "description": "Aggregating labels when annotator disagreement is genuine signal."
-  },
-  {
-    "title": "Label Noise Tolerance Thresholds for Instruction Tuning",
-    "slug": "label-noise-instruction-tuning",
-    "status": "empirically-open",
-    "description": "What noise rate in instruction data degrades alignment?"
-  },
-  {
-    "title": "Data Attribution for Emergent Capabilities",
-    "slug": "attribution-emergent-capabilities",
-    "status": "open",
-    "description": "Which training documents cause a specific emergent skill?"
+    "description": "Defining document quality independent of a scoring model."
   },
   {
     "title": "Deduplication Granularity Choice",
-    "slug": "deduplication-granularity",
+    "slug": "deduplication-granularity-choice",
     "status": "empirically-open",
-    "description": "Document, paragraph, or n-gram level dedup: which wins?"
+    "description": "Document, paragraph, or token-level dedup: which wins?"
   },
   {
-    "title": "PII Scrubbing Without Utility Loss",
-    "slug": "pii-scrubbing-utility-loss",
-    "status": "open",
-    "description": "Removing personal data while preserving downstream model utility."
-  },
-  {
-    "title": "Long-Tail Retention Under Aggressive Filtering",
-    "slug": "long-tail-retention-filtering",
-    "status": "open",
-    "description": "Do quality filters systematically delete rare-knowledge documents?"
-  },
-  {
-    "title": "Scaling Laws for Data Curation Effort",
-    "slug": "scaling-laws-curation-effort",
+    "title": "Curriculum Ordering Gains at Scale",
+    "slug": "curriculum-ordering-gains-at-scale",
     "status": "empirically-open",
-    "description": "How does curation labor trade against added raw tokens?"
+    "description": "Does data ordering matter for large single-epoch pretraining?"
   },
   {
-    "title": "Optimal Context Packing and Document Boundaries",
-    "slug": "context-packing-document-boundaries",
-    "status": "empirically-open",
-    "description": "Does cross-document packing harm long-context learning?"
-  },
-  {
-    "title": "Automated Detection of Annotation Guideline Drift",
-    "slug": "annotation-guideline-drift-detection",
-    "status": "open",
-    "description": "Detecting silent shifts in labeling standards over time."
-  },
-  {
-    "title": "Active Learning Gains at Foundation-Model Scale",
-    "slug": "active-learning-foundation-scale",
-    "status": "empirically-open",
-    "description": "Does active selection beat random at billion-token scale?"
-  },
-  {
-    "title": "Data Poisoning Detection Below the Dilution Floor",
-    "slug": "poisoning-detection-dilution-floor",
-    "status": "open",
-    "description": "Finding tiny poisoned subsets inside web-scale corpora."
-  },
-  {
-    "title": "Fair Value Attribution for Data Contributors",
-    "slug": "data-contributor-value-attribution",
-    "status": "solved-but-impractical",
-    "description": "Shapley data value is correct but computationally infeasible."
-  },
-  {
-    "title": "Filtering Rules That Generalize Across Web Snapshots",
-    "slug": "filter-generalization-across-snapshots",
-    "status": "empirically-open",
-    "description": "Do heuristic filters tuned on one crawl transfer forward?"
-  },
-  {
-    "title": "Optimal Ratio of Code to Natural Language",
-    "slug": "code-to-text-ratio",
-    "status": "empirically-open",
-    "description": "How much code data maximizes general reasoning ability?"
-  },
-  {
-    "title": "Distribution Shift Detection for Streaming Training Data",
-    "slug": "streaming-shift-detection",
-    "status": "open",
-    "description": "Detecting harmful corpus drift before model quality drops."
-  },
-  {
-    "title": "Verified Reproducibility of Web-Scale Corpora",
-    "slug": "web-corpus-reproducibility",
-    "status": "open",
-    "description": "Reconstructing an identical crawl-derived dataset years later."
-  },
-  {
-    "title": "Multimodal Alignment Filtering Thresholds",
-    "slug": "multimodal-alignment-filtering",
-    "status": "empirically-open",
-    "description": "What image-text match score should filtering demand?"
-  },
-  {
-    "title": "Sample-Level Difficulty Estimation Without Training",
-    "slug": "difficulty-estimation-without-training",
-    "status": "open",
-    "description": "Predicting example learnability before any model sees it."
-  },
-  {
-    "title": "Data Pipeline Bug Detection via Model Behavior",
-    "slug": "pipeline-bug-detection-via-behavior",
-    "status": "methodologically-blocked",
-    "description": "Inferring preprocessing defects from trained model artifacts."
-  },
-  {
-    "title": "Retrieval Corpus Curation for RAG Systems",
-    "slug": "retrieval-corpus-curation-rag",
-    "status": "open",
-    "description": "Which documents to keep in a retrieval index?"
-  },
-  {
-    "title": "Deduplication Interaction With Memorization Risk",
-    "slug": "dedup-memorization-interaction",
+    "title": "Optimal Sequence Packing and Document Boundaries",
+    "slug": "sequence-packing-document-boundaries",
     "status": "partially-solved",
-    "description": "How much does dedup actually reduce verbatim memorization?"
+    "description": "Cost of cross-document attention in packed training batches."
   },
   {
-    "title": "Preference Data Sufficiency for Alignment",
-    "slug": "preference-data-sufficiency",
-    "status": "empirically-open",
-    "description": "Minimum preference pairs needed for stable alignment gains."
-  },
-  {
-    "title": "Cost-Optimal Human-Model Labeling Split",
-    "slug": "human-model-labeling-split",
+    "title": "Web Crawl Exhaustion and Token Ceiling",
+    "slug": "web-crawl-exhaustion-token-ceiling",
     "status": "open",
-    "description": "How to allocate budget between human and model annotators?"
+    "description": "How many usable unique public text tokens remain?"
+  },
+  {
+    "title": "Multilingual Mixture Allocation Under Transfer",
+    "slug": "multilingual-mixture-allocation-transfer",
+    "status": "open",
+    "description": "Optimal per-language token budget given cross-lingual transfer."
+  },
+  {
+    "title": "Low-Resource Language Filter Bias",
+    "slug": "low-resource-language-filter-bias",
+    "status": "empirically-open",
+    "description": "Do quality classifiers disproportionately delete low-resource text?"
+  },
+  {
+    "title": "PII Removal Versus Utility Tradeoff",
+    "slug": "pii-removal-utility-tradeoff",
+    "status": "open",
+    "description": "Quantifying capability loss from privacy scrubbing pipelines."
+  },
+  {
+    "title": "Memorization Prediction From Data Statistics",
+    "slug": "memorization-prediction-from-data-statistics",
+    "status": "open",
+    "description": "Predicting which documents get memorized before training."
+  },
+  {
+    "title": "Deduplication Effect on Memorization Risk",
+    "slug": "dedup-effect-on-memorization-risk",
+    "status": "partially-solved",
+    "description": "How much does dedup actually reduce verbatim regurgitation?"
+  },
+  {
+    "title": "Active Data Selection Under Streaming Constraints",
+    "slug": "active-data-selection-streaming",
+    "status": "open",
+    "description": "Online selection when the corpus cannot be revisited."
+  },
+  {
+    "title": "Proxy Model Fidelity for Data Selection",
+    "slug": "proxy-model-fidelity-data-selection",
+    "status": "empirically-open",
+    "description": "How small can a selection proxy model be?"
+  },
+  {
+    "title": "Optimal Label Noise Cleaning Budget",
+    "slug": "optimal-label-noise-cleaning-budget",
+    "status": "partially-solved",
+    "description": "Which examples to relabel given a fixed annotation budget?"
+  },
+  {
+    "title": "Annotator Disagreement as Signal Not Noise",
+    "slug": "annotator-disagreement-as-signal",
+    "status": "methodologically-blocked",
+    "description": "Modeling irreducible label ambiguity instead of aggregating it away."
+  },
+  {
+    "title": "Preference Data Quality Versus Quantity",
+    "slug": "preference-data-quality-versus-quantity",
+    "status": "empirically-open",
+    "description": "Do fewer clean preference pairs beat many noisy ones?"
+  },
+  {
+    "title": "Instruction Tuning Set Minimality",
+    "slug": "instruction-tuning-set-minimality",
+    "status": "open",
+    "description": "Smallest instruction set achieving full alignment performance."
+  },
+  {
+    "title": "Diversity Metrics That Predict Generalization",
+    "slug": "diversity-metrics-predicting-generalization",
+    "status": "methodologically-blocked",
+    "description": "No dataset diversity measure reliably predicts downstream gains."
+  },
+  {
+    "title": "Detecting Machine-Generated Text in Crawls",
+    "slug": "detecting-machine-text-in-crawls",
+    "status": "open",
+    "description": "Reliably identifying LLM-written pages in web corpora."
+  },
+  {
+    "title": "Data Poisoning Detection at Web Scale",
+    "slug": "poisoning-detection-web-scale",
+    "status": "open",
+    "description": "Finding a few thousand poisoned documents among billions."
+  },
+  {
+    "title": "Minimum Poison Fraction for Backdoor Persistence",
+    "slug": "minimum-poison-fraction-backdoor",
+    "status": "partially-solved",
+    "description": "How few poisoned documents install a durable backdoor?"
+  },
+  {
+    "title": "License-Compliant Corpora Without Quality Collapse",
+    "slug": "license-compliant-corpora-quality",
+    "status": "empirically-open",
+    "description": "Can openly licensed data match web-scale model quality?"
+  },
+  {
+    "title": "Tokenizer-Corpus Co-Optimization",
+    "slug": "tokenizer-corpus-co-optimization",
+    "status": "open",
+    "description": "Jointly choosing tokenizer and data mixture optimally."
+  },
+  {
+    "title": "Reproducible Pipeline Provenance at Scale",
+    "slug": "reproducible-pipeline-provenance",
+    "status": "methodologically-blocked",
+    "description": "No standard for bit-level reproducible corpus construction records."
+  },
+  {
+    "title": "OCR and Parsing Error Impact on Reasoning",
+    "slug": "ocr-parsing-error-impact-reasoning",
+    "status": "empirically-open",
+    "description": "How much do document extraction errors degrade math ability?"
+  },
+  {
+    "title": "Code Data Transfer to Natural Language Reasoning",
+    "slug": "code-data-transfer-to-reasoning",
+    "status": "empirically-open",
+    "description": "Which code properties cause reasoning gains, if any?"
+  },
+  {
+    "title": "Multimodal Caption Quality Versus Image Count",
+    "slug": "multimodal-caption-quality-versus-count",
+    "status": "open",
+    "description": "Trading caption fidelity against number of image pairs."
+  },
+  {
+    "title": "Long-Context Training Data Construction",
+    "slug": "long-context-training-data-construction",
+    "status": "open",
+    "description": "Sourcing genuinely long-range-dependent documents rather than concatenations."
+  },
+  {
+    "title": "Data Deletion Compliance Without Retraining",
+    "slug": "data-deletion-without-retraining",
+    "status": "open",
+    "description": "Certified removal of documents from a pretrained model."
+  },
+  {
+    "title": "Filter Interaction Non-Additivity",
+    "slug": "filter-interaction-non-additivity",
+    "status": "empirically-open",
+    "description": "Do stacked pipeline filters combine additively or interfere?"
+  },
+  {
+    "title": "Stopping Rule for Corpus Curation Effort",
+    "slug": "stopping-rule-corpus-curation-effort",
+    "status": "open",
+    "description": "When does further curation stop paying for itself?"
   }
 ]

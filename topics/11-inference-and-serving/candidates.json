@@ -1,242 +1,242 @@
 [
   {
     "title": "Optimal KV Cache Eviction Under Bounded Memory",
-    "slug": "optimal-kv-cache-eviction-bounded-memory",
+    "slug": "optimal-kv-cache-eviction",
     "status": "open",
-    "description": "No competitive-ratio bound exists for online KV token eviction."
+    "description": "No provable competitive ratio for online KV cache eviction policies."
   },
   {
-    "title": "Lossless Speculative Decoding Draft-Model Optimality",
-    "slug": "speculative-decoding-draft-optimality",
+    "title": "Speculative Decoding Draft Model Selection",
+    "slug": "speculative-decoding-draft-selection",
+    "status": "empirically-open",
+    "description": "How to pick draft models maximizing end-to-end throughput per target."
+  },
+  {
+    "title": "Lossless Speculative Decoding Under Batching",
+    "slug": "lossless-speculation-under-batching",
     "status": "partially-solved",
-    "description": "Which draft model maximizes accepted tokens per unit latency?"
+    "description": "Speculation gains vanish at high batch sizes; conditions unclear."
   },
   {
-    "title": "Speculative Decoding Beyond Single-Sequence Distribution Preservation",
-    "slug": "speculative-decoding-batch-distribution-preservation",
-    "status": "open",
-    "description": "Does batched speculation preserve exact output distribution under dynamic batching?"
-  },
-  {
-    "title": "Tight Lower Bound on Attention Memory Bandwidth at Decode",
-    "slug": "decode-attention-bandwidth-lower-bound",
-    "status": "open",
-    "description": "Is decode attention provably memory-bandwidth bound at all scales?"
-  },
-  {
-    "title": "Exact Equivalence of Quantized and Full-Precision Serving Outputs",
-    "slug": "quantized-serving-output-equivalence",
+    "title": "Exact Output Equivalence Across Serving Backends",
+    "slug": "cross-backend-output-equivalence",
     "status": "methodologically-blocked",
-    "description": "How to measure whether quantized serving changes model behavior meaningfully?"
+    "description": "No accepted definition of numerical equivalence between inference engines."
   },
   {
     "title": "Continuous Batching Scheduling Optimality",
     "slug": "continuous-batching-scheduling-optimality",
     "status": "open",
-    "description": "Is optimal continuous-batch scheduling NP-hard with unknown output lengths?"
+    "description": "Optimal online scheduling for unknown-length generation requests remains unsolved."
   },
   {
-    "title": "Output Length Prediction for Request Scheduling",
-    "slug": "output-length-prediction-scheduling",
+    "title": "Predicting Output Length Before Generation",
+    "slug": "output-length-prediction",
     "status": "empirically-open",
-    "description": "Can predicted generation length beat FCFS scheduling at production scale?"
+    "description": "Can generation length be predicted accurately enough to schedule better?"
   },
   {
-    "title": "Prefix Cache Sharing Under Privacy Constraints",
-    "slug": "prefix-cache-sharing-privacy",
-    "status": "open",
-    "description": "Does cross-user prefix caching leak information through timing?"
-  },
-  {
-    "title": "Compute-Optimal Prefill-Decode Disaggregation Ratio",
-    "slug": "prefill-decode-disaggregation-ratio",
+    "title": "Prefill-Decode Disaggregation Break-Even Point",
+    "slug": "prefill-decode-disaggregation-breakeven",
     "status": "empirically-open",
-    "description": "What machine ratio minimizes cost under mixed workload traces?"
+    "description": "When does disaggregated serving beat colocated under realistic traffic?"
   },
   {
-    "title": "KV Cache Compression Without Long-Context Degradation",
-    "slug": "kv-compression-long-context-degradation",
+    "title": "Quantization Error Amplification in Long Generations",
+    "slug": "quantization-error-long-generation",
     "status": "open",
-    "description": "Can KV caches compress sublinearly without losing retrieval ability?"
+    "description": "Whether low-bit weight error compounds across thousands of decode steps."
   },
   {
-    "title": "Provable Sparsity of Attention at Inference Time",
-    "slug": "provable-attention-sparsity-inference",
-    "status": "partially-solved",
-    "description": "Which heads are provably sparse enough to skip safely?"
-  },
-  {
-    "title": "Determinism of Batched Floating-Point LLM Inference",
-    "slug": "batch-invariant-inference-determinism",
-    "status": "partially-solved",
-    "description": "Can serving be bitwise deterministic across batch sizes cheaply?"
-  },
-  {
-    "title": "Latency-Optimal Tensor Parallel Degree Selection",
-    "slug": "latency-optimal-tensor-parallel-degree",
-    "status": "partially-solved",
-    "description": "Predicting best parallelism degree from hardware and model shape."
-  },
-  {
-    "title": "Early-Exit Confidence Calibration for Generative Models",
-    "slug": "early-exit-confidence-calibration-generation",
+    "title": "Post-Training Quantization Below Four Bits Without Calibration Overfit",
+    "slug": "sub-4bit-ptq-calibration-overfit",
     "status": "open",
-    "description": "Are per-token exit confidences calibrated for sequence-level quality?"
+    "description": "Do calibration sets cause hidden overfitting at very low bitwidth?"
   },
   {
-    "title": "Cascade Routing With Guaranteed Quality Floor",
-    "slug": "cascade-routing-quality-floor",
-    "status": "open",
-    "description": "Can model cascades guarantee no per-query quality regression?"
+    "title": "KV Cache Quantization Sensitivity of Attention Sinks",
+    "slug": "kv-quantization-attention-sinks",
+    "status": "partially-solved",
+    "description": "Why some KV entries resist quantization and how to detect them."
   },
   {
-    "title": "Mixture-of-Experts Expert Placement for Serving Skew",
-    "slug": "moe-expert-placement-load-skew",
-    "status": "empirically-open",
-    "description": "Does adaptive expert replication remove MoE inference load imbalance?"
-  },
-  {
-    "title": "Cost of Exact Top-k Sampling at Large Vocabularies",
-    "slug": "exact-topk-sampling-cost",
-    "status": "solved-but-impractical",
-    "description": "Exact large-vocabulary sampling is correct but too slow."
-  },
-  {
-    "title": "Semantic Caching Correctness Criterion",
-    "slug": "semantic-cache-correctness-criterion",
+    "title": "Serving-Time Detection of Silent Accuracy Regression",
+    "slug": "silent-accuracy-regression-detection",
     "status": "methodologically-blocked",
-    "description": "When is reusing a similar prompt's answer actually valid?"
+    "description": "No online test distinguishes kernel bugs from normal output variance."
   },
   {
-    "title": "Structured Decoding Without Distribution Distortion",
-    "slug": "structured-decoding-distribution-distortion",
+    "title": "Optimal Speculation Tree Shape",
+    "slug": "optimal-speculation-tree-shape",
     "status": "partially-solved",
-    "description": "Grammar-constrained decoding shifts probabilities in unquantified ways."
+    "description": "Best draft token tree topology per acceptance-rate profile is unknown."
   },
   {
-    "title": "Optimal Chunked Prefill Chunk Size",
-    "slug": "optimal-chunked-prefill-size",
-    "status": "empirically-open",
-    "description": "What chunk size jointly optimizes TTFT and throughput?"
-  },
-  {
-    "title": "SLO-Aware Admission Control for LLM Serving",
-    "slug": "slo-aware-admission-control-llm",
+    "title": "Cache-Aware Request Routing in Multi-Replica Clusters",
+    "slug": "cache-aware-request-routing",
     "status": "open",
-    "description": "No online algorithm with proven SLO attainment guarantees."
+    "description": "Optimal routing tradeoff between prefix-cache reuse and load balance."
   },
   {
-    "title": "Speculation Depth Adaptation Policy",
-    "slug": "adaptive-speculation-depth-policy",
+    "title": "Prefix Cache Admission and Eviction Policy",
+    "slug": "prefix-cache-admission-policy",
+    "status": "empirically-open",
+    "description": "Which prefixes to keep when cache is far smaller than traffic."
+  },
+  {
+    "title": "Latency SLO Attainment Under Adversarial Prompt Mixes",
+    "slug": "slo-attainment-adversarial-mixes",
+    "status": "open",
+    "description": "Worst-case tail latency guarantees for LLM servers are unproven."
+  },
+  {
+    "title": "Fair Sharing Among Tenants With Unequal Token Costs",
+    "slug": "multi-tenant-token-fairness",
+    "status": "open",
+    "description": "No agreed fairness metric when request costs differ by orders."
+  },
+  {
+    "title": "Attention Kernel Choice as a Function of Shape",
+    "slug": "attention-kernel-shape-selection",
+    "status": "empirically-open",
+    "description": "Predicting fastest attention kernel from sequence and batch shape."
+  },
+  {
+    "title": "Sparse Attention Serving Without Quality Loss at Long Context",
+    "slug": "sparse-attention-long-context-quality",
+    "status": "open",
+    "description": "Whether sublinear attention preserves retrieval accuracy at million-token context."
+  },
+  {
+    "title": "Sub-Quadratic Model Recall Ceiling at Inference",
+    "slug": "subquadratic-recall-ceiling",
     "status": "partially-solved",
-    "description": "Optimal per-request draft length under varying acceptance rates."
+    "description": "Fixed-state recurrent models provably lose recall; practical bound unclear."
   },
   {
-    "title": "KV Cache Offloading Bandwidth Break-Even Point",
-    "slug": "kv-offload-bandwidth-breakeven",
+    "title": "Optimal Expert Placement for MoE Serving",
+    "slug": "moe-expert-placement",
+    "status": "open",
+    "description": "Placing experts across devices to minimize all-to-all under skew."
+  },
+  {
+    "title": "MoE Routing Skew Prediction and Mitigation Online",
+    "slug": "moe-routing-skew-online",
     "status": "empirically-open",
-    "description": "When does CPU or SSD KV offload beat recomputation?"
+    "description": "Can expert load skew be forecast fast enough to rebalance?"
   },
   {
-    "title": "Long-Context Inference Cost Scaling Law",
-    "slug": "long-context-inference-cost-scaling-law",
-    "status": "open",
-    "description": "No predictive law for serving cost versus context length."
-  },
-  {
-    "title": "Test-Time Compute Allocation Under a Token Budget",
-    "slug": "test-time-compute-budget-allocation",
-    "status": "open",
-    "description": "How to allocate reasoning tokens optimally across a query set?"
-  },
-  {
-    "title": "Verifier-Free Best-of-n Selection Guarantees",
-    "slug": "verifier-free-best-of-n-guarantees",
-    "status": "open",
-    "description": "Can self-consistency selection beat random without an external verifier?"
-  },
-  {
-    "title": "Batch Size Effects on Generation Quality",
-    "slug": "batch-size-generation-quality-effects",
-    "status": "empirically-open",
-    "description": "Does batching change sampled output quality measurably?"
-  },
-  {
-    "title": "Optimal Paging Granularity for Attention Memory",
-    "slug": "optimal-kv-paging-granularity",
+    "title": "Batch-Size Invariance of Model Outputs",
+    "slug": "batch-size-invariance",
     "status": "partially-solved",
-    "description": "What page size minimizes fragmentation and kernel overhead jointly?"
+    "description": "Batching changes reductions and thus outputs; can invariance be cheap?"
   },
   {
-    "title": "Multi-Tenant Fairness in Token-Level Serving",
-    "slug": "multi-tenant-token-level-fairness",
-    "status": "open",
-    "description": "No accepted fairness definition for variable-length token streams."
-  },
-  {
-    "title": "Speculative Decoding for Non-Greedy Temperatures",
-    "slug": "speculative-decoding-high-temperature",
-    "status": "partially-solved",
-    "description": "Acceptance rates collapse at high temperature; no principled fix."
-  },
-  {
-    "title": "Cold-Start Model Loading Latency Lower Bound",
-    "slug": "model-cold-start-latency-bound",
-    "status": "open",
-    "description": "Minimum achievable time from request to first token, unloaded."
-  },
-  {
-    "title": "Draft-Free Self-Speculation Acceptance Prediction",
-    "slug": "self-speculation-acceptance-prediction",
-    "status": "empirically-open",
-    "description": "Can layer-skipping self-drafts match separate draft models?"
-  },
-  {
-    "title": "Attention Kernel Numerical Error Accumulation Over Long Generations",
-    "slug": "attention-numerical-error-accumulation",
-    "status": "open",
-    "description": "Does low-precision attention error compound across thousands of tokens?"
-  },
-  {
-    "title": "Serving Throughput Roofline for Sparse Attention",
-    "slug": "sparse-attention-serving-roofline",
-    "status": "methodologically-blocked",
-    "description": "No agreed cost model for irregular sparse attention kernels."
-  },
-  {
-    "title": "Retrieval-Augmented Serving Cache Coherence",
-    "slug": "rag-serving-cache-coherence",
-    "status": "open",
-    "description": "How to invalidate KV caches when retrieved documents change?"
-  },
-  {
-    "title": "Optimal Placement of LoRA Adapters in Multi-Adapter Serving",
-    "slug": "multi-lora-adapter-placement",
-    "status": "empirically-open",
-    "description": "Best adapter batching and swapping policy at hundreds of adapters."
-  },
-  {
-    "title": "Energy-Optimal Inference Operating Point",
-    "slug": "energy-optimal-inference-operating-point",
-    "status": "empirically-open",
-    "description": "What frequency, batch, and precision minimize joules per token?"
-  },
-  {
-    "title": "Watermark Preservation Under Speculative Decoding",
-    "slug": "watermark-preservation-speculative-decoding",
-    "status": "open",
-    "description": "Can watermarks survive speculation without detectability loss?"
-  },
-  {
-    "title": "Streaming Attention Sink Necessity",
-    "slug": "streaming-attention-sink-necessity",
-    "status": "partially-solved",
-    "description": "Why do attention sinks make streaming inference stable?"
-  },
-  {
-    "title": "Confidential Inference Overhead Lower Bound",
-    "slug": "confidential-inference-overhead-bound",
+    "title": "Deterministic Replay of Distributed Inference",
+    "slug": "deterministic-distributed-inference-replay",
     "status": "solved-but-impractical",
-    "description": "Cryptographically private inference works but costs orders of magnitude."
+    "description": "Bitwise replay is possible but costs too much throughput."
+  },
+  {
+    "title": "Compute-Optimal Allocation of Test-Time Search Budget",
+    "slug": "test-time-search-budget-allocation",
+    "status": "empirically-open",
+    "description": "How to split budget across samples, depth, and verification."
+  },
+  {
+    "title": "Early-Exit Confidence Calibration for Serving",
+    "slug": "early-exit-confidence-calibration",
+    "status": "open",
+    "description": "No reliable per-token signal for safely skipping remaining layers."
+  },
+  {
+    "title": "Cascade Router Threshold Selection Under Distribution Shift",
+    "slug": "cascade-router-threshold-shift",
+    "status": "open",
+    "description": "Small-to-large model routing thresholds degrade when traffic shifts."
+  },
+  {
+    "title": "Cost of Guaranteed Grammar-Constrained Decoding",
+    "slug": "grammar-constrained-decoding-cost",
+    "status": "partially-solved",
+    "description": "Constrained decoding overhead and distribution distortion are not jointly bounded."
+  },
+  {
+    "title": "Distribution Distortion From Structured Output Constraints",
+    "slug": "structured-output-distribution-distortion",
+    "status": "open",
+    "description": "Whether constrained decoding measurably degrades reasoning quality versus unconstrained."
+  },
+  {
+    "title": "Watermarking Under Serving-Time Batching and Speculation",
+    "slug": "watermark-under-speculation",
+    "status": "open",
+    "description": "Do speculative and batched decoding break watermark detectability guarantees?"
+  },
+  {
+    "title": "Timing Side Channels From Shared Prefix Caches",
+    "slug": "prefix-cache-timing-side-channel",
+    "status": "partially-solved",
+    "description": "Cache sharing leaks other users' prompts; mitigation cost unquantified."
+  },
+  {
+    "title": "Memory Fragmentation Bounds for Paged KV Allocators",
+    "slug": "paged-kv-fragmentation-bounds",
+    "status": "open",
+    "description": "No worst-case fragmentation bound for paged attention memory managers."
+  },
+  {
+    "title": "Optimal Page Size for KV Cache Paging",
+    "slug": "kv-cache-page-size",
+    "status": "empirically-open",
+    "description": "Page size tradeoff between fragmentation and kernel efficiency is unmeasured."
+  },
+  {
+    "title": "KV Cache Offloading Break-Even Across Memory Tiers",
+    "slug": "kv-offload-tier-breakeven",
+    "status": "empirically-open",
+    "description": "When recomputing beats fetching KV from host or storage."
+  },
+  {
+    "title": "Cold-Start Latency for Large Model Loading",
+    "slug": "model-cold-start-latency",
+    "status": "open",
+    "description": "Minimum achievable time from zero to first token served."
+  },
+  {
+    "title": "Multi-LoRA Serving Capacity Limits",
+    "slug": "multi-lora-serving-capacity",
+    "status": "empirically-open",
+    "description": "How many adapters can share one base model without slowdown."
+  },
+  {
+    "title": "Throughput-Latency Pareto Frontier Characterization",
+    "slug": "throughput-latency-pareto-frontier",
+    "status": "methodologically-blocked",
+    "description": "No standard way to compare serving systems across load points."
+  },
+  {
+    "title": "Energy Per Useful Token as a Serving Metric",
+    "slug": "energy-per-useful-token",
+    "status": "methodologically-blocked",
+    "description": "Defining energy cost per unit of task success remains unsettled."
+  },
+  {
+    "title": "Agentic Workload Scheduling With Tool-Call Stalls",
+    "slug": "agentic-workload-scheduling-stalls",
+    "status": "open",
+    "description": "Scheduling sessions that idle during external tool calls holding KV."
+  },
+  {
+    "title": "Semantic Cache Correctness for Reused Responses",
+    "slug": "semantic-cache-correctness",
+    "status": "open",
+    "description": "No soundness criterion for returning cached answers to similar prompts."
+  },
+  {
+    "title": "Verifying Untrusted Inference Providers Served the Claimed Model",
+    "slug": "inference-provider-model-verification",
+    "status": "open",
+    "description": "Cheaply proving a served model matches the advertised weights."
   }
 ]

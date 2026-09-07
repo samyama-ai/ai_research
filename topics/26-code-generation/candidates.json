@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Semantic Equivalence Contamination in Code Benchmarks",
+    "slug": "semantic-equivalence-contamination-code-benchmarks",
+    "status": "methodologically-blocked",
+    "description": "No accepted measure of solution leakage beyond exact string overlap."
+  },
+  {
+    "title": "Test-Suite Adequacy Gap in Functional Correctness Metrics",
+    "slug": "test-suite-adequacy-gap-pass-at-k",
+    "status": "empirically-open",
+    "description": "How often do passing programs fail stronger hidden test suites?"
+  },
+  {
+    "title": "Unbiased Low-Variance Estimation of pass@k at Large k",
+    "slug": "unbiased-pass-at-k-estimation-large-k",
+    "status": "partially-solved",
+    "description": "Estimating pass@k reliably when sampling budget is far below k."
+  },
+  {
+    "title": "Repository-Scale Context Selection for Code Completion",
+    "slug": "repository-scale-context-selection",
+    "status": "open",
+    "description": "Which repository context maximizes completion accuracy per token?"
+  },
+  {
+    "title": "Provable Compilation Correctness of Neural Transpilation",
+    "slug": "provable-correctness-neural-transpilation",
+    "status": "open",
+    "description": "Can learned translators emit machine-checkable equivalence proofs?"
+  },
+  {
+    "title": "Execution Feedback Credit Assignment in Program Repair",
+    "slug": "execution-feedback-credit-assignment",
+    "status": "open",
+    "description": "Attributing sparse test failures to specific generated code tokens."
+  },
+  {
+    "title": "Reward Hacking of Unit-Test Reward in Code RL",
+    "slug": "reward-hacking-unit-test-rl",
+    "status": "empirically-open",
+    "description": "How often does RL on tests produce test-gaming, not correct code?"
+  },
+  {
+    "title": "Scaling Laws for Program Synthesis Sample Efficiency",
+    "slug": "scaling-laws-program-synthesis-sampling",
+    "status": "empirically-open",
+    "description": "Does best-of-n accuracy follow a predictable law in compute?"
+  },
+  {
+    "title": "Verifier-Generator Compute Allocation Optimum",
+    "slug": "verifier-generator-compute-allocation",
+    "status": "open",
+    "description": "Optimal split of inference compute between generating and verifying code."
+  },
+  {
+    "title": "Specification Ambiguity in Natural Language Programming Tasks",
+    "slug": "specification-ambiguity-nl-programming",
+    "status": "methodologically-blocked",
+    "description": "No principled way to score outputs under underspecified prompts."
+  },
+  {
+    "title": "Length Generalization of Learned Loop Invariants",
+    "slug": "length-generalization-loop-invariants",
+    "status": "open",
+    "description": "Do invariant predictors transfer to longer, deeper loop nests?"
+  },
+  {
+    "title": "Neural Guidance for Enumerative Synthesis Search",
+    "slug": "neural-guidance-enumerative-synthesis",
+    "status": "partially-solved",
+    "description": "When does learned search beat symbolic enumeration on SyGuS-scale tasks?"
+  },
+  {
+    "title": "Compositional Generalization to Unseen API Combinations",
+    "slug": "compositional-generalization-unseen-apis",
+    "status": "open",
+    "description": "Can models compose library calls never co-occurring in training?"
+  },
+  {
+    "title": "Silent Correctness Failures in Type-Checked Generated Code",
+    "slug": "silent-failures-type-checked-generation",
+    "status": "empirically-open",
+    "description": "How much does type checking actually reduce semantic bugs?"
+  },
+  {
+    "title": "Calibration of Model Confidence on Program Correctness",
+    "slug": "calibration-confidence-program-correctness",
+    "status": "open",
+    "description": "Do code models know when their programs are wrong?"
+  },
+  {
+    "title": "Self-Repair Ceiling Without External Feedback",
+    "slug": "self-repair-ceiling-without-feedback",
+    "status": "partially-solved",
+    "description": "Can models fix bugs using only self-critique, no execution?"
+  },
+  {
+    "title": "Cost of Formal Verification-in-the-Loop Synthesis",
+    "slug": "verification-in-the-loop-synthesis-cost",
+    "status": "solved-but-impractical",
+    "description": "Verified synthesis works but scales badly beyond small programs."
+  },
+  {
+    "title": "Learning Program Semantics from Execution Traces",
+    "slug": "learning-semantics-from-execution-traces",
+    "status": "open",
+    "description": "Does trace supervision produce genuine semantic representations?"
+  },
+  {
+    "title": "Latent Execution Simulation Inside Code Models",
+    "slug": "latent-execution-simulation",
+    "status": "methodologically-blocked",
+    "description": "Whether models internally simulate execution is not yet measurable."
+  },
+  {
+    "title": "Cross-Language Transfer of Program Synthesis Ability",
+    "slug": "cross-language-transfer-synthesis",
+    "status": "empirically-open",
+    "description": "How much low-resource language skill comes from high-resource pretraining?"
+  },
+  {
+    "title": "Optimal Tokenization for Source Code",
+    "slug": "optimal-tokenization-source-code",
+    "status": "open",
+    "description": "Which tokenizer minimizes loss per compute on code?"
+  },
+  {
+    "title": "Synthetic Code Data Scaling Without Model Collapse",
+    "slug": "synthetic-code-data-collapse",
+    "status": "empirically-open",
+    "description": "How far can self-generated code data scale before degradation?"
+  },
+  {
+    "title": "Security Vulnerability Rate Under Distribution Shift",
+    "slug": "vulnerability-rate-distribution-shift",
+    "status": "empirically-open",
+    "description": "Do generated code vulnerability rates persist on unseen CWE classes?"
+  },
+  {
+    "title": "Backdoor Insertion Detectability in Generated Code",
+    "slug": "backdoor-detectability-generated-code",
+    "status": "open",
+    "description": "Can deliberately hidden malicious logic be reliably detected?"
+  },
+  {
+    "title": "Performance Optimization Beyond Human-Written Code",
+    "slug": "superhuman-code-optimization",
+    "status": "partially-solved",
+    "description": "Can synthesis reliably beat expert-optimized kernels across hardware?"
+  },
+  {
+    "title": "Automatic Test Generation That Dominates Human Suites",
+    "slug": "test-generation-dominating-human-suites",
+    "status": "empirically-open",
+    "description": "Do model-written tests catch more real bugs than developer tests?"
+  },
+  {
+    "title": "Long-Horizon Multi-File Edit Consistency",
+    "slug": "multi-file-edit-consistency",
+    "status": "open",
+    "description": "Keeping edits globally consistent across many interdependent files."
+  },
+  {
+    "title": "Sample Complexity of Programming by Example",
+    "slug": "sample-complexity-programming-by-example",
+    "status": "open",
+    "description": "How many examples uniquely determine an intended program?"
+  },
+  {
+    "title": "Decidable Detection of Reward-Model Gaming in Code Preferences",
+    "slug": "reward-model-gaming-code-preferences",
+    "status": "open",
+    "description": "Detecting when code preference models reward style over correctness."
+  },
+  {
+    "title": "Repository-Level Refactoring Behavior Preservation",
+    "slug": "refactoring-behavior-preservation",
+    "status": "open",
+    "description": "Proving learned refactorings preserve observable program behavior."
+  },
+  {
+    "title": "Complexity-Aware Synthesis of Asymptotically Optimal Algorithms",
+    "slug": "asymptotically-optimal-algorithm-synthesis",
+    "status": "open",
+    "description": "Can models synthesize algorithms meeting proven complexity bounds?"
+  },
+  {
+    "title": "Interactive Clarification Policy for Ambiguous Requests",
+    "slug": "interactive-clarification-policy",
+    "status": "open",
+    "description": "When should a code agent ask instead of guess?"
+  },
+  {
+    "title": "Memorization versus Generalization Boundary in Code Models",
+    "slug": "memorization-generalization-boundary-code",
+    "status": "methodologically-blocked",
+    "description": "No agreed test separating recall from synthesis in code."
+  },
+  {
+    "title": "Grammar-Constrained Decoding Effect on Semantic Quality",
+    "slug": "grammar-constrained-decoding-semantic-cost",
+    "status": "empirically-open",
+    "description": "Does enforcing syntax constraints hurt semantic correctness?"
+  },
+  {
+    "title": "Inference-Time Search Over Program Space at Scale",
+    "slug": "inference-time-search-program-space",
+    "status": "open",
+    "description": "Which search structure best exploits large sampling budgets for code?"
+  },
+  {
+    "title": "Learned Heuristics for SMT Solver Selection in Synthesis",
+    "slug": "learned-smt-heuristics-synthesis",
+    "status": "partially-solved",
+    "description": "Do learned solver heuristics generalize beyond training benchmark families?"
+  },
+  {
+    "title": "Reproducing Environment State for Agentic Coding Evaluation",
+    "slug": "environment-reproducibility-agentic-coding",
+    "status": "methodologically-blocked",
+    "description": "Agentic code benchmarks lack stable, reproducible execution environments."
+  },
+  {
+    "title": "Transfer from Competitive Programming to Real Software Tasks",
+    "slug": "competitive-programming-to-real-software-transfer",
+    "status": "empirically-open",
+    "description": "Does contest performance predict real repository issue resolution?"
+  },
+  {
+    "title": "Minimal Sufficient Supervision for Neural Decompilation",
+    "slug": "minimal-supervision-neural-decompilation",
+    "status": "open",
+    "description": "How much paired data is needed to recover source semantics?"
+  },
+  {
+    "title": "Provable Termination Guarantees for Generated Programs",
+    "slug": "provable-termination-generated-programs",
+    "status": "open",
+    "description": "Can generators emit termination certificates alongside synthesized code?"
+  }
+]

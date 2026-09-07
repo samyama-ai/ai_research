@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Sample-Efficient Latent Dynamics Learning Without Reconstruction",
+    "slug": "latent-dynamics-without-reconstruction",
+    "status": "open",
+    "description": "Can latent world models drop pixel reconstruction without losing task-relevant state?"
+  },
+  {
+    "title": "Compounding Error Bounds for Autoregressive Rollouts",
+    "slug": "compounding-error-bounds-rollouts",
+    "status": "partially-solved",
+    "description": "Tight horizon-dependent error bounds for learned model rollouts remain unproven."
+  },
+  {
+    "title": "Optimal Imagination Horizon in Dyna-Style Training",
+    "slug": "optimal-imagination-horizon",
+    "status": "empirically-open",
+    "description": "What rollout length maximizes return per unit of compute?"
+  },
+  {
+    "title": "Measuring Whether a Video Model Encodes Physics",
+    "slug": "video-model-physics-encoding-measure",
+    "status": "methodologically-blocked",
+    "description": "No agreed test separates physical understanding from surface prediction."
+  },
+  {
+    "title": "Object Permanence Under Long Occlusion in Learned Simulators",
+    "slug": "object-permanence-long-occlusion",
+    "status": "open",
+    "description": "Learned simulators lose occluded objects beyond short time gaps."
+  },
+  {
+    "title": "Action-Conditioning Fidelity in Generative Game Engines",
+    "slug": "action-conditioning-fidelity-game-engines",
+    "status": "empirically-open",
+    "description": "Do neural game engines obey actions or hallucinate plausible continuations?"
+  },
+  {
+    "title": "Value-Aware Model Learning at Scale",
+    "slug": "value-aware-model-learning-scale",
+    "status": "partially-solved",
+    "description": "Decision-aware model losses help in theory, rarely at scale."
+  },
+  {
+    "title": "Model-Based Exploration Under Irreversible Dynamics",
+    "slug": "exploration-irreversible-dynamics",
+    "status": "open",
+    "description": "Safe exploration when mistakes permanently remove reachable states."
+  },
+  {
+    "title": "Scaling Laws for World Model Prediction Error",
+    "slug": "scaling-laws-world-model-error",
+    "status": "empirically-open",
+    "description": "How does rollout fidelity scale with parameters, data, and horizon?"
+  },
+  {
+    "title": "Discovering Reusable Temporal Abstractions Without Hand-Coded Options",
+    "slug": "unsupervised-temporal-abstraction-discovery",
+    "status": "open",
+    "description": "No method reliably discovers useful options from scratch."
+  },
+  {
+    "title": "Planning Horizon Versus Model Error Tradeoff",
+    "slug": "planning-horizon-model-error-tradeoff",
+    "status": "partially-solved",
+    "description": "Optimal planning depth given an imperfect model is unresolved."
+  },
+  {
+    "title": "MCTS Without Learned Value Bootstrapping",
+    "slug": "mcts-without-value-bootstrap",
+    "status": "empirically-open",
+    "description": "Can search alone match bootstrapped value networks at scale?"
+  },
+  {
+    "title": "Latent Space Planning Consistency",
+    "slug": "latent-space-planning-consistency",
+    "status": "open",
+    "description": "Latent plans need not correspond to feasible real trajectories."
+  },
+  {
+    "title": "Transferring World Models Across Embodiments",
+    "slug": "cross-embodiment-world-model-transfer",
+    "status": "open",
+    "description": "Reusing dynamics models across different robot morphologies fails."
+  },
+  {
+    "title": "Counterfactual Validity of Learned Simulators",
+    "slug": "counterfactual-validity-learned-simulators",
+    "status": "methodologically-blocked",
+    "description": "Learned models are untested on unseen interventions, not just predictions."
+  },
+  {
+    "title": "Long-Horizon Credit Assignment Through Imagined Rollouts",
+    "slug": "credit-assignment-imagined-rollouts",
+    "status": "open",
+    "description": "Gradients through long imagined trajectories vanish or explode."
+  },
+  {
+    "title": "Uncertainty Calibration in Learned Dynamics Ensembles",
+    "slug": "dynamics-ensemble-uncertainty-calibration",
+    "status": "partially-solved",
+    "description": "Ensembles underestimate epistemic uncertainty far from data."
+  },
+  {
+    "title": "Distinguishing Aleatoric From Epistemic Error in Rollouts",
+    "slug": "aleatoric-epistemic-separation-rollouts",
+    "status": "methodologically-blocked",
+    "description": "No practical decomposition of prediction error into its two sources."
+  },
+  {
+    "title": "Test-Time Search Scaling in LLM Planners",
+    "slug": "test-time-search-scaling-llm-planners",
+    "status": "empirically-open",
+    "description": "Does more search compute keep improving LLM plan validity?"
+  },
+  {
+    "title": "LLMs as Faithful World Model Simulators",
+    "slug": "llm-as-world-model-fidelity",
+    "status": "open",
+    "description": "Whether language models track state consistently over long interactions."
+  },
+  {
+    "title": "Learned Heuristics With Bounded Suboptimality Guarantees",
+    "slug": "learned-heuristics-bounded-suboptimality",
+    "status": "partially-solved",
+    "description": "Neural heuristics rarely come with admissibility or bound guarantees."
+  },
+  {
+    "title": "Symbolic Abstraction Discovery for Task and Motion Planning",
+    "slug": "symbolic-abstraction-discovery-tamp",
+    "status": "open",
+    "description": "Learning PDDL-like predicates from raw continuous observation streams."
+  },
+  {
+    "title": "Offline Model-Based RL Under Narrow Data Coverage",
+    "slug": "offline-mbrl-narrow-coverage",
+    "status": "partially-solved",
+    "description": "Guarantees exist only under coverage assumptions rarely met in practice."
+  },
+  {
+    "title": "Reward Model Exploitation Inside Imagined Rollouts",
+    "slug": "reward-exploitation-imagined-rollouts",
+    "status": "open",
+    "description": "Policies exploit model flaws to fabricate reward during imagination."
+  },
+  {
+    "title": "Non-Stationary World Model Adaptation Rate",
+    "slug": "nonstationary-world-model-adaptation",
+    "status": "empirically-open",
+    "description": "How fast can a model track changing dynamics without forgetting?"
+  },
+  {
+    "title": "Partial Observability Versus Recurrent State Sufficiency",
+    "slug": "recurrent-state-sufficiency-pomdp",
+    "status": "open",
+    "description": "When is a learned recurrent state a sufficient statistic?"
+  },
+  {
+    "title": "Memory Capacity Limits of Recurrent World Models",
+    "slug": "recurrent-world-model-memory-capacity",
+    "status": "empirically-open",
+    "description": "Maximum retrievable history length in learned state-space models."
+  },
+  {
+    "title": "Diffusion Planners Versus Autoregressive Planners",
+    "slug": "diffusion-versus-autoregressive-planners",
+    "status": "empirically-open",
+    "description": "Which plan representation wins at long horizons and scale?"
+  },
+  {
+    "title": "Guaranteeing Constraint Satisfaction in Generative Plans",
+    "slug": "constraint-satisfaction-generative-plans",
+    "status": "open",
+    "description": "Generative planners cannot yet certify hard constraint feasibility."
+  },
+  {
+    "title": "Sim-to-Real Gap Prediction Before Deployment",
+    "slug": "predicting-sim-to-real-gap",
+    "status": "methodologically-blocked",
+    "description": "No metric forecasts real-world performance from simulator fidelity."
+  },
+  {
+    "title": "Model-Based Versus Model-Free Sample Efficiency Crossover",
+    "slug": "model-based-model-free-crossover",
+    "status": "empirically-open",
+    "description": "At what data budget does model-free overtake model-based learning?"
+  },
+  {
+    "title": "Causal Structure Identifiability From Interventional Agent Data",
+    "slug": "causal-identifiability-agent-data",
+    "status": "partially-solved",
+    "description": "Which causal graphs an acting agent can identify from its own actions."
+  },
+  {
+    "title": "Goal-Conditioned Value Function Composition",
+    "slug": "goal-conditioned-value-composition",
+    "status": "open",
+    "description": "Composing learned subgoal values into valid long-horizon plans."
+  },
+  {
+    "title": "World Model Consistency Under Repeated Replanning",
+    "slug": "replanning-consistency",
+    "status": "open",
+    "description": "Successive replans can oscillate rather than converge to behavior."
+  },
+  {
+    "title": "Learning Dynamics From Passive Video Without Action Labels",
+    "slug": "action-free-dynamics-from-video",
+    "status": "partially-solved",
+    "description": "Recovering an action space from unlabeled observational video."
+  },
+  {
+    "title": "Amortized Planning Versus Explicit Search at Scale",
+    "slug": "amortized-versus-explicit-search",
+    "status": "empirically-open",
+    "description": "Can a distilled policy fully replace search-time computation?"
+  },
+  {
+    "title": "Continuous-Time World Models for Irregular Observations",
+    "slug": "continuous-time-world-models",
+    "status": "open",
+    "description": "Handling irregularly sampled sensor streams without discretization artifacts."
+  },
+  {
+    "title": "Verification of Learned Models Against Conservation Laws",
+    "slug": "conservation-law-verification-learned-models",
+    "status": "open",
+    "description": "Certifying that learned dynamics respect known physical invariants."
+  },
+  {
+    "title": "Compute-Optimal Split Between Model Training and Search",
+    "slug": "compute-split-model-versus-search",
+    "status": "empirically-open",
+    "description": "Best allocation of a fixed budget between learning and planning."
+  },
+  {
+    "title": "Evaluating World Models Independently of Downstream Policy",
+    "slug": "policy-independent-world-model-evaluation",
+    "status": "methodologically-blocked",
+    "description": "No model quality metric predicts control performance reliably."
+  }
+]

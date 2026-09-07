@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Speaker-Attributed Overlapping ASR at High Speaker Counts",
+    "slug": "speaker-attributed-asr-high-overlap",
+    "status": "open",
+    "description": "Transcribing who said what under heavy multi-talker overlap."
+  },
+  {
+    "title": "Streaming Diarization with Unbounded Speaker Inventory",
+    "slug": "streaming-diarization-unbounded-speakers",
+    "status": "open",
+    "description": "Online diarization without knowing speaker count in advance."
+  },
+  {
+    "title": "Neural Codec Bitrate Floor for Perceptual Transparency",
+    "slug": "codec-bitrate-floor-transparency",
+    "status": "empirically-open",
+    "description": "Lowest bitrate achieving transparent speech and music coding."
+  },
+  {
+    "title": "Discrete Audio Token Vocabulary Scaling Law",
+    "slug": "audio-token-vocabulary-scaling-law",
+    "status": "empirically-open",
+    "description": "Optimal codebook size and frame rate for audio LLMs."
+  },
+  {
+    "title": "Semantic versus Acoustic Token Separation",
+    "slug": "semantic-acoustic-token-separation",
+    "status": "methodologically-blocked",
+    "description": "Measuring what audio tokens encode beyond phonetic content."
+  },
+  {
+    "title": "Zero-Shot Voice Cloning Speaker Identity Leakage Bound",
+    "slug": "voice-cloning-identity-leakage-bound",
+    "status": "open",
+    "description": "How little enrollment audio suffices to clone a voice."
+  },
+  {
+    "title": "Provable Audio Deepfake Detection Generalization",
+    "slug": "deepfake-detection-generalization",
+    "status": "open",
+    "description": "Detectors failing on unseen synthesis systems."
+  },
+  {
+    "title": "Robust Audio Watermarking Under Codec and Resynthesis",
+    "slug": "audio-watermark-resynthesis-robustness",
+    "status": "open",
+    "description": "Watermarks surviving neural vocoder re-encoding and edits."
+  },
+  {
+    "title": "Low-Resource ASR Without Any Transcribed Speech",
+    "slug": "unsupervised-asr-zero-transcription",
+    "status": "partially-solved",
+    "description": "Fully unsupervised speech recognition beyond a few languages."
+  },
+  {
+    "title": "Phoneme-Level Emergence in Self-Supervised Speech Models",
+    "slug": "phoneme-emergence-ssl-speech",
+    "status": "methodologically-blocked",
+    "description": "Whether SSL layers truly encode discrete phonemic units."
+  },
+  {
+    "title": "Cocktail Party Separation with Unknown Source Count",
+    "slug": "separation-unknown-source-count",
+    "status": "open",
+    "description": "Separating mixtures without knowing how many speakers."
+  },
+  {
+    "title": "Permutation Invariant Training Scaling Limits",
+    "slug": "pit-scaling-limits",
+    "status": "partially-solved",
+    "description": "PIT cost and quality collapse as sources increase."
+  },
+  {
+    "title": "Full-Duplex Spoken Dialogue Turn-Taking",
+    "slug": "full-duplex-dialogue-turn-taking",
+    "status": "open",
+    "description": "Models that listen and speak simultaneously and interrupt correctly."
+  },
+  {
+    "title": "Latency-Quality Frontier for Simultaneous Speech Translation",
+    "slug": "simultaneous-speech-translation-frontier",
+    "status": "empirically-open",
+    "description": "Optimal read-write policy trading delay against translation quality."
+  },
+  {
+    "title": "Prosody Controllability Without Paired Supervision",
+    "slug": "prosody-control-unpaired",
+    "status": "open",
+    "description": "Disentangling and controlling prosody with no prosodic labels."
+  },
+  {
+    "title": "Long-Form TTS Coherence Beyond Ten Minutes",
+    "slug": "long-form-tts-coherence",
+    "status": "empirically-open",
+    "description": "Maintaining voice and prosody across very long syntheses."
+  },
+  {
+    "title": "Objective Metric Correlating with TTS Naturalness",
+    "slug": "tts-naturalness-metric",
+    "status": "methodologically-blocked",
+    "description": "No automatic metric reliably predicts human MOS."
+  },
+  {
+    "title": "Hallucination in End-to-End ASR on Silence",
+    "slug": "asr-hallucination-on-silence",
+    "status": "open",
+    "description": "Why ASR models emit text for non-speech input."
+  },
+  {
+    "title": "Code-Switching ASR Without Code-Switched Training Data",
+    "slug": "code-switching-asr-zero-shot",
+    "status": "open",
+    "description": "Recognizing intra-sentence language switches from monolingual data only."
+  },
+  {
+    "title": "Speech Foundation Model Compute-Optimal Scaling",
+    "slug": "speech-foundation-compute-optimal",
+    "status": "empirically-open",
+    "description": "Chinchilla-style scaling laws for speech pretraining are unmeasured."
+  },
+  {
+    "title": "Audio-Text Alignment Bottleneck in Speech LLMs",
+    "slug": "audio-text-alignment-bottleneck",
+    "status": "open",
+    "description": "Why speech LLMs lag text LLMs on reasoning."
+  },
+  {
+    "title": "Paralinguistic Understanding Beyond Transcript Content",
+    "slug": "paralinguistic-beyond-transcript",
+    "status": "empirically-open",
+    "description": "Do audio LLMs use anything beyond implicit ASR?"
+  },
+  {
+    "title": "Far-Field Multichannel Gains Beyond Beamforming",
+    "slug": "far-field-multichannel-gains",
+    "status": "open",
+    "description": "Whether neural front-ends beat classical beamforming under real reverberation."
+  },
+  {
+    "title": "Blind Room Impulse Response Estimation Identifiability",
+    "slug": "blind-rir-identifiability",
+    "status": "open",
+    "description": "Conditions under which room acoustics are recoverable from speech."
+  },
+  {
+    "title": "Cross-Lingual Transfer Floor for Unwritten Languages",
+    "slug": "unwritten-language-transfer-floor",
+    "status": "open",
+    "description": "Minimum data to build speech systems without orthography."
+  },
+  {
+    "title": "Speech Enhancement That Never Hurts Downstream ASR",
+    "slug": "enhancement-asr-mismatch",
+    "status": "open",
+    "description": "Denoising improves perception but often degrades recognition."
+  },
+  {
+    "title": "Perceptual Loss Functions for Generative Audio",
+    "slug": "perceptual-loss-generative-audio",
+    "status": "methodologically-blocked",
+    "description": "No differentiable loss matching human audio quality judgments."
+  },
+  {
+    "title": "Music Source Separation Ceiling from Bleed and Labels",
+    "slug": "music-separation-label-ceiling",
+    "status": "partially-solved",
+    "description": "Whether separation quality is limited by dataset stem leakage."
+  },
+  {
+    "title": "Symbolic Structure in Long-Form Music Generation",
+    "slug": "long-form-music-structure",
+    "status": "open",
+    "description": "Generating multi-minute music with coherent global structure."
+  },
+  {
+    "title": "Singing Voice Synthesis Pitch-Timbre Disentanglement",
+    "slug": "singing-pitch-timbre-disentanglement",
+    "status": "open",
+    "description": "Independent control of pitch and timbre in singing synthesis."
+  },
+  {
+    "title": "Non-Autoregressive Audio Generation Quality Gap",
+    "slug": "non-autoregressive-audio-gap",
+    "status": "empirically-open",
+    "description": "Whether parallel decoders can match autoregressive audio fidelity."
+  },
+  {
+    "title": "Streaming Neural Vocoder Sub-Millisecond Latency",
+    "slug": "streaming-vocoder-latency",
+    "status": "solved-but-impractical",
+    "description": "High-fidelity vocoding at hearing-aid-grade algorithmic latency."
+  },
+  {
+    "title": "Keyword Spotting Under Adversarial Acoustic Attack",
+    "slug": "keyword-spotting-adversarial",
+    "status": "open",
+    "description": "Certified robustness for always-on wake word detectors."
+  },
+  {
+    "title": "Speaker Verification Fairness Across Accents and Age",
+    "slug": "speaker-verification-fairness",
+    "status": "empirically-open",
+    "description": "Error rate disparities across demographic groups remain unexplained."
+  },
+  {
+    "title": "Self-Supervised Objective Choice for Non-Speech Audio",
+    "slug": "ssl-objective-nonspeech-audio",
+    "status": "open",
+    "description": "Best pretraining objective for environmental and general sound."
+  },
+  {
+    "title": "Audio Event Detection with Weak and Noisy Timestamps",
+    "slug": "sed-weak-timestamp-labels",
+    "status": "partially-solved",
+    "description": "Recovering precise event boundaries from clip-level labels."
+  },
+  {
+    "title": "Memorization and Verbatim Voice Recall in Audio Generators",
+    "slug": "audio-generator-memorization",
+    "status": "empirically-open",
+    "description": "Measuring training-audio memorization in generative speech models."
+  },
+  {
+    "title": "Emotion Recognition Label Noise Ceiling",
+    "slug": "emotion-recognition-label-ceiling",
+    "status": "methodologically-blocked",
+    "description": "Human annotator disagreement caps achievable emotion accuracy."
+  },
+  {
+    "title": "On-Device Speech Model Quantization Below Four Bits",
+    "slug": "speech-model-sub-4bit-quantization",
+    "status": "empirically-open",
+    "description": "Where extreme quantization breaks streaming ASR and TTS."
+  },
+  {
+    "title": "Universal Audio Representation Across Speech, Music, Sound",
+    "slug": "universal-audio-representation",
+    "status": "open",
+    "description": "One encoder matching specialists on all three domains."
+  }
+]

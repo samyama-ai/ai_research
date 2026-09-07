@@ -1,242 +1,242 @@
 [
   {
-    "title": "Modality Gap in Contrastive Embedding Spaces",
-    "slug": "modality-gap-contrastive-embeddings",
+    "title": "Cross-Modal Attention Sink Universality",
+    "slug": "cross-modal-attention-sink-universality",
+    "status": "empirically-open",
+    "description": "Do vision tokens develop attention sinks like text tokens?"
+  },
+  {
+    "title": "Optimal Vision-Token Budget Scaling Law",
+    "slug": "optimal-vision-token-budget-scaling",
+    "status": "empirically-open",
+    "description": "How many image tokens per compute budget maximize accuracy?"
+  },
+  {
+    "title": "Modality Gap Persistence in Contrastive Embeddings",
+    "slug": "modality-gap-persistence",
     "status": "partially-solved",
-    "description": "Why image and text embeddings occupy disjoint cones."
-  },
-  {
-    "title": "Compute-Optimal Vision-Token Budget",
-    "slug": "compute-optimal-vision-token-budget",
-    "status": "empirically-open",
-    "description": "How many visual tokens per image maximize accuracy per FLOP."
-  },
-  {
-    "title": "Scaling Laws for Interleaved Image-Text Pretraining",
-    "slug": "scaling-laws-interleaved-pretraining",
-    "status": "empirically-open",
-    "description": "Joint loss scaling exponents for mixed image-text corpora."
-  },
-  {
-    "title": "Optimal Image-to-Text Data Mixing Ratio",
-    "slug": "optimal-image-text-mixing-ratio",
-    "status": "empirically-open",
-    "description": "Best proportion of text-only data in multimodal training."
+    "description": "Why do image and text embeddings occupy disjoint cones?"
   },
   {
     "title": "Provable Identifiability of Shared Latent Factors",
-    "slug": "identifiability-shared-latent-factors",
+    "slug": "multimodal-latent-identifiability",
     "status": "partially-solved",
-    "description": "When contrastive learning recovers true cross-modal generative factors."
+    "description": "When does contrastive learning identify true shared generative factors?"
   },
   {
-    "title": "Cross-Modal Hallucination Detection Without References",
-    "slug": "reference-free-hallucination-detection",
+    "title": "Compositional Binding Failure in Vision-Language Models",
+    "slug": "compositional-binding-failure",
     "status": "open",
-    "description": "Detecting ungrounded image descriptions without ground-truth annotations."
+    "description": "Why do models confuse attribute-object bindings in images?"
   },
   {
-    "title": "Causal Attribution of Answers to Visual Evidence",
-    "slug": "causal-attribution-visual-evidence",
+    "title": "Late versus Early Fusion Compute-Optimality",
+    "slug": "late-vs-early-fusion-optimality",
+    "status": "empirically-open",
+    "description": "Which fusion depth is compute-optimal at fixed FLOPs?"
+  },
+  {
+    "title": "Native Multimodal Pretraining versus Adapter Grafting",
+    "slug": "native-pretraining-vs-adapter-grafting",
+    "status": "empirically-open",
+    "description": "Does joint pretraining beat grafting vision onto frozen LLMs?"
+  },
+  {
+    "title": "Catastrophic Text Forgetting from Vision Instruction Tuning",
+    "slug": "catastrophic-text-forgetting-vision-tuning",
+    "status": "empirically-open",
+    "description": "Can vision tuning avoid degrading language-only ability entirely?"
+  },
+  {
+    "title": "Hallucination Rate Lower Bounds for Grounded Captioning",
+    "slug": "hallucination-lower-bounds-captioning",
+    "status": "open",
+    "description": "Is object hallucination reducible to zero without external grounding?"
+  },
+  {
+    "title": "Measuring Genuine Cross-Modal Reasoning versus Language Priors",
+    "slug": "cross-modal-reasoning-vs-language-priors",
     "status": "methodologically-blocked",
-    "description": "Proving an answer used the image, not language priors."
+    "description": "No accepted metric separates visual evidence from text priors."
   },
   {
-    "title": "Late vs Early Fusion Sample-Efficiency Crossover",
-    "slug": "late-vs-early-fusion-crossover",
-    "status": "empirically-open",
-    "description": "At what scale does early fusion overtake adapter-based fusion."
-  },
-  {
-    "title": "Discrete vs Continuous Visual Tokenization for Understanding",
-    "slug": "discrete-vs-continuous-visual-tokens",
-    "status": "empirically-open",
-    "description": "Whether quantized visual tokens lose information needed for reasoning."
-  },
-  {
-    "title": "Unified Generation-Understanding Interference",
-    "slug": "generation-understanding-interference",
+    "title": "Contrastive Objective Sample Complexity for Zero-Shot Transfer",
+    "slug": "contrastive-sample-complexity-zero-shot",
     "status": "open",
-    "description": "Why joint image generation degrades multimodal understanding accuracy."
-  },
-  {
-    "title": "Negative Transfer in Many-Modality Encoders",
-    "slug": "negative-transfer-many-modalities",
-    "status": "empirically-open",
-    "description": "When adding a modality hurts existing modalities' performance."
-  },
-  {
-    "title": "Resolution Scaling Law for Fine-Grained Perception",
-    "slug": "resolution-scaling-fine-grained-perception",
-    "status": "empirically-open",
-    "description": "How accuracy scales with input pixel count per task."
+    "description": "How many pairs are needed for given zero-shot error?"
   },
   {
     "title": "Video Temporal Grounding Beyond Single-Frame Bias",
-    "slug": "video-single-frame-bias",
-    "status": "open",
-    "description": "Building video tasks unsolvable from one sampled frame."
-  },
-  {
-    "title": "Long-Video Memory Compression Limits",
-    "slug": "long-video-memory-compression-limits",
-    "status": "open",
-    "description": "Information-theoretic bounds on compressing hour-long video context."
-  },
-  {
-    "title": "Audio-Visual Synchrony Learning Without Supervision",
-    "slug": "unsupervised-audio-visual-synchrony",
-    "status": "partially-solved",
-    "description": "Learning fine sub-second alignment from unlabeled video."
-  },
-  {
-    "title": "Compositional Generalization to Unseen Attribute Bindings",
-    "slug": "compositional-attribute-binding",
-    "status": "open",
-    "description": "Whether models bind attributes to correct objects compositionally."
-  },
-  {
-    "title": "Spatial Reasoning From Egocentric Viewpoints",
-    "slug": "egocentric-spatial-reasoning",
-    "status": "open",
-    "description": "Left-right and occlusion reasoning from first-person imagery."
-  },
-  {
-    "title": "Counting Generalization Beyond Training Cardinalities",
-    "slug": "counting-generalization-cardinalities",
-    "status": "open",
-    "description": "Extrapolating object counts past counts seen in training."
-  },
-  {
-    "title": "Faithful Chart and Diagram Value Extraction",
-    "slug": "faithful-chart-value-extraction",
+    "slug": "video-temporal-grounding-single-frame-bias",
     "status": "empirically-open",
-    "description": "Reading exact numeric values off unlabeled plot elements."
+    "description": "Do video models use temporal order or single frames?"
   },
   {
-    "title": "Cross-Modal Chain-of-Thought With Visual Intermediates",
-    "slug": "visual-intermediate-chain-of-thought",
+    "title": "Long-Video Context Compression Without Task Loss",
+    "slug": "long-video-context-compression",
     "status": "open",
-    "description": "Whether generated images as reasoning steps improve accuracy."
+    "description": "Can hour-long video compress to tokens with bounded loss?"
   },
   {
-    "title": "Reward Models for Multimodal Preference Alignment",
-    "slug": "multimodal-reward-model-grounding",
+    "title": "Discrete versus Continuous Visual Tokenization Tradeoff",
+    "slug": "discrete-vs-continuous-visual-tokenization",
+    "status": "empirically-open",
+    "description": "Does discrete tokenization cost accuracy versus continuous embeddings?"
+  },
+  {
+    "title": "Unified Understanding-Generation Model Interference",
+    "slug": "understanding-generation-interference",
     "status": "open",
-    "description": "Reward models that score visual grounding, not text style."
+    "description": "Do generation and understanding objectives interfere in one model?"
   },
   {
-    "title": "Contamination-Free Multimodal Evaluation",
-    "slug": "contamination-free-multimodal-evaluation",
+    "title": "Audio-Visual Synchronization Learning Without Labels",
+    "slug": "audio-visual-sync-unsupervised",
+    "status": "partially-solved",
+    "description": "Can models learn fine-grained AV sync from raw video?"
+  },
+  {
+    "title": "Cross-Modal Transfer of Chain-of-Thought Reasoning",
+    "slug": "cross-modal-chain-of-thought-transfer",
+    "status": "empirically-open",
+    "description": "Does text reasoning training transfer to visual reasoning tasks?"
+  },
+  {
+    "title": "Resolution Scaling versus Parameter Scaling Exchange Rate",
+    "slug": "resolution-vs-parameter-scaling",
+    "status": "empirically-open",
+    "description": "What is the tradeoff rate between pixels and parameters?"
+  },
+  {
+    "title": "Multimodal Data Mixture Optimization",
+    "slug": "multimodal-data-mixture-optimization",
+    "status": "empirically-open",
+    "description": "What image-text-video-audio mixture ratios are compute-optimal?"
+  },
+  {
+    "title": "Contamination-Free Evaluation of Multimodal Benchmarks",
+    "slug": "multimodal-benchmark-contamination",
     "status": "methodologically-blocked",
-    "description": "Measuring test-set leakage in web-scale image-text corpora."
+    "description": "No reliable test detects image-text benchmark leakage in pretraining."
   },
   {
-    "title": "Blind Baselines Matching Multimodal Benchmarks",
-    "slug": "blind-baseline-benchmark-gap",
+    "title": "Spatial Reasoning Failure in 3D-from-2D Inputs",
+    "slug": "spatial-reasoning-3d-from-2d",
+    "status": "open",
+    "description": "Can 2D-trained models acquire metric 3D spatial understanding?"
+  },
+  {
+    "title": "Cross-Modal Jailbreak Transferability",
+    "slug": "cross-modal-jailbreak-transfer",
     "status": "empirically-open",
-    "description": "How much of benchmark accuracy needs no image."
+    "description": "Do image-channel attacks transfer across model families reliably?"
   },
   {
-    "title": "Cross-Modal Transfer of Safety Refusals",
-    "slug": "cross-modal-safety-refusal-transfer",
-    "status": "open",
-    "description": "Whether text-only safety training transfers to image inputs."
+    "title": "Provable Robustness to Adversarial Image Perturbations in VLMs",
+    "slug": "vlm-adversarial-certified-robustness",
+    "status": "solved-but-impractical",
+    "description": "Certified defenses exist but cost rules out real deployment."
   },
   {
-    "title": "Certified Robustness to Typographic Image Attacks",
-    "slug": "certified-typographic-attack-robustness",
-    "status": "open",
-    "description": "Defending against text rendered inside adversarial images."
-  },
-  {
-    "title": "Universal Cross-Modal Jailbreak Transferability",
-    "slug": "cross-modal-jailbreak-transferability",
-    "status": "empirically-open",
-    "description": "Do image-based jailbreaks transfer across model families."
-  },
-  {
-    "title": "Watermarking Survivability Through Multimodal Recaptioning",
-    "slug": "watermark-survival-recaptioning",
-    "status": "open",
-    "description": "Whether generative watermarks survive caption-and-regenerate pipelines."
-  },
-  {
-    "title": "Sample Complexity of Cross-Modal Retrieval",
-    "slug": "sample-complexity-cross-modal-retrieval",
+    "title": "Modality Dropout Robustness Guarantees",
+    "slug": "modality-dropout-robustness",
     "status": "partially-solved",
-    "description": "Pairs needed to reach target retrieval error rates."
+    "description": "How gracefully must models degrade when a modality vanishes?"
   },
   {
-    "title": "Zero-Shot Transfer to Unpaired Modality Pairs",
-    "slug": "unpaired-modality-zero-shot-transfer",
-    "status": "open",
-    "description": "Aligning two modalities never seen paired during training."
-  },
-  {
-    "title": "Synthetic Caption Quality vs Diversity Tradeoff",
-    "slug": "synthetic-caption-quality-diversity",
+    "title": "Interleaved Document Training Signal Value",
+    "slug": "interleaved-document-training-value",
     "status": "empirically-open",
-    "description": "When recaptioned data outperforms noisy alt-text at scale."
+    "description": "How much do interleaved image-text documents beat caption pairs?"
   },
   {
-    "title": "Modality-Specific Neuron Localization and Editing",
-    "slug": "modality-specific-neuron-editing",
+    "title": "Synthetic Caption Recaptioning Model Collapse Threshold",
+    "slug": "synthetic-caption-collapse-threshold",
+    "status": "empirically-open",
+    "description": "At what synthetic-caption fraction does multimodal training degrade?"
+  },
+  {
+    "title": "Vision Encoder Feature Sufficiency for Fine-Grained Tasks",
+    "slug": "vision-encoder-feature-sufficiency",
     "status": "open",
-    "description": "Locating and editing visual facts inside multimodal models."
+    "description": "Do frozen encoders discard information language decoders need?"
   },
   {
-    "title": "Position Encoding Extrapolation for 2D and 3D Inputs",
-    "slug": "multidimensional-position-extrapolation",
+    "title": "Cross-Modal Neuron Existence and Causal Role",
+    "slug": "cross-modal-neuron-causal-role",
+    "status": "partially-solved",
+    "description": "Are multimodal neurons causally necessary or merely correlated?"
+  },
+  {
+    "title": "Multimodal Chain-of-Thought Faithfulness",
+    "slug": "multimodal-cot-faithfulness",
+    "status": "methodologically-blocked",
+    "description": "No test verifies stated visual reasoning matches internal computation."
+  },
+  {
+    "title": "Emergent Cross-Lingual Visual Grounding",
+    "slug": "cross-lingual-visual-grounding",
+    "status": "empirically-open",
+    "description": "Does visual grounding transfer to languages with no image data?"
+  },
+  {
+    "title": "Retrieval-Augmented Multimodal Generation Attribution",
+    "slug": "multimodal-rag-attribution",
     "status": "open",
-    "description": "Generalizing to resolutions and volumes beyond training sizes."
+    "description": "Can generated content be provably attributed to retrieved images?"
   },
   {
-    "title": "Text-Rendering Fidelity in Image Generation",
+    "title": "Any-to-Any Modality Scaling Beyond Two Modalities",
+    "slug": "any-to-any-modality-scaling",
+    "status": "empirically-open",
+    "description": "Do gains persist as modality count grows past three?"
+  },
+  {
+    "title": "Diffusion versus Autoregressive Image Generation Compute Frontier",
+    "slug": "diffusion-vs-autoregressive-compute-frontier",
+    "status": "empirically-open",
+    "description": "Which generative family wins at matched training compute?"
+  },
+  {
+    "title": "Text Rendering Fidelity in Image Generators",
     "slug": "text-rendering-fidelity-generation",
     "status": "partially-solved",
-    "description": "Why generators misspell long strings inside images."
+    "description": "Why do generators still misspell long text in images?"
   },
   {
-    "title": "Prompt-Image Consistency Metrics That Track Humans",
-    "slug": "prompt-image-consistency-metrics",
-    "status": "methodologically-blocked",
-    "description": "Automatic scores correlating with human alignment judgments."
-  },
-  {
-    "title": "Multimodal In-Context Learning From Image Demonstrations",
-    "slug": "multimodal-in-context-learning",
-    "status": "empirically-open",
-    "description": "Whether image-label demonstrations produce true in-context learning."
-  },
-  {
-    "title": "Tokenizer-Free Pixel-Level Language Modeling",
-    "slug": "pixel-level-tokenizer-free-modeling",
-    "status": "empirically-open",
-    "description": "Can raw-pixel models match tokenized multimodal models."
-  },
-  {
-    "title": "Cross-Modal Knowledge Conflict Resolution",
-    "slug": "cross-modal-knowledge-conflict",
+    "title": "Multimodal Reward Model Generalization",
+    "slug": "multimodal-reward-model-generalization",
     "status": "open",
-    "description": "Which source wins when image contradicts parametric knowledge."
+    "description": "Do visual reward models generalize beyond their preference distribution?"
   },
   {
-    "title": "Streaming Real-Time Multimodal Latency Bounds",
-    "slug": "streaming-multimodal-latency-bounds",
-    "status": "solved-but-impractical",
-    "description": "Full-context streaming inference is correct but too costly."
-  },
-  {
-    "title": "Embodied Multimodal Sim-to-Real Perception Gap",
-    "slug": "embodied-sim-to-real-perception-gap",
+    "title": "Embodied Action Tokenization for Vision-Language-Action Models",
+    "slug": "embodied-action-tokenization",
     "status": "open",
-    "description": "Quantifying perception loss transferring policies from simulation."
+    "description": "What action representation best transfers across robot embodiments?"
   },
   {
-    "title": "Cross-Lingual Grounding Transfer Without Paired Data",
-    "slug": "cross-lingual-grounding-transfer",
+    "title": "Test-Time Compute Scaling for Perception Tasks",
+    "slug": "test-time-compute-perception",
     "status": "empirically-open",
-    "description": "Visual grounding in languages lacking image-text pairs."
+    "description": "Does extra inference compute improve perception, not just reasoning?"
+  },
+  {
+    "title": "Multimodal In-Context Learning Mechanism",
+    "slug": "multimodal-in-context-learning-mechanism",
+    "status": "open",
+    "description": "Why is visual in-context learning weaker than textual?"
+  },
+  {
+    "title": "Document and Chart Understanding Without OCR Pipelines",
+    "slug": "ocr-free-document-understanding",
+    "status": "empirically-open",
+    "description": "Can end-to-end models match OCR pipelines on dense documents."
+  },
+  {
+    "title": "Cross-Modal Watermark Survival Through Generation",
+    "slug": "cross-modal-watermark-survival",
+    "status": "open",
+    "description": "Do watermarks survive image-to-text-to-image regeneration loops?"
   }
 ]

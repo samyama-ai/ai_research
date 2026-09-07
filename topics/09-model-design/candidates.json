@@ -1,242 +1,230 @@
 [
   {
-    "title": "Compute-Optimal Vocabulary Size",
-    "slug": "compute-optimal-vocabulary-size",
+    "title": "Depth versus Width Allocation at Fixed Parameter Count",
+    "slug": "depth-width-allocation-fixed-params",
     "status": "empirically-open",
-    "description": "How tokenizer vocabulary should scale with model and data budget."
-  },
-  {
-    "title": "Optimal Depth-to-Width Ratio at Fixed Parameter Count",
-    "slug": "optimal-depth-width-ratio",
-    "status": "empirically-open",
-    "description": "Which aspect ratio minimizes loss for a fixed parameter budget."
+    "description": "Optimal layer count versus hidden size for a fixed budget."
   },
   {
     "title": "Length Generalization in Transformer Arithmetic",
     "slug": "length-generalization-arithmetic",
     "status": "partially-solved",
-    "description": "Can transformers extrapolate arithmetic far beyond training lengths."
+    "description": "Architectures that extrapolate arithmetic far beyond training length."
   },
   {
-    "title": "Positional Encoding Choice and Context Extrapolation",
-    "slug": "positional-encoding-extrapolation",
+    "title": "Expressivity Gap Between State-Space Models and Attention",
+    "slug": "ssm-attention-expressivity-gap",
     "status": "partially-solved",
-    "description": "Which positional scheme actually enables extrapolation beyond trained context."
+    "description": "Which tasks recurrent state models provably cannot solve."
   },
   {
-    "title": "State-Space Models Versus Attention on Recall Tasks",
-    "slug": "ssm-vs-attention-recall",
-    "status": "partially-solved",
-    "description": "Whether fixed-state recurrent models can match attention at associative recall."
-  },
-  {
-    "title": "Necessary Attention Layers in Hybrid Architectures",
-    "slug": "minimal-attention-layers-hybrids",
-    "status": "empirically-open",
-    "description": "Minimum fraction of attention layers a hybrid model needs."
-  },
-  {
-    "title": "Mixture-of-Experts Granularity Optimum",
+    "title": "Optimal Expert Granularity in Mixture-of-Experts",
     "slug": "moe-expert-granularity",
     "status": "empirically-open",
-    "description": "Optimal expert size and count at fixed active parameters."
+    "description": "How many experts of what size maximize quality per FLOP."
   },
   {
-    "title": "Load-Balancing Loss Versus Model Quality Tradeoff",
-    "slug": "moe-load-balancing-quality-tradeoff",
+    "title": "Differentiable Discrete Routing Without Load-Balancing Hacks",
+    "slug": "differentiable-discrete-routing",
     "status": "open",
-    "description": "Whether balance penalties inherently cost expert specialization quality."
+    "description": "Learn sparse routing without auxiliary balance losses."
   },
   {
-    "title": "Discrete Routing Without Gradient Estimation Bias",
-    "slug": "unbiased-discrete-routing",
-    "status": "open",
-    "description": "Can expert routing be trained without biased gradient surrogates."
-  },
-  {
-    "title": "Parameter Sharing Versus Depth in Recurrent-Depth Models",
-    "slug": "weight-tying-depth-recurrence",
-    "status": "empirically-open",
-    "description": "Does looped weight sharing match untied depth at scale."
-  },
-  {
-    "title": "Normalization Placement and Training Stability Limits",
-    "slug": "normalization-placement-stability",
+    "title": "Positional Encoding That Extrapolates Without Fine-Tuning",
+    "slug": "positional-encoding-extrapolation",
     "status": "partially-solved",
-    "description": "Which normalization arrangement removes loss spikes at large scale."
+    "description": "Encodings valid far past the trained context length."
   },
   {
-    "title": "Attention Entropy Collapse Prevention",
-    "slug": "attention-entropy-collapse",
+    "title": "Necessity of Softmax in Attention",
+    "slug": "softmax-necessity-attention",
+    "status": "empirically-open",
+    "description": "Whether linear or other normalizations match softmax at scale."
+  },
+  {
+    "title": "Attention Sinks as an Architectural Artifact",
+    "slug": "attention-sink-artifact",
     "status": "partially-solved",
-    "description": "How to guarantee attention logits stay bounded during long training."
+    "description": "Why models allocate mass to uninformative first tokens."
   },
   {
-    "title": "Optimal KV Cache Head Sharing Ratio",
-    "slug": "kv-head-sharing-ratio",
-    "status": "empirically-open",
-    "description": "How much key-value head sharing quality tolerates at scale."
-  },
-  {
-    "title": "Linear Attention Expressivity Gap",
-    "slug": "linear-attention-expressivity-gap",
+    "title": "Provable Separation Between Depth and Chain-of-Thought Steps",
+    "slug": "depth-vs-cot-steps-separation",
     "status": "partially-solved",
-    "description": "Which tasks provably separate linear from softmax attention."
+    "description": "When serial compute substitutes for extra layers."
   },
   {
-    "title": "Sparse Attention Patterns That Preserve In-Context Learning",
-    "slug": "sparse-attention-icl-preservation",
-    "status": "open",
-    "description": "Whether sparse attention can retain full in-context learning ability."
-  },
-  {
-    "title": "Tokenizer-Free Byte Models at Frontier Scale",
-    "slug": "byte-level-models-at-scale",
+    "title": "Compute-Optimal Sparsity Ratio for Sparse Models",
+    "slug": "compute-optimal-sparsity-ratio",
     "status": "empirically-open",
-    "description": "Can byte-level models match tokenized models per unit compute."
+    "description": "Best active-to-total parameter ratio under a training budget."
   },
   {
-    "title": "Learned Dynamic Patching Versus Fixed Tokenization",
-    "slug": "dynamic-patching-vs-tokenization",
-    "status": "empirically-open",
-    "description": "Does learned input chunking beat fixed subword segmentation."
-  },
-  {
-    "title": "Activation Function Choice Beyond Empirical Search",
-    "slug": "activation-function-principled-choice",
-    "status": "open",
-    "description": "Is there theory predicting the best activation before training."
-  },
-  {
-    "title": "Residual Stream Width as a Capacity Bottleneck",
-    "slug": "residual-stream-bottleneck",
+    "title": "Architecture-Independent Definition of Model Capacity",
+    "slug": "model-capacity-definition",
     "status": "methodologically-blocked",
-    "description": "Whether residual width limits how many features coexist."
+    "description": "No measurable capacity notion comparable across architectures."
   },
   {
-    "title": "Optimal Embedding Untying and Output Head Design",
-    "slug": "embedding-untying-output-head",
+    "title": "Weight Sharing and Recurrent Depth at Scale",
+    "slug": "recurrent-depth-weight-sharing",
     "status": "empirically-open",
-    "description": "When untied input and output embeddings pay for themselves."
+    "description": "Whether looped shared layers match untied depth at scale."
   },
   {
-    "title": "Depth Scaling Limits and Diminishing Returns",
-    "slug": "depth-scaling-diminishing-returns",
+    "title": "Normalization-Free Training of Very Deep Transformers",
+    "slug": "normalization-free-deep-transformers",
+    "status": "partially-solved",
+    "description": "Removing LayerNorm without losing stability or quality."
+  },
+  {
+    "title": "Optimal Placement of Residual and Normalization Operators",
+    "slug": "residual-norm-placement",
+    "status": "empirically-open",
+    "description": "Pre-norm, post-norm, or hybrid at very large depth."
+  },
+  {
+    "title": "KV Cache Compression Without Quality Loss",
+    "slug": "kv-cache-compression-lossless",
     "status": "open",
-    "description": "Why very deep transformers stop improving beyond some depth."
+    "description": "How far the attention cache compresses before quality drops."
   },
   {
-    "title": "Architecture Choice Interaction With Optimizer",
-    "slug": "architecture-optimizer-coupling",
-    "status": "empirically-open",
-    "description": "Whether architecture rankings survive changing the optimizer."
-  },
-  {
-    "title": "Transferability of Small-Scale Architecture Ablations",
-    "slug": "ablation-transfer-across-scale",
-    "status": "empirically-open",
-    "description": "Do small-model architecture wins persist at frontier scale."
-  },
-  {
-    "title": "Muddling of Width and Data in Scaling Laws",
-    "slug": "width-data-confound-scaling-laws",
-    "status": "methodologically-blocked",
-    "description": "Separating shape effects from parameter count in scaling fits."
-  },
-  {
-    "title": "Memory Layers Versus Feedforward Capacity",
-    "slug": "memory-layers-vs-ffn",
-    "status": "empirically-open",
-    "description": "Can key-value memory layers replace feedforward parameters efficiently."
-  },
-  {
-    "title": "Retrieval Inside the Architecture Versus Longer Context",
-    "slug": "in-architecture-retrieval-vs-context",
+    "title": "Sub-Quadratic Attention Matching Quality on Recall Tasks",
+    "slug": "subquadratic-attention-recall-parity",
     "status": "open",
-    "description": "Whether built-in retrieval beats simply extending the context window."
+    "description": "Efficient attention that matches exact recall performance."
   },
   {
-    "title": "Chunk-Level Recurrence for Unbounded Context",
-    "slug": "chunked-recurrence-unbounded-context",
-    "status": "open",
-    "description": "Architecture that keeps constant memory without losing distant information."
-  },
-  {
-    "title": "Test-Time Compute Depth Versus Sampling Width",
-    "slug": "latent-depth-vs-token-sampling",
+    "title": "Optimal Hybrid Ratio of Attention to Recurrent Layers",
+    "slug": "hybrid-attention-recurrence-ratio",
     "status": "empirically-open",
-    "description": "Whether latent recurrence matches chain-of-thought token compute."
+    "description": "How many attention layers a recurrent backbone needs."
   },
   {
-    "title": "Diffusion Language Models Versus Autoregressive at Equal Compute",
-    "slug": "diffusion-vs-autoregressive-language",
+    "title": "Activation Function Choice at Scale",
+    "slug": "activation-function-scale-dependence",
     "status": "empirically-open",
-    "description": "Can masked diffusion language models match autoregressive loss efficiency."
+    "description": "Whether activation gains persist beyond small models."
   },
   {
-    "title": "Architectural Priors for Systematic Compositional Generalization",
-    "slug": "architectural-priors-compositionality",
+    "title": "Architectural Determinants of Quantization Robustness",
+    "slug": "architecture-quantization-robustness",
     "status": "open",
-    "description": "Which inductive bias yields systematic composition without task-specific engineering."
+    "description": "Which design choices cause low-precision outlier features."
+  },
+  {
+    "title": "Inductive Bias for Systematic Compositional Generalization",
+    "slug": "compositional-generalization-inductive-bias",
+    "status": "open",
+    "description": "Architecture that composes learned parts reliably out of distribution."
+  },
+  {
+    "title": "Learned Versus Hand-Designed Architecture Search Payoff",
+    "slug": "nas-payoff-at-scale",
+    "status": "empirically-open",
+    "description": "Whether automated search beats human design at large scale."
+  },
+  {
+    "title": "Optimal Head Count and Head Dimension Trade-off",
+    "slug": "head-count-dimension-tradeoff",
+    "status": "empirically-open",
+    "description": "How to split attention width into heads."
+  },
+  {
+    "title": "Parameter Sharing Between Embedding and Output Layers",
+    "slug": "tied-embedding-output-scaling",
+    "status": "empirically-open",
+    "description": "When weight tying stops helping as scale grows."
+  },
+  {
+    "title": "Architectures With Constant-Memory Unbounded Context",
+    "slug": "constant-memory-unbounded-context",
+    "status": "open",
+    "description": "Fixed-state models that never forget relevant distant tokens."
+  },
+  {
+    "title": "Continuous-Depth Models Competitive With Discrete Layers",
+    "slug": "continuous-depth-competitiveness",
+    "status": "open",
+    "description": "Whether ODE-style depth ever beats stacked discrete layers."
   },
   {
     "title": "Equivariance Versus Data Augmentation at Scale",
-    "slug": "equivariance-vs-augmentation",
-    "status": "partially-solved",
-    "description": "When hard-coded symmetry beats learning symmetry from data."
-  },
-  {
-    "title": "Vision Encoder Design for Multimodal Language Models",
-    "slug": "vision-encoder-design-vlm",
+    "slug": "equivariance-versus-augmentation",
     "status": "empirically-open",
-    "description": "Which visual tokenization maximizes downstream multimodal reasoning per token."
+    "description": "Do built-in symmetries still help with abundant data."
   },
   {
-    "title": "Early Fusion Versus Adapter-Based Multimodal Architectures",
-    "slug": "early-fusion-vs-adapters",
-    "status": "empirically-open",
-    "description": "Whether native multimodal training beats bolting encoders onto language models."
-  },
-  {
-    "title": "Quantization-Aware Architecture Design",
-    "slug": "quantization-aware-architecture",
+    "title": "Adaptive Per-Token Compute Allocation",
+    "slug": "adaptive-per-token-compute",
     "status": "open",
-    "description": "Designing architectures whose activations are inherently low-precision friendly."
+    "description": "Spending more layers only on hard tokens."
   },
   {
-    "title": "Outlier Features and Their Architectural Cause",
-    "slug": "activation-outlier-cause",
-    "status": "partially-solved",
-    "description": "Why massive activation outliers appear and how to prevent them."
+    "title": "Optimal Architecture for Diffusion Language Models",
+    "slug": "diffusion-language-model-architecture",
+    "status": "open",
+    "description": "Backbone design for non-autoregressive text generation."
   },
   {
-    "title": "Hardware-Aware Neural Architecture Search Without Proxy Error",
-    "slug": "nas-proxy-fidelity",
+    "title": "Cross-Modal Fusion Depth in Multimodal Models",
+    "slug": "multimodal-fusion-depth",
+    "status": "empirically-open",
+    "description": "Where to merge modality streams inside the network."
+  },
+  {
+    "title": "Architectural Causes of Loss Spikes",
+    "slug": "architectural-causes-loss-spikes",
+    "status": "open",
+    "description": "Which design features make large-scale training diverge."
+  },
+  {
+    "title": "Superposition Capacity as a Design Constraint",
+    "slug": "superposition-capacity-constraint",
     "status": "methodologically-blocked",
-    "description": "Cheap proxies that faithfully rank architectures at target scale."
+    "description": "How many features a layer width can represent."
   },
   {
-    "title": "Optimal Sparsity Pattern for Structured Pruning",
-    "slug": "structured-sparsity-optimum",
-    "status": "open",
-    "description": "Which structured sparsity gives the best quality per latency."
+    "title": "Memory-Augmented Layers That Beat Parametric Scaling",
+    "slug": "memory-layers-versus-parameters",
+    "status": "empirically-open",
+    "description": "Do retrieval or key-value memory layers outperform dense parameters."
   },
   {
-    "title": "Universal Transformers and Turing-Completeness in Practice",
-    "slug": "universal-transformer-practical-computation",
+    "title": "Optimal Feedforward Expansion Ratio",
+    "slug": "feedforward-expansion-ratio",
+    "status": "empirically-open",
+    "description": "Whether the standard four-times MLP ratio is optimal."
+  },
+  {
+    "title": "Architecture Transfer of Hyperparameters Across Scale",
+    "slug": "hyperparameter-transfer-across-architectures",
     "status": "partially-solved",
-    "description": "Whether theoretical universality yields any practical algorithmic gain."
+    "description": "Do width-scaling transfer rules hold for new architectures."
   },
   {
-    "title": "Circuit Depth Limits of Fixed-Depth Transformers",
-    "slug": "transformer-circuit-depth-limits",
-    "status": "partially-solved",
-    "description": "Which sequential problems fixed-depth transformers provably cannot solve."
-  },
-  {
-    "title": "Architecture Effects on Continual Learning Plasticity",
-    "slug": "architecture-plasticity-loss",
+    "title": "Sparse Attention Patterns Learned Rather Than Fixed",
+    "slug": "learned-sparse-attention-patterns",
     "status": "open",
-    "description": "Which design choices prevent loss of plasticity over training."
+    "description": "Learning which tokens to attend without dense computation."
+  },
+  {
+    "title": "Provable Universality of Modern Recurrent Architectures",
+    "slug": "recurrent-architecture-universality",
+    "status": "open",
+    "description": "Whether gated linear recurrences are Turing-complete in practice."
+  },
+  {
+    "title": "Architectural Modularity and Catastrophic Forgetting",
+    "slug": "modularity-catastrophic-forgetting",
+    "status": "open",
+    "description": "Designs that isolate updates to prevent forgetting."
+  },
+  {
+    "title": "Inference-Optimal Versus Training-Optimal Architecture Shape",
+    "slug": "inference-optimal-architecture-shape",
+    "status": "empirically-open",
+    "description": "Reshaping models when serving cost dominates training cost."
   }
 ]

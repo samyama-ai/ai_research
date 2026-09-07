@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Compute-Optimal Vocabulary Allocation Across Unequal-Resource Languages",
+    "slug": "compute-optimal-multilingual-vocabulary-allocation",
+    "status": "empirically-open",
+    "description": "How should tokenizer budget split across languages of unequal data?"
+  },
+  {
+    "title": "The Curse of Multilinguality Scaling Exponent",
+    "slug": "curse-of-multilinguality-scaling-exponent",
+    "status": "empirically-open",
+    "description": "Does adding languages hurt per-language loss at fixed compute forever?"
+  },
+  {
+    "title": "Tokenizer Fertility as a Causal Driver of Downstream Gap",
+    "slug": "tokenizer-fertility-causal-downstream-gap",
+    "status": "partially-solved",
+    "description": "Is token inflation causing low-resource quality loss, or merely correlated?"
+  },
+  {
+    "title": "Cross-Lingual Transfer Without Shared Subwords",
+    "slug": "cross-lingual-transfer-without-shared-subwords",
+    "status": "partially-solved",
+    "description": "What mechanism transfers ability between disjoint-script languages?"
+  },
+  {
+    "title": "Byte-Level Models Versus Subword at Equal Compute",
+    "slug": "byte-level-vs-subword-equal-compute",
+    "status": "empirically-open",
+    "description": "Do byte or patch models close the low-resource gap?"
+  },
+  {
+    "title": "Minimum Viable Corpus Size for a New Language",
+    "slug": "minimum-viable-corpus-size-new-language",
+    "status": "open",
+    "description": "How little text suffices to add a language usefully?"
+  },
+  {
+    "title": "Data Contamination in Low-Resource Benchmarks",
+    "slug": "low-resource-benchmark-contamination",
+    "status": "methodologically-blocked",
+    "description": "Are low-resource eval sets already inside pretraining crawls?"
+  },
+  {
+    "title": "Machine-Translated Evaluation Sets and Translationese Bias",
+    "slug": "translationese-bias-in-evaluation",
+    "status": "partially-solved",
+    "description": "Do translated benchmarks systematically misrank multilingual models?"
+  },
+  {
+    "title": "Language Identification Failure on Low-Resource and Code-Mixed Text",
+    "slug": "langid-failure-low-resource-code-mixed",
+    "status": "open",
+    "description": "Can LangID reach usable precision on rare and mixed languages?"
+  },
+  {
+    "title": "Quality Filtering Without a Reference Corpus",
+    "slug": "quality-filtering-without-reference-corpus",
+    "status": "open",
+    "description": "How to filter web text for a language with no clean corpus?"
+  },
+  {
+    "title": "Optimal Language Sampling Temperature Under Scaling",
+    "slug": "optimal-language-sampling-temperature",
+    "status": "empirically-open",
+    "description": "Does the best upsampling exponent change with model scale?"
+  },
+  {
+    "title": "Catastrophic Forgetting Bound in Language-Adaptive Pretraining",
+    "slug": "forgetting-bound-language-adaptive-pretraining",
+    "status": "open",
+    "description": "How much source-language skill must continued pretraining destroy?"
+  },
+  {
+    "title": "Do Multilingual Models Share a Language-Neutral Concept Space?",
+    "slug": "language-neutral-concept-space",
+    "status": "methodologically-blocked",
+    "description": "Is there a measurable shared semantic subspace across languages?"
+  },
+  {
+    "title": "English Pivoting in Chain-of-Thought Reasoning",
+    "slug": "english-pivoting-chain-of-thought",
+    "status": "partially-solved",
+    "description": "Do models internally reason in English for other languages?"
+  },
+  {
+    "title": "Reasoning Transfer to Languages Absent From Reasoning Data",
+    "slug": "reasoning-transfer-unseen-languages",
+    "status": "empirically-open",
+    "description": "Does math reasoning transfer to languages lacking reasoning corpora?"
+  },
+  {
+    "title": "Synthetic Data Collapse in Low-Resource Languages",
+    "slug": "synthetic-data-collapse-low-resource",
+    "status": "open",
+    "description": "When does self-generated low-resource text degrade rather than help?"
+  },
+  {
+    "title": "Grammatical Error Rate of LLM-Generated Low-Resource Text",
+    "slug": "grammaticality-of-generated-low-resource-text",
+    "status": "methodologically-blocked",
+    "description": "No reliable automatic grammaticality metric exists for most languages."
+  },
+  {
+    "title": "Faithful Evaluation Metrics for Morphologically Rich Languages",
+    "slug": "metrics-morphologically-rich-languages",
+    "status": "methodologically-blocked",
+    "description": "Do surface metrics track human judgment under rich morphology?"
+  },
+  {
+    "title": "Dialect Versus Standard Language Performance Gap",
+    "slug": "dialect-vs-standard-performance-gap",
+    "status": "open",
+    "description": "Can models serve dialects without standard-language training data?"
+  },
+  {
+    "title": "Unsupervised Machine Translation Below the Monolingual Data Threshold",
+    "slug": "unsupervised-mt-below-data-threshold",
+    "status": "partially-solved",
+    "description": "Unsupervised MT collapses for truly low-resource pairs; why exactly?"
+  },
+  {
+    "title": "Zero-Shot Translation Off-Target Language Errors",
+    "slug": "zero-shot-off-target-translation",
+    "status": "partially-solved",
+    "description": "Why do multilingual models output the wrong target language?"
+  },
+  {
+    "title": "Grammar-Book Prompting for Unseen Languages",
+    "slug": "grammar-book-prompting-unseen-languages",
+    "status": "open",
+    "description": "Can in-context grammars teach a genuinely unseen language?"
+  },
+  {
+    "title": "Script Transliteration as a Transfer Bridge",
+    "slug": "transliteration-as-transfer-bridge",
+    "status": "empirically-open",
+    "description": "Does romanizing scripts improve transfer at large scale?"
+  },
+  {
+    "title": "Safety Alignment Transfer Across Languages",
+    "slug": "safety-alignment-cross-lingual-transfer",
+    "status": "open",
+    "description": "Does safety training in English generalize to other languages?"
+  },
+  {
+    "title": "Low-Resource Jailbreak Asymmetry",
+    "slug": "low-resource-jailbreak-asymmetry",
+    "status": "partially-solved",
+    "description": "Why are refusals weaker when prompts use rare languages?"
+  },
+  {
+    "title": "Multilingual RLHF With Non-Native Annotators",
+    "slug": "multilingual-rlhf-annotator-validity",
+    "status": "methodologically-blocked",
+    "description": "Are preference labels valid when annotators lack native fluency?"
+  },
+  {
+    "title": "LLM-as-Judge Reliability Outside High-Resource Languages",
+    "slug": "llm-judge-reliability-low-resource",
+    "status": "open",
+    "description": "Do LLM judges correlate with humans in rare languages?"
+  },
+  {
+    "title": "Modular Language Adapters Versus Dense Multilingual Training",
+    "slug": "language-adapters-vs-dense-training",
+    "status": "empirically-open",
+    "description": "Do adapters beat dense models at matched inference cost?"
+  },
+  {
+    "title": "Language-Specific Neurons and Their Causal Role",
+    "slug": "language-specific-neurons-causal-role",
+    "status": "partially-solved",
+    "description": "Do identified language neurons causally control output language?"
+  },
+  {
+    "title": "Predicting Transfer Source Languages Before Training",
+    "slug": "predicting-transfer-source-languages",
+    "status": "open",
+    "description": "Can we forecast the best pivot language without training?"
+  },
+  {
+    "title": "Typological Features as Predictors of Cross-Lingual Gain",
+    "slug": "typology-predicts-cross-lingual-gain",
+    "status": "empirically-open",
+    "description": "Do typological databases predict transfer better than data size?"
+  },
+  {
+    "title": "Speech Recognition for Languages Without Orthography",
+    "slug": "asr-languages-without-orthography",
+    "status": "open",
+    "description": "How to build ASR when a language has no standard writing?"
+  },
+  {
+    "title": "Cross-Lingual Alignment of Speech and Text Representations",
+    "slug": "speech-text-alignment-low-resource",
+    "status": "empirically-open",
+    "description": "Can speech units transfer across unrelated low-resource languages?"
+  },
+  {
+    "title": "Sample Complexity of Few-Shot Language Addition Post-Training",
+    "slug": "sample-complexity-language-addition",
+    "status": "open",
+    "description": "How many examples add a language to an aligned model?"
+  },
+  {
+    "title": "Long-Context Degradation in Non-Latin Scripts",
+    "slug": "long-context-degradation-non-latin-scripts",
+    "status": "empirically-open",
+    "description": "Does effective context shrink for scripts with high token counts?"
+  },
+  {
+    "title": "Culturally Grounded Knowledge Versus Translated Knowledge",
+    "slug": "cultural-knowledge-vs-translated-knowledge",
+    "status": "open",
+    "description": "Can models learn culture-specific facts absent from English data?"
+  },
+  {
+    "title": "Fair Inference Pricing Under Unequal Tokenization",
+    "slug": "fair-inference-pricing-unequal-tokenization",
+    "status": "solved-but-impractical",
+    "description": "Equal-cost serving across languages exists but is economically unused."
+  },
+  {
+    "title": "Retrieval Augmentation When the Corpus Language Differs",
+    "slug": "cross-lingual-retrieval-augmentation-gap",
+    "status": "partially-solved",
+    "description": "When does cross-language retrieval beat translating the query?"
+  },
+  {
+    "title": "Sign Language Modeling Without Large Aligned Video Corpora",
+    "slug": "sign-language-modeling-low-resource",
+    "status": "open",
+    "description": "Can sign languages be modeled without massive aligned video?"
+  },
+  {
+    "title": "Scaling Laws Fitted Per Language Versus Pooled",
+    "slug": "per-language-versus-pooled-scaling-laws",
+    "status": "empirically-open",
+    "description": "Do per-language scaling laws differ from the pooled fit?"
+  }
+]
