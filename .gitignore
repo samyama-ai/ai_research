@@ -4,3 +4,4 @@ __pycache__/
 catalog-run.log
 catalog-run.nohup
 progress.watch
+autopush.log
