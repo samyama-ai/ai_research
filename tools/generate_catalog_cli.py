@@ -34,7 +34,9 @@ AGY_SEMAPHORE = asyncio.Semaphore(AGY_CONCURRENCY)
 # ~1,100 queued calls retrying against "Individual quota reached", producing nothing:
 # every call returned in under 10 seconds, so the retry loop just spun. Once this is
 # seen, the whole run aborts and says when the quota resets.
-QUOTA_RE = re.compile(r"quota reached|rate limit|Resets in", re.I)
+QUOTA_RE = re.compile(
+    r"quota reached|rate limit|session limit|usage limit"
+    r"|Resets in|resets \d|resets at", re.I)
 
 
 class QuotaExhausted(RuntimeError):
