@@ -91,6 +91,27 @@ def claims():
     return out
 
 
+def fetch_with_retry(ids, tries=4):
+    """Resolve a batch, retrying with backoff. Returns (found, ok).
+
+    `ok` is False when every attempt failed. That distinction is the whole
+    point: without it a rate-limited batch is reported as 50 nonexistent
+    papers. A first version of this file did exactly that and claimed 804
+    unresolvable ids on a catalog that had one.
+    """
+    delay = 5.0
+    for attempt in range(tries):
+        try:
+            return fetch(ids), True
+        except Exception as e:
+            if attempt == tries - 1:
+                print(f"  batch failed after {tries} tries: {e}", file=sys.stderr, flush=True)
+                return {}, False
+            time.sleep(delay)
+            delay *= 2
+    return {}, False
+
+
 def fetch(ids):
     """Resolve a batch of ids -> {id: real_title}. Missing ids simply absent."""
     q = urllib.parse.urlencode({"id_list": ",".join(ids), "max_results": len(ids)})
@@ -119,21 +140,26 @@ def main():
     print(f"-- {len(ids)} unique arXiv ids across "
           f"{sum(len(p) for t in c.values() for p in t.values())} citations --", flush=True)
 
-    real = {}
+    real, unchecked = {}, set()
     for i in range(0, len(ids), BATCH):
         batch = ids[i:i + BATCH]
-        try:
-            real.update(fetch(batch))
-        except Exception as e:
-            print(f"  batch {i // BATCH}: {e}", file=sys.stderr, flush=True)
+        found, ok = fetch_with_retry(batch)
+        if ok:
+            real.update(found)
+        else:
+            unchecked.update(batch)
         print(f"  resolved {len(real)}/{len(ids)}", end="\r", file=sys.stderr, flush=True)
         if i + BATCH < len(ids):
             time.sleep(PAUSE)
     print(file=sys.stderr)
+    if unchecked:
+        print(f"-- {len(unchecked)} ids UNCHECKED (request failed, not missing) --")
 
     missing, mismatch, ok = [], [], 0
     for aid in ids:
         for claimed, pages in c[aid].items():
+            if aid in unchecked:
+                continue                    # never claim a bad id we could not ask about
             if aid not in real:
                 missing.append({"id": aid, "claimed": claimed, "pages": pages})
             else:
@@ -160,6 +186,8 @@ def main():
     if args.json:
         json.dump({"ok": ok, "mismatch": mismatch, "missing": missing},
                   open(args.json, "w"), indent=2)
+    if unchecked:
+        print(f"   re-run to check the {len(unchecked)} unchecked ids")
     return 1 if (missing or hard) else 0
 
 
