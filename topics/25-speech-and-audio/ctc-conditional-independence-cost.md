@@ -116,7 +116,7 @@ Secondary readout: does arm 2 recover $\ge 80\%$ of $\delta$? If yes, in-encoder
 - **[SOTA]** Higuchi, Watanabe, Chen, Ogawa, Kobayashi. *Mask CTC: Non-Autoregressive End-to-End ASR with CTC and Mask Predict.* Interspeech, 2020. — arXiv:2005.08700
 - **[SOTA]** Chan, Saharia, Hinton, Norouzi, Jaitly. *Imputer: Sequence Modelling via Imputation and Dynamic Programming.* ICML, 2020. — arXiv:2002.08926
 - **[SOTA]** Baevski, Zhou, Mohamed, Auli. *wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations.* NeurIPS, 2020. — arXiv:2006.11477
-- **[Related]** Variani, Rybach, Allauzen, Riley. *Hybrid Autoregressive Transducer (HAT).* ICASSP, 2020. — arXiv:1910.11455
+- **[Related]** Variani, Rybach, Allauzen, Riley. *Hybrid Autoregressive Transducer (HAT).* ICASSP, 2020. — arXiv:2003.07705
 - **[Survey]** Higuchi, Chen, Fujita, Inaguma, Komatsu, Lee, Nozaki, Wang, Watanabe. *A Comparative Study on Non-Autoregressive Modelings for Speech-to-Text Generation.* ASRU, 2021. — arXiv:2110.05249
 - **[Tutorial]** Hannun. *Sequence Modeling with CTC.* Distill, 2017.
 

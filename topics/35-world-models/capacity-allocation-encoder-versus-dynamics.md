@@ -113,7 +113,7 @@ Secondary readout: does $\arg\max_\rho$ move toward the encoder when Atari obser
 - **[Method]** Wang, Zhu, Torralba, Isola. *Denoised MDPs: Learning World Models Better Than the World Itself.* ICML 2022.
 - **[Scaling]** Hoffmann et al. *Training Compute-Optimal Large Language Models.* NeurIPS 2022. — arXiv:2203.15556
 - **[Scaling]** Kaplan et al. *Scaling Laws for Neural Language Models.* 2020. — arXiv:2001.08361
-- **[Evaluation]** Agarwal, Schwarzer, Castro, Courville, Bellemare. *Deep Reinforcement Learning at the Edge of the Statistical Precipice.* NeurIPS 2021. — arXiv:2108.13379
+- **[Evaluation]** Agarwal, Schwarzer, Castro, Courville, Bellemare. *Deep Reinforcement Learning at the Edge of the Statistical Precipice.* NeurIPS 2021. — arXiv:2108.13264
 - **[Related]** Bardes et al. *Revisiting Feature Prediction for Learning Visual Representations from Video (V-JEPA).* 2024.
 
 ## 10. Worked Example

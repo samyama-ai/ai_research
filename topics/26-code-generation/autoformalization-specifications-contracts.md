@@ -115,7 +115,7 @@ Cost estimate: ~2M output tokens plus ~10 CPU-hours of test execution. Runnable 
 - **[SOTA]** Chuyue Sun, Ying Sheng, Oded Padon, Clark Barrett. *Clover: Closed-Loop Verifiable Code Generation.* SAIV, 2024. — arXiv:2310.17807
 - **[SOTA]** Md Rakib Hossain Misu, Cristina V. Lopes, Iris Ma, James Noble. *Towards AI-Assisted Synthesis of Verified Dafny Methods.* FSE, 2024.
 - **[Benchmark]** Chloe Loughridge, Qinyi Sun, Seth Ahrenbach, Federico Cassano, Chuyue Sun, Ying Sheng, Anish Mudide, Md Rakib Hossain Misu, Nada Amin, Max Tegmark. *DafnyBench: A Benchmark for Formal Software Verification.* 2024. — arXiv:2406.08467
-- **[Measurement]** Shuvendu K. Lahiri. *Evaluating LLM-driven User-Intent Formalization for Verification-Aware Languages.* 2024. — arXiv:2406.14664
+- **[Measurement]** Shuvendu K. Lahiri. *Evaluating LLM-driven User-Intent Formalization for Verification-Aware Languages.* 2024. — arXiv:2406.09757
 - **[Method]** Cheng Wen, Jialun Cao, Jie Su, Zhiwu Xu, Shengchao Qin, Mengda He, Haokun Li, Shing-Chi Cheung, Cong Tian. *Enchanting Program Specification Synthesis by Large Language Models Using Static Analysis and Program Verification.* CAV, 2024.
 - **[Method]** Saikat Chakraborty, Shuvendu K. Lahiri, Sarah Fakhoury, Madanlal Musuvathi, Akash Lal, Aseem Rastogi, Aditya Senthilnathan, Rahul Sharma, Nikhil Swamy. *Ranking LLM-Generated Loop Invariants for Program Verification.* Findings of EMNLP, 2023.
 - **[Method]** Matthias Cosler, Christopher Hahn, Daniel Mendoza, Frederik Schmitt, Caroline Trippel. *nl2spec: Interactively Translating Unstructured Natural Language to Temporal Logics with Large Language Models.* CAV, 2023. — arXiv:2303.04864

@@ -106,7 +106,7 @@ The obstruction is **confounded measurement plus absent ground truth**, not comp
 - **[Foundational]** W. H. Sumby, I. Pollack. *Visual Contribution to Speech Intelligibility in Noise.* Journal of the Acoustical Society of America, 1954.
 - **[Foundational]** H. McGurk, J. MacDonald. *Hearing Lips and Seeing Voices.* Nature, 1976.
 - **[Foundational]** K. W. Grant, P.-F. Seitz. *The use of visible speech cues for improving auditory detection of spoken sentences.* JASA, 2000.
-- **[Foundational]** P. L. Williams, R. D. Beer. *Nonnegative Decomposition of Multivariate Information.* arXiv, 2010. — arXiv:2004.12041 is *not* this paper; cite by title/year.
+- **[Foundational]** P. L. Williams, R. D. Beer. *Nonnegative Decomposition of Multivariate Information.* arXiv, 2010. — arXiv:1004.2515 is *not* this paper; cite by title/year.
 - **[Foundational]** N. Bertschinger, J. Rauh, E. Olbrich, J. Jost, N. Ay. *Quantifying Unique Information.* Entropy 16(4), 2014.
 - **[SOTA]** B. Shi, W.-N. Hsu, K. Lakhotia, A. Mohamed. *Learning Audio-Visual Speech Representation by Masked Multimodal Cluster Prediction (AV-HuBERT).* ICLR 2022.
 - **[SOTA]** P. Ma, A. Haliassos, A. Fernandez-Lopez, H. Chen, S. Petridis, M. Pantic. *Auto-AVSR: Audio-Visual Speech Recognition with Automatic Labels.* ICASSP 2023.
