@@ -116,7 +116,7 @@ Second, the leading mechanistic explanation — memorizing $\epsilon$-induced la
 - **[Mechanism]** David Stutz, Matthias Hein, Bernt Schiele. *Relating Adversarially Robust Generalization to Flat Minima.* ICCV, 2021. — arXiv:2104.04448
 - **[Theory]** Yue Xing, Qifan Song, Guang Cheng. *On the Algorithmic Stability of Adversarial Training.* NeurIPS, 2021.
 - **[Theory]** Dong Yin, Kannan Ramchandran, Peter Bartlett. *Rademacher Complexity for Adversarially Robust Generalization.* ICML, 2019. — arXiv:1810.11914
-- **[Evaluation]** Francesco Croce, Matthias Hein. *Reliable Evaluation of Adversarial Robustness with an Ensemble of Diverse Parameter-free Attacks.* ICML, 2020. — arXiv:2003.01128
+- **[Evaluation]** Francesco Croce, Matthias Hein. *Reliable Evaluation of Adversarial Robustness with an Ensemble of Diverse Parameter-free Attacks.* ICML, 2020. — arXiv:2003.01690
 - **[Survey/Benchmark]** Francesco Croce, Maksym Andriushchenko, Vikash Sehwag, Edoardo Debenedetti, Nicolas Flammarion, Mung Chiang, Prateek Mittal, Matthias Hein. *RobustBench: A Standardized Adversarial Robustness Benchmark.* NeurIPS Datasets & Benchmarks, 2021. — arXiv:2010.09670
 
 ## 10. Worked Example

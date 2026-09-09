@@ -111,7 +111,7 @@ The binding obstruction is **confounded measurement compounded by initialization
 - **[SOTA]** Lin, K. Q. et al. *Egocentric Video-Language Pretraining.* NeurIPS, 2022. — arXiv:2206.01670
 - **[SOTA]** Zhao, Y. et al. *Learning Video Representations from Large Language Models (LaViLa).* CVPR, 2023. — arXiv:2212.04501
 - **[Established]** Orhan, A. E., Gupta, V. V., Lake, B. M. *Self-supervised learning through the eyes of a child.* NeurIPS, 2020. — arXiv:2007.16189
-- **[Benchmark]** Mangalam, K., Akshulakov, R., Malik, J. *EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding.* NeurIPS Datasets & Benchmarks, 2023. — arXiv:2308.08479
+- **[Benchmark]** Mangalam, K., Akshulakov, R., Malik, J. *EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding.* NeurIPS Datasets & Benchmarks, 2023. — arXiv:2308.09126
 - **[Benchmark]** Damen, D. et al. *Rescaling Egocentric Vision: Collection, Pipeline and Challenges for EPIC-KITCHENS-100.* IJCV, 2022. — arXiv:2006.13256
 - **[Theory]** Arora, S., Khandeparkar, H., Khodak, M., Plevrakis, O., Saunshi, N. *A Theoretical Analysis of Contrastive Unsupervised Representation Learning.* ICML, 2019. — arXiv:1902.09229
 - **[Theory]** Tosh, C., Krishnamurthy, A., Hsu, D. *Contrastive learning, multi-view redundancy, and linear models.* ALT, 2021.

@@ -63,7 +63,7 @@ Measured proxies, all computable:
 - Human preference corpora are length-skewed at the source. In HH-RLHF and WebGPT-style data the chosen response is longer in roughly 60–70% of pairs; a "longer wins" classifier therefore scores in that band with zero language understanding, against reward models that typically score 65–75% held-out pair accuracy at 7B. The margin over the trivial baseline is often single-digit points.
 - Reward hacking via length is the dominant failure mode of unconstrained PPO on 7B–70B policies: mean response length rises multiple-fold while human-judged quality plateaus (Singhal et al. 2024; Chen et al. 2024).
 - LLM judges have measurable verbosity bias. Zheng et al., "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena" (NeurIPS 2023 D&B, arXiv:2306.05685), documented it and showed GPT-4 judges can be flipped by content-free expansions.
-- Length-controlled metrics are themselves gameable. Zheng et al., "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates" (2024, arXiv:2410.07095): a *constant* response independent of the instruction reached an ~86% LC win rate on AlpacaEval 2.0. Length control removes one confound, not judge exploitability.
+- Length-controlled metrics are themselves gameable. Zheng et al., "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates" (2024, arXiv:2410.07137): a *constant* response independent of the instruction reached an ~86% LC win rate on AlpacaEval 2.0. Length control removes one confound, not judge exploitability.
 - The GRPO length effect is architectural, not data-driven: it appears with verifiable binary rewards and no reward model at all (arXiv:2503.20783).
 
 ## 5. What Is Not Known
@@ -110,7 +110,7 @@ Second, the referee is compromised. The standard adjudicator of "did quality sur
 - **[SOTA]** Yu Meng, Mengzhou Xia, Danqi Chen. *SimPO: Simple Preference Optimization with a Reference-Free Reward.* NeurIPS, 2024. — arXiv:2405.14734
 - **[SOTA]** Yann Dubois, Balázs Galambosi, Percy Liang, Tatsunori Hashimoto. *Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators.* 2024. — arXiv:2404.04475
 - **[SOTA]** Zichen Liu et al. *Understanding R1-Zero-Like Training: A Critical Perspective.* 2025. — arXiv:2503.20783
-- **[Related]** Xiaosen Zheng et al. *Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates.* ICLR, 2025. — arXiv:2410.07095
+- **[Related]** Xiaosen Zheng et al. *Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates.* ICLR, 2025. — arXiv:2410.07137
 - **[Related]** Pranjal Aggarwal, Sean Welleck. *L1: Controlling How Long A Reasoning Model Thinks With Reinforcement Learning.* 2025. — arXiv:2503.04697
 - **[Survey]** Rafael Rafailov et al. *Direct Preference Optimization: Your Language Model is Secretly a Reward Model.* NeurIPS, 2023. — arXiv:2305.18290
 

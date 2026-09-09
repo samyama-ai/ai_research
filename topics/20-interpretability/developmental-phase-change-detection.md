@@ -125,7 +125,7 @@ Compute is a secondary cost, not the binding constraint: $\hat\lambda$ at one ch
 - **[SOTA]** Curt Tigges, Michael Hanna, Qinan Yu, Stella Biderman. *LLM Circuit Analyses Are Consistent Across Training and Scale.* NeurIPS 2024. — arXiv:2407.10827
 - **[Empirical]** Angelica Chen, Ravid Shwartz-Ziv, Kyunghyun Cho, Matthew L. Leavitt, Naomi Saphra. *Sudden Drops in the Loss: Syntax Acquisition, Phase Transitions, and Simplicity Bias in MLMs.* ICLR 2024. — arXiv:2309.07311
 - **[Empirical]** Stella Biderman et al. *Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling.* ICML 2023. — arXiv:2304.01373
-- **[Counterpoint]** Rylan Schaeffer, Brando Miranda, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* NeurIPS 2023. — arXiv:2305.15891
+- **[Counterpoint]** Rylan Schaeffer, Brando Miranda, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* NeurIPS 2023. — arXiv:2304.15004
 - **[Survey]** Eric J. Michaud, Ziming Liu, Uzay Girit, Max Tegmark. *The Quantization Model of Neural Scaling.* NeurIPS 2023. — arXiv:2303.13506
 
 ## 10. Worked Example
