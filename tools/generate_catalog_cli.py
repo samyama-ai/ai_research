@@ -37,7 +37,12 @@ AGY_SEMAPHORE = asyncio.Semaphore(AGY_CONCURRENCY)
 QUOTA_RE = re.compile(
     r"quota reached|quota exceeded|rate limit|resets? (in|at|\d)|"
     r"(session|usage|weekly|daily) limit|hit your limit|"
-    r"upgrade your subscription|too many requests|429", re.I)
+    r"upgrade your subscription|too many requests|429|"
+    # An admin disabling Code access is not a rate limit, but retrying is just
+    # as pointless: it wedged a run for 75 minutes with the service still
+    # reporting active and its log frozen.
+    r"organization has disabled|subscription access for claude code|"
+    r"use an anthropic api key", re.I)
 
 
 class QuotaExhausted(RuntimeError):
