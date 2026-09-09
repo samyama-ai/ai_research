@@ -28,6 +28,10 @@ BACKEND = os.getenv("CATALOG_BACKEND", "claude").lower()
 # Bound total in-flight calls across all topics.
 AGY_CONCURRENCY = int(os.getenv("AGY_CONCURRENCY", "8"))
 AGY_TIMEOUT = os.getenv("AGY_PRINT_TIMEOUT", "10m")
+# Hard ceiling on one CLI call. A page takes ~130s; 10x that is generous and
+# still bounded, so a wedged child is killed and the candidate simply retried
+# on the next pass instead of stalling the whole run.
+CALL_TIMEOUT = int(os.getenv("CATALOG_CALL_TIMEOUT", "1200"))
 AGY_SEMAPHORE = asyncio.Semaphore(AGY_CONCURRENCY)
 
 # A quota wall is not a transient error. The first long run burned 20 minutes and
@@ -182,7 +186,16 @@ async def call_agy_cli(prompt, is_json=False):
         model = os.getenv("CATALOG_MODEL") or os.getenv("AGY_MODEL")
         if model:
             cmd += ["--model", model]
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        # stdin=DEVNULL and a timeout are both load-bearing. Without them a
+        # hung `claude -p` never returns: three of them (the concurrency limit)
+        # held the semaphore for 3.9 hours with the service reporting active,
+        # no error and not one new log line. The CLI also blocks waiting on
+        # stdin when nothing is piped, which is one way to get there.
+        try:
+            result = subprocess.run(cmd, capture_output=True, text=True,
+                                    stdin=subprocess.DEVNULL, timeout=CALL_TIMEOUT)
+        except subprocess.TimeoutExpired:
+            raise RuntimeError(f"{BACKEND} -p timed out after {CALL_TIMEOUT}s")
         if result.returncode != 0:
             err = (result.stderr + result.stdout).strip()
             if QUOTA_RE.search(err):
